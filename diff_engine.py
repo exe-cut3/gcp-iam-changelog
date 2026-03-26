@@ -92,8 +92,7 @@ def _diff_permissions(
             change_type="added",
             permission=perm,
             service=_service_of(perm),
-            details={"description": curr[perm].get("description", ""),
-                     "stage": curr[perm].get("stage", "")},
+            details={},
         ))
 
     for perm in prev_keys - curr_keys:
@@ -104,8 +103,7 @@ def _diff_permissions(
             change_type="removed",
             permission=perm,
             service=_service_of(perm),
-            details={"description": prev[perm].get("description", ""),
-                     "stage": prev[perm].get("stage", "")},
+            details={},
         ))
 
     return entries
@@ -176,6 +174,28 @@ def _diff_predefined_roles(
 # Dimension 3 – role_permissions.json
 # ---------------------------------------------------------------------------
 
+def _extract_role_map(entry: Any) -> dict[str, bool]:
+    """Extract {role_id: undocumented} from a role_permissions entry.
+
+    Handles both the list format ``[{"id": "roles/...", "undocumented": bool}]``
+    (current iam-dataset) and the legacy dict format
+    ``{"roles": [{"role": "roles/...", "undocumented": bool}]}``.
+    """
+    if isinstance(entry, list):
+        return {
+            (r.get("id") or r.get("role", "")): r.get("undocumented", False)
+            for r in entry
+            if isinstance(r, dict) and ("id" in r or "role" in r)
+        }
+    if isinstance(entry, dict):
+        return {
+            (r.get("role") or r.get("id", "")): r.get("undocumented", False)
+            for r in entry.get("roles", [])
+            if isinstance(r, dict) and ("role" in r or "id" in r)
+        }
+    return {}
+
+
 def _diff_role_permissions(
     prev: dict[str, Any] | None,
     curr: dict[str, Any] | None,
@@ -183,8 +203,8 @@ def _diff_role_permissions(
     sha: str,
 ) -> list[ChangeEntry]:
     """
-    role_permissions.json structure:
-      { "<permission>": { "roles": [ {"role": "...", "undocumented": bool}, ... ] } }
+    role_permissions.json structure (current iam-dataset):
+      { "<permission>": [ {"id": "roles/...", "name": "...", "undocumented": bool}, ... ] }
     """
     if curr is None:
         return []
@@ -194,19 +214,11 @@ def _diff_role_permissions(
     all_perms = set(prev.keys()) | set(curr.keys())
 
     for perm in all_perms:
-        prev_entry = prev.get(perm, {})
-        curr_entry = curr.get(perm, {})
+        prev_entry = prev.get(perm, [])
+        curr_entry = curr.get(perm, [])
 
-        prev_roles: dict[str, bool] = {
-            r["role"]: r.get("undocumented", False)
-            for r in prev_entry.get("roles", [])
-            if "role" in r
-        }
-        curr_roles: dict[str, bool] = {
-            r["role"]: r.get("undocumented", False)
-            for r in curr_entry.get("roles", [])
-            if "role" in r
-        }
+        prev_roles: dict[str, bool] = _extract_role_map(prev_entry)
+        curr_roles: dict[str, bool] = _extract_role_map(curr_entry)
 
         for role in set(curr_roles) - set(prev_roles):
             undoc = curr_roles[role]
@@ -243,11 +255,16 @@ def _diff_role_permissions(
 def _flatten_methods(methods_data: dict[str, Any]) -> dict[str, set[str]]:
     """Return { service: {method1, method2, ...} }."""
     result: dict[str, set[str]] = {}
-    for service, methods in methods_data.items():
-        if isinstance(methods, dict):
-            result[service] = set(methods.keys())
-        elif isinstance(methods, list):
-            result[service] = set(methods)
+    for service, svc_val in methods_data.items():
+        if isinstance(svc_val, dict):
+            # New format: {"service": {"description": ..., "methods": {"method_name": {...}}}}
+            if "methods" in svc_val and isinstance(svc_val["methods"], dict):
+                result[service] = set(svc_val["methods"].keys())
+            else:
+                # Legacy flat format: {"service": {"method1": ..., "method2": ...}}
+                result[service] = set(svc_val.keys())
+        elif isinstance(svc_val, list):
+            result[service] = set(svc_val)
     return result
 
 
@@ -454,24 +471,28 @@ def _detect_special(
     prev_map = prev_data.get("map") or {}
 
     curr_all_methods: set[str] = set()
-    for svc, methods in curr_methods.items():
-        if isinstance(methods, dict):
-            curr_all_methods.update(
-                f"{svc}.{m}" if not m.startswith(svc) else m
-                for m in methods.keys()
-            )
-        elif isinstance(methods, list):
-            curr_all_methods.update(methods)
+    for svc, svc_val in curr_methods.items():
+        if isinstance(svc_val, dict):
+            methods_dict = svc_val.get("methods", svc_val)
+            if isinstance(methods_dict, dict):
+                curr_all_methods.update(
+                    f"{svc}.{m}" if not m.startswith(svc) else m
+                    for m in methods_dict.keys()
+                )
+        elif isinstance(svc_val, list):
+            curr_all_methods.update(svc_val)
 
     prev_all_methods: set[str] = set()
-    for svc, methods in prev_methods.items():
-        if isinstance(methods, dict):
-            prev_all_methods.update(
-                f"{svc}.{m}" if not m.startswith(svc) else m
-                for m in methods.keys()
-            )
-        elif isinstance(methods, list):
-            prev_all_methods.update(methods)
+    for svc, svc_val in prev_methods.items():
+        if isinstance(svc_val, dict):
+            methods_dict = svc_val.get("methods", svc_val)
+            if isinstance(methods_dict, dict):
+                prev_all_methods.update(
+                    f"{svc}.{m}" if not m.startswith(svc) else m
+                    for m in methods_dict.keys()
+                )
+        elif isinstance(svc_val, list):
+            prev_all_methods.update(svc_val)
 
     new_methods = curr_all_methods - prev_all_methods
     for method in new_methods:
