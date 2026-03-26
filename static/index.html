@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GCP IAM Changelog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =====================================================================
+       HEADER
+  ===================================================================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             aria-hidden="true">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        <h1>GCP IAM Changelog</h1>
+      </div>
+      <div id="last-updated" class="last-updated" aria-live="polite">Loading…</div>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       FILTER BAR
+  ===================================================================== -->
+  <section class="filter-bar" aria-label="Filters">
+    <div class="filter-inner">
+
+      <!-- Severity chips -->
+      <div class="filter-group" role="group" aria-label="Severity filter">
+        <span class="filter-label">Severity</span>
+        <div class="chip-group" id="severity-chips">
+          <button class="chip chip-critical active" data-severity="CRITICAL" aria-pressed="true">
+            CRITICAL <span class="chip-count" id="count-CRITICAL">0</span>
+          </button>
+          <button class="chip chip-high active" data-severity="HIGH" aria-pressed="true">
+            HIGH <span class="chip-count" id="count-HIGH">0</span>
+          </button>
+          <button class="chip chip-medium active" data-severity="MEDIUM" aria-pressed="true">
+            MEDIUM <span class="chip-count" id="count-MEDIUM">0</span>
+          </button>
+          <button class="chip chip-info active" data-severity="INFO" aria-pressed="true">
+            INFO <span class="chip-count" id="count-INFO">0</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Dimension filter -->
+      <div class="filter-group" role="group" aria-label="Dimension filter">
+        <span class="filter-label">Dimension</span>
+        <select id="dimension-filter" class="filter-select" aria-label="Filter by dimension">
+          <option value="">All dimensions</option>
+          <option value="permissions">Permissions</option>
+          <option value="predefined_roles">Predefined Roles</option>
+          <option value="role_permissions">Role ↔ Permission</option>
+          <option value="methods">API Methods</option>
+          <option value="method_map">Method Map</option>
+          <option value="security_tags">Security Tags</option>
+        </select>
+      </div>
+
+      <!-- Date range -->
+      <div class="filter-group" role="group" aria-label="Date range filter">
+        <span class="filter-label">From</span>
+        <input type="date" id="date-from" class="filter-input" aria-label="Start date" />
+        <span class="filter-label">To</span>
+        <input type="date" id="date-to" class="filter-input" aria-label="End date" />
+      </div>
+
+      <!-- Text search -->
+      <div class="filter-group filter-group-search">
+        <label for="text-search" class="filter-label">Search</label>
+        <input type="search" id="text-search" class="filter-input filter-search"
+               placeholder="permission, role, service…" aria-label="Text search" />
+      </div>
+
+      <button class="btn-reset" id="reset-filters" aria-label="Reset all filters">
+        Reset
+      </button>
+
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       STATS BAR
+  ===================================================================== -->
+  <section class="stats-bar" id="stats-bar" aria-label="Summary statistics">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-num" id="stat-total">—</span>
+        <span class="stat-lbl">total changes</span>
+      </div>
+      <div class="stat-item stat-critical">
+        <span class="stat-num" id="stat-critical">—</span>
+        <span class="stat-lbl">critical</span>
+      </div>
+      <div class="stat-item stat-high">
+        <span class="stat-num" id="stat-high">—</span>
+        <span class="stat-lbl">high</span>
+      </div>
+      <div class="stat-item stat-medium">
+        <span class="stat-num" id="stat-medium">—</span>
+        <span class="stat-lbl">medium</span>
+      </div>
+      <div class="stat-item stat-info">
+        <span class="stat-num" id="stat-info">—</span>
+        <span class="stat-lbl">info</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" id="stat-services">—</span>
+        <span class="stat-lbl">new services</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       MAIN TIMELINE
+  ===================================================================== -->
+  <main class="timeline-container" id="timeline-container" aria-label="IAM change timeline">
+    <div id="loading-indicator" class="loading" role="status" aria-live="polite">
+      <span class="spinner" aria-hidden="true"></span> Loading changelog data…
+    </div>
+    <div id="error-message" class="error-msg hidden" role="alert"></div>
+    <ol id="timeline" class="timeline" aria-label="Change entries"></ol>
+    <div id="no-results" class="no-results hidden" role="status">No entries match the current filters.</div>
+  </main>
+
+  <!-- =====================================================================
+       PAGINATION
+  ===================================================================== -->
+  <nav class="pagination" id="pagination" aria-label="Page navigation" hidden>
+    <button class="btn-page" id="btn-prev" aria-label="Previous page" disabled>← Prev</button>
+    <span class="page-info" id="page-info" aria-live="polite"></span>
+    <button class="btn-page" id="btn-next" aria-label="Next page">Next →</button>
+  </nav>
+
+  <!-- =====================================================================
+       FOOTER
+  ===================================================================== -->
+  <footer class="site-footer">
+    <p>
+      Data sourced from
+      <a href="https://github.com/iann0036/iam-dataset" target="_blank" rel="noopener noreferrer">
+        iann0036/iam-dataset
+      </a>
+      · Generated automatically via GitHub Actions
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
