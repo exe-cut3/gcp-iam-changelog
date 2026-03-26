@@ -40,7 +40,7 @@
    -------------------------------------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { font-size: 14px; scroll-behavior: smooth; }
+html { font-size: 16px; scroll-behavior: smooth; }
 
 body {
   background: var(--bg);
@@ -132,7 +132,7 @@ h1 {
 .filter-group-search { flex: 1 1 200px; }
 
 .filter-label {
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   color: var(--muted);
   white-space: nowrap;
 }
@@ -145,7 +145,7 @@ h1 {
   gap: 0.3rem;
   padding: 0.2rem 0.6rem;
   border-radius: 2rem;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border: 1px solid transparent;
   cursor: pointer;
@@ -174,7 +174,7 @@ h1 {
   background: rgba(255,255,255,0.08);
   border-radius: 1rem;
   padding: 0.05rem 0.35rem;
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   font-weight: 700;
 }
 
@@ -185,7 +185,7 @@ h1 {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 0.3rem 0.6rem;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   font-family: var(--font-sans);
   transition: border-color var(--transition);
 }
@@ -204,13 +204,35 @@ h1 {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 0.3rem 0.8rem;
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   cursor: pointer;
   transition: color var(--transition), border-color var(--transition);
   white-space: nowrap;
 }
 
 .btn-reset:hover { color: var(--text); border-color: var(--text); }
+
+/* Date preset quick-select buttons */
+.date-presets {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.btn-preset {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.2rem 0.55rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+  white-space: nowrap;
+}
+
+.btn-preset:hover { color: var(--text); border-color: var(--info); }
+.btn-preset.active { color: var(--info); border-color: var(--info); background: rgba(88, 166, 255, 0.1); }
 
 /* --------------------------------------------------------------------------
    Stats Bar
@@ -245,7 +267,7 @@ h1 {
 }
 
 .stat-lbl {
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -308,7 +330,7 @@ h1 {
 .entry-card.expanded .entry-expand-icon { transform: rotate(90deg); }
 
 .badge-severity {
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   padding: 0.15rem 0.45rem;
@@ -323,7 +345,7 @@ h1 {
 [data-severity="INFO"]     .badge-severity { background: rgba(88,166,255,0.15); color: var(--info); }
 
 .badge-dimension {
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   padding: 0.15rem 0.45rem;
   border-radius: 3px;
   background: rgba(255,255,255,0.06);
@@ -335,7 +357,7 @@ h1 {
 
 .entry-main-text {
   flex: 1 1 200px;
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   color: var(--text);
   font-family: var(--font-mono);
   overflow: hidden;
@@ -352,19 +374,19 @@ h1 {
 }
 
 .entry-date {
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   color: var(--muted);
   font-family: var(--font-mono);
 }
 
 .entry-commit {
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   color: var(--muted);
   font-family: var(--font-mono);
 }
 
 .tag-badge {
-  font-size: 0.62rem;
+  font-size: 0.7rem;
   padding: 0.1rem 0.35rem;
   border-radius: 3px;
   border: 1px solid;
@@ -397,14 +419,14 @@ h1 {
 .detail-row { display: flex; flex-direction: column; gap: 0.1rem; }
 
 .detail-key {
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
 .detail-val {
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   color: var(--text);
   font-family: var(--font-mono);
   word-break: break-all;
@@ -487,7 +509,7 @@ h1 {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 0.4rem 1rem;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   cursor: pointer;
   transition: border-color var(--transition), color var(--transition);
 }
@@ -496,7 +518,7 @@ h1 {
 .btn-page:disabled { opacity: 0.3; cursor: not-allowed; }
 
 .page-info {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: var(--muted);
   font-family: var(--font-mono);
 }

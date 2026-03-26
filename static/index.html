@@ -66,9 +66,15 @@
 
       <!-- Date range -->
       <div class="filter-group" role="group" aria-label="Date range filter">
-        <span class="filter-label">From</span>
+        <span class="filter-label">Date</span>
+        <div class="date-presets" role="group" aria-label="Quick date ranges">
+          <button class="btn-preset" data-preset="7d" aria-pressed="false">Last 7d</button>
+          <button class="btn-preset" data-preset="30d" aria-pressed="false">Last 30d</button>
+          <button class="btn-preset" data-preset="90d" aria-pressed="false">Last 3m</button>
+          <button class="btn-preset" data-preset="365d" aria-pressed="false">Last year</button>
+        </div>
         <input type="date" id="date-from" class="filter-input" aria-label="Start date" />
-        <span class="filter-label">To</span>
+        <span class="filter-label">–</span>
         <input type="date" id="date-to" class="filter-input" aria-label="End date" />
       </div>
 
