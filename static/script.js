@@ -114,28 +114,57 @@
           chip.classList.add("active");
           chip.setAttribute("aria-pressed", "true");
         }
-        _applyFiltersAndRender();
-        _pushURL();
+        _onFilterChange();
       });
     });
 
     // Dimension select
     document.getElementById("dimension-filter").addEventListener("change", (e) => {
       filters.dimension = e.target.value;
-      _applyFiltersAndRender();
-      _pushURL();
+      _onFilterChange();
     });
 
-    // Date range
+    // Date range (manual inputs clear any active preset)
     document.getElementById("date-from").addEventListener("change", (e) => {
       filters.dateFrom = e.target.value;
-      _applyFiltersAndRender();
-      _pushURL();
+      _clearActivePreset();
+      _onFilterChange();
     });
     document.getElementById("date-to").addEventListener("change", (e) => {
       filters.dateTo = e.target.value;
-      _applyFiltersAndRender();
-      _pushURL();
+      _clearActivePreset();
+      _onFilterChange();
+    });
+
+    // Date preset buttons
+    document.querySelectorAll(".btn-preset[data-preset]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const preset = btn.dataset.preset;
+        const today = new Date();
+        const toDate = today.toISOString().split("T")[0];
+        const fromDate = new Date(today);
+
+        switch (preset) {
+          case "7d":   fromDate.setDate(fromDate.getDate() - 7);          break;
+          case "30d":  fromDate.setDate(fromDate.getDate() - 30);         break;
+          case "90d":  fromDate.setDate(fromDate.getDate() - 90);         break;
+          case "365d": fromDate.setFullYear(fromDate.getFullYear() - 1);  break;
+        }
+
+        filters.dateFrom = fromDate.toISOString().split("T")[0];
+        filters.dateTo   = toDate;
+
+        // Sync date inputs and mark active preset
+        _clearActivePreset();
+        btn.classList.add("active");
+        btn.setAttribute("aria-pressed", "true");
+        const fromInp = document.getElementById("date-from");
+        const toInp   = document.getElementById("date-to");
+        if (fromInp) fromInp.value = filters.dateFrom;
+        if (toInp)   toInp.value   = filters.dateTo;
+
+        _onFilterChange();
+      });
     });
 
     // Text search (debounced)
@@ -144,8 +173,7 @@
       clearTimeout(searchTimer);
       searchTimer = setTimeout(() => {
         filters.text = e.target.value.toLowerCase().trim();
-        _applyFiltersAndRender();
-        _pushURL();
+        _onFilterChange();
       }, 250);
     });
 
@@ -156,9 +184,9 @@
       filters.dateFrom = "";
       filters.dateTo = "";
       filters.text = "";
+      _clearActivePreset();
       _syncFilterUI();
-      _applyFiltersAndRender();
-      _pushURL();
+      _onFilterChange();
     });
 
     // Pagination
@@ -167,6 +195,26 @@
     });
     $btnNext.addEventListener("click", () => {
       if (currentPage < totalPages) _loadPage(currentPage + 1);
+    });
+  }
+
+  // -------------------------------------------------------------------------
+  // Filter change helper — resets to page 1 so results are immediately visible
+  // -------------------------------------------------------------------------
+
+  function _onFilterChange() {
+    _pushURL();
+    if (currentPage !== 1) {
+      _loadPage(1);
+    } else {
+      _applyFiltersAndRender();
+    }
+  }
+
+  function _clearActivePreset() {
+    document.querySelectorAll(".btn-preset[data-preset]").forEach((b) => {
+      b.classList.remove("active");
+      b.setAttribute("aria-pressed", "false");
     });
   }
 
@@ -212,6 +260,8 @@
     if (toInp) toInp.value = filters.dateTo;
     const searchInp = document.getElementById("text-search");
     if (searchInp) searchInp.value = filters.text;
+    // Preset buttons are not restored from URL; clear them on a full sync
+    _clearActivePreset();
   }
 
   // -------------------------------------------------------------------------
