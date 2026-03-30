@@ -57,6 +57,81 @@ a:hover { text-decoration: underline; }
 
 ol, ul { list-style: none; }
 
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Loading Overlay
+   -------------------------------------------------------------------------- */
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.loading-overlay.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loading-overlay.hidden { display: none; }
+
+.loading-content {
+  text-align: center;
+  max-width: 360px;
+  padding: 2rem;
+}
+
+.loading-shield {
+  width: 3rem;
+  height: 3rem;
+  color: var(--info);
+  margin-bottom: 1rem;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.95); }
+}
+
+.loading-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--info);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.loading-status {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 /* --------------------------------------------------------------------------
    Header
    -------------------------------------------------------------------------- */
@@ -110,12 +185,21 @@ h1 {
 .filter-bar {
   background: var(--card-bg);
   border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 49px; /* below header */
+  z-index: 99;
 }
 
 .filter-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0.75rem 1.5rem;
+  padding: 0.6rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -132,9 +216,15 @@ h1 {
 .filter-group-search { flex: 1 1 200px; }
 
 .filter-label {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--muted);
   white-space: nowrap;
+  font-weight: 500;
+}
+
+.filter-sep {
+  font-size: 0.8rem;
+  color: var(--muted);
 }
 
 .chip-group { display: flex; gap: 0.35rem; flex-wrap: wrap; }
@@ -145,7 +235,7 @@ h1 {
   gap: 0.3rem;
   padding: 0.2rem 0.6rem;
   border-radius: 2rem;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 600;
   border: 1px solid transparent;
   cursor: pointer;
@@ -174,7 +264,7 @@ h1 {
   background: rgba(255,255,255,0.08);
   border-radius: 1rem;
   padding: 0.05rem 0.35rem;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 700;
 }
 
@@ -185,7 +275,7 @@ h1 {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 0.3rem 0.6rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: var(--font-sans);
   transition: border-color var(--transition);
 }
@@ -196,27 +286,29 @@ h1 {
   border-color: var(--info);
 }
 
-.filter-search { width: 100%; min-width: 160px; }
-
-.btn-reset {
-  background: transparent;
-  color: var(--muted);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.3rem 0.8rem;
-  font-size: 0.85rem;
-  cursor: pointer;
-  transition: color var(--transition), border-color var(--transition);
-  white-space: nowrap;
+.search-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 160px;
 }
 
-.btn-reset:hover { color: var(--text); border-color: var(--text); }
+.filter-search { width: 100%; padding-right: 5rem; }
 
-/* Date preset quick-select buttons */
+.search-count {
+  position: absolute;
+  right: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  pointer-events: none;
+}
+
+/* Date preset buttons */
 .date-presets {
   display: flex;
-  gap: 0.25rem;
-  flex-wrap: wrap;
+  gap: 0.2rem;
 }
 
 .btn-preset {
@@ -224,8 +316,8 @@ h1 {
   color: var(--muted);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 0.2rem 0.55rem;
-  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.78rem;
   cursor: pointer;
   transition: color var(--transition), border-color var(--transition), background var(--transition);
   white-space: nowrap;
@@ -233,6 +325,78 @@ h1 {
 
 .btn-preset:hover { color: var(--text); border-color: var(--info); }
 .btn-preset.active { color: var(--info); border-color: var(--info); background: rgba(88, 166, 255, 0.1); }
+
+/* --------------------------------------------------------------------------
+   Active Filter Tags
+   -------------------------------------------------------------------------- */
+.active-filters {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.active-filters.hidden { display: none; }
+
+.active-filters-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.4rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-tags {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.filter-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.15rem 0.5rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.filter-tag-label {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.filter-tag-remove {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.85rem;
+  line-height: 1;
+  padding: 0 0.1rem;
+  transition: color var(--transition);
+}
+
+.filter-tag-remove:hover { color: var(--critical); }
+
+.btn-clear-all {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.15rem 0.6rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition);
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+.btn-clear-all:hover { color: var(--text); border-color: var(--text); }
 
 /* --------------------------------------------------------------------------
    Stats Bar
@@ -267,7 +431,7 @@ h1 {
 }
 
 .stat-lbl {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -357,12 +521,19 @@ h1 {
 
 .entry-main-text {
   flex: 1 1 200px;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--text);
   font-family: var(--font-mono);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.entry-main-text mark {
+  background: rgba(255, 204, 0, 0.3);
+  color: var(--text);
+  border-radius: 2px;
+  padding: 0 1px;
 }
 
 .entry-meta {
@@ -432,6 +603,13 @@ h1 {
   word-break: break-all;
 }
 
+.detail-val mark {
+  background: rgba(255, 204, 0, 0.3);
+  color: var(--text);
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
 .detail-raw {
   margin-top: 0.5rem;
 }
@@ -449,30 +627,59 @@ h1 {
 }
 
 /* --------------------------------------------------------------------------
-   Loading / Error / No-results
+   Empty State
    -------------------------------------------------------------------------- */
-.loading {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  justify-content: center;
+.no-results {
   padding: 3rem 1rem;
+}
+
+.no-results.hidden { display: none; }
+
+.empty-state {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.empty-icon {
+  width: 3rem;
+  height: 3rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  opacity: 0.5;
 }
 
-.spinner {
-  width: 1.2rem;
-  height: 1.2rem;
-  border: 2px solid var(--border);
-  border-top-color: var(--info);
-  border-radius: 50%;
-  animation: spin 0.7s linear infinite;
-  display: inline-block;
+.empty-title {
+  font-size: 1.1rem;
+  color: var(--text);
+  font-weight: 600;
 }
 
-@keyframes spin { to { transform: rotate(360deg); } }
+.empty-hint {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
 
+.btn-reset-empty {
+  background: transparent;
+  color: var(--info);
+  border: 1px solid var(--info);
+  border-radius: var(--radius);
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+  margin-top: 0.5rem;
+}
+
+.btn-reset-empty:hover {
+  background: rgba(88, 166, 255, 0.1);
+}
+
+/* --------------------------------------------------------------------------
+   Error
+   -------------------------------------------------------------------------- */
 .error-msg {
   background: rgba(255,68,68,0.1);
   border: 1px solid var(--critical);
@@ -483,12 +690,7 @@ h1 {
   font-size: 0.9rem;
 }
 
-.no-results {
-  text-align: center;
-  padding: 3rem 1rem;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
+.error-msg.hidden { display: none; }
 
 .hidden { display: none !important; }
 
@@ -496,11 +698,39 @@ h1 {
    Pagination
    -------------------------------------------------------------------------- */
 .pagination {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.pagination[hidden] { display: none; }
+
+.pagination-inner {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1rem;
-  padding: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.pagination-info {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.page-numbers {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
 }
 
 .btn-page {
@@ -508,19 +738,61 @@ h1 {
   color: var(--text);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 0.4rem 1rem;
-  font-size: 0.9rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
   cursor: pointer;
-  transition: border-color var(--transition), color var(--transition);
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+  min-width: 2rem;
+  text-align: center;
 }
 
-.btn-page:hover:not(:disabled) { border-color: var(--info); color: var(--info); }
+.btn-page:hover:not(:disabled):not(.active) { border-color: var(--info); color: var(--info); }
 .btn-page:disabled { opacity: 0.3; cursor: not-allowed; }
 
-.page-info {
-  font-size: 0.9rem;
+.btn-page.active {
+  background: var(--info);
+  color: #fff;
+  border-color: var(--info);
+}
+
+.page-ellipsis {
   color: var(--muted);
-  font-family: var(--font-mono);
+  padding: 0 0.3rem;
+  font-size: 0.85rem;
+  user-select: none;
+}
+
+.pagination-options {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.per-page-select {
+  padding: 0.25rem 0.4rem;
+  font-size: 0.8rem;
+}
+
+.jump-to-page {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.jump-input {
+  width: 4.5rem;
+  padding: 0.25rem 0.4rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Remove spinner from number input */
+.jump-input::-webkit-outer-spin-button,
+.jump-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.jump-input[type=number] { -moz-appearance: textfield; }
+
+.btn-go {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -539,9 +811,20 @@ h1 {
 /* --------------------------------------------------------------------------
    Responsive
    -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .pagination-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pagination-options { flex-wrap: wrap; justify-content: center; }
+}
+
 @media (max-width: 640px) {
   .header-inner  { flex-direction: column; align-items: flex-start; }
-  .filter-inner  { gap: 0.6rem; }
-  .stats-inner   { gap: 0.8rem; }
+  .filter-inner  { padding: 0.5rem 1rem; }
+  .filter-row    { gap: 0.5rem; }
+  .stats-inner   { gap: 0.8rem; justify-content: center; }
   .entry-main-text { white-space: normal; }
+  .active-filters-inner { padding: 0.4rem 1rem; }
+  .timeline-container { padding: 0 1rem; margin: 1rem auto; }
 }
