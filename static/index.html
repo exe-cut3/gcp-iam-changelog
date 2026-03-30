@@ -8,9 +8,26 @@
 </head>
 <body>
 
-  <!-- =====================================================================
+  <!-- =================================================================
+       LOADING OVERLAY (shown during initial data fetch)
+  ================================================================= -->
+  <div id="loading-overlay" class="loading-overlay" role="status" aria-live="polite">
+    <div class="loading-content">
+      <svg class="loading-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      </svg>
+      <h2 class="loading-title">GCP IAM Changelog</h2>
+      <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <p class="loading-status" id="loading-status">Loading page 1…</p>
+    </div>
+  </div>
+
+  <!-- =================================================================
        HEADER
-  ===================================================================== -->
+  ================================================================= -->
   <header class="site-header">
     <div class="header-inner">
       <div class="header-title">
@@ -25,76 +42,86 @@
     </div>
   </header>
 
-  <!-- =====================================================================
-       FILTER BAR
-  ===================================================================== -->
+  <!-- =================================================================
+       FILTER BAR (sticky)
+  ================================================================= -->
   <section class="filter-bar" aria-label="Filters">
     <div class="filter-inner">
 
-      <!-- Severity chips -->
-      <div class="filter-group" role="group" aria-label="Severity filter">
-        <span class="filter-label">Severity</span>
-        <div class="chip-group" id="severity-chips">
-          <button class="chip chip-critical active" data-severity="CRITICAL" aria-pressed="true">
-            CRITICAL <span class="chip-count" id="count-CRITICAL">0</span>
-          </button>
-          <button class="chip chip-high active" data-severity="HIGH" aria-pressed="true">
-            HIGH <span class="chip-count" id="count-HIGH">0</span>
-          </button>
-          <button class="chip chip-medium active" data-severity="MEDIUM" aria-pressed="true">
-            MEDIUM <span class="chip-count" id="count-MEDIUM">0</span>
-          </button>
-          <button class="chip chip-info active" data-severity="INFO" aria-pressed="true">
-            INFO <span class="chip-count" id="count-INFO">0</span>
-          </button>
+      <!-- Row 1: Severity chips -->
+      <div class="filter-row">
+        <div class="filter-group" role="group" aria-label="Severity filter">
+          <span class="filter-label">Severity</span>
+          <div class="chip-group" id="severity-chips">
+            <button class="chip chip-critical active" data-severity="CRITICAL" aria-pressed="true">
+              CRITICAL <span class="chip-count" id="count-CRITICAL">0</span>
+            </button>
+            <button class="chip chip-high active" data-severity="HIGH" aria-pressed="true">
+              HIGH <span class="chip-count" id="count-HIGH">0</span>
+            </button>
+            <button class="chip chip-medium active" data-severity="MEDIUM" aria-pressed="true">
+              MEDIUM <span class="chip-count" id="count-MEDIUM">0</span>
+            </button>
+            <button class="chip chip-info active" data-severity="INFO" aria-pressed="true">
+              INFO <span class="chip-count" id="count-INFO">0</span>
+            </button>
+          </div>
         </div>
       </div>
 
-      <!-- Dimension filter -->
-      <div class="filter-group" role="group" aria-label="Dimension filter">
-        <span class="filter-label">Dimension</span>
-        <select id="dimension-filter" class="filter-select" aria-label="Filter by dimension">
-          <option value="">All dimensions</option>
-          <option value="permissions">Permissions</option>
-          <option value="predefined_roles">Predefined Roles</option>
-          <option value="role_permissions">Role ↔ Permission</option>
-          <option value="methods">API Methods</option>
-          <option value="method_map">Method Map</option>
-          <option value="security_tags">Security Tags</option>
-        </select>
-      </div>
-
-      <!-- Date range -->
-      <div class="filter-group" role="group" aria-label="Date range filter">
-        <span class="filter-label">Date</span>
-        <div class="date-presets" role="group" aria-label="Quick date ranges">
-          <button class="btn-preset" data-preset="7d" aria-pressed="false">Last 7d</button>
-          <button class="btn-preset" data-preset="30d" aria-pressed="false">Last 30d</button>
-          <button class="btn-preset" data-preset="90d" aria-pressed="false">Last 3m</button>
-          <button class="btn-preset" data-preset="365d" aria-pressed="false">Last year</button>
+      <!-- Row 2: Dimension, Date, Search -->
+      <div class="filter-row">
+        <div class="filter-group" role="group" aria-label="Dimension filter">
+          <span class="filter-label">Dimension</span>
+          <select id="dimension-filter" class="filter-select" aria-label="Filter by dimension">
+            <option value="">All dimensions</option>
+            <option value="permissions">Permissions</option>
+            <option value="predefined_roles">Predefined Roles</option>
+            <option value="role_permissions">Role ↔ Permission</option>
+            <option value="methods">API Methods</option>
+            <option value="method_map">Method Map</option>
+            <option value="security_tags">Security Tags</option>
+          </select>
         </div>
-        <input type="date" id="date-from" class="filter-input" aria-label="Start date" />
-        <span class="filter-label">–</span>
-        <input type="date" id="date-to" class="filter-input" aria-label="End date" />
+
+        <div class="filter-group" role="group" aria-label="Date range filter">
+          <span class="filter-label">Date</span>
+          <div class="date-presets" role="group" aria-label="Quick date ranges">
+            <button class="btn-preset" data-preset="7d" aria-pressed="false" aria-label="Last 7 days">7d</button>
+            <button class="btn-preset" data-preset="30d" aria-pressed="false" aria-label="Last 30 days">30d</button>
+            <button class="btn-preset" data-preset="90d" aria-pressed="false" aria-label="Last 3 months">3m</button>
+            <button class="btn-preset" data-preset="365d" aria-pressed="false" aria-label="Last year">1y</button>
+          </div>
+          <input type="date" id="date-from" class="filter-input" aria-label="Start date" />
+          <span class="filter-sep">–</span>
+          <input type="date" id="date-to" class="filter-input" aria-label="End date" />
+        </div>
+
+        <div class="filter-group filter-group-search">
+          <label for="text-search" class="filter-label">Search</label>
+          <div class="search-wrapper">
+            <input type="search" id="text-search" class="filter-input filter-search"
+                   placeholder="permission, role, service…" aria-label="Text search" />
+            <span class="search-count" id="search-count" aria-live="polite"></span>
+          </div>
+        </div>
       </div>
-
-      <!-- Text search -->
-      <div class="filter-group filter-group-search">
-        <label for="text-search" class="filter-label">Search</label>
-        <input type="search" id="text-search" class="filter-input filter-search"
-               placeholder="permission, role, service…" aria-label="Text search" />
-      </div>
-
-      <button class="btn-reset" id="reset-filters" aria-label="Reset all filters">
-        Reset
-      </button>
-
     </div>
   </section>
 
-  <!-- =====================================================================
+  <!-- =================================================================
+       ACTIVE FILTER TAGS
+  ================================================================= -->
+  <section id="active-filters" class="active-filters hidden" aria-label="Active filters">
+    <div class="active-filters-inner">
+      <div class="filter-tags" id="filter-tags"></div>
+      <button class="btn-clear-all" id="btn-clear-all" aria-label="Clear all filters">Clear all</button>
+    </div>
+  </section>
+
+  <!-- =================================================================
        STATS BAR
-  ===================================================================== -->
+  ================================================================= -->
   <section class="stats-bar" id="stats-bar" aria-label="Summary statistics">
     <div class="stats-inner">
       <div class="stat-item">
@@ -124,30 +151,60 @@
     </div>
   </section>
 
-  <!-- =====================================================================
+  <!-- =================================================================
        MAIN TIMELINE
-  ===================================================================== -->
+  ================================================================= -->
   <main class="timeline-container" id="timeline-container" aria-label="IAM change timeline">
-    <div id="loading-indicator" class="loading" role="status" aria-live="polite">
-      <span class="spinner" aria-hidden="true"></span> Loading changelog data…
-    </div>
     <div id="error-message" class="error-msg hidden" role="alert"></div>
     <ol id="timeline" class="timeline" aria-label="Change entries"></ol>
-    <div id="no-results" class="no-results hidden" role="status">No entries match the current filters.</div>
+    <div id="no-results" class="no-results hidden" role="status">
+      <div class="empty-state">
+        <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <p class="empty-title">No entries match your filters</p>
+        <p class="empty-hint">Try removing some filters or broadening your search</p>
+        <button class="btn-reset-empty" id="btn-reset-empty" aria-label="Reset all filters">Reset all filters</button>
+      </div>
+    </div>
   </main>
 
-  <!-- =====================================================================
+  <!-- =================================================================
        PAGINATION
-  ===================================================================== -->
+  ================================================================= -->
   <nav class="pagination" id="pagination" aria-label="Page navigation" hidden>
-    <button class="btn-page" id="btn-prev" aria-label="Previous page" disabled>← Prev</button>
-    <span class="page-info" id="page-info" aria-live="polite"></span>
-    <button class="btn-page" id="btn-next" aria-label="Next page">Next →</button>
+    <div class="pagination-inner">
+      <div class="pagination-info" id="pagination-info" aria-live="polite"></div>
+      <div class="pagination-controls">
+        <button class="btn-page" id="btn-first" aria-label="First page" title="First page">«</button>
+        <button class="btn-page" id="btn-prev" aria-label="Previous page" title="Previous page">‹</button>
+        <div class="page-numbers" id="page-numbers"></div>
+        <button class="btn-page" id="btn-next" aria-label="Next page" title="Next page">›</button>
+        <button class="btn-page" id="btn-last" aria-label="Last page" title="Last page">»</button>
+      </div>
+      <div class="pagination-options">
+        <label class="per-page-label">
+          <select id="per-page-select" class="filter-select per-page-select" aria-label="Items per page">
+            <option value="25">25 / page</option>
+            <option value="50" selected>50 / page</option>
+            <option value="100">100 / page</option>
+          </select>
+        </label>
+        <div class="jump-to-page">
+          <label for="jump-page-input" class="sr-only">Jump to page</label>
+          <input type="number" id="jump-page-input" class="filter-input jump-input"
+                 placeholder="Page #" min="1" aria-label="Jump to page" />
+          <button class="btn-page btn-go" id="btn-go" aria-label="Go to page">Go</button>
+        </div>
+      </div>
+    </div>
   </nav>
 
-  <!-- =====================================================================
+  <!-- =================================================================
        FOOTER
-  ===================================================================== -->
+  ================================================================= -->
   <footer class="site-footer">
     <p>
       Data sourced from
