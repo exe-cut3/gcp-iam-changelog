@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-30T16:46:52Z",
+  "generated_at": "2026-03-30T17:25:56Z",
   "total_entries": 1340,
   "pages": 14,
   "page": 13,
@@ -12,7 +12,7 @@
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "cloudkms.retiredResources.get",
-      "role": "roles/cloudkms.admin",
+      "role": "roles/iam.mlEngineer",
       "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
@@ -44,7 +44,7 @@
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "cloudkms.retiredResources.get",
-      "role": "roles/iam.mlEngineer",
+      "role": "roles/cloudkms.admin",
       "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
@@ -55,22 +55,6 @@
     },
     {
       "id": "2026-03-08-1204",
-      "date": "2026-03-08",
-      "commit": "ee508ea6ad84",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditSchedules.list",
-      "role": "roles/viewer",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-08-1205",
       "date": "2026-03-08",
       "commit": "ee508ea6ad84",
       "dimension": "role_permissions",
@@ -86,16 +70,32 @@
       }
     },
     {
+      "id": "2026-03-08-1205",
+      "date": "2026-03-08",
+      "commit": "ee508ea6ad84",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.cryptoKeyVersions.delete",
+      "role": "roles/cloudkms.admin",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
       "id": "2026-03-08-1206",
       "date": "2026-03-08",
       "commit": "ee508ea6ad84",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.cryptoKeys.delete",
-      "role": "roles/cloudkms.admin",
-      "service": "cloudkms",
+      "permission": "auditmanager.auditSchedules.get",
+      "role": "roles/viewer",
+      "service": "auditmanager",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -110,7 +110,7 @@
       "permission": "",
       "role": "",
       "service": "aiplatform",
-      "method": "aiplatform.projects.locations.askContexts",
+      "method": "aiplatform.projects.locations.endpoints.openapi.responses",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -126,7 +126,7 @@
       "permission": "",
       "role": "",
       "service": "aiplatform",
-      "method": "aiplatform.projects.locations.asyncRetrieveContexts",
+      "method": "aiplatform.projects.locations.askContexts",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -142,7 +142,7 @@
       "permission": "",
       "role": "",
       "service": "aiplatform",
-      "method": "aiplatform.projects.locations.endpoints.openapi.responses",
+      "method": "aiplatform.projects.locations.asyncRetrieveContexts",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -158,7 +158,7 @@
       "permission": "",
       "role": "",
       "service": "aiplatform",
-      "method": "aiplatform.projects.locations.askContexts",
+      "method": "aiplatform.projects.locations.endpoints.openapi.responses",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -174,7 +174,7 @@
       "permission": "",
       "role": "",
       "service": "aiplatform",
-      "method": "aiplatform.projects.locations.asyncRetrieveContexts",
+      "method": "aiplatform.projects.locations.askContexts",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -190,7 +190,7 @@
       "permission": "",
       "role": "",
       "service": "aiplatform",
-      "method": "aiplatform.projects.locations.endpoints.openapi.responses",
+      "method": "aiplatform.projects.locations.asyncRetrieveContexts",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -203,9 +203,9 @@
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.datasets.get",
-      "role": "roles/aiplatform.expressUser",
-      "service": "aiplatform",
+      "permission": "dataform.teamFolders.deleteTree",
+      "role": "roles/dataform.teamFolderOwner",
+      "service": "dataform",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -219,9 +219,9 @@
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "edgecontainer.zonalservices.disable",
-      "role": "roles/edgecontainer.zonalServiceAdmin",
-      "service": "edgecontainer",
+      "permission": "dataform.teamFolders.deleteTree",
+      "role": "roles/owner",
+      "service": "dataform",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -235,11 +235,11 @@
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.cryptoKeyVersions.delete",
-      "role": "roles/owner",
-      "service": "cloudkms",
+      "permission": "dataform.teamFolders.deleteTree",
+      "role": "roles/aiplatform.colabEnterpriseAdmin",
+      "service": "dataform",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -251,9 +251,9 @@
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.datasetVersions.get",
-      "role": "roles/aiplatform.expressUser",
-      "service": "aiplatform",
+      "permission": "dataform.teamFolders.deleteTree",
+      "role": "roles/bigquery.admin",
+      "service": "dataform",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -267,9 +267,9 @@
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "spanner.databases.beginOrRollbackReadWriteTransaction",
-      "role": "roles/spanner.serviceAgent",
-      "service": "spanner",
+      "permission": "dataform.teamFolders.deleteTree",
+      "role": "roles/dataplex.serviceAgent",
+      "service": "dataform",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -283,9 +283,9 @@
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "edgecontainer.zonalProjects.disable",
-      "role": "roles/edgecontainer.zonalProjectAdmin",
-      "service": "edgecontainer",
+      "permission": "cloudkms.retiredResources.list",
+      "role": "roles/iam.supportUser",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -300,7 +300,7 @@
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "cloudkms.retiredResources.list",
-      "role": "roles/iam.securityReviewer",
+      "role": "roles/cloudkms.viewer",
       "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
@@ -332,7 +332,7 @@
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "cloudkms.retiredResources.list",
-      "role": "roles/iam.supportUser",
+      "role": "roles/iam.securityAdmin",
       "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
@@ -348,7 +348,7 @@
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "cloudkms.retiredResources.list",
-      "role": "roles/iam.securityAdmin",
+      "role": "roles/iam.securityReviewer",
       "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
@@ -359,262 +359,6 @@
     },
     {
       "id": "2026-03-07-1223",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudkms.retiredResources.list",
-      "role": "roles/cloudkms.viewer",
-      "service": "cloudkms",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1224",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataform.teamFolders.deleteTree",
-      "role": "roles/owner",
-      "service": "dataform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1225",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataform.teamFolders.deleteTree",
-      "role": "roles/aiplatform.colabEnterpriseAdmin",
-      "service": "dataform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1226",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataform.teamFolders.deleteTree",
-      "role": "roles/bigquery.admin",
-      "service": "dataform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1227",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataform.teamFolders.deleteTree",
-      "role": "roles/dataform.teamFolderOwner",
-      "service": "dataform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1228",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataform.teamFolders.deleteTree",
-      "role": "roles/dataplex.serviceAgent",
-      "service": "dataform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1229",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "spanner.databases.write",
-      "role": "roles/spanner.serviceAgent",
-      "service": "spanner",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1230",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.targetTcpProxies.attach",
-      "role": "roles/container.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1231",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.targetTcpProxies.attach",
-      "role": "roles/owner",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1232",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.targetTcpProxies.attach",
-      "role": "roles/iam.infrastructureAdmin",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1233",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.targetTcpProxies.attach",
-      "role": "roles/compute.networkAdmin",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1234",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.targetTcpProxies.attach",
-      "role": "roles/multiclusterservicediscovery.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1235",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.datasetVersions.restore",
-      "role": "roles/aiplatform.expressUser",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1236",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.datasetVersions.list",
-      "role": "roles/aiplatform.expressUser",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1237",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.datasetVersions.delete",
-      "role": "roles/aiplatform.expressUser",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1238",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.datasets.delete",
-      "role": "roles/aiplatform.expressUser",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1239",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
@@ -630,46 +374,14 @@
       }
     },
     {
-      "id": "2026-03-07-1240",
+      "id": "2026-03-07-1224",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditSchedules.create",
-      "role": "roles/owner",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1241",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditSchedules.create",
-      "role": "roles/auditmanager.admin",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1242",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditSchedules.get",
-      "role": "roles/owner",
-      "service": "auditmanager",
+      "permission": "edgecontainer.zonalProjects.disable",
+      "role": "roles/edgecontainer.zonalProjectAdmin",
+      "service": "edgecontainer",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -678,55 +390,7 @@
       }
     },
     {
-      "id": "2026-03-07-1243",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditSchedules.get",
-      "role": "roles/auditmanager.admin",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1244",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditSchedules.get",
-      "role": "roles/iam.supportUser",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1245",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.regionFirewallPolicies.deleteTagBinding",
-      "role": "roles/dataproc.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1246",
+      "id": "2026-03-07-1225",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
@@ -742,44 +406,12 @@
       }
     },
     {
-      "id": "2026-03-07-1247",
+      "id": "2026-03-07-1226",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditSchedules.update",
-      "role": "roles/owner",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1248",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditSchedules.update",
-      "role": "roles/auditmanager.admin",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1249",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.datasets.list",
+      "permission": "aiplatform.datasetVersions.restore",
       "role": "roles/aiplatform.expressUser",
       "service": "aiplatform",
       "method": "",
@@ -790,87 +422,7 @@
       }
     },
     {
-      "id": "2026-03-07-1250",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.regionTargetTcpProxies.attach",
-      "role": "roles/container.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1251",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.regionTargetTcpProxies.attach",
-      "role": "roles/owner",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1252",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.regionTargetTcpProxies.attach",
-      "role": "roles/iam.infrastructureAdmin",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1253",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.regionTargetTcpProxies.attach",
-      "role": "roles/compute.networkAdmin",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1254",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.regionTargetTcpProxies.attach",
-      "role": "roles/multiclusterservicediscovery.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1255",
+      "id": "2026-03-07-1227",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
@@ -886,14 +438,14 @@
       }
     },
     {
-      "id": "2026-03-07-1256",
+      "id": "2026-03-07-1228",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.retiredResources.get",
-      "role": "roles/cloudkms.viewer",
-      "service": "cloudkms",
+      "permission": "aiplatform.datasetVersions.list",
+      "role": "roles/aiplatform.expressUser",
+      "service": "aiplatform",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -902,63 +454,63 @@
       }
     },
     {
-      "id": "2026-03-07-1257",
+      "id": "2026-03-07-1229",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.retiredResources.get",
-      "role": "roles/owner",
-      "service": "cloudkms",
+      "permission": "aiplatform.datasetVersions.delete",
+      "role": "roles/aiplatform.expressUser",
+      "service": "aiplatform",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
       }
     },
     {
-      "id": "2026-03-07-1258",
+      "id": "2026-03-07-1230",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.retiredResources.get",
-      "role": "roles/iam.supportUser",
-      "service": "cloudkms",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-07-1259",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditSchedules.list",
-      "role": "roles/iam.securityReviewer",
+      "permission": "auditmanager.auditSchedules.update",
+      "role": "roles/auditmanager.admin",
       "service": "auditmanager",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
       }
     },
     {
-      "id": "2026-03-07-1260",
+      "id": "2026-03-07-1231",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditSchedules.list",
+      "permission": "auditmanager.auditSchedules.update",
       "role": "roles/owner",
       "service": "auditmanager",
       "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1232",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "aiplatform.datasets.get",
+      "role": "roles/aiplatform.expressUser",
+      "service": "aiplatform",
+      "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
@@ -966,7 +518,7 @@
       }
     },
     {
-      "id": "2026-03-07-1261",
+      "id": "2026-03-07-1233",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
@@ -982,7 +534,23 @@
       }
     },
     {
-      "id": "2026-03-07-1262",
+      "id": "2026-03-07-1234",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditSchedules.list",
+      "role": "roles/owner",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1235",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
@@ -998,7 +566,7 @@
       }
     },
     {
-      "id": "2026-03-07-1263",
+      "id": "2026-03-07-1236",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
@@ -1014,14 +582,46 @@
       }
     },
     {
-      "id": "2026-03-07-1264",
+      "id": "2026-03-07-1237",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataform.folders.deleteTree",
+      "permission": "auditmanager.auditSchedules.list",
+      "role": "roles/iam.securityReviewer",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1238",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.regionTargetTcpProxies.attach",
+      "role": "roles/multiclusterservicediscovery.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1239",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.regionTargetTcpProxies.attach",
       "role": "roles/owner",
-      "service": "dataform",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1030,14 +630,14 @@
       }
     },
     {
-      "id": "2026-03-07-1265",
+      "id": "2026-03-07-1240",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataform.folders.deleteTree",
-      "role": "roles/aiplatform.colabEnterpriseAdmin",
-      "service": "dataform",
+      "permission": "compute.regionTargetTcpProxies.attach",
+      "role": "roles/container.serviceAgent",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1046,14 +646,14 @@
       }
     },
     {
-      "id": "2026-03-07-1266",
+      "id": "2026-03-07-1241",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataform.folders.deleteTree",
-      "role": "roles/bigquery.admin",
-      "service": "dataform",
+      "permission": "compute.regionTargetTcpProxies.attach",
+      "role": "roles/compute.networkAdmin",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1062,14 +662,14 @@
       }
     },
     {
-      "id": "2026-03-07-1267",
+      "id": "2026-03-07-1242",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataform.folders.deleteTree",
-      "role": "roles/dataform.teamFolderOwner",
-      "service": "dataform",
+      "permission": "compute.regionTargetTcpProxies.attach",
+      "role": "roles/iam.infrastructureAdmin",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1078,14 +678,14 @@
       }
     },
     {
-      "id": "2026-03-07-1268",
+      "id": "2026-03-07-1243",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataform.folders.deleteTree",
-      "role": "roles/dataplex.serviceAgent",
-      "service": "dataform",
+      "permission": "compute.regionFirewallPolicies.deleteTagBinding",
+      "role": "roles/dataproc.serviceAgent",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1094,23 +694,23 @@
       }
     },
     {
-      "id": "2026-03-07-1269",
+      "id": "2026-03-07-1244",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.cryptoKeys.delete",
-      "role": "roles/owner",
-      "service": "cloudkms",
+      "permission": "aiplatform.datasets.list",
+      "role": "roles/aiplatform.expressUser",
+      "service": "aiplatform",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
       }
     },
     {
-      "id": "2026-03-07-1270",
+      "id": "2026-03-07-1245",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
@@ -1126,7 +726,311 @@
       }
     },
     {
-      "id": "2026-03-07-1271",
+      "id": "2026-03-07-1246",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.cryptoKeys.delete",
+      "role": "roles/owner",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1247",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.targetTcpProxies.attach",
+      "role": "roles/multiclusterservicediscovery.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1248",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.targetTcpProxies.attach",
+      "role": "roles/owner",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1249",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.targetTcpProxies.attach",
+      "role": "roles/container.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1250",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.targetTcpProxies.attach",
+      "role": "roles/compute.networkAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1251",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.targetTcpProxies.attach",
+      "role": "roles/iam.infrastructureAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1252",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.retiredResources.get",
+      "role": "roles/iam.supportUser",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1253",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.retiredResources.get",
+      "role": "roles/cloudkms.viewer",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1254",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.retiredResources.get",
+      "role": "roles/owner",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1255",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataform.folders.deleteTree",
+      "role": "roles/dataform.teamFolderOwner",
+      "service": "dataform",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1256",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataform.folders.deleteTree",
+      "role": "roles/owner",
+      "service": "dataform",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1257",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataform.folders.deleteTree",
+      "role": "roles/aiplatform.colabEnterpriseAdmin",
+      "service": "dataform",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1258",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataform.folders.deleteTree",
+      "role": "roles/bigquery.admin",
+      "service": "dataform",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1259",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataform.folders.deleteTree",
+      "role": "roles/dataplex.serviceAgent",
+      "service": "dataform",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1260",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "spanner.databases.write",
+      "role": "roles/spanner.serviceAgent",
+      "service": "spanner",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1261",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "edgecontainer.zonalservices.disable",
+      "role": "roles/edgecontainer.zonalServiceAdmin",
+      "service": "edgecontainer",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1262",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditSchedules.create",
+      "role": "roles/auditmanager.admin",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1263",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditSchedules.create",
+      "role": "roles/owner",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1264",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "aiplatform.datasets.delete",
+      "role": "roles/aiplatform.expressUser",
+      "service": "aiplatform",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1265",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "role_permissions",
@@ -1142,87 +1046,103 @@
       }
     },
     {
+      "id": "2026-03-07-1266",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "aiplatform.datasetVersions.get",
+      "role": "roles/aiplatform.expressUser",
+      "service": "aiplatform",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1267",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "spanner.databases.beginOrRollbackReadWriteTransaction",
+      "role": "roles/spanner.serviceAgent",
+      "service": "spanner",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1268",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.cryptoKeyVersions.delete",
+      "role": "roles/owner",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1269",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditSchedules.get",
+      "role": "roles/iam.supportUser",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1270",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditSchedules.get",
+      "role": "roles/owner",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-07-1271",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditSchedules.get",
+      "role": "roles/auditmanager.admin",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
       "id": "2026-03-07-1272",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "networksecurity",
-      "method": "networksecurity.projects.locations.firewallEndpoints.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "networksecurity"
-      }
-    },
-    {
-      "id": "2026-03-07-1273",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "networksecurity",
-      "method": "networksecurity.projects.locations.firewallEndpoints.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "networksecurity"
-      }
-    },
-    {
-      "id": "2026-03-07-1274",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "networksecurity",
-      "method": "networksecurity.projects.locations.firewallEndpoints.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "networksecurity"
-      }
-    },
-    {
-      "id": "2026-03-07-1275",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "networksecurity",
-      "method": "networksecurity.projects.locations.firewallEndpoints.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "networksecurity"
-      }
-    },
-    {
-      "id": "2026-03-07-1276",
-      "date": "2026-03-07",
-      "commit": "add387e29068",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "networksecurity",
-      "method": "networksecurity.projects.locations.firewallEndpoints.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "networksecurity"
-      }
-    },
-    {
-      "id": "2026-03-07-1277",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "methods",
@@ -1230,7 +1150,7 @@
       "permission": "",
       "role": "",
       "service": "displayvideo",
-      "method": "displayvideo.advertisers.adGroups.targetingTypes.assignedTargetingOptions.delete",
+      "method": "displayvideo.advertisers.adGroups.delete",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -1238,7 +1158,39 @@
       }
     },
     {
-      "id": "2026-03-07-1278",
+      "id": "2026-03-07-1273",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "displayvideo",
+      "method": "displayvideo.advertisers.adGroupAds.patch",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "displayvideo"
+      }
+    },
+    {
+      "id": "2026-03-07-1274",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "displayvideo",
+      "method": "displayvideo.advertisers.adGroups.patch",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "displayvideo"
+      }
+    },
+    {
+      "id": "2026-03-07-1275",
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "methods",
@@ -1254,6 +1206,54 @@
       }
     },
     {
+      "id": "2026-03-07-1276",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "displayvideo",
+      "method": "displayvideo.advertisers.adGroups.targetingTypes.assignedTargetingOptions.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "displayvideo"
+      }
+    },
+    {
+      "id": "2026-03-07-1277",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "displayvideo",
+      "method": "displayvideo.advertisers.adGroups.targetingTypes.assignedTargetingOptions.create",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "displayvideo"
+      }
+    },
+    {
+      "id": "2026-03-07-1278",
+      "date": "2026-03-07",
+      "commit": "add387e29068",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "displayvideo",
+      "method": "displayvideo.advertisers.adGroups.bulkEditAssignedTargetingOptions",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "displayvideo"
+      }
+    },
+    {
       "id": "2026-03-07-1279",
       "date": "2026-03-07",
       "commit": "add387e29068",
@@ -1262,7 +1262,7 @@
       "permission": "",
       "role": "",
       "service": "displayvideo",
-      "method": "displayvideo.advertisers.adGroupAds.patch",
+      "method": "displayvideo.advertisers.adGroupAds.create",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -1290,15 +1290,15 @@
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "methods",
-      "change_type": "added",
+      "change_type": "removed",
       "permission": "",
       "role": "",
-      "service": "displayvideo",
-      "method": "displayvideo.advertisers.adGroups.patch",
+      "service": "networksecurity",
+      "method": "networksecurity.projects.locations.firewallEndpoints.patch",
       "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "displayvideo"
+        "service": "networksecurity"
       }
     },
     {
@@ -1306,15 +1306,15 @@
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "methods",
-      "change_type": "added",
+      "change_type": "removed",
       "permission": "",
       "role": "",
-      "service": "displayvideo",
-      "method": "displayvideo.advertisers.adGroups.bulkEditAssignedTargetingOptions",
+      "service": "networksecurity",
+      "method": "networksecurity.projects.locations.firewallEndpoints.get",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "displayvideo"
+        "service": "networksecurity"
       }
     },
     {
@@ -1322,15 +1322,15 @@
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "methods",
-      "change_type": "added",
+      "change_type": "removed",
       "permission": "",
       "role": "",
-      "service": "displayvideo",
-      "method": "displayvideo.advertisers.adGroups.delete",
+      "service": "networksecurity",
+      "method": "networksecurity.projects.locations.firewallEndpoints.create",
       "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "displayvideo"
+        "service": "networksecurity"
       }
     },
     {
@@ -1338,15 +1338,15 @@
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "methods",
-      "change_type": "added",
+      "change_type": "removed",
       "permission": "",
       "role": "",
-      "service": "displayvideo",
-      "method": "displayvideo.advertisers.adGroupAds.create",
+      "service": "networksecurity",
+      "method": "networksecurity.projects.locations.firewallEndpoints.delete",
       "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "displayvideo"
+        "service": "networksecurity"
       }
     },
     {
@@ -1354,15 +1354,15 @@
       "date": "2026-03-07",
       "commit": "add387e29068",
       "dimension": "methods",
-      "change_type": "added",
+      "change_type": "removed",
       "permission": "",
       "role": "",
-      "service": "displayvideo",
-      "method": "displayvideo.advertisers.adGroups.targetingTypes.assignedTargetingOptions.create",
-      "severity": "HIGH",
+      "service": "networksecurity",
+      "method": "networksecurity.projects.locations.firewallEndpoints.list",
+      "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "displayvideo"
+        "service": "networksecurity"
       }
     },
     {
@@ -1374,7 +1374,7 @@
       "permission": "",
       "role": "",
       "service": "displayvideo",
-      "method": "displayvideo.advertisers.adGroups.targetingTypes.assignedTargetingOptions.delete",
+      "method": "displayvideo.advertisers.adGroups.delete",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -1390,7 +1390,7 @@
       "permission": "",
       "role": "",
       "service": "displayvideo",
-      "method": "displayvideo.advertisers.adGroups.patch",
+      "method": "displayvideo.advertisers.adGroupAds.patch",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -1406,7 +1406,7 @@
       "permission": "",
       "role": "",
       "service": "displayvideo",
-      "method": "displayvideo.advertisers.adGroups.create",
+      "method": "displayvideo.advertisers.adGroups.patch",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -1422,7 +1422,7 @@
       "permission": "",
       "role": "",
       "service": "displayvideo",
-      "method": "displayvideo.advertisers.adGroupAds.delete",
+      "method": "displayvideo.advertisers.adGroups.create",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -1438,7 +1438,7 @@
       "permission": "",
       "role": "",
       "service": "displayvideo",
-      "method": "displayvideo.advertisers.adGroupAds.patch",
+      "method": "displayvideo.advertisers.adGroups.targetingTypes.assignedTargetingOptions.delete",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -1470,7 +1470,7 @@
       "permission": "",
       "role": "",
       "service": "displayvideo",
-      "method": "displayvideo.advertisers.adGroups.delete",
+      "method": "displayvideo.advertisers.adGroups.targetingTypes.assignedTargetingOptions.create",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -1502,7 +1502,7 @@
       "permission": "",
       "role": "",
       "service": "displayvideo",
-      "method": "displayvideo.advertisers.adGroups.targetingTypes.assignedTargetingOptions.create",
+      "method": "displayvideo.advertisers.adGroupAds.delete",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -1515,7 +1515,7 @@
       "commit": "21a9d0a7ce0f",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.addresses.get",
+      "permission": "compute.addresses.list",
       "role": "roles/vpcaccess.serviceAgent",
       "service": "compute",
       "method": "",
@@ -1531,11 +1531,11 @@
       "commit": "21a9d0a7ce0f",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.cryptoKeyVersions.delete",
-      "role": "roles/editor",
-      "service": "cloudkms",
+      "permission": "dataform.teamFolders.deleteTree",
+      "role": "roles/iam.databasesAdmin",
+      "service": "dataform",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1547,9 +1547,9 @@
       "commit": "21a9d0a7ce0f",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.retiredResources.list",
-      "role": "roles/iam.securityAuditor",
-      "service": "cloudkms",
+      "permission": "dataform.teamFolders.deleteTree",
+      "role": "roles/bigquery.studioAdmin",
+      "service": "dataform",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1563,9 +1563,9 @@
       "commit": "21a9d0a7ce0f",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.retiredResources.list",
-      "role": "roles/editor",
-      "service": "cloudkms",
+      "permission": "dataform.teamFolders.deleteTree",
+      "role": "roles/dataform.admin",
+      "service": "dataform",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1579,9 +1579,9 @@
       "commit": "21a9d0a7ce0f",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.retiredResources.list",
-      "role": "roles/iam.databasesAdmin",
-      "service": "cloudkms",
+      "permission": "dataform.teamFolders.deleteTree",
+      "role": "roles/dataflow.serviceAgent",
+      "service": "dataform",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1595,9 +1595,9 @@
       "commit": "21a9d0a7ce0f",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.retiredResources.list",
-      "role": "roles/iam.siteReliabilityEngineer",
-      "service": "cloudkms",
+      "permission": "dataform.teamFolders.deleteTree",
+      "role": "roles/editor",
+      "service": "dataform",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
