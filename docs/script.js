@@ -507,6 +507,8 @@
     _setText($statMedium,   bySev.MEDIUM);
     _setText($statInfo,     bySev.INFO);
     _setText($statServices, services.size);
+
+    if ($btnExport) $btnExport.disabled = filteredEntries.length === 0;
   }
 
   function _updateLastUpdated(iso) {
@@ -897,10 +899,7 @@
     if (!filteredEntries.length) return;
 
     const activeFilters = {};
-    const activeSevs = Array.from(filters.severities);
-    if (activeSevs.length < SEVERITY_ORDER.length) {
-      activeFilters.severities = activeSevs;
-    }
+    activeFilters.severities = Array.from(filters.severities);
     if (filters.dimension)  activeFilters.dimension = filters.dimension;
     if (filters.dateFrom)   activeFilters.date_from = filters.dateFrom;
     if (filters.dateTo)     activeFilters.date_to   = filters.dateTo;
@@ -909,7 +908,7 @@
     const exportData = {
       exported_at: new Date().toISOString(),
       source_generated_at: generatedAt,
-      filters_applied: Object.keys(activeFilters).length > 0 ? activeFilters : "none",
+      filters_applied: activeFilters,
       total_entries: filteredEntries.length,
       entries: filteredEntries,
     };
