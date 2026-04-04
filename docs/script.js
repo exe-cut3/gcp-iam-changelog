@@ -74,7 +74,8 @@
       $btnFirst, $btnPrev, $btnNext, $btnLast,
       $perPageSelect, $jumpInput, $btnGo,
       $statTotal, $statCritical, $statHigh, $statMedium, $statInfo, $statServices,
-      $activeFilters, $filterTags, $btnClearAll, $searchCount;
+      $activeFilters, $filterTags, $btnClearAll, $searchCount,
+      $btnExport;
 
   // -------------------------------------------------------------------------
   // Initialisation
@@ -108,6 +109,7 @@
     $filterTags    = document.getElementById("filter-tags");
     $btnClearAll   = document.getElementById("btn-clear-all");
     $searchCount   = document.getElementById("search-count");
+    $btnExport     = document.getElementById("btn-export");
 
     _restoreFiltersFromURL();
     _syncFilterUI();
@@ -284,6 +286,9 @@
     $jumpInput.addEventListener("keydown", (e) => {
       if (e.key === "Enter") _jumpToPage();
     });
+
+    // Export JSON
+    $btnExport.addEventListener("click", _exportFilteredJSON);
   }
 
   function _jumpToPage() {
@@ -502,6 +507,8 @@
     _setText($statMedium,   bySev.MEDIUM);
     _setText($statInfo,     bySev.INFO);
     _setText($statServices, services.size);
+
+    if ($btnExport) $btnExport.disabled = filteredEntries.length === 0;
   }
 
   function _updateLastUpdated(iso) {
@@ -882,6 +889,40 @@
     }
 
     $pageNumbers.appendChild(frag);
+  }
+
+  // -------------------------------------------------------------------------
+  // Export filtered results as JSON
+  // -------------------------------------------------------------------------
+
+  function _exportFilteredJSON() {
+    if (!filteredEntries.length) return;
+
+    const activeFilters = {};
+    activeFilters.severities = Array.from(filters.severities);
+    if (filters.dimension)  activeFilters.dimension = filters.dimension;
+    if (filters.dateFrom)   activeFilters.date_from = filters.dateFrom;
+    if (filters.dateTo)     activeFilters.date_to   = filters.dateTo;
+    if (filters.text)       activeFilters.search    = filters.text;
+
+    const exportData = {
+      exported_at: new Date().toISOString(),
+      source_generated_at: generatedAt,
+      filters_applied: activeFilters,
+      total_entries: filteredEntries.length,
+      entries: filteredEntries,
+    };
+
+    const json = JSON.stringify(exportData, null, 2);
+    const blob = new Blob([json], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `gcp-iam-export-${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   }
 
   // -------------------------------------------------------------------------
