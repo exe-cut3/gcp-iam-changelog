@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-05T16:26:21Z",
-  "total_entries": 10211,
+  "generated_at": "2026-04-06T16:37:16Z",
+  "total_entries": 10226,
   "pages": 103,
   "page": 97,
   "page_size": 100,
@@ -11,9 +11,9 @@
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.routes.get",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "compute",
+      "permission": "config.resources.get",
+      "role": "roles/geminicloudassist.user",
+      "service": "config",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -27,9 +27,9 @@
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.locations.get",
-      "role": "roles/cloudkms.expertPqcSigner",
-      "service": "cloudkms",
+      "permission": "certificatemanager.observedcerts.list",
+      "role": "roles/certificatemanager.editor",
+      "service": "certificatemanager",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -43,9 +43,9 @@
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "roads.selectedRoutes.list",
-      "role": "roles/editor",
-      "service": "roads",
+      "permission": "certificatemanager.observedcerts.list",
+      "role": "roles/iam.supportUser",
+      "service": "certificatemanager",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -59,9 +59,9 @@
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "roads.selectedRoutes.list",
-      "role": "roles/roads.roadsSelectionAdmin",
-      "service": "roads",
+      "permission": "certificatemanager.observedcerts.list",
+      "role": "roles/editor",
+      "service": "certificatemanager",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -74,15 +74,15 @@
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "roads.selectedRoutes.list",
-      "role": "roles/iam.supportUser",
-      "service": "roads",
+      "change_type": "permission_removed_from_role",
+      "permission": "certificatemanager.observedcerts.list",
+      "role": "roles/iam.securityAdmin",
+      "service": "certificatemanager",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -91,9 +91,9 @@
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "roads.selectedRoutes.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "roads",
+      "permission": "certificatemanager.observedcerts.list",
+      "role": "roles/certificatemanager.viewer",
+      "service": "certificatemanager",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -103,70 +103,6 @@
     },
     {
       "id": "2026-03-28-9607",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.route_views.list",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9608",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.serviceBindings.get",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9609",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditReports.generate",
-      "role": "roles/securitycenter.admin",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9610",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditReports.generate",
-      "role": "roles/cloudsecuritycompliance.admin",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9611",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
@@ -182,14 +118,78 @@
       }
     },
     {
+      "id": "2026-03-28-9608",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.projects.get",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9609",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditScopeReports.generate",
+      "role": "roles/securitycenter.admin",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9610",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditScopeReports.generate",
+      "role": "roles/cloudsecuritycompliance.admin",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9611",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "serviceusage.groups.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "serviceusage",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
       "id": "2026-03-28-9612",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.serviceLbPolicies.list",
+      "permission": "compute.zones.list",
       "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "networkservices",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -203,9 +203,9 @@
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.httpfilters.use",
+      "permission": "compute.wireGroups.list",
       "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "networkservices",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -219,9 +219,9 @@
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkmanagement.providers.list",
-      "role": "roles/iam.supportUser",
-      "service": "networkmanagement",
+      "permission": "networksecurity.operations.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networksecurity",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -235,9 +235,9 @@
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkmanagement.providers.list",
-      "role": "roles/editor",
-      "service": "networkmanagement",
+      "permission": "networkservices.grpcRoutes.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -251,9 +251,9 @@
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkmanagement.providers.list",
-      "role": "roles/networkmanagement.viewer",
-      "service": "networkmanagement",
+      "permission": "compute.networks.listEffectiveTags",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -263,278 +263,6 @@
     },
     {
       "id": "2026-03-28-9617",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkmanagement.providers.list",
-      "role": "roles/networkmanagement.admin",
-      "service": "networkmanagement",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9618",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkmanagement.providers.list",
-      "role": "roles/networkmanagement.CloudNetworkInsightsEditor",
-      "service": "networkmanagement",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9619",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkmanagement.providers.list",
-      "role": "roles/networkmanagement.CloudNetworkInsightsAdmin",
-      "service": "networkmanagement",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9620",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "networkmanagement.providers.list",
-      "role": "roles/networkmanagement.CloudNetworkInsightsViewer",
-      "service": "networkmanagement",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9621",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "networkmanagement.providers.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "networkmanagement",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9622",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dns.networks.targetWithPeeringZone",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "dns",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9623",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networksecurity.serverTlsPolicies.get",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "networksecurity",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9624",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.regionNetworkPolicies.get",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9625",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networksecurity.tlsInspectionPolicies.use",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "networksecurity",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9626",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryGroups.useSchemaJoinAspect",
-      "role": "roles/dataplex.catalogAdmin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9627",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryGroups.useSchemaJoinAspect",
-      "role": "roles/datacatalog.entryOwner",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9628",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryGroups.useSchemaJoinAspect",
-      "role": "roles/editor",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9629",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.entryGroups.useSchemaJoinAspect",
-      "role": "roles/datacatalog.admin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9630",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "databaseinsights.queryMetrics.fetch",
-      "role": "roles/editor",
-      "service": "databaseinsights",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9631",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "databaseinsights.queryMetrics.fetch",
-      "role": "roles/iam.supportUser",
-      "service": "databaseinsights",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9632",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "databaseinsights.queryMetrics.fetch",
-      "role": "roles/databaseinsights.viewer",
-      "service": "databaseinsights",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9633",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.interconnectAttachmentGroups.list",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9634",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
@@ -552,108 +280,12 @@
       }
     },
     {
-      "id": "2026-03-28-9635",
+      "id": "2026-03-28-9618",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.httpfilters.get",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9636",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "config.resources.list",
-      "role": "roles/geminicloudassist.user",
-      "service": "config",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9637",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkmanagement.providers.delete",
-      "role": "roles/networkmanagement.CloudNetworkInsightsEditor",
-      "service": "networkmanagement",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9638",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkmanagement.providers.delete",
-      "role": "roles/networkmanagement.admin",
-      "service": "networkmanagement",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9639",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkmanagement.providers.delete",
-      "role": "roles/networkmanagement.CloudNetworkInsightsAdmin",
-      "service": "networkmanagement",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9640",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.grpcRoutes.list",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9641",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "designcenter.operations.get",
+      "permission": "designcenter.applicationTemplates.get",
       "role": "roles/saasservicemgmt.serviceAgent",
       "service": "designcenter",
       "method": "",
@@ -664,28 +296,12 @@
       }
     },
     {
-      "id": "2026-03-28-9642",
+      "id": "2026-03-28-9619",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "config.previews.get",
-      "role": "roles/geminicloudassist.user",
-      "service": "config",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9643",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.interconnectAttachments.list",
+      "permission": "compute.interconnectAttachments.listTagBindings",
       "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
       "service": "compute",
       "method": "",
@@ -696,14 +312,14 @@
       }
     },
     {
-      "id": "2026-03-28-9644",
+      "id": "2026-03-28-9620",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networksecurity.tlsInspectionPolicies.get",
+      "permission": "compute.interconnectGroups.list",
       "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "networksecurity",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -712,76 +328,12 @@
       }
     },
     {
-      "id": "2026-03-28-9645",
+      "id": "2026-03-28-9621",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "apptopology.locations.get",
-      "role": "roles/iam.devOps",
-      "service": "apptopology",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9646",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "databaseinsights.dbCenter.query",
-      "role": "roles/editor",
-      "service": "databaseinsights",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9647",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "databaseinsights.dbCenter.query",
-      "role": "roles/iam.supportUser",
-      "service": "databaseinsights",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9648",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "databaseinsights.dbCenter.query",
-      "role": "roles/databaseinsights.viewer",
-      "service": "databaseinsights",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9649",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkconnectivity.internalRanges.list",
+      "permission": "networkconnectivity.policyBasedRoutes.list",
       "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
       "service": "networkconnectivity",
       "method": "",
@@ -792,124 +344,12 @@
       }
     },
     {
-      "id": "2026-03-28-9650",
+      "id": "2026-03-28-9622",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "biglake.tables.listPartitions",
-      "role": "roles/editor",
-      "service": "biglake",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9651",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "biglake.tables.listPartitions",
-      "role": "roles/iam.databasesAdmin",
-      "service": "biglake",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9652",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "biglake.tables.listPartitions",
-      "role": "roles/iam.supportUser",
-      "service": "biglake",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9653",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "biglake.tables.listPartitions",
-      "role": "roles/biglake.metadataViewer",
-      "service": "biglake",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9654",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "biglake.tables.listPartitions",
-      "role": "roles/biglake.editor",
-      "service": "biglake",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9655",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "serviceusage.quotas.get",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "serviceusage",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9656",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.regionNetworkPolicies.use",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9657",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networksecurity.firewallEndpoints.list",
+      "permission": "networksecurity.urlLists.use",
       "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
       "service": "networksecurity",
       "method": "",
@@ -920,14 +360,78 @@
       }
     },
     {
-      "id": "2026-03-28-9658",
+      "id": "2026-03-28-9623",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networksecurity.gatewaySecurityPolicies.use",
+      "permission": "auditmanager.operations.list",
+      "role": "roles/securitycenter.admin",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9624",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.operations.list",
+      "role": "roles/securitycenter.adminViewer",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9625",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.operations.list",
+      "role": "roles/cloudsecuritycompliance.admin",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9626",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.operations.list",
+      "role": "roles/securitycenter.adminEditor",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9627",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.meshes.list",
       "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "networksecurity",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -936,71 +440,7 @@
       }
     },
     {
-      "id": "2026-03-28-9659",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "serviceusage.values.test",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "serviceusage",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9660",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "spanner.databases.runGraphAlgorithms",
-      "role": "roles/editor",
-      "service": "spanner",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9661",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "spanner.databases.runGraphAlgorithms",
-      "role": "roles/iam.databasesAdmin",
-      "service": "spanner",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9662",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "spanner.databases.runGraphAlgorithms",
-      "role": "roles/spanner.databaseAdmin",
-      "service": "spanner",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9663",
+      "id": "2026-03-28-9628",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
@@ -1016,60 +456,12 @@
       }
     },
     {
-      "id": "2026-03-28-9664",
+      "id": "2026-03-28-9629",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "biglake.tables.createPartitions",
-      "role": "roles/editor",
-      "service": "biglake",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9665",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "biglake.tables.createPartitions",
-      "role": "roles/iam.databasesAdmin",
-      "service": "biglake",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9666",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "biglake.tables.createPartitions",
-      "role": "roles/biglake.editor",
-      "service": "biglake",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9667",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networksecurity.gatewaySecurityPolicies.get",
+      "permission": "networksecurity.operations.get",
       "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
       "service": "networksecurity",
       "method": "",
@@ -1080,92 +472,12 @@
       }
     },
     {
-      "id": "2026-03-28-9668",
+      "id": "2026-03-28-9630",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "certificatemanager.observedcerts.list",
-      "role": "roles/editor",
-      "service": "certificatemanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9669",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "certificatemanager.observedcerts.list",
-      "role": "roles/certificatemanager.editor",
-      "service": "certificatemanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9670",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "certificatemanager.observedcerts.list",
-      "role": "roles/iam.supportUser",
-      "service": "certificatemanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9671",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "certificatemanager.observedcerts.list",
-      "role": "roles/certificatemanager.viewer",
-      "service": "certificatemanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9672",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "certificatemanager.observedcerts.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "certificatemanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9673",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networksecurity.clientTlsPolicies.list",
+      "permission": "networksecurity.addressGroups.get",
       "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
       "service": "networksecurity",
       "method": "",
@@ -1176,348 +488,12 @@
       }
     },
     {
-      "id": "2026-03-28-9674",
+      "id": "2026-03-28-9631",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networksecurity.securityProfiles.get",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "networksecurity",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9675",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dns.managedZones.get",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "dns",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9676",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networksecurity.sacRealms.list",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "networksecurity",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9677",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryGroups.useSchemaJoinEntryLink",
-      "role": "roles/editor",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9678",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryGroups.useSchemaJoinEntryLink",
-      "role": "roles/datacatalog.entryOwner",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9679",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryGroups.useSchemaJoinEntryLink",
-      "role": "roles/dataplex.admin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9680",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryGroups.useSchemaJoinEntryLink",
-      "role": "roles/dataplex.catalogAdmin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9681",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.entryGroups.useSchemaJoinEntryLink",
-      "role": "roles/datacatalog.admin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9682",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.vpnTunnels.listTagBindings",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9683",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.routers.listRoutePolicies",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9684",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networksecurity.serverTlsPolicies.list",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "networksecurity",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9685",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.networks.getEffectiveFirewalls",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9686",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "storage.multipartUploads.list",
-      "role": "roles/geminicloudassist.user",
-      "service": "storage",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9687",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditScopeReports.generate",
-      "role": "roles/securitycenter.admin",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9688",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditScopeReports.generate",
-      "role": "roles/cloudsecuritycompliance.admin",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9689",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "ces.securitySettings.get",
-      "role": "roles/ces.viewer",
-      "service": "ces",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9690",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "ces.securitySettings.get",
-      "role": "roles/ces.deploymentEditor",
-      "service": "ces",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9691",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "ces.securitySettings.get",
-      "role": "roles/ces.appEditor",
-      "service": "ces",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9692",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "ces.securitySettings.get",
-      "role": "roles/iam.supportUser",
-      "service": "ces",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9693",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "ces.securitySettings.get",
-      "role": "roles/editor",
-      "service": "ces",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9694",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "ces.securitySettings.get",
-      "role": "roles/ces.securitySettingsEditor",
-      "service": "ces",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-03-28-9695",
-      "date": "2026-03-28",
-      "commit": "d6bb0669e066",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.gateways.get",
+      "permission": "networkservices.lbRouteExtensions.get",
       "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
       "service": "networkservices",
       "method": "",
@@ -1528,14 +504,46 @@
       }
     },
     {
-      "id": "2026-03-28-9696",
+      "id": "2026-03-28-9632",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dns.managedZones.list",
-      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
-      "service": "dns",
+      "permission": "roads.selectedRoutes.delete",
+      "role": "roles/roads.roadsSelectionAdmin",
+      "service": "roads",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9633",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "roads.selectedRoutes.delete",
+      "role": "roles/editor",
+      "service": "roads",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9634",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "config.locations.get",
+      "role": "roles/geminicloudassist.user",
+      "service": "config",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1544,7 +552,103 @@
       }
     },
     {
-      "id": "2026-03-28-9697",
+      "id": "2026-03-28-9635",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "storage.folders.get",
+      "role": "roles/geminicloudassist.user",
+      "service": "storage",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9636",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.firewalls.listEffectiveTags",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9637",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "resourcemanager.projects.list",
+      "role": "roles/cloudkms.expertPqcSigner",
+      "service": "resourcemanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9638",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "resourcemanager.projects.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "resourcemanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9639",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.subnetworks.use",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9640",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "artifactregistry.repositories.uploadArtifacts",
+      "role": "roles/saasservicemgmt.serviceAgent",
+      "service": "artifactregistry",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9641",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
@@ -1560,7 +664,7 @@
       }
     },
     {
-      "id": "2026-03-28-9698",
+      "id": "2026-03-28-9642",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
@@ -1576,7 +680,7 @@
       }
     },
     {
-      "id": "2026-03-28-9699",
+      "id": "2026-03-28-9643",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
@@ -1592,14 +696,910 @@
       }
     },
     {
+      "id": "2026-03-28-9644",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditReports.get",
+      "role": "roles/securitycenter.admin",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9645",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditReports.get",
+      "role": "roles/securitycenter.adminViewer",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9646",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditReports.get",
+      "role": "roles/cloudsecuritycompliance.admin",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9647",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditReports.get",
+      "role": "roles/securitycenter.adminEditor",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9648",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.regionNetworkPolicies.use",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9649",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.firewalls.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9650",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.tlsRoutes.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9651",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.httpfilters.get",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9652",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.httpRoutes.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9653",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "apphub.applications.create",
+      "role": "roles/saasservicemgmt.serviceAgent",
+      "service": "apphub",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9654",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networksecurity.gatewaySecurityPolicies.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networksecurity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9655",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networksecurity.sacRealms.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networksecurity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9656",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networksecurity.addressGroups.use",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networksecurity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9657",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "apphub.discoveredWorkloads.register",
+      "role": "roles/saasservicemgmt.serviceAgent",
+      "service": "apphub",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9658",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networksecurity.addressGroups.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networksecurity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9659",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "config.resources.list",
+      "role": "roles/geminicloudassist.user",
+      "service": "config",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9660",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkmanagement.networkpaths.list",
+      "role": "roles/networkmanagement.viewer",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9661",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkmanagement.networkpaths.list",
+      "role": "roles/networkmanagement.admin",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9662",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkmanagement.networkpaths.list",
+      "role": "roles/networkmanagement.CloudNetworkInsightsEditor",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9663",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkmanagement.networkpaths.list",
+      "role": "roles/iam.supportUser",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9664",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkmanagement.networkpaths.list",
+      "role": "roles/networkmanagement.CloudNetworkInsightsAdmin",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9665",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkmanagement.networkpaths.list",
+      "role": "roles/editor",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9666",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "networkmanagement.networkpaths.list",
+      "role": "roles/networkmanagement.CloudNetworkInsightsViewer",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9667",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "networkmanagement.networkpaths.list",
+      "role": "roles/iam.securityAdmin",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9668",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.wasmPlugins.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9669",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.locations.get",
+      "role": "roles/cloudkms.expertPqcSigner",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9670",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.interconnectAttachments.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9671",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditReports.list",
+      "role": "roles/securitycenter.admin",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9672",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditReports.list",
+      "role": "roles/securitycenter.adminViewer",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9673",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditReports.list",
+      "role": "roles/cloudsecuritycompliance.admin",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9674",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditReports.list",
+      "role": "roles/securitycenter.adminEditor",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9675",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.locations.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9676",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networksecurity.securityProfiles.use",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networksecurity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9677",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "biglake.tables.listPartitions",
+      "role": "roles/biglake.metadataViewer",
+      "service": "biglake",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9678",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "biglake.tables.listPartitions",
+      "role": "roles/iam.databasesAdmin",
+      "service": "biglake",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9679",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "biglake.tables.listPartitions",
+      "role": "roles/iam.supportUser",
+      "service": "biglake",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9680",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "biglake.tables.listPartitions",
+      "role": "roles/editor",
+      "service": "biglake",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9681",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "biglake.tables.listPartitions",
+      "role": "roles/biglake.editor",
+      "service": "biglake",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9682",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkmanagement.providers.get",
+      "role": "roles/networkmanagement.viewer",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9683",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkmanagement.providers.get",
+      "role": "roles/networkmanagement.admin",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9684",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkmanagement.providers.get",
+      "role": "roles/networkmanagement.CloudNetworkInsightsEditor",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9685",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkmanagement.providers.get",
+      "role": "roles/iam.supportUser",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9686",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkmanagement.providers.get",
+      "role": "roles/networkmanagement.CloudNetworkInsightsAdmin",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9687",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkmanagement.providers.get",
+      "role": "roles/editor",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9688",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "networkmanagement.providers.get",
+      "role": "roles/networkmanagement.CloudNetworkInsightsViewer",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9689",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "artifactregistry.repositories.create",
+      "role": "roles/saasservicemgmt.serviceAgent",
+      "service": "artifactregistry",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9690",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.addresses.createInternal",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9691",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.addresses.useInternal",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9692",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.meshes.use",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9693",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networksecurity.firewallEndpointAssociations.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networksecurity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9694",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.regionCompositeHealthChecks.get",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9695",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.targetVpnGateways.listTagBindings",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9696",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.tcpRoutes.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9697",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.targetVpnGateways.get",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9698",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.networkAttachments.get",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-03-28-9699",
+      "date": "2026-03-28",
+      "commit": "d6bb0669e066",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.authzExtensions.use",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
       "id": "2026-03-28-9700",
       "date": "2026-03-28",
       "commit": "d6bb0669e066",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkmanagement.monitoringpoints.downloadConfig",
-      "role": "roles/networkmanagement.CloudNetworkInsightsEditor",
-      "service": "networkmanagement",
+      "permission": "networksecurity.securityProfiles.list",
+      "role": "roles/hypercomputecluster.sharedVpcServiceAgent",
+      "service": "networksecurity",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1610,16 +1610,16 @@
   ],
   "summary": {
     "by_severity": {
-      "CRITICAL": 64,
-      "HIGH": 2480,
-      "MEDIUM": 7529,
-      "INFO": 138
+      "CRITICAL": 65,
+      "HIGH": 2488,
+      "MEDIUM": 7513,
+      "INFO": 160
     },
     "by_dimension": {
+      "methods": 133,
+      "method_map": 86,
       "predefined_roles": 176,
-      "role_permissions": 9849,
-      "methods": 115,
-      "method_map": 71
+      "role_permissions": 9831
     },
     "new_services": []
   }
