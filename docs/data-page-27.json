@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-12T17:54:02Z",
-  "total_entries": 6080,
-  "pages": 61,
+  "generated_at": "2026-05-13T17:58:22Z",
+  "total_entries": 4926,
+  "pages": 50,
   "page": 27,
   "page_size": 100,
   "entries": [
@@ -11,9 +11,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "orgpolicy.policy.get",
-      "role": "roles/geminicloudassist.admin",
-      "service": "orgpolicy",
+      "permission": "cloudaicompanion.instances.completeTask",
+      "role": "roles/firebase.admin",
+      "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -27,9 +27,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.agentGateways.use",
-      "role": "roles/iam.infrastructureAdmin",
-      "service": "networkservices",
+      "permission": "cloudaicompanion.instances.completeTask",
+      "role": "roles/datapipelines.serviceAgent",
+      "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -43,9 +43,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.agentGateways.use",
-      "role": "roles/compute.networkUser",
-      "service": "networkservices",
+      "permission": "cloudaicompanion.instances.completeTask",
+      "role": "roles/datafusion.serviceAgent",
+      "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -59,9 +59,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.agentGateways.use",
-      "role": "roles/compute.networkAdmin",
-      "service": "networkservices",
+      "permission": "cloudaicompanion.instances.completeTask",
+      "role": "roles/iam.infrastructureAdmin",
+      "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -75,9 +75,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.agentGateways.use",
-      "role": "roles/container.serviceAgent",
-      "service": "networkservices",
+      "permission": "cloudaicompanion.instances.completeTask",
+      "role": "roles/dataproc.serviceAgent",
+      "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -91,9 +91,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.agentGateways.use",
-      "role": "roles/composer.serviceAgent",
-      "service": "networkservices",
+      "permission": "cloudaicompanion.instances.completeTask",
+      "role": "roles/visualinspection.serviceAgent",
+      "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -107,9 +107,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.agentGateways.use",
-      "role": "roles/networkservices.admin",
-      "service": "networkservices",
+      "permission": "datamigration.operations.cancel",
+      "role": "roles/datamigration.editor",
+      "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -123,9 +123,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.agentGateways.use",
-      "role": "roles/iam.networkAdmin",
-      "service": "networkservices",
+      "permission": "chronicle.caseDetections.get",
+      "role": "roles/chronicle.editor",
+      "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -139,9 +139,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.agentGateways.use",
-      "role": "roles/cloudtpu.serviceAgent",
-      "service": "networkservices",
+      "permission": "chronicle.caseDetections.get",
+      "role": "roles/chronicle.soarAdmin",
+      "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -155,9 +155,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "gkebackup.backupChannels.list",
-      "role": "roles/gkebackup.editor",
-      "service": "gkebackup",
+      "permission": "chronicle.caseDetections.get",
+      "role": "roles/iam.supportUser",
+      "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -171,12 +171,14 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "config.locations.get",
+      "permission": "storage.objects.get",
       "role": "roles/geminicloudassist.editor",
-      "service": "config",
+      "service": "storage",
       "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
+      "severity": "HIGH",
+      "tags": [
+        "DataAccess"
+      ],
       "details": {
         "undocumented": true
       }
@@ -187,12 +189,14 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "config.locations.get",
+      "permission": "storage.objects.get",
       "role": "roles/geminicloudassist.admin",
-      "service": "config",
+      "service": "storage",
       "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
+      "severity": "HIGH",
+      "tags": [
+        "DataAccess"
+      ],
       "details": {
         "undocumented": true
       }
@@ -203,12 +207,14 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "config.locations.get",
+      "permission": "storage.objects.get",
       "role": "roles/geminicloudassist.viewer",
-      "service": "config",
+      "service": "storage",
       "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
+      "severity": "HIGH",
+      "tags": [
+        "DataAccess"
+      ],
       "details": {
         "undocumented": true
       }
@@ -219,7 +225,7 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "datamigration.privateConnections.listTagBindings",
+      "permission": "datamigration.migrationjobs.generateSshScript",
       "role": "roles/datamigration.editor",
       "service": "datamigration",
       "method": "",
@@ -235,9 +241,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryGroups.useOracleConnectorTypes",
-      "role": "roles/datacatalog.admin",
-      "service": "dataplex",
+      "permission": "iamconnectors.locations.list",
+      "role": "roles/iam.supportUser",
+      "service": "iamconnectors",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -251,9 +257,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryGroups.useOracleConnectorTypes",
-      "role": "roles/dataplex.catalogEditor",
-      "service": "dataplex",
+      "permission": "iamconnectors.locations.list",
+      "role": "roles/iamconnectors.editor",
+      "service": "iamconnectors",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -267,9 +273,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryGroups.useOracleConnectorTypes",
-      "role": "roles/dataplex.entryGroupOwner",
-      "service": "dataplex",
+      "permission": "iamconnectors.locations.list",
+      "role": "roles/iam.securityReviewer",
+      "service": "iamconnectors",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -283,9 +289,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "parametermanager.parameters.list",
-      "role": "roles/parametermanager.editor",
-      "service": "parametermanager",
+      "permission": "iamconnectors.locations.list",
+      "role": "roles/iam.securityAuditor",
+      "service": "iamconnectors",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -299,215 +305,7 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "parametermanager.parameters.list",
-      "role": "roles/parametermanager.viewer",
-      "service": "parametermanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2620",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "config.terraformversions.list",
-      "role": "roles/geminicloudassist.editor",
-      "service": "config",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2621",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "config.terraformversions.list",
-      "role": "roles/geminicloudassist.admin",
-      "service": "config",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2622",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "config.terraformversions.list",
-      "role": "roles/geminicloudassist.viewer",
-      "service": "config",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2623",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "gkeonprem.bareMetalNodePools.update",
-      "role": "roles/gkeonprem.editor",
-      "service": "gkeonprem",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2624",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "datamigration.connectionprofiles.delete",
-      "role": "roles/datamigration.editor",
-      "service": "datamigration",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2625",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "gdchardwaremanagement.hardwareGroups.list",
-      "role": "roles/gdchardwaremanagement.viewer",
-      "service": "gdchardwaremanagement",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2626",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "gkebackup.restores.delete",
-      "role": "roles/gkebackup.editor",
-      "service": "gkebackup",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2627",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "gkeonprem.bareMetalClusters.enroll",
-      "role": "roles/gkeonprem.editor",
-      "service": "gkeonprem",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2628",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "iamconnectors.connectors.getIamPolicy",
-      "role": "roles/iamconnectors.editor",
-      "service": "iamconnectors",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2629",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "iamconnectors.connectors.getIamPolicy",
-      "role": "roles/iam.supportUser",
-      "service": "iamconnectors",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2630",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "iamconnectors.connectors.getIamPolicy",
-      "role": "roles/iam.securityReviewer",
-      "service": "iamconnectors",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2631",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "iamconnectors.connectors.getIamPolicy",
-      "role": "roles/iam.securityAuditor",
-      "service": "iamconnectors",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2632",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "iamconnectors.connectors.getIamPolicy",
+      "permission": "iamconnectors.locations.list",
       "role": "roles/iamconnectors.viewer",
       "service": "iamconnectors",
       "method": "",
@@ -518,615 +316,7 @@
       }
     },
     {
-      "id": "2026-04-16-2633",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "livestream.channels.listTagBindings",
-      "role": "roles/iam.securityAuditor",
-      "service": "livestream",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2634",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "livestream.channels.listTagBindings",
-      "role": "roles/iam.supportUser",
-      "service": "livestream",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2635",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "livestream.channels.listTagBindings",
-      "role": "roles/livestream.editor",
-      "service": "livestream",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2636",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "livestream.channels.listTagBindings",
-      "role": "roles/resourcemanager.tagViewer",
-      "service": "livestream",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2637",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.gateways.deleteTagBinding",
-      "role": "roles/iam.infrastructureAdmin",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2638",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.gateways.deleteTagBinding",
-      "role": "roles/compute.networkAdmin",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2639",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.gateways.deleteTagBinding",
-      "role": "roles/container.serviceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2640",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.gateways.deleteTagBinding",
-      "role": "roles/composer.serviceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2641",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.gateways.deleteTagBinding",
-      "role": "roles/networkservices.admin",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2642",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.gateways.deleteTagBinding",
-      "role": "roles/iam.networkAdmin",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2643",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.gateways.deleteTagBinding",
-      "role": "roles/cloudtpu.serviceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2644",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "storage.multipartUploads.listParts",
-      "role": "roles/geminicloudassist.editor",
-      "service": "storage",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2645",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "storage.multipartUploads.listParts",
-      "role": "roles/geminicloudassist.admin",
-      "service": "storage",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2646",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "gkeonprem.bareMetalAdminClusters.connect",
-      "role": "roles/gkeonprem.editor",
-      "service": "gkeonprem",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2647",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "datamigration.objects.list",
-      "role": "roles/datamigration.editor",
-      "service": "datamigration",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2648",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "backupdr.backupVaults.listTagBindings",
-      "role": "roles/resourcemanager.tagViewer",
-      "service": "backupdr",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2649",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "backupdr.backupVaults.listTagBindings",
-      "role": "roles/iam.supportUser",
-      "service": "backupdr",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2650",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "backupdr.backupVaults.listTagBindings",
-      "role": "roles/backupdr.admin",
-      "service": "backupdr",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2651",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "backupdr.backupVaults.listTagBindings",
-      "role": "roles/iam.securityAuditor",
-      "service": "backupdr",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2652",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "backupdr.backupVaults.listTagBindings",
-      "role": "roles/backupdr.backupvaultAdmin",
-      "service": "backupdr",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2653",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "designcenter.components.list",
-      "role": "roles/geminicloudassist.editor",
-      "service": "designcenter",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2654",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "designcenter.components.list",
-      "role": "roles/geminicloudassist.admin",
-      "service": "designcenter",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2655",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "designcenter.components.list",
-      "role": "roles/geminicloudassist.viewer",
-      "service": "designcenter",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2656",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "gdchardwaremanagement.comments.list",
-      "role": "roles/gdchardwaremanagement.viewer",
-      "service": "gdchardwaremanagement",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2657",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "iamconnectors.connectors.delete",
-      "role": "roles/iamconnectors.editor",
-      "service": "iamconnectors",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2658",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "health.subscriptions.get",
-      "role": "roles/iam.supportUser",
-      "service": "health",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2659",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "health.subscriptions.get",
-      "role": "roles/health.viewer",
-      "service": "health",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2660",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "health.subscriptions.get",
-      "role": "roles/health.admin",
-      "service": "health",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2661",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "health.subscriptions.get",
-      "role": "roles/health.editor",
-      "service": "health",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2662",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.caseEvents.get",
-      "role": "roles/iam.supportUser",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2663",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.caseEvents.get",
-      "role": "roles/chronicle.soarAdmin",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2664",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.caseEvents.get",
-      "role": "roles/chronicle.editor",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2665",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "designcenter.sharedTemplates.list",
-      "role": "roles/geminicloudassist.editor",
-      "service": "designcenter",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2666",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "designcenter.sharedTemplates.list",
-      "role": "roles/geminicloudassist.admin",
-      "service": "designcenter",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2667",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "designcenter.sharedTemplates.list",
-      "role": "roles/geminicloudassist.viewer",
-      "service": "designcenter",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2668",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "geminicloudassist.investigations.list",
-      "role": "roles/geminicloudassist.editor",
-      "service": "geminicloudassist",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2669",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "geminicloudassist.investigations.list",
-      "role": "roles/geminicloudassist.admin",
-      "service": "geminicloudassist",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2670",
-      "date": "2026-04-16",
-      "commit": "7cdf16ffaac5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "geminicloudassist.investigations.list",
-      "role": "roles/geminicloudassist.viewer",
-      "service": "geminicloudassist",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-04-16-2671",
+      "id": "2026-04-16-2620",
       "date": "2026-04-16",
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
@@ -1142,16 +332,832 @@
       }
     },
     {
+      "id": "2026-04-16-2621",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkconnectivity.hubs.createTagBinding",
+      "role": "roles/networkconnectivity.hubAdmin",
+      "service": "networkconnectivity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2622",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkconnectivity.hubs.createTagBinding",
+      "role": "roles/iam.networkAdmin",
+      "service": "networkconnectivity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2623",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "gkeonprem.operations.list",
+      "role": "roles/gkeonprem.editor",
+      "service": "gkeonprem",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2624",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.channels.listTagBindings",
+      "role": "roles/iam.dataScientist",
+      "service": "eventarc",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2625",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.channels.listTagBindings",
+      "role": "roles/iam.supportUser",
+      "service": "eventarc",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2626",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.channels.listTagBindings",
+      "role": "roles/iam.devOps",
+      "service": "eventarc",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2627",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.channels.listTagBindings",
+      "role": "roles/resourcemanager.tagViewer",
+      "service": "eventarc",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2628",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.channels.listTagBindings",
+      "role": "roles/iam.securityAuditor",
+      "service": "eventarc",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2629",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.channels.listTagBindings",
+      "role": "roles/firebase.admin",
+      "service": "eventarc",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2630",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.channels.listTagBindings",
+      "role": "roles/cloudfunctions.editor",
+      "service": "eventarc",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2631",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.channels.listTagBindings",
+      "role": "roles/cloudfunctions.developer",
+      "service": "eventarc",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2632",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.channels.listTagBindings",
+      "role": "roles/cloudfunctions.serviceAgent",
+      "service": "eventarc",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2633",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.channels.listTagBindings",
+      "role": "roles/cloudfunctions.admin",
+      "service": "eventarc",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2634",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.gateways.deleteTagBinding",
+      "role": "roles/compute.networkAdmin",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2635",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.gateways.deleteTagBinding",
+      "role": "roles/cloudtpu.serviceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2636",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.gateways.deleteTagBinding",
+      "role": "roles/composer.serviceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2637",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.gateways.deleteTagBinding",
+      "role": "roles/networkservices.admin",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2638",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.gateways.deleteTagBinding",
+      "role": "roles/container.serviceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2639",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.gateways.deleteTagBinding",
+      "role": "roles/iam.infrastructureAdmin",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2640",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.gateways.deleteTagBinding",
+      "role": "roles/iam.networkAdmin",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2641",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "designcenter.sharedTemplateRevisions.get",
+      "role": "roles/geminicloudassist.editor",
+      "service": "designcenter",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2642",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "designcenter.sharedTemplateRevisions.get",
+      "role": "roles/geminicloudassist.admin",
+      "service": "designcenter",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2643",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "designcenter.sharedTemplateRevisions.get",
+      "role": "roles/geminicloudassist.viewer",
+      "service": "designcenter",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2644",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "firebaseauth.users.createSession",
+      "role": "roles/firebaseauth.editor",
+      "service": "firebaseauth",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2645",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkconnectivity.hubs.listTagBindings",
+      "role": "roles/networkconnectivity.editor",
+      "service": "networkconnectivity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2646",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkconnectivity.hubs.listTagBindings",
+      "role": "roles/iam.supportUser",
+      "service": "networkconnectivity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2647",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkconnectivity.hubs.listTagBindings",
+      "role": "roles/resourcemanager.tagViewer",
+      "service": "networkconnectivity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2648",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkconnectivity.hubs.listTagBindings",
+      "role": "roles/networkconnectivity.hubAdmin",
+      "service": "networkconnectivity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2649",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkconnectivity.hubs.listTagBindings",
+      "role": "roles/iam.securityAuditor",
+      "service": "networkconnectivity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2650",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkconnectivity.hubs.listTagBindings",
+      "role": "roles/iam.networkAdmin",
+      "service": "networkconnectivity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2651",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "designcenter.locations.get",
+      "role": "roles/geminicloudassist.editor",
+      "service": "designcenter",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2652",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "designcenter.locations.get",
+      "role": "roles/geminicloudassist.admin",
+      "service": "designcenter",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2653",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "designcenter.locations.get",
+      "role": "roles/geminicloudassist.viewer",
+      "service": "designcenter",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2654",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "designcenter.applications.delete",
+      "role": "roles/geminicloudassist.editor",
+      "service": "designcenter",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2655",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "designcenter.applications.delete",
+      "role": "roles/geminicloudassist.admin",
+      "service": "designcenter",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2656",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "parametermanager.parameterVersions.delete",
+      "role": "roles/parametermanager.editor",
+      "service": "parametermanager",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2657",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "gkebackup.restores.list",
+      "role": "roles/gkebackup.editor",
+      "service": "gkebackup",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2658",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "gkebackup.restorePlanBindings.get",
+      "role": "roles/gkebackup.editor",
+      "service": "gkebackup",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2659",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "designcenter.locations.list",
+      "role": "roles/geminicloudassist.editor",
+      "service": "designcenter",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2660",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "designcenter.locations.list",
+      "role": "roles/geminicloudassist.admin",
+      "service": "designcenter",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2661",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "designcenter.locations.list",
+      "role": "roles/geminicloudassist.viewer",
+      "service": "designcenter",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2662",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "designcenter.catalogTemplateRevisions.get",
+      "role": "roles/geminicloudassist.editor",
+      "service": "designcenter",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2663",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "designcenter.catalogTemplateRevisions.get",
+      "role": "roles/geminicloudassist.admin",
+      "service": "designcenter",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2664",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "designcenter.catalogTemplateRevisions.get",
+      "role": "roles/geminicloudassist.viewer",
+      "service": "designcenter",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2665",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "securitycentermanagement.operations.cancel",
+      "role": "roles/securitycentermanagement.admin",
+      "service": "securitycentermanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2666",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "securitycentermanagement.operations.cancel",
+      "role": "roles/securitycentermanagement.editor",
+      "service": "securitycentermanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2667",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "securitycentermanagement.operations.cancel",
+      "role": "roles/securitycenter.settingsEditor",
+      "service": "securitycentermanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2668",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "discoveryengine.locations.completeExternalIdentities",
+      "role": "roles/discoveryengine.agentspaceRestrictedUser",
+      "service": "discoveryengine",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2669",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.gateways.listEffectiveTags",
+      "role": "roles/compute.networkAdmin",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2670",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.gateways.listEffectiveTags",
+      "role": "roles/iam.supportUser",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-04-16-2671",
+      "date": "2026-04-16",
+      "commit": "7cdf16ffaac5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.gateways.listEffectiveTags",
+      "role": "roles/cloudtpu.serviceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
       "id": "2026-04-16-2672",
       "date": "2026-04-16",
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "gkebackup.backupPlans.create",
-      "role": "roles/gkebackup.editor",
-      "service": "gkebackup",
+      "permission": "networkservices.gateways.listEffectiveTags",
+      "role": "roles/composer.serviceAgent",
+      "service": "networkservices",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1163,11 +1169,11 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.agentGateways.update",
-      "role": "roles/iam.infrastructureAdmin",
+      "permission": "networkservices.gateways.listEffectiveTags",
+      "role": "roles/iam.securityAuditor",
       "service": "networkservices",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1179,11 +1185,11 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.agentGateways.update",
-      "role": "roles/compute.networkAdmin",
+      "permission": "networkservices.gateways.listEffectiveTags",
+      "role": "roles/resourcemanager.tagViewer",
       "service": "networkservices",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1195,11 +1201,11 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.agentGateways.update",
-      "role": "roles/container.serviceAgent",
+      "permission": "networkservices.gateways.listEffectiveTags",
+      "role": "roles/networkservices.admin",
       "service": "networkservices",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1211,11 +1217,11 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.agentGateways.update",
-      "role": "roles/composer.serviceAgent",
+      "permission": "networkservices.gateways.listEffectiveTags",
+      "role": "roles/container.serviceAgent",
       "service": "networkservices",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1227,11 +1233,11 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.agentGateways.update",
-      "role": "roles/networkservices.admin",
+      "permission": "networkservices.gateways.listEffectiveTags",
+      "role": "roles/iam.infrastructureAdmin",
       "service": "networkservices",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1243,11 +1249,11 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.agentGateways.update",
+      "permission": "networkservices.gateways.listEffectiveTags",
       "role": "roles/iam.networkAdmin",
       "service": "networkservices",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1259,9 +1265,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.agentGateways.update",
-      "role": "roles/cloudtpu.serviceAgent",
-      "service": "networkservices",
+      "permission": "iamconnectors.authorizations.delete",
+      "role": "roles/iamconnectors.editor",
+      "service": "iamconnectors",
       "method": "",
       "severity": "HIGH",
       "tags": [],
@@ -1275,9 +1281,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "krmapihosting.krmApiHosts.listTagBindings",
-      "role": "roles/iam.securityAuditor",
-      "service": "krmapihosting",
+      "permission": "networkservices.meshes.createTagBinding",
+      "role": "roles/compute.networkAdmin",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1291,9 +1297,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "krmapihosting.krmApiHosts.listTagBindings",
-      "role": "roles/iam.supportUser",
-      "service": "krmapihosting",
+      "permission": "networkservices.meshes.createTagBinding",
+      "role": "roles/cloudtpu.serviceAgent",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1307,9 +1313,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "krmapihosting.krmApiHosts.listTagBindings",
-      "role": "roles/krmapihosting.editor",
-      "service": "krmapihosting",
+      "permission": "networkservices.meshes.createTagBinding",
+      "role": "roles/composer.serviceAgent",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1323,9 +1329,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "krmapihosting.krmApiHosts.listTagBindings",
-      "role": "roles/resourcemanager.tagViewer",
-      "service": "krmapihosting",
+      "permission": "networkservices.meshes.createTagBinding",
+      "role": "roles/networkservices.admin",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1339,9 +1345,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "datamigration.migrationjobs.promote",
-      "role": "roles/datamigration.editor",
-      "service": "datamigration",
+      "permission": "networkservices.meshes.createTagBinding",
+      "role": "roles/container.serviceAgent",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1355,11 +1361,11 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "parametermanager.parameterVersions.create",
-      "role": "roles/parametermanager.editor",
-      "service": "parametermanager",
+      "permission": "networkservices.meshes.createTagBinding",
+      "role": "roles/iam.infrastructureAdmin",
+      "service": "networkservices",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1371,11 +1377,11 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "apphub.applications.update",
-      "role": "roles/geminicloudassist.editor",
-      "service": "apphub",
+      "permission": "networkservices.meshes.createTagBinding",
+      "role": "roles/iam.networkAdmin",
+      "service": "networkservices",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1387,11 +1393,11 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "apphub.applications.update",
-      "role": "roles/geminicloudassist.admin",
-      "service": "apphub",
+      "permission": "chronicle.enrichmentAgent.execute",
+      "role": "roles/chronicle.editor",
+      "service": "chronicle",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1403,9 +1409,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "gkebackup.backupPlanBindings.get",
-      "role": "roles/gkebackup.editor",
-      "service": "gkebackup",
+      "permission": "chronicle.enrichmentAgent.execute",
+      "role": "roles/chronicle.serviceAgent",
+      "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1419,9 +1425,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminicloudassist.locations.list",
-      "role": "roles/geminicloudassist.editor",
-      "service": "geminicloudassist",
+      "permission": "chronicle.enrichmentAgent.execute",
+      "role": "roles/chronicle.soarAdmin",
+      "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1435,9 +1441,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminicloudassist.locations.list",
-      "role": "roles/geminicloudassist.admin",
-      "service": "geminicloudassist",
+      "permission": "storage.objects.list",
+      "role": "roles/geminicloudassist.editor",
+      "service": "storage",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1451,9 +1457,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminicloudassist.locations.list",
-      "role": "roles/geminicloudassist.viewer",
-      "service": "geminicloudassist",
+      "permission": "storage.objects.list",
+      "role": "roles/geminicloudassist.admin",
+      "service": "storage",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1467,11 +1473,11 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "gkebackup.restores.update",
-      "role": "roles/gkebackup.editor",
-      "service": "gkebackup",
+      "permission": "storage.objects.list",
+      "role": "roles/geminicloudassist.viewer",
+      "service": "storage",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1483,9 +1489,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminicloudassist.locations.get",
-      "role": "roles/geminicloudassist.editor",
-      "service": "geminicloudassist",
+      "permission": "datamigration.connectionProfiles.listTagBindings",
+      "role": "roles/datamigration.editor",
+      "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1499,9 +1505,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminicloudassist.locations.get",
-      "role": "roles/geminicloudassist.admin",
-      "service": "geminicloudassist",
+      "permission": "gkeonprem.bareMetalNodePools.enroll",
+      "role": "roles/gkeonprem.editor",
+      "service": "gkeonprem",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1515,9 +1521,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminicloudassist.locations.get",
-      "role": "roles/geminicloudassist.viewer",
-      "service": "geminicloudassist",
+      "permission": "gkeonprem.bareMetalAdminClusters.connect",
+      "role": "roles/gkeonprem.editor",
+      "service": "gkeonprem",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1531,9 +1537,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "designcenter.operations.list",
-      "role": "roles/geminicloudassist.editor",
-      "service": "designcenter",
+      "permission": "datamigration.migrationjobs.fetchSourceObjects",
+      "role": "roles/datamigration.editor",
+      "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1547,9 +1553,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "designcenter.operations.list",
-      "role": "roles/geminicloudassist.admin",
-      "service": "designcenter",
+      "permission": "config.resources.get",
+      "role": "roles/geminicloudassist.editor",
+      "service": "config",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1563,9 +1569,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "designcenter.operations.list",
-      "role": "roles/geminicloudassist.viewer",
-      "service": "designcenter",
+      "permission": "config.resources.get",
+      "role": "roles/geminicloudassist.admin",
+      "service": "config",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1579,9 +1585,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "gkeonprem.vmwareNodePools.unenroll",
-      "role": "roles/gkeonprem.editor",
-      "service": "gkeonprem",
+      "permission": "config.resources.get",
+      "role": "roles/geminicloudassist.viewer",
+      "service": "config",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1595,9 +1601,9 @@
       "commit": "7cdf16ffaac5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "agentregistry.bindings.list",
-      "role": "roles/agentregistry.viewer",
-      "service": "agentregistry",
+      "permission": "apphub.applications.list",
+      "role": "roles/geminicloudassist.editor",
+      "service": "apphub",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1608,16 +1614,16 @@
   ],
   "summary": {
     "by_severity": {
-      "CRITICAL": 24,
-      "HIGH": 1057,
-      "MEDIUM": 4825,
-      "INFO": 174
+      "CRITICAL": 21,
+      "HIGH": 773,
+      "MEDIUM": 4027,
+      "INFO": 105
     },
     "by_dimension": {
-      "predefined_roles": 87,
-      "role_permissions": 5757,
-      "methods": 128,
-      "method_map": 108
+      "predefined_roles": 78,
+      "role_permissions": 4711,
+      "methods": 76,
+      "method_map": 61
     },
     "new_services": []
   }
