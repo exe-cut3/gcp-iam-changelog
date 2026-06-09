@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-08T18:18:38Z",
-  "total_entries": 1760,
+  "generated_at": "2026-06-09T17:52:55Z",
+  "total_entries": 1748,
   "pages": 18,
   "page": 8,
   "page_size": 100,
@@ -14,8 +14,8 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.folderZoneVmExtensionPolicies.getVmExtension",
-      "severity": "INFO",
+      "method": "compute.organizationRolloutPlans.insert",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
@@ -99,9 +99,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.projects.list",
-      "role": "roles/geminidataanalytics.viewer",
-      "service": "resourcemanager",
+      "permission": "auditmanager.auditSchedules.list",
+      "role": "roles/auditmanager.viewer",
+      "service": "auditmanager",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -115,9 +115,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.projects.list",
-      "role": "roles/fleetengine.viewer",
-      "service": "resourcemanager",
+      "permission": "dataplex.locations.get",
+      "role": "roles/spanner.databaseReaderWithDataBoost",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -131,9 +131,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.projects.list",
-      "role": "roles/auditmanager.viewer",
-      "service": "resourcemanager",
+      "permission": "dataplex.locations.get",
+      "role": "roles/iam.dataScientist",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -147,9 +147,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.projects.list",
-      "role": "roles/geminidataanalytics.admin",
-      "service": "resourcemanager",
+      "permission": "dataplex.locations.get",
+      "role": "roles/spanner.databaseUser",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -163,9 +163,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.operations.list",
-      "role": "roles/geminidataanalytics.admin",
-      "service": "geminidataanalytics",
+      "permission": "dataplex.locations.get",
+      "role": "roles/spanner.databaseReader",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -179,9 +179,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.operations.list",
-      "role": "roles/geminidataanalytics.viewer",
-      "service": "geminidataanalytics",
+      "permission": "dataplex.locations.get",
+      "role": "roles/datafusion.serviceAgent",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -195,11 +195,11 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "fleetengine.trips.get",
-      "role": "roles/fleetengine.viewer",
-      "service": "fleetengine",
+      "permission": "dataplex.operations.delete",
+      "role": "roles/spanner.databaseUser",
+      "service": "dataplex",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -207,6 +207,22 @@
     },
     {
       "id": "2026-05-31-0713",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.operations.delete",
+      "role": "roles/datafusion.serviceAgent",
+      "service": "dataplex",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0714",
       "date": "2026-05-31",
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
@@ -222,30 +238,14 @@
       }
     },
     {
-      "id": "2026-05-31-0714",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditReports.list",
-      "role": "roles/auditmanager.viewer",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
       "id": "2026-05-31-0715",
       "date": "2026-05-31",
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.tlsRoutes.list",
-      "role": "roles/multiclusteringress.serviceAgent",
-      "service": "networkservices",
+      "permission": "geminidataanalytics.dataAgents.list",
+      "role": "roles/geminidataanalytics.admin",
+      "service": "geminidataanalytics",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -259,215 +259,7 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "fleetengine.vehicles.search",
-      "role": "roles/fleetengine.viewer",
-      "service": "fleetengine",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0717",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditSchedules.get",
-      "role": "roles/auditmanager.viewer",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0718",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.findings.list",
-      "role": "roles/auditmanager.viewer",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0719",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "fleetengine.vehicles.searchFuzzed",
-      "role": "roles/fleetengine.viewer",
-      "service": "fleetengine",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0720",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.locations.list",
-      "role": "roles/datafusion.serviceAgent",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0721",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.locations.list",
-      "role": "roles/spanner.databaseUser",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0722",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.locations.list",
-      "role": "roles/spanner.databaseReaderWithDataBoost",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0723",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.locations.list",
-      "role": "roles/iam.dataScientist",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0724",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.locations.list",
-      "role": "roles/spanner.databaseReader",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0725",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "fleetengine.vehicles.get",
-      "role": "roles/fleetengine.viewer",
-      "service": "fleetengine",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0726",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.locations.get",
-      "role": "roles/auditmanager.viewer",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0727",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.tlsRoutes.delete",
-      "role": "roles/multiclusteringress.serviceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0728",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.locations.chat",
-      "role": "roles/geminidataanalytics.admin",
-      "service": "geminidataanalytics",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0729",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.locations.chat",
+      "permission": "geminidataanalytics.dataAgents.list",
       "role": "roles/geminidataanalytics.viewer",
       "service": "geminidataanalytics",
       "method": "",
@@ -478,7 +270,7 @@
       }
     },
     {
-      "id": "2026-05-31-0730",
+      "id": "2026-05-31-0717",
       "date": "2026-05-31",
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
@@ -494,14 +286,222 @@
       }
     },
     {
+      "id": "2026-05-31-0718",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "fleetengine.trips.search",
+      "role": "roles/fleetengine.viewer",
+      "service": "fleetengine",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0719",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "geminidataanalytics.dataAgents.update",
+      "role": "roles/geminidataanalytics.admin",
+      "service": "geminidataanalytics",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0720",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.storagePools.list",
+      "role": "roles/hypercomputecluster.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0721",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "geminidataanalytics.operations.list",
+      "role": "roles/geminidataanalytics.admin",
+      "service": "geminidataanalytics",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0722",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "geminidataanalytics.operations.list",
+      "role": "roles/geminidataanalytics.viewer",
+      "service": "geminidataanalytics",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0723",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "geminidataanalytics.operations.delete",
+      "role": "roles/geminidataanalytics.admin",
+      "service": "geminidataanalytics",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0724",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "fleetengine.trips.get",
+      "role": "roles/fleetengine.viewer",
+      "service": "fleetengine",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0725",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.customComplianceFrameworks.list",
+      "role": "roles/auditmanager.viewer",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0726",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "geminidataanalytics.locations.get",
+      "role": "roles/geminidataanalytics.admin",
+      "service": "geminidataanalytics",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0727",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "geminidataanalytics.locations.get",
+      "role": "roles/geminidataanalytics.viewer",
+      "service": "geminidataanalytics",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0728",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networksecurity.firewallEndpoints.useWildfire",
+      "role": "roles/iam.infrastructureAdmin",
+      "service": "networksecurity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0729",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networksecurity.firewallEndpoints.useWildfire",
+      "role": "roles/cloudtpu.serviceAgent",
+      "service": "networksecurity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0730",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networksecurity.firewallEndpoints.useWildfire",
+      "role": "roles/owner",
+      "service": "networksecurity",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
       "id": "2026-05-31-0731",
       "date": "2026-05-31",
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.projects.showEffectiveAutokeyConfig",
-      "role": "roles/iam.securityAuditor",
-      "service": "cloudkms",
+      "permission": "networksecurity.firewallEndpoints.useWildfire",
+      "role": "roles/composer.serviceAgent",
+      "service": "networksecurity",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -515,9 +515,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.projects.showEffectiveAutokeyConfig",
-      "role": "roles/cloudkms.viewer",
-      "service": "cloudkms",
+      "permission": "networksecurity.firewallEndpoints.useWildfire",
+      "role": "roles/networksecurity.firewallEndpointAdmin",
+      "service": "networksecurity",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -531,9 +531,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.locations.list",
-      "role": "roles/geminidataanalytics.admin",
-      "service": "geminidataanalytics",
+      "permission": "networksecurity.firewallEndpoints.useWildfire",
+      "role": "roles/compute.networkAdmin",
+      "service": "networksecurity",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -547,9 +547,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.locations.list",
-      "role": "roles/geminidataanalytics.viewer",
-      "service": "geminidataanalytics",
+      "permission": "networkservices.tlsRoutes.list",
+      "role": "roles/multiclusteringress.serviceAgent",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -563,7 +563,7 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "auditmanager.controls.list",
+      "permission": "auditmanager.controlReports.get",
       "role": "roles/auditmanager.viewer",
       "service": "auditmanager",
       "method": "",
@@ -579,7 +579,7 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "auditmanager.locations.list",
+      "permission": "auditmanager.auditReports.list",
       "role": "roles/auditmanager.viewer",
       "service": "auditmanager",
       "method": "",
@@ -595,11 +595,11 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.dataAgents.delete",
-      "role": "roles/geminidataanalytics.admin",
-      "service": "geminidataanalytics",
+      "permission": "auditmanager.findings.list",
+      "role": "roles/auditmanager.viewer",
+      "service": "auditmanager",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -611,11 +611,11 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.dataAgents.get",
-      "role": "roles/geminidataanalytics.admin",
-      "service": "geminidataanalytics",
+      "permission": "networkservices.tlsRoutes.update",
+      "role": "roles/multiclusteringress.serviceAgent",
+      "service": "networkservices",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -627,11 +627,11 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.dataAgents.get",
-      "role": "roles/geminidataanalytics.viewer",
-      "service": "geminidataanalytics",
+      "permission": "networkservices.tlsRoutes.delete",
+      "role": "roles/multiclusteringress.serviceAgent",
+      "service": "networkservices",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -643,11 +643,11 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.operations.delete",
-      "role": "roles/datafusion.serviceAgent",
-      "service": "dataplex",
+      "permission": "resourcemanager.projects.list",
+      "role": "roles/fleetengine.viewer",
+      "service": "resourcemanager",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -659,11 +659,11 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.operations.delete",
-      "role": "roles/spanner.databaseUser",
-      "service": "dataplex",
+      "permission": "resourcemanager.projects.list",
+      "role": "roles/geminidataanalytics.admin",
+      "service": "resourcemanager",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -675,9 +675,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.tlsRoutes.get",
-      "role": "roles/multiclusteringress.serviceAgent",
-      "service": "networkservices",
+      "permission": "resourcemanager.projects.list",
+      "role": "roles/auditmanager.viewer",
+      "service": "resourcemanager",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -691,9 +691,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "auditmanager.billingSettings.get",
-      "role": "roles/auditmanager.viewer",
-      "service": "auditmanager",
+      "permission": "resourcemanager.projects.list",
+      "role": "roles/geminidataanalytics.viewer",
+      "service": "resourcemanager",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -707,9 +707,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "fleetengine.deliveryvehicles.get",
-      "role": "roles/fleetengine.viewer",
-      "service": "fleetengine",
+      "permission": "geminidataanalytics.locations.list",
+      "role": "roles/geminidataanalytics.admin",
+      "service": "geminidataanalytics",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -723,8 +723,8 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.dataAgents.chat",
-      "role": "roles/geminidataanalytics.admin",
+      "permission": "geminidataanalytics.locations.list",
+      "role": "roles/geminidataanalytics.viewer",
       "service": "geminidataanalytics",
       "method": "",
       "severity": "MEDIUM",
@@ -739,9 +739,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.dataAgents.chat",
-      "role": "roles/geminidataanalytics.viewer",
-      "service": "geminidataanalytics",
+      "permission": "fleetengine.tasks.list",
+      "role": "roles/fleetengine.viewer",
+      "service": "fleetengine",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -755,8 +755,8 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.operations.get",
-      "role": "roles/spanner.databaseReader",
+      "permission": "dataplex.locations.list",
+      "role": "roles/spanner.databaseReaderWithDataBoost",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -771,8 +771,8 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.operations.get",
-      "role": "roles/spanner.databaseReaderWithDataBoost",
+      "permission": "dataplex.locations.list",
+      "role": "roles/iam.dataScientist",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -787,7 +787,7 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.operations.get",
+      "permission": "dataplex.locations.list",
       "role": "roles/spanner.databaseUser",
       "service": "dataplex",
       "method": "",
@@ -803,9 +803,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "netapp.storagePools.updateBackupConfig",
-      "role": "roles/netapp.admin",
-      "service": "netapp",
+      "permission": "dataplex.locations.list",
+      "role": "roles/spanner.databaseReader",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -819,9 +819,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "netapp.storagePools.updateBackupConfig",
-      "role": "roles/owner",
-      "service": "netapp",
+      "permission": "dataplex.locations.list",
+      "role": "roles/datafusion.serviceAgent",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -835,7 +835,7 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.operations.cancel",
+      "permission": "geminidataanalytics.locations.useDataEngineeringAgent",
       "role": "roles/geminidataanalytics.admin",
       "service": "geminidataanalytics",
       "method": "",
@@ -851,8 +851,8 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.locations.get",
-      "role": "roles/geminidataanalytics.admin",
+      "permission": "geminidataanalytics.locations.useDataEngineeringAgent",
+      "role": "roles/geminidataanalytics.viewer",
       "service": "geminidataanalytics",
       "method": "",
       "severity": "MEDIUM",
@@ -867,9 +867,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.locations.get",
-      "role": "roles/geminidataanalytics.viewer",
-      "service": "geminidataanalytics",
+      "permission": "fleetengine.vehicles.get",
+      "role": "roles/fleetengine.viewer",
+      "service": "fleetengine",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -883,9 +883,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.storagePools.get",
-      "role": "roles/hypercomputecluster.serviceAgent",
-      "service": "compute",
+      "permission": "dataplex.operations.cancel",
+      "role": "roles/spanner.databaseUser",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -915,9 +915,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.operations.cancel",
-      "role": "roles/spanner.databaseUser",
-      "service": "dataplex",
+      "permission": "auditmanager.controls.list",
+      "role": "roles/auditmanager.viewer",
+      "service": "auditmanager",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -931,9 +931,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "fleetengine.trips.search",
-      "role": "roles/fleetengine.viewer",
-      "service": "fleetengine",
+      "permission": "geminidataanalytics.dataAgents.getIamPolicy",
+      "role": "roles/geminidataanalytics.admin",
+      "service": "geminidataanalytics",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -947,8 +947,8 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.locations.useDataEngineeringAgent",
-      "role": "roles/geminidataanalytics.admin",
+      "permission": "geminidataanalytics.dataAgents.getIamPolicy",
+      "role": "roles/geminidataanalytics.viewer",
       "service": "geminidataanalytics",
       "method": "",
       "severity": "MEDIUM",
@@ -963,9 +963,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.locations.useDataEngineeringAgent",
-      "role": "roles/geminidataanalytics.viewer",
-      "service": "geminidataanalytics",
+      "permission": "auditmanager.locations.list",
+      "role": "roles/auditmanager.viewer",
+      "service": "auditmanager",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -975,262 +975,6 @@
     },
     {
       "id": "2026-05-31-0761",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "fleetengine.vehicles.list",
-      "role": "roles/fleetengine.viewer",
-      "service": "fleetengine",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0762",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.operations.get",
-      "role": "roles/auditmanager.viewer",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0763",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.locations.get",
-      "role": "roles/datafusion.serviceAgent",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0764",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.locations.get",
-      "role": "roles/spanner.databaseUser",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0765",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.locations.get",
-      "role": "roles/spanner.databaseReaderWithDataBoost",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0766",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.locations.get",
-      "role": "roles/iam.dataScientist",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0767",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.locations.get",
-      "role": "roles/spanner.databaseReader",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0768",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditSchedules.list",
-      "role": "roles/auditmanager.viewer",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0769",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networksecurity.firewallEndpoints.useWildfire",
-      "role": "roles/compute.networkAdmin",
-      "service": "networksecurity",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0770",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networksecurity.firewallEndpoints.useWildfire",
-      "role": "roles/cloudtpu.serviceAgent",
-      "service": "networksecurity",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0771",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networksecurity.firewallEndpoints.useWildfire",
-      "role": "roles/composer.serviceAgent",
-      "service": "networksecurity",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0772",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networksecurity.firewallEndpoints.useWildfire",
-      "role": "roles/networksecurity.firewallEndpointAdmin",
-      "service": "networksecurity",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0773",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networksecurity.firewallEndpoints.useWildfire",
-      "role": "roles/owner",
-      "service": "networksecurity",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0774",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networksecurity.firewallEndpoints.useWildfire",
-      "role": "roles/iam.infrastructureAdmin",
-      "service": "networksecurity",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0775",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.tlsRoutes.update",
-      "role": "roles/multiclusteringress.serviceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0776",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.dataAgents.create",
-      "role": "roles/geminidataanalytics.admin",
-      "service": "geminidataanalytics",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0777",
       "date": "2026-05-31",
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
@@ -1246,76 +990,12 @@
       }
     },
     {
-      "id": "2026-05-31-0778",
+      "id": "2026-05-31-0762",
       "date": "2026-05-31",
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.operations.list",
-      "role": "roles/spanner.databaseReader",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0779",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.operations.list",
-      "role": "roles/spanner.databaseReaderWithDataBoost",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0780",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.operations.list",
-      "role": "roles/spanner.databaseUser",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0781",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "fleetengine.tasktrackinginfo.get",
-      "role": "roles/fleetengine.viewer",
-      "service": "fleetengine",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0782",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.customComplianceFrameworks.list",
+      "permission": "auditmanager.resourceEnrollmentStatuses.get",
       "role": "roles/auditmanager.viewer",
       "service": "auditmanager",
       "method": "",
@@ -1326,87 +1006,7 @@
       }
     },
     {
-      "id": "2026-05-31-0783",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.dataAgents.list",
-      "role": "roles/geminidataanalytics.admin",
-      "service": "geminidataanalytics",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0784",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.dataAgents.list",
-      "role": "roles/geminidataanalytics.viewer",
-      "service": "geminidataanalytics",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0785",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.storagePools.list",
-      "role": "roles/hypercomputecluster.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0786",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "fleetengine.tasks.get",
-      "role": "roles/fleetengine.viewer",
-      "service": "fleetengine",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0787",
-      "date": "2026-05-31",
-      "commit": "484627b4f9fb",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "auditmanager.auditReports.get",
-      "role": "roles/auditmanager.viewer",
-      "service": "auditmanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-31-0788",
+      "id": "2026-05-31-0763",
       "date": "2026-05-31",
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
@@ -1422,7 +1022,39 @@
       }
     },
     {
-      "id": "2026-05-31-0789",
+      "id": "2026-05-31-0764",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "geminidataanalytics.dataAgents.get",
+      "role": "roles/geminidataanalytics.admin",
+      "service": "geminidataanalytics",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0765",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "geminidataanalytics.dataAgents.get",
+      "role": "roles/geminidataanalytics.viewer",
+      "service": "geminidataanalytics",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0766",
       "date": "2026-05-31",
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
@@ -1438,14 +1070,382 @@
       }
     },
     {
+      "id": "2026-05-31-0767",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.controlReports.list",
+      "role": "roles/auditmanager.viewer",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0768",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "fleetengine.vehicles.list",
+      "role": "roles/fleetengine.viewer",
+      "service": "fleetengine",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0769",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.auditSchedules.get",
+      "role": "roles/auditmanager.viewer",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0770",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "fleetengine.vehicles.searchFuzzed",
+      "role": "roles/fleetengine.viewer",
+      "service": "fleetengine",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0771",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "geminidataanalytics.operations.cancel",
+      "role": "roles/geminidataanalytics.admin",
+      "service": "geminidataanalytics",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0772",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "geminidataanalytics.dataAgents.chat",
+      "role": "roles/geminidataanalytics.admin",
+      "service": "geminidataanalytics",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0773",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "geminidataanalytics.dataAgents.chat",
+      "role": "roles/geminidataanalytics.viewer",
+      "service": "geminidataanalytics",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0774",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.projects.showEffectiveAutokeyConfig",
+      "role": "roles/cloudkms.viewer",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0775",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.projects.showEffectiveAutokeyConfig",
+      "role": "roles/iam.securityAuditor",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0776",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.operations.get",
+      "role": "roles/auditmanager.viewer",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0777",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "geminidataanalytics.dataAgents.delete",
+      "role": "roles/geminidataanalytics.admin",
+      "service": "geminidataanalytics",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0778",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.operations.get",
+      "role": "roles/spanner.databaseUser",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0779",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.operations.get",
+      "role": "roles/spanner.databaseReader",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0780",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.operations.get",
+      "role": "roles/spanner.databaseReaderWithDataBoost",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0781",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "netapp.storagePools.updateBackupConfig",
+      "role": "roles/netapp.admin",
+      "service": "netapp",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0782",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "netapp.storagePools.updateBackupConfig",
+      "role": "roles/owner",
+      "service": "netapp",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0783",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "geminidataanalytics.dataAgents.create",
+      "role": "roles/geminidataanalytics.admin",
+      "service": "geminidataanalytics",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0784",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.resourceEnrollmentStatuses.list",
+      "role": "roles/auditmanager.viewer",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0785",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.findings.get",
+      "role": "roles/auditmanager.viewer",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0786",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "fleetengine.deliveryvehicles.list",
+      "role": "roles/fleetengine.viewer",
+      "service": "fleetengine",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0787",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.billingSettings.get",
+      "role": "roles/auditmanager.viewer",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0788",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "auditmanager.locations.get",
+      "role": "roles/auditmanager.viewer",
+      "service": "auditmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-31-0789",
+      "date": "2026-05-31",
+      "commit": "484627b4f9fb",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.operations.list",
+      "role": "roles/spanner.databaseUser",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
       "id": "2026-05-31-0790",
       "date": "2026-05-31",
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "netapp.storagePools.listBackupConfigs",
-      "role": "roles/netapp.admin",
-      "service": "netapp",
+      "permission": "dataplex.operations.list",
+      "role": "roles/spanner.databaseReader",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1459,9 +1459,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "netapp.storagePools.listBackupConfigs",
-      "role": "roles/owner",
-      "service": "netapp",
+      "permission": "dataplex.operations.list",
+      "role": "roles/spanner.databaseReaderWithDataBoost",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1475,11 +1475,11 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.dataAgents.setIamPolicy",
-      "role": "roles/geminidataanalytics.admin",
-      "service": "geminidataanalytics",
+      "permission": "netapp.storagePools.listBackupConfigs",
+      "role": "roles/netapp.admin",
+      "service": "netapp",
       "method": "",
-      "severity": "CRITICAL",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1491,8 +1491,8 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "netapp.storagePools.restoreVolume",
-      "role": "roles/netapp.admin",
+      "permission": "netapp.storagePools.listBackupConfigs",
+      "role": "roles/owner",
       "service": "netapp",
       "method": "",
       "severity": "MEDIUM",
@@ -1507,9 +1507,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "netapp.storagePools.restoreVolume",
-      "role": "roles/owner",
-      "service": "netapp",
+      "permission": "auditmanager.auditReports.get",
+      "role": "roles/auditmanager.viewer",
+      "service": "auditmanager",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1523,7 +1523,7 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.operations.get",
+      "permission": "geminidataanalytics.locations.chat",
       "role": "roles/geminidataanalytics.admin",
       "service": "geminidataanalytics",
       "method": "",
@@ -1539,7 +1539,7 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.operations.get",
+      "permission": "geminidataanalytics.locations.chat",
       "role": "roles/geminidataanalytics.viewer",
       "service": "geminidataanalytics",
       "method": "",
@@ -1555,9 +1555,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "auditmanager.controlReports.get",
-      "role": "roles/auditmanager.viewer",
-      "service": "auditmanager",
+      "permission": "fleetengine.tasktrackinginfo.get",
+      "role": "roles/fleetengine.viewer",
+      "service": "fleetengine",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1571,9 +1571,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.dataAgents.getIamPolicy",
-      "role": "roles/geminidataanalytics.admin",
-      "service": "geminidataanalytics",
+      "permission": "netapp.storagePools.restoreVolume",
+      "role": "roles/netapp.admin",
+      "service": "netapp",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1587,9 +1587,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.dataAgents.getIamPolicy",
-      "role": "roles/geminidataanalytics.viewer",
-      "service": "geminidataanalytics",
+      "permission": "netapp.storagePools.restoreVolume",
+      "role": "roles/owner",
+      "service": "netapp",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1603,9 +1603,9 @@
       "commit": "484627b4f9fb",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "fleetengine.deliveryvehicles.list",
-      "role": "roles/fleetengine.viewer",
-      "service": "fleetengine",
+      "permission": "networkservices.tlsRoutes.get",
+      "role": "roles/multiclusteringress.serviceAgent",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1618,13 +1618,13 @@
     "by_severity": {
       "CRITICAL": 3,
       "HIGH": 408,
-      "MEDIUM": 1215,
-      "INFO": 134
+      "MEDIUM": 1207,
+      "INFO": 130
     },
     "by_dimension": {
-      "methods": 94,
-      "method_map": 89,
-      "role_permissions": 1553,
+      "methods": 92,
+      "method_map": 87,
+      "role_permissions": 1545,
       "predefined_roles": 24
     },
     "new_services": []
