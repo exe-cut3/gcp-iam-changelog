@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-09T17:52:55Z",
-  "total_entries": 1748,
-  "pages": 18,
+  "generated_at": "2026-06-10T18:25:04Z",
+  "total_entries": 1664,
+  "pages": 17,
   "page": 11,
   "page_size": 100,
   "entries": [
@@ -13,9 +13,9 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "dataplex",
-      "method": "dataplex.projects.locations.changeRequests.delete",
-      "severity": "HIGH",
+      "service": "networksecurity",
+      "method": "networksecurity.organizations.locations.get",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
@@ -29,8 +29,8 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "networksecurity",
-      "method": "networksecurity.organizations.locations.addressGroups.testIamPermissions",
+      "service": "chromemanagement",
+      "method": "chromemanagement.customers.enterprise.securityInsights.enable",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -46,7 +46,7 @@
       "permission": "",
       "role": "",
       "service": "dataplex",
-      "method": "dataplex.projects.locations.changeRequests.approve",
+      "method": "dataplex.projects.locations.changeRequests.reject",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -61,9 +61,9 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "dataplex",
-      "method": "dataplex.projects.locations.changeRequests.patch",
-      "severity": "HIGH",
+      "service": "networksecurity",
+      "method": "networksecurity.organizations.locations.list",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
@@ -71,22 +71,6 @@
     },
     {
       "id": "2026-05-22-1005",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "predefined_roles",
-      "change_type": "removed",
-      "permission": "",
-      "role": "roles/chronicle.orgServiceAgent",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "title": "Chronicle Organization Service Agent"
-      }
-    },
-    {
-      "id": "2026-05-22-1006",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "predefined_roles",
@@ -102,19 +86,35 @@
       }
     },
     {
-      "id": "2026-05-22-1007",
+      "id": "2026-05-22-1006",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.get",
-      "role": "roles/container.serviceAgent",
-      "service": "compute",
+      "dimension": "predefined_roles",
+      "change_type": "removed",
+      "permission": "",
+      "role": "roles/chronicle.orgServiceAgent",
+      "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "title": "Chronicle Organization Service Agent"
+      }
+    },
+    {
+      "id": "2026-05-22-1007",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudsql.blueGreenDeployments.switchover",
+      "role": "roles/owner",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
       }
     },
     {
@@ -122,15 +122,15 @@
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.get",
-      "role": "roles/notebooks.legacyViewer",
-      "service": "compute",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudsql.blueGreenDeployments.switchover",
+      "role": "roles/composer.serviceAgent",
+      "service": "cloudsql",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -139,9 +139,9 @@
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.get",
-      "role": "roles/genomics.serviceAgent",
-      "service": "compute",
+      "permission": "networkservices.googleTagGatewayPolicies.list",
+      "role": "roles/compute.networkUser",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -155,9 +155,9 @@
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.get",
-      "role": "roles/dataprep.serviceAgent",
-      "service": "compute",
+      "permission": "networkservices.googleTagGatewayPolicies.list",
+      "role": "roles/networkservices.viewer",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -171,9 +171,9 @@
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.get",
+      "permission": "networkservices.googleTagGatewayPolicies.list",
       "role": "roles/iam.supportUser",
-      "service": "compute",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -187,9 +187,9 @@
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.get",
-      "role": "roles/batch.serviceAgent",
-      "service": "compute",
+      "permission": "networkservices.googleTagGatewayPolicies.list",
+      "role": "roles/container.serviceAgent",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -203,9 +203,9 @@
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.get",
-      "role": "roles/notebooks.runner",
-      "service": "compute",
+      "permission": "networkservices.googleTagGatewayPolicies.list",
+      "role": "roles/compute.networkAdmin",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -218,15 +218,15 @@
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.get",
-      "role": "roles/notebooks.serviceAgent",
-      "service": "compute",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.googleTagGatewayPolicies.list",
+      "role": "roles/networkservices.editor",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -235,9 +235,9 @@
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.get",
-      "role": "roles/notebooks.legacyAdmin",
-      "service": "compute",
+      "permission": "networkservices.googleTagGatewayPolicies.list",
+      "role": "roles/owner",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -251,9 +251,9 @@
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.get",
-      "role": "roles/notebooks.editor",
-      "service": "compute",
+      "permission": "networkservices.googleTagGatewayPolicies.list",
+      "role": "roles/composer.serviceAgent",
+      "service": "networkservices",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -263,646 +263,6 @@
     },
     {
       "id": "2026-05-22-1017",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.get",
-      "role": "roles/owner",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1018",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.get",
-      "role": "roles/composer.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1019",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.get",
-      "role": "roles/compute.instanceAdmin",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1020",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.get",
-      "role": "roles/iam.siteReliabilityEngineer",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1021",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.get",
-      "role": "roles/networkservices.editor",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1022",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.get",
-      "role": "roles/container.serviceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1023",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.get",
-      "role": "roles/networkservices.viewer",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1024",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.get",
-      "role": "roles/compute.networkUser",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1025",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.get",
-      "role": "roles/iam.supportUser",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1026",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.get",
-      "role": "roles/compute.networkAdmin",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1027",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "networkservices.googleTagGatewayPolicies.get",
-      "role": "roles/composer.serviceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1028",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "networkservices.googleTagGatewayPolicies.get",
-      "role": "roles/owner",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1029",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudsql.blueGreenDeployments.delete",
-      "role": "roles/composer.serviceAgent",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1030",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudsql.blueGreenDeployments.delete",
-      "role": "roles/owner",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1031",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.create",
-      "role": "roles/networkservices.editor",
-      "service": "networkservices",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1032",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.create",
-      "role": "roles/container.serviceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1033",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.create",
-      "role": "roles/compute.networkAdmin",
-      "service": "networkservices",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1034",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "networkservices.googleTagGatewayPolicies.create",
-      "role": "roles/composer.serviceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1035",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "networkservices.googleTagGatewayPolicies.create",
-      "role": "roles/owner",
-      "service": "networkservices",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1036",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.networks.updatePolicy",
-      "role": "roles/vpcaccess.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1037",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudsql.blueGreenDeployments.get",
-      "role": "roles/cloudsql.viewer",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1038",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudsql.blueGreenDeployments.get",
-      "role": "roles/cloudsql.editor",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1039",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudsql.blueGreenDeployments.get",
-      "role": "roles/iam.supportUser",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1040",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudsql.blueGreenDeployments.get",
-      "role": "roles/composer.serviceAgent",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1041",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudsql.blueGreenDeployments.get",
-      "role": "roles/owner",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1042",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudsql.blueGreenDeployments.get",
-      "role": "roles/iam.siteReliabilityEngineer",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1043",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.list",
-      "role": "roles/container.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1044",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.list",
-      "role": "roles/notebooks.legacyViewer",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1045",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.list",
-      "role": "roles/genomics.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1046",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.list",
-      "role": "roles/dataprep.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1047",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.list",
-      "role": "roles/iam.supportUser",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1048",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.list",
-      "role": "roles/batch.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1049",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.list",
-      "role": "roles/notebooks.runner",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1050",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.list",
-      "role": "roles/notebooks.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1051",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.list",
-      "role": "roles/notebooks.legacyAdmin",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1052",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.list",
-      "role": "roles/notebooks.editor",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1053",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.list",
-      "role": "roles/owner",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1054",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.list",
-      "role": "roles/composer.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1055",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.list",
-      "role": "roles/compute.instanceAdmin",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1056",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.list",
-      "role": "roles/iam.siteReliabilityEngineer",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1057",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
@@ -918,412 +278,12 @@
       }
     },
     {
-      "id": "2026-05-22-1058",
+      "id": "2026-05-22-1018",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "consumerprocurement.entitlements.list",
-      "role": "roles/discoveryengine.agentspaceAdmin",
-      "service": "consumerprocurement",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1059",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudsql.blueGreenDeployments.switchover",
-      "role": "roles/composer.serviceAgent",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1060",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudsql.blueGreenDeployments.switchover",
-      "role": "roles/owner",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1061",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudsql.blueGreenDeployments.list",
-      "role": "roles/cloudsql.viewer",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1062",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudsql.blueGreenDeployments.list",
-      "role": "roles/cloudsql.editor",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1063",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudsql.blueGreenDeployments.list",
-      "role": "roles/iam.supportUser",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1064",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudsql.blueGreenDeployments.list",
-      "role": "roles/composer.serviceAgent",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1065",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudsql.blueGreenDeployments.list",
-      "role": "roles/owner",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1066",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudsql.blueGreenDeployments.list",
-      "role": "roles/iam.siteReliabilityEngineer",
-      "service": "cloudsql",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1067",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.list",
-      "role": "roles/networkservices.editor",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1068",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.list",
-      "role": "roles/container.serviceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1069",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.list",
-      "role": "roles/networkservices.viewer",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1070",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.list",
-      "role": "roles/compute.networkUser",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1071",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.list",
-      "role": "roles/iam.supportUser",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1072",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.list",
-      "role": "roles/compute.networkAdmin",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1073",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "networkservices.googleTagGatewayPolicies.list",
-      "role": "roles/composer.serviceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1074",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "networkservices.googleTagGatewayPolicies.list",
-      "role": "roles/owner",
-      "service": "networkservices",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1075",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "ces.evaluations.export",
-      "role": "roles/iam.supportUser",
-      "service": "ces",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1076",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "ces.evaluations.export",
-      "role": "roles/owner",
-      "service": "ces",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1077",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.update",
-      "role": "roles/networkservices.editor",
-      "service": "networkservices",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1078",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.update",
-      "role": "roles/container.serviceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1079",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.update",
-      "role": "roles/compute.networkAdmin",
-      "service": "networkservices",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1080",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "networkservices.googleTagGatewayPolicies.update",
-      "role": "roles/composer.serviceAgent",
-      "service": "networkservices",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1081",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "networkservices.googleTagGatewayPolicies.update",
-      "role": "roles/owner",
-      "service": "networkservices",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1082",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.getVersion",
-      "role": "roles/container.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1083",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.getVersion",
+      "permission": "compute.hosts.get",
       "role": "roles/notebooks.legacyViewer",
       "service": "compute",
       "method": "",
@@ -1334,60 +294,12 @@
       }
     },
     {
-      "id": "2026-05-22-1084",
+      "id": "2026-05-22-1019",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.getVersion",
-      "role": "roles/genomics.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1085",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.getVersion",
-      "role": "roles/dataprep.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1086",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.getVersion",
-      "role": "roles/iam.supportUser",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-05-22-1087",
-      "date": "2026-05-22",
-      "commit": "fedce37586e5",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.getVersion",
+      "permission": "compute.hosts.get",
       "role": "roles/batch.serviceAgent",
       "service": "compute",
       "method": "",
@@ -1398,12 +310,12 @@
       }
     },
     {
-      "id": "2026-05-22-1088",
+      "id": "2026-05-22-1020",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.hosts.getVersion",
+      "permission": "compute.hosts.get",
       "role": "roles/notebooks.runner",
       "service": "compute",
       "method": "",
@@ -1414,60 +326,76 @@
       }
     },
     {
-      "id": "2026-05-22-1089",
+      "id": "2026-05-22-1021",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.getVersion",
-      "role": "roles/notebooks.serviceAgent",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.get",
+      "role": "roles/iam.supportUser",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
-      "id": "2026-05-22-1090",
+      "id": "2026-05-22-1022",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.getVersion",
-      "role": "roles/notebooks.legacyAdmin",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.get",
+      "role": "roles/container.serviceAgent",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
-      "id": "2026-05-22-1091",
+      "id": "2026-05-22-1023",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.getVersion",
-      "role": "roles/notebooks.editor",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.get",
+      "role": "roles/dataprep.serviceAgent",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
-      "id": "2026-05-22-1092",
+      "id": "2026-05-22-1024",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.get",
+      "role": "roles/genomics.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1025",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.getVersion",
+      "permission": "compute.hosts.get",
       "role": "roles/owner",
       "service": "compute",
       "method": "",
@@ -1478,12 +406,12 @@
       }
     },
     {
-      "id": "2026-05-22-1093",
+      "id": "2026-05-22-1026",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.getVersion",
+      "permission": "compute.hosts.get",
       "role": "roles/composer.serviceAgent",
       "service": "compute",
       "method": "",
@@ -1494,13 +422,13 @@
       }
     },
     {
-      "id": "2026-05-22-1094",
+      "id": "2026-05-22-1027",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.getVersion",
-      "role": "roles/compute.instanceAdmin",
+      "permission": "compute.hosts.get",
+      "role": "roles/notebooks.editor",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -1510,12 +438,28 @@
       }
     },
     {
-      "id": "2026-05-22-1095",
+      "id": "2026-05-22-1028",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "compute.hosts.getVersion",
+      "permission": "compute.hosts.get",
+      "role": "roles/notebooks.legacyAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1029",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.get",
       "role": "roles/iam.siteReliabilityEngineer",
       "service": "compute",
       "method": "",
@@ -1526,7 +470,167 @@
       }
     },
     {
-      "id": "2026-05-22-1096",
+      "id": "2026-05-22-1030",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.get",
+      "role": "roles/notebooks.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1031",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.get",
+      "role": "roles/compute.instanceAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1032",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.googleTagGatewayPolicies.get",
+      "role": "roles/compute.networkUser",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1033",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.googleTagGatewayPolicies.get",
+      "role": "roles/networkservices.viewer",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1034",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.googleTagGatewayPolicies.get",
+      "role": "roles/iam.supportUser",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1035",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.googleTagGatewayPolicies.get",
+      "role": "roles/container.serviceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1036",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.googleTagGatewayPolicies.get",
+      "role": "roles/compute.networkAdmin",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1037",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.googleTagGatewayPolicies.get",
+      "role": "roles/networkservices.editor",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1038",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "networkservices.googleTagGatewayPolicies.get",
+      "role": "roles/owner",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1039",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "networkservices.googleTagGatewayPolicies.get",
+      "role": "roles/composer.serviceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1040",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
@@ -1542,39 +646,103 @@
       }
     },
     {
-      "id": "2026-05-22-1097",
+      "id": "2026-05-22-1041",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.delete",
-      "role": "roles/networkservices.editor",
-      "service": "networkservices",
+      "permission": "cloudsql.blueGreenDeployments.list",
+      "role": "roles/cloudsql.viewer",
+      "service": "cloudsql",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
       }
     },
     {
-      "id": "2026-05-22-1098",
+      "id": "2026-05-22-1042",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.googleTagGatewayPolicies.delete",
-      "role": "roles/container.serviceAgent",
-      "service": "networkservices",
+      "permission": "cloudsql.blueGreenDeployments.list",
+      "role": "roles/iam.supportUser",
+      "service": "cloudsql",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
       }
     },
     {
-      "id": "2026-05-22-1099",
+      "id": "2026-05-22-1043",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudsql.blueGreenDeployments.list",
+      "role": "roles/cloudsql.editor",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1044",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudsql.blueGreenDeployments.list",
+      "role": "roles/owner",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1045",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudsql.blueGreenDeployments.list",
+      "role": "roles/iam.siteReliabilityEngineer",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1046",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudsql.blueGreenDeployments.list",
+      "role": "roles/composer.serviceAgent",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1047",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
@@ -1590,7 +758,55 @@
       }
     },
     {
-      "id": "2026-05-22-1100",
+      "id": "2026-05-22-1048",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.googleTagGatewayPolicies.delete",
+      "role": "roles/container.serviceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1049",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.googleTagGatewayPolicies.delete",
+      "role": "roles/networkservices.editor",
+      "service": "networkservices",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1050",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "networkservices.googleTagGatewayPolicies.delete",
+      "role": "roles/owner",
+      "service": "networkservices",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1051",
       "date": "2026-05-22",
       "commit": "fedce37586e5",
       "dimension": "role_permissions",
@@ -1604,20 +820,804 @@
       "details": {
         "was_undocumented": true
       }
+    },
+    {
+      "id": "2026-05-22-1052",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "consumerprocurement.entitlements.list",
+      "role": "roles/discoveryengine.agentspaceAdmin",
+      "service": "consumerprocurement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1053",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudsql.blueGreenDeployments.delete",
+      "role": "roles/owner",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1054",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudsql.blueGreenDeployments.delete",
+      "role": "roles/composer.serviceAgent",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1055",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.getVersion",
+      "role": "roles/notebooks.legacyViewer",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1056",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.getVersion",
+      "role": "roles/batch.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1057",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.getVersion",
+      "role": "roles/notebooks.runner",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1058",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.getVersion",
+      "role": "roles/iam.supportUser",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1059",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.getVersion",
+      "role": "roles/container.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1060",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.getVersion",
+      "role": "roles/dataprep.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1061",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.getVersion",
+      "role": "roles/genomics.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1062",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.getVersion",
+      "role": "roles/owner",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1063",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.getVersion",
+      "role": "roles/composer.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1064",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.getVersion",
+      "role": "roles/notebooks.editor",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1065",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.getVersion",
+      "role": "roles/notebooks.legacyAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1066",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.getVersion",
+      "role": "roles/iam.siteReliabilityEngineer",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1067",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.getVersion",
+      "role": "roles/notebooks.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1068",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.getVersion",
+      "role": "roles/compute.instanceAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1069",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.list",
+      "role": "roles/notebooks.legacyViewer",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1070",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.list",
+      "role": "roles/batch.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1071",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.list",
+      "role": "roles/notebooks.runner",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1072",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.list",
+      "role": "roles/iam.supportUser",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1073",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.list",
+      "role": "roles/container.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1074",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.list",
+      "role": "roles/dataprep.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1075",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.hosts.list",
+      "role": "roles/genomics.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1076",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.list",
+      "role": "roles/owner",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1077",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.list",
+      "role": "roles/composer.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1078",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.list",
+      "role": "roles/notebooks.editor",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1079",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.list",
+      "role": "roles/notebooks.legacyAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1080",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.list",
+      "role": "roles/iam.siteReliabilityEngineer",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1081",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.list",
+      "role": "roles/notebooks.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1082",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.hosts.list",
+      "role": "roles/compute.instanceAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1083",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "ces.evaluations.export",
+      "role": "roles/iam.supportUser",
+      "service": "ces",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1084",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "ces.evaluations.export",
+      "role": "roles/owner",
+      "service": "ces",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1085",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudsql.blueGreenDeployments.get",
+      "role": "roles/cloudsql.viewer",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1086",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudsql.blueGreenDeployments.get",
+      "role": "roles/iam.supportUser",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1087",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudsql.blueGreenDeployments.get",
+      "role": "roles/cloudsql.editor",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1088",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudsql.blueGreenDeployments.get",
+      "role": "roles/owner",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1089",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudsql.blueGreenDeployments.get",
+      "role": "roles/iam.siteReliabilityEngineer",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1090",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudsql.blueGreenDeployments.get",
+      "role": "roles/composer.serviceAgent",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1091",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.networks.updatePolicy",
+      "role": "roles/vpcaccess.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1092",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudsql.blueGreenDeployments.create",
+      "role": "roles/cloudsql.editor",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1093",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudsql.blueGreenDeployments.create",
+      "role": "roles/owner",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1094",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudsql.blueGreenDeployments.create",
+      "role": "roles/composer.serviceAgent",
+      "service": "cloudsql",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1095",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.googleTagGatewayPolicies.create",
+      "role": "roles/compute.networkAdmin",
+      "service": "networkservices",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1096",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.googleTagGatewayPolicies.create",
+      "role": "roles/container.serviceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1097",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.googleTagGatewayPolicies.create",
+      "role": "roles/networkservices.editor",
+      "service": "networkservices",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1098",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "networkservices.googleTagGatewayPolicies.create",
+      "role": "roles/owner",
+      "service": "networkservices",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1099",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "networkservices.googleTagGatewayPolicies.create",
+      "role": "roles/composer.serviceAgent",
+      "service": "networkservices",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-05-22-1100",
+      "date": "2026-05-22",
+      "commit": "fedce37586e5",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkservices.googleTagGatewayPolicies.update",
+      "role": "roles/compute.networkAdmin",
+      "service": "networkservices",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
     }
   ],
   "summary": {
     "by_severity": {
-      "CRITICAL": 3,
-      "HIGH": 408,
-      "MEDIUM": 1207,
+      "CRITICAL": 1,
+      "HIGH": 394,
+      "MEDIUM": 1139,
       "INFO": 130
     },
     "by_dimension": {
       "methods": 92,
       "method_map": 87,
-      "role_permissions": 1545,
-      "predefined_roles": 24
+      "role_permissions": 1463,
+      "predefined_roles": 22
     },
     "new_services": []
   }
