@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-18T17:00:58Z",
-  "total_entries": 1596,
+  "generated_at": "2026-06-19T16:47:20Z",
+  "total_entries": 1516,
   "pages": 16,
   "page": 4,
   "page_size": 100,
@@ -11,9 +11,9 @@
       "commit": "ae377b996fad",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "networkmanagement.providers.generateProviderAccessToken",
-      "role": "roles/editor",
-      "service": "networkmanagement",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/dataplex.catalogViewer",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -27,9 +27,9 @@
       "commit": "ae377b996fad",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "networkmanagement.providers.generateProviderAccessToken",
-      "role": "roles/networkmanagement.viewer",
-      "service": "networkmanagement",
+      "permission": "dataplex.changeRequests.getIamPolicy",
+      "role": "roles/editor",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -43,9 +43,9 @@
       "commit": "ae377b996fad",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "firebaseappcheck.recaptchaV3Config.get",
-      "role": "roles/firebase.managementServiceAgent",
-      "service": "firebaseappcheck",
+      "permission": "dataplex.changeRequests.getIamPolicy",
+      "role": "roles/iam.securityAdmin",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -59,11 +59,11 @@
       "commit": "ae377b996fad",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "cloudkms.projects.showEffectiveAutokeyConfig",
-      "role": "roles/apigee.editor",
-      "service": "cloudkms",
+      "permission": "dataplex.changeRequests.setIamPolicy",
+      "role": "roles/iam.securityAdmin",
+      "service": "dataplex",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
         "was_undocumented": true
@@ -71,70 +71,6 @@
     },
     {
       "id": "2026-06-13-0305",
-      "date": "2026-06-13",
-      "commit": "ae377b996fad",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.dataProducts.approve",
-      "role": "roles/editor",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-13-0306",
-      "date": "2026-06-13",
-      "commit": "ae377b996fad",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.dataProducts.approve",
-      "role": "roles/dataplex.editor",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-13-0307",
-      "date": "2026-06-13",
-      "commit": "ae377b996fad",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudkms.operations.get",
-      "role": "roles/apigee.editor",
-      "service": "cloudkms",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-13-0308",
-      "date": "2026-06-13",
-      "commit": "ae377b996fad",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudmessaging.topicSubscriptions.list",
-      "role": "roles/firebase.growthViewer",
-      "service": "cloudmessaging",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-13-0309",
       "date": "2026-06-13",
       "commit": "ae377b996fad",
       "dimension": "role_permissions",
@@ -150,13 +86,77 @@
       }
     },
     {
+      "id": "2026-06-13-0306",
+      "date": "2026-06-13",
+      "commit": "ae377b996fad",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "dataplex.changeRequests.update",
+      "role": "roles/editor",
+      "service": "dataplex",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-13-0307",
+      "date": "2026-06-13",
+      "commit": "ae377b996fad",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/datacatalog.viewer",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-13-0308",
+      "date": "2026-06-13",
+      "commit": "ae377b996fad",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/datacatalog.entryGroupOwner",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-13-0309",
+      "date": "2026-06-13",
+      "commit": "ae377b996fad",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/dataplex.entryOwner",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
       "id": "2026-06-13-0310",
       "date": "2026-06-13",
       "commit": "ae377b996fad",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "dataplex.entryGroups.requestChanges",
-      "role": "roles/dataplex.catalogViewer",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/editor",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -171,8 +171,8 @@
       "commit": "ae377b996fad",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "dataplex.entryGroups.requestChanges",
-      "role": "roles/datacatalog.entryGroupOwner",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/iam.securityAdmin",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -187,8 +187,8 @@
       "commit": "ae377b996fad",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "dataplex.entryGroups.requestChanges",
-      "role": "roles/editor",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/datacatalog.entryOwner",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -203,8 +203,8 @@
       "commit": "ae377b996fad",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "dataplex.entryGroups.requestChanges",
-      "role": "roles/datacatalog.viewer",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/dataplex.catalogViewer",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -219,11 +219,11 @@
       "commit": "ae377b996fad",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "navigationconnect.trips.create",
+      "permission": "dataplex.changeRequests.use",
       "role": "roles/editor",
-      "service": "navigationconnect",
+      "service": "dataplex",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "was_undocumented": true
@@ -238,8 +238,8 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.folderGlobalVmExtensionPolicies.aggregatedList",
-      "severity": "INFO",
+      "method": "compute.organizationGlobalVmExtensionPolicies.update",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "compute"
@@ -254,7 +254,7 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.organizationGlobalVmExtensionPolicies.getVmExtension",
+      "method": "compute.organizationGlobalVmExtensionPolicies.aggregatedList",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -270,7 +270,7 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.organizationGlobalVmExtensionPolicies.get",
+      "method": "compute.organizationGlobalVmExtensionPolicies.list",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -286,7 +286,7 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.folderGlobalVmExtensionPolicies.update",
+      "method": "compute.folderGlobalVmExtensionPolicies.insert",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -302,8 +302,8 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.folderGlobalVmExtensionPolicies.delete",
-      "severity": "HIGH",
+      "method": "compute.organizationGlobalVmExtensionPolicies.listVmExtensions",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "compute"
@@ -318,8 +318,8 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.organizationGlobalVmExtensionPolicies.insert",
-      "severity": "HIGH",
+      "method": "compute.organizationGlobalVmExtensionPolicies.get",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "compute"
@@ -334,8 +334,8 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.organizationGlobalVmExtensionPolicies.update",
-      "severity": "HIGH",
+      "method": "compute.folderGlobalVmExtensionPolicies.list",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "compute"
@@ -350,7 +350,7 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.organizationGlobalVmExtensionPolicies.aggregatedList",
+      "method": "compute.folderGlobalVmExtensionPolicies.listVmExtensions",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -366,8 +366,8 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.organizationGlobalVmExtensionPolicies.listVmExtensions",
-      "severity": "INFO",
+      "method": "compute.organizationGlobalVmExtensionPolicies.delete",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "compute"
@@ -382,7 +382,7 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.folderGlobalVmExtensionPolicies.getVmExtension",
+      "method": "compute.folderGlobalVmExtensionPolicies.get",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -398,8 +398,8 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.organizationGlobalVmExtensionPolicies.list",
-      "severity": "INFO",
+      "method": "compute.organizationGlobalVmExtensionPolicies.insert",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "compute"
@@ -414,7 +414,7 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.folderGlobalVmExtensionPolicies.get",
+      "method": "compute.folderGlobalVmExtensionPolicies.aggregatedList",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -430,7 +430,7 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.folderGlobalVmExtensionPolicies.insert",
+      "method": "compute.folderGlobalVmExtensionPolicies.delete",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -446,8 +446,8 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.organizationGlobalVmExtensionPolicies.delete",
-      "severity": "HIGH",
+      "method": "compute.folderGlobalVmExtensionPolicies.getVmExtension",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "compute"
@@ -462,8 +462,8 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.folderGlobalVmExtensionPolicies.listVmExtensions",
-      "severity": "INFO",
+      "method": "compute.folderGlobalVmExtensionPolicies.update",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "compute"
@@ -478,7 +478,7 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.folderGlobalVmExtensionPolicies.list",
+      "method": "compute.organizationGlobalVmExtensionPolicies.getVmExtension",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -494,102 +494,6 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.folderGlobalVmExtensionPolicies.aggregatedList",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-13-0332",
-      "date": "2026-06-13",
-      "commit": "ae377b996fad",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.organizationGlobalVmExtensionPolicies.getVmExtension",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-13-0333",
-      "date": "2026-06-13",
-      "commit": "ae377b996fad",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.organizationGlobalVmExtensionPolicies.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-13-0334",
-      "date": "2026-06-13",
-      "commit": "ae377b996fad",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.folderGlobalVmExtensionPolicies.update",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-13-0335",
-      "date": "2026-06-13",
-      "commit": "ae377b996fad",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.folderGlobalVmExtensionPolicies.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-13-0336",
-      "date": "2026-06-13",
-      "commit": "ae377b996fad",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.organizationGlobalVmExtensionPolicies.insert",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-13-0337",
-      "date": "2026-06-13",
-      "commit": "ae377b996fad",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "compute",
       "method": "compute.organizationGlobalVmExtensionPolicies.update",
       "severity": "HIGH",
       "tags": [],
@@ -598,71 +502,7 @@
       }
     },
     {
-      "id": "2026-06-13-0338",
-      "date": "2026-06-13",
-      "commit": "ae377b996fad",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.organizationGlobalVmExtensionPolicies.aggregatedList",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-13-0339",
-      "date": "2026-06-13",
-      "commit": "ae377b996fad",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.organizationGlobalVmExtensionPolicies.listVmExtensions",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-13-0340",
-      "date": "2026-06-13",
-      "commit": "ae377b996fad",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.folderGlobalVmExtensionPolicies.getVmExtension",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-13-0341",
-      "date": "2026-06-13",
-      "commit": "ae377b996fad",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.organizationGlobalVmExtensionPolicies.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-13-0342",
+      "id": "2026-06-13-0332",
       "date": "2026-06-13",
       "commit": "ae377b996fad",
       "dimension": "method_map",
@@ -678,7 +518,7 @@
       }
     },
     {
-      "id": "2026-06-13-0343",
+      "id": "2026-06-13-0333",
       "date": "2026-06-13",
       "commit": "ae377b996fad",
       "dimension": "method_map",
@@ -686,7 +526,7 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.folderGlobalVmExtensionPolicies.get",
+      "method": "compute.organizationGlobalVmExtensionPolicies.list",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -694,7 +534,7 @@
       }
     },
     {
-      "id": "2026-06-13-0344",
+      "id": "2026-06-13-0334",
       "date": "2026-06-13",
       "commit": "ae377b996fad",
       "dimension": "method_map",
@@ -702,15 +542,63 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.organizationGlobalVmExtensionPolicies.delete",
-      "severity": "HIGH",
+      "method": "compute.organizationGlobalVmExtensionPolicies.get",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
       }
     },
     {
-      "id": "2026-06-13-0345",
+      "id": "2026-06-13-0335",
+      "date": "2026-06-13",
+      "commit": "ae377b996fad",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.organizationGlobalVmExtensionPolicies.listVmExtensions",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-13-0336",
+      "date": "2026-06-13",
+      "commit": "ae377b996fad",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.organizationGlobalVmExtensionPolicies.aggregatedList",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-13-0337",
+      "date": "2026-06-13",
+      "commit": "ae377b996fad",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.folderGlobalVmExtensionPolicies.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-13-0338",
       "date": "2026-06-13",
       "commit": "ae377b996fad",
       "dimension": "method_map",
@@ -726,6 +614,118 @@
       }
     },
     {
+      "id": "2026-06-13-0339",
+      "date": "2026-06-13",
+      "commit": "ae377b996fad",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.organizationGlobalVmExtensionPolicies.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-13-0340",
+      "date": "2026-06-13",
+      "commit": "ae377b996fad",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.folderGlobalVmExtensionPolicies.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-13-0341",
+      "date": "2026-06-13",
+      "commit": "ae377b996fad",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.organizationGlobalVmExtensionPolicies.insert",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-13-0342",
+      "date": "2026-06-13",
+      "commit": "ae377b996fad",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.folderGlobalVmExtensionPolicies.aggregatedList",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-13-0343",
+      "date": "2026-06-13",
+      "commit": "ae377b996fad",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.folderGlobalVmExtensionPolicies.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-13-0344",
+      "date": "2026-06-13",
+      "commit": "ae377b996fad",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.folderGlobalVmExtensionPolicies.getVmExtension",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-13-0345",
+      "date": "2026-06-13",
+      "commit": "ae377b996fad",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.folderGlobalVmExtensionPolicies.update",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
       "id": "2026-06-13-0346",
       "date": "2026-06-13",
       "commit": "ae377b996fad",
@@ -734,7 +734,7 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.folderGlobalVmExtensionPolicies.list",
+      "method": "compute.organizationGlobalVmExtensionPolicies.getVmExtension",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -891,11 +891,11 @@
       "commit": "88035e35580d",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.delete",
-      "role": "roles/editor",
-      "service": "dataplex",
+      "permission": "firebaseappcheck.recaptchaV3Config.get",
+      "role": "roles/firebase.managementServiceAgent",
+      "service": "firebaseappcheck",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -907,9 +907,9 @@
       "commit": "88035e35580d",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.organizations.get",
-      "role": "roles/cloudsupport.supportSubscriptionEditor",
-      "service": "resourcemanager",
+      "permission": "cloudkms.keyHandles.get",
+      "role": "roles/apigee.editor",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -919,6 +919,70 @@
     },
     {
       "id": "2026-06-12-0357",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.delete",
+      "role": "roles/editor",
+      "service": "dataplex",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0358",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "navigationconnect.trips.get",
+      "role": "roles/editor",
+      "service": "navigationconnect",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0359",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.projects.showEffectiveAutokeyConfig",
+      "role": "roles/apigee.editor",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0360",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "storage.objects.list",
+      "role": "roles/datastudio.managedStorageServiceAgent",
+      "service": "storage",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0361",
       "date": "2026-06-12",
       "commit": "88035e35580d",
       "dimension": "role_permissions",
@@ -934,7 +998,391 @@
       }
     },
     {
-      "id": "2026-06-12-0358",
+      "id": "2026-06-12-0362",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "resourcemanager.organizations.get",
+      "role": "roles/cloudsupport.supportSubscriptionEditor",
+      "service": "resourcemanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0363",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryGroups.requestChanges",
+      "role": "roles/datacatalog.viewer",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0364",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryGroups.requestChanges",
+      "role": "roles/datacatalog.entryGroupOwner",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0365",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryGroups.requestChanges",
+      "role": "roles/dataplex.catalogViewer",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0366",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryGroups.requestChanges",
+      "role": "roles/editor",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0367",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "navigationconnect.trips.create",
+      "role": "roles/editor",
+      "service": "navigationconnect",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0368",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "navigationconnect.trips.cancel",
+      "role": "roles/editor",
+      "service": "navigationconnect",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0369",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "bigquery.tables.updateData",
+      "role": "roles/datastudio.managedStorageServiceAgent",
+      "service": "bigquery",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0370",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.glossaries.requestChanges",
+      "role": "roles/datacatalog.viewer",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0371",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.glossaries.requestChanges",
+      "role": "roles/editor",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0372",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.glossaries.requestChanges",
+      "role": "roles/dataplex.catalogViewer",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0373",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "bigquery.datasets.get",
+      "role": "roles/datastudio.managedStorageServiceAgent",
+      "service": "bigquery",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0374",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "bigquery.tables.create",
+      "role": "roles/datastudio.managedStorageServiceAgent",
+      "service": "bigquery",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0375",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.operations.get",
+      "role": "roles/apigee.editor",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0376",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "bigquery.tables.list",
+      "role": "roles/datastudio.managedStorageServiceAgent",
+      "service": "bigquery",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0377",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.keyHandles.create",
+      "role": "roles/apigee.editor",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0378",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.keyHandles.list",
+      "role": "roles/apigee.editor",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0379",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkmanagement.providers.generateProviderAccessToken",
+      "role": "roles/networkmanagement.editor",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0380",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkmanagement.providers.generateProviderAccessToken",
+      "role": "roles/editor",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0381",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "networkmanagement.providers.generateProviderAccessToken",
+      "role": "roles/networkmanagement.viewer",
+      "service": "networkmanagement",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0382",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudmessaging.topicSubscriptions.get",
+      "role": "roles/firebase.growthViewer",
+      "service": "cloudmessaging",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0383",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudmessaging.topicSubscriptions.list",
+      "role": "roles/firebase.growthViewer",
+      "service": "cloudmessaging",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0384",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.dataProducts.approve",
+      "role": "roles/editor",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0385",
+      "date": "2026-06-12",
+      "commit": "88035e35580d",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.dataProducts.approve",
+      "role": "roles/dataplex.editor",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-12-0386",
       "date": "2026-06-12",
       "commit": "88035e35580d",
       "dimension": "role_permissions",
@@ -952,461 +1400,13 @@
       }
     },
     {
-      "id": "2026-06-12-0359",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/dataplex.catalogViewer",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0360",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/datacatalog.entryGroupOwner",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0361",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/datacatalog.viewer",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0362",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/editor",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0363",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/dataplex.entryOwner",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0364",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/datacatalog.entryOwner",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0365",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "navigationconnect.trips.get",
-      "role": "roles/editor",
-      "service": "navigationconnect",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0366",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudkms.keyHandles.create",
-      "role": "roles/apigee.editor",
-      "service": "cloudkms",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0367",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudkms.keyHandles.get",
-      "role": "roles/apigee.editor",
-      "service": "cloudkms",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0368",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "bigquery.datasets.get",
-      "role": "roles/datastudio.managedStorageServiceAgent",
-      "service": "bigquery",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0369",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "bigquery.tables.create",
-      "role": "roles/datastudio.managedStorageServiceAgent",
-      "service": "bigquery",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0370",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "navigationconnect.trips.cancel",
-      "role": "roles/editor",
-      "service": "navigationconnect",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0371",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "bigquery.tables.list",
-      "role": "roles/datastudio.managedStorageServiceAgent",
-      "service": "bigquery",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0372",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.getIamPolicy",
-      "role": "roles/editor",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0373",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.getIamPolicy",
-      "role": "roles/iam.securityAdmin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0374",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudmessaging.topicSubscriptions.get",
-      "role": "roles/firebase.growthViewer",
-      "service": "cloudmessaging",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0375",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudkms.keyHandles.list",
-      "role": "roles/apigee.editor",
-      "service": "cloudkms",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0376",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/dataplex.catalogViewer",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0377",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/datacatalog.entryGroupOwner",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0378",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/datacatalog.viewer",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0379",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0380",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/editor",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0381",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/dataplex.entryOwner",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0382",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/datacatalog.entryOwner",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0383",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.setIamPolicy",
-      "role": "roles/iam.securityAdmin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0384",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.use",
-      "role": "roles/editor",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0385",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "bigquery.tables.updateData",
-      "role": "roles/datastudio.managedStorageServiceAgent",
-      "service": "bigquery",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-12-0386",
-      "date": "2026-06-12",
-      "commit": "88035e35580d",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.update",
-      "role": "roles/editor",
-      "service": "dataplex",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
       "id": "2026-06-12-0387",
       "date": "2026-06-12",
       "commit": "88035e35580d",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.glossaries.requestChanges",
-      "role": "roles/dataplex.catalogViewer",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/datacatalog.viewer",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -1421,8 +1421,8 @@
       "commit": "88035e35580d",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.glossaries.requestChanges",
-      "role": "roles/editor",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/datacatalog.entryGroupOwner",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -1437,8 +1437,8 @@
       "commit": "88035e35580d",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.glossaries.requestChanges",
-      "role": "roles/datacatalog.viewer",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/dataplex.entryOwner",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -1453,9 +1453,9 @@
       "commit": "88035e35580d",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkmanagement.providers.generateProviderAccessToken",
-      "role": "roles/networkmanagement.editor",
-      "service": "networkmanagement",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/editor",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1469,9 +1469,9 @@
       "commit": "88035e35580d",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkmanagement.providers.generateProviderAccessToken",
-      "role": "roles/editor",
-      "service": "networkmanagement",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/datacatalog.entryOwner",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1485,9 +1485,9 @@
       "commit": "88035e35580d",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkmanagement.providers.generateProviderAccessToken",
-      "role": "roles/networkmanagement.viewer",
-      "service": "networkmanagement",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/dataplex.catalogViewer",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1501,9 +1501,9 @@
       "commit": "88035e35580d",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "firebaseappcheck.recaptchaV3Config.get",
-      "role": "roles/firebase.managementServiceAgent",
-      "service": "firebaseappcheck",
+      "permission": "dataplex.changeRequests.getIamPolicy",
+      "role": "roles/editor",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1517,11 +1517,11 @@
       "commit": "88035e35580d",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "storage.objects.create",
-      "role": "roles/datastudio.managedStorageServiceAgent",
-      "service": "storage",
+      "permission": "dataplex.changeRequests.getIamPolicy",
+      "role": "roles/iam.securityAdmin",
+      "service": "dataplex",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1533,12 +1533,14 @@
       "commit": "88035e35580d",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "storage.objects.delete",
+      "permission": "storage.objects.get",
       "role": "roles/datastudio.managedStorageServiceAgent",
       "service": "storage",
       "method": "",
       "severity": "HIGH",
-      "tags": [],
+      "tags": [
+        "DataAccess"
+      ],
       "details": {
         "undocumented": true
       }
@@ -1549,11 +1551,11 @@
       "commit": "88035e35580d",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "storage.objects.list",
+      "permission": "storage.objects.delete",
       "role": "roles/datastudio.managedStorageServiceAgent",
       "service": "storage",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1581,11 +1583,11 @@
       "commit": "88035e35580d",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "bigquery.tables.delete",
-      "role": "roles/datastudio.managedStorageServiceAgent",
-      "service": "bigquery",
+      "permission": "dataplex.changeRequests.setIamPolicy",
+      "role": "roles/iam.securityAdmin",
+      "service": "dataplex",
       "method": "",
-      "severity": "HIGH",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1597,9 +1599,9 @@
       "commit": "88035e35580d",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.projects.showEffectiveAutokeyConfig",
-      "role": "roles/apigee.editor",
-      "service": "cloudkms",
+      "permission": "externalexposure.scanMetrics.get",
+      "role": "roles/securitycenter.adminViewer",
+      "service": "externalexposure",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1613,11 +1615,11 @@
       "commit": "88035e35580d",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.dataProducts.approve",
+      "permission": "dataplex.changeRequests.update",
       "role": "roles/editor",
       "service": "dataplex",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1627,15 +1629,15 @@
   "summary": {
     "by_severity": {
       "CRITICAL": 6,
-      "HIGH": 328,
-      "MEDIUM": 1126,
-      "INFO": 136
+      "HIGH": 315,
+      "MEDIUM": 1061,
+      "INFO": 134
     },
     "by_dimension": {
-      "predefined_roles": 54,
-      "role_permissions": 1349,
-      "methods": 99,
-      "method_map": 94
+      "predefined_roles": 52,
+      "role_permissions": 1273,
+      "methods": 98,
+      "method_map": 93
     },
     "new_services": []
   }
