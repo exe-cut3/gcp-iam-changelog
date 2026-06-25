@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-24T16:42:05Z",
-  "total_entries": 1820,
+  "generated_at": "2026-06-25T16:45:06Z",
+  "total_entries": 1818,
   "pages": 19,
   "page": 3,
   "page_size": 100,
@@ -11,9 +11,9 @@
       "commit": "e615f899c9d1",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "hypercomputecluster.machineLearningRuns.list",
-      "role": "roles/hypercomputecluster.serviceAgent",
-      "service": "hypercomputecluster",
+      "permission": "run.services.sshRoot",
+      "role": "roles/editor",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -27,8 +27,8 @@
       "commit": "e615f899c9d1",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.services.sshRead",
-      "role": "roles/iam.supportUser",
+      "permission": "run.services.sshRoot",
+      "role": "roles/owner",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -43,8 +43,8 @@
       "commit": "e615f899c9d1",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.services.sshRead",
-      "role": "roles/run.sshReader",
+      "permission": "run.workerpools.sshRoot",
+      "role": "roles/cloudfunctions.serviceAgent",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -59,8 +59,8 @@
       "commit": "e615f899c9d1",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.services.sshRead",
-      "role": "roles/editor",
+      "permission": "run.workerpools.sshRoot",
+      "role": "roles/iam.devOps",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -75,8 +75,8 @@
       "commit": "e615f899c9d1",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.services.sshRead",
-      "role": "roles/owner",
+      "permission": "run.workerpools.sshRoot",
+      "role": "roles/run.sshRoot",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -91,8 +91,8 @@
       "commit": "e615f899c9d1",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.services.sshRead",
-      "role": "roles/iam.devOps",
+      "permission": "run.workerpools.sshRoot",
+      "role": "roles/run.developer",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -107,8 +107,8 @@
       "commit": "e615f899c9d1",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.services.sshRead",
-      "role": "roles/cloudfunctions.serviceAgent",
+      "permission": "run.workerpools.sshRoot",
+      "role": "roles/editor",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -123,8 +123,8 @@
       "commit": "e615f899c9d1",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.services.sshRead",
-      "role": "roles/run.developer",
+      "permission": "run.workerpools.sshRoot",
+      "role": "roles/owner",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -139,9 +139,9 @@
       "commit": "e615f899c9d1",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "appengine.instances.get",
-      "role": "roles/appengine.editor",
-      "service": "appengine",
+      "permission": "discoveryengine.collections.get",
+      "role": "roles/discoveryengine.agentspaceUser",
+      "service": "discoveryengine",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -155,12 +155,14 @@
       "commit": "e615f899c9d1",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "appengine.instances.get",
-      "role": "roles/appengine.admin",
+      "permission": "appengine.instances.enableDebug",
+      "role": "roles/appengine.editor",
       "service": "appengine",
       "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
+      "severity": "HIGH",
+      "tags": [
+        "DataAccess"
+      ],
       "details": {
         "undocumented": true
       }
@@ -171,12 +173,14 @@
       "commit": "e615f899c9d1",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "appengine.instances.get",
-      "role": "roles/appengine.viewer",
+      "permission": "appengine.instances.enableDebug",
+      "role": "roles/appengine.admin",
       "service": "appengine",
       "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
+      "severity": "HIGH",
+      "tags": [
+        "DataAccess"
+      ],
       "details": {
         "undocumented": true
       }
@@ -187,7 +191,7 @@
       "commit": "e615f899c9d1",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "hypercomputecluster.machineLearningRuns.delete",
+      "permission": "hypercomputecluster.operations.delete",
       "role": "roles/hypercomputecluster.serviceAgent",
       "service": "hypercomputecluster",
       "method": "",
@@ -203,9 +207,9 @@
       "commit": "e615f899c9d1",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "logging.operations.get",
-      "role": "roles/aiplatform.serviceAgent",
-      "service": "logging",
+      "permission": "chronicle.userLocalizations.get",
+      "role": "roles/chronicle.viewer",
+      "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -289,9 +293,9 @@
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "capacityplanner.operations.get",
-      "role": "roles/capacityplanner.admin",
-      "service": "capacityplanner",
+      "permission": "earthengine.assets.get",
+      "role": "roles/earthengine.editor",
+      "service": "earthengine",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -305,11 +309,11 @@
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "chronicle.featuredContentPlaybooks.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "chronicle",
+      "permission": "earthengine.imports.create",
+      "role": "roles/earthengine.editor",
+      "service": "earthengine",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -321,11 +325,11 @@
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "chronicle.featuredContentPlaybooks.list",
-      "role": "roles/iam.securityAuditor",
-      "service": "chronicle",
+      "permission": "earthengine.featureviews.create",
+      "role": "roles/earthengine.editor",
+      "service": "earthengine",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -337,9 +341,9 @@
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "chronicle.featuredContentPlaybooks.list",
-      "role": "roles/viewer",
-      "service": "chronicle",
+      "permission": "earthengine.assets.getIamPolicy",
+      "role": "roles/earthengine.editor",
+      "service": "earthengine",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -352,15 +356,15 @@
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "chronicle.featuredContentPlaybooks.list",
-      "role": "roles/chronicle.editor",
-      "service": "chronicle",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.futureReservations.list",
+      "role": "roles/capacityplanner.admin",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -401,9 +405,9 @@
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "capacityplanner.capacityPlans.create",
-      "role": "roles/capacityplanner.admin",
-      "service": "capacityplanner",
+      "permission": "earthengine.assets.create",
+      "role": "roles/earthengine.editor",
+      "service": "earthengine",
       "method": "",
       "severity": "HIGH",
       "tags": [],
@@ -417,9 +421,9 @@
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.jobs.sshRead",
-      "role": "roles/iam.mlEngineer",
-      "service": "run",
+      "permission": "chronicle.socRoles.get",
+      "role": "roles/chronicle.soarVulnerabilityManager",
+      "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -433,231 +437,7 @@
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.jobs.sshRead",
-      "role": "roles/cloudfunctions.admin",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0228",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.jobs.sshRead",
-      "role": "roles/iam.dataScientist",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0229",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.jobs.sshRead",
-      "role": "roles/firebase.admin",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0230",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.jobs.sshRead",
-      "role": "roles/viewer",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0231",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.jobs.sshRead",
-      "role": "roles/firebase.developAdmin",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0232",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.jobs.sshRead",
-      "role": "roles/run.editor",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0233",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.jobs.sshRead",
-      "role": "roles/cloudfunctions.serviceAgent",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0234",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.jobs.sshRead",
-      "role": "roles/run.developer",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0235",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "earthengine.operations.delete",
-      "role": "roles/earthengine.editor",
-      "service": "earthengine",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0236",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "earthengine.thumbnails.get",
-      "role": "roles/earthengine.editor",
-      "service": "earthengine",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0237",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "earthengine.assets.update",
-      "role": "roles/earthengine.editor",
-      "service": "earthengine",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0238",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "capacityplanner.capacityPlans.delete",
-      "role": "roles/capacityplanner.admin",
-      "service": "capacityplanner",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0239",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "earthengine.maps.create",
-      "role": "roles/earthengine.editor",
-      "service": "earthengine",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0240",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.userNotifications.get",
-      "role": "roles/chronicle.soarVulnerabilityManager",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0241",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.userNotifications.get",
+      "permission": "chronicle.socRoles.get",
       "role": "roles/chronicle.soarThreatManager",
       "service": "chronicle",
       "method": "",
@@ -668,119 +448,7 @@
       }
     },
     {
-      "id": "2026-06-21-0242",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "serviceusage.groups.listMembers",
-      "role": "roles/capacityplanner.admin",
-      "service": "serviceusage",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0243",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.projects.list",
-      "role": "roles/earthengine.editor",
-      "service": "resourcemanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0244",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.projects.list",
-      "role": "roles/capacityplanner.admin",
-      "service": "resourcemanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0245",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "earthengine.computations.create",
-      "role": "roles/earthengine.editor",
-      "service": "earthengine",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0246",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "storage.buckets.get",
-      "role": "roles/firebasetelemetry.serviceAgent",
-      "service": "storage",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0247",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "earthengine.featureviews.create",
-      "role": "roles/earthengine.editor",
-      "service": "earthengine",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0248",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "serviceusage.consumerpolicy.get",
-      "role": "roles/capacityplanner.admin",
-      "service": "serviceusage",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0249",
+      "id": "2026-06-21-0228",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
@@ -796,14 +464,350 @@
       }
     },
     {
+      "id": "2026-06-21-0229",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "chronicle.environmentGroups.get",
+      "role": "roles/chronicle.soarVulnerabilityManager",
+      "service": "chronicle",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0230",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "chronicle.environmentGroups.get",
+      "role": "roles/chronicle.soarThreatManager",
+      "service": "chronicle",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0231",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "chronicle.preferenceSets.update",
+      "role": "roles/chronicle.soarVulnerabilityManager",
+      "service": "chronicle",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0232",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "chronicle.preferenceSets.update",
+      "role": "roles/chronicle.soarThreatManager",
+      "service": "chronicle",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0233",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "workloadmanager.findings.create",
+      "role": "roles/workloadmanager.evaluationAdmin",
+      "service": "workloadmanager",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0234",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "workloadmanager.findings.create",
+      "role": "roles/workloadmanager.admin",
+      "service": "workloadmanager",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0235",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.jobs.sshRead",
+      "role": "roles/firebase.developAdmin",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0236",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.jobs.sshRead",
+      "role": "roles/firebase.admin",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0237",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.jobs.sshRead",
+      "role": "roles/iam.dataScientist",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0238",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.jobs.sshRead",
+      "role": "roles/cloudfunctions.admin",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0239",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.jobs.sshRead",
+      "role": "roles/run.editor",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0240",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.jobs.sshRead",
+      "role": "roles/iam.mlEngineer",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0241",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.jobs.sshRead",
+      "role": "roles/viewer",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0242",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.jobs.sshRead",
+      "role": "roles/run.developer",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0243",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.jobs.sshRead",
+      "role": "roles/cloudfunctions.serviceAgent",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0244",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "hypercomputecluster.machineLearningRuns.create",
+      "role": "roles/hypercomputecluster.serviceAgent",
+      "service": "hypercomputecluster",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0245",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.sshRoot",
+      "role": "roles/firebase.developAdmin",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0246",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.sshRoot",
+      "role": "roles/firebase.admin",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0247",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.sshRoot",
+      "role": "roles/iam.dataScientist",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0248",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.sshRoot",
+      "role": "roles/cloudfunctions.admin",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0249",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.sshRoot",
+      "role": "roles/iam.mlEngineer",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
       "id": "2026-06-21-0250",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "discoveryengine.collections.get",
-      "role": "roles/discoveryengine.podcastApiUser",
-      "service": "discoveryengine",
+      "permission": "run.instances.sshRoot",
+      "role": "roles/run.editor",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -816,15 +820,15 @@
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "discoveryengine.collections.get",
-      "role": "roles/discoveryengine.user",
-      "service": "discoveryengine",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.instances.sshRoot",
+      "role": "roles/run.developer",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -833,9 +837,9 @@
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "hypercomputecluster.machineLearningRuns.get",
-      "role": "roles/hypercomputecluster.serviceAgent",
-      "service": "hypercomputecluster",
+      "permission": "run.instances.sshRoot",
+      "role": "roles/cloudfunctions.serviceAgent",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -845,182 +849,6 @@
     },
     {
       "id": "2026-06-21-0253",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "earthengine.filmstripthumbnails.get",
-      "role": "roles/earthengine.editor",
-      "service": "earthengine",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0254",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "capacityplanner.forecasts.list",
-      "role": "roles/capacityplanner.admin",
-      "service": "capacityplanner",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0255",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "capacityplanner.capacityPlans.get",
-      "role": "roles/capacityplanner.admin",
-      "service": "capacityplanner",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0256",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "earthengine.operations.list",
-      "role": "roles/earthengine.editor",
-      "service": "earthengine",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0257",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "earthengine.imports.create",
-      "role": "roles/earthengine.editor",
-      "service": "earthengine",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0258",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "logging.operations.list",
-      "role": "roles/aiplatform.serviceAgent",
-      "service": "logging",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0259",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudkms.keyHandles.create",
-      "role": "roles/apihub.provisioningAdmin",
-      "service": "cloudkms",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0260",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudkms.keyHandles.create",
-      "role": "roles/workflows.editor",
-      "service": "cloudkms",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0261",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "monitoring.monitoredResourceDescriptors.get",
-      "role": "roles/firebasetelemetry.serviceAgent",
-      "service": "monitoring",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0262",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.instances.get",
-      "role": "roles/chronicle.soarVulnerabilityManager",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0263",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.instances.get",
-      "role": "roles/chronicle.soarThreatManager",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0264",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
@@ -1036,169 +864,7 @@
       }
     },
     {
-      "id": "2026-06-21-0265",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "earthengine.operations.update",
-      "role": "roles/earthengine.editor",
-      "service": "earthengine",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0266",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.userLocalizations.get",
-      "role": "roles/chronicle.soarVulnerabilityManager",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0267",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.userLocalizations.get",
-      "role": "roles/chronicle.soarThreatManager",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0268",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.futureReservations.get",
-      "role": "roles/capacityplanner.admin",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0269",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.moduleSettings.modifyCaseList",
-      "role": "roles/viewer",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0270",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "chronicle.moduleSettings.modifyCaseList",
-      "role": "roles/chronicle.editor",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0271",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "capacityplanner.usageAlertInsights.list",
-      "role": "roles/capacityplanner.admin",
-      "service": "capacityplanner",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0272",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "earthengine.operations.get",
-      "role": "roles/earthengine.editor",
-      "service": "earthengine",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0273",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "storage.objects.get",
-      "role": "roles/firebasetelemetry.serviceAgent",
-      "service": "storage",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [
-        "DataAccess"
-      ],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0274",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "monitoring.metricDescriptors.get",
-      "role": "roles/firebasetelemetry.serviceAgent",
-      "service": "monitoring",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0275",
+      "id": "2026-06-21-0254",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
@@ -1214,14 +880,14 @@
       }
     },
     {
-      "id": "2026-06-21-0276",
+      "id": "2026-06-21-0255",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "logging.logEntries.route",
-      "role": "roles/firebasetelemetry.serviceAgent",
-      "service": "logging",
+      "permission": "cloudkms.keyHandles.list",
+      "role": "roles/apihub.provisioningAdmin",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1230,60 +896,28 @@
       }
     },
     {
-      "id": "2026-06-21-0277",
+      "id": "2026-06-21-0256",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "earthengine.exports.create",
-      "role": "roles/earthengine.editor",
-      "service": "earthengine",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0278",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "hypercomputecluster.operations.list",
-      "role": "roles/hypercomputecluster.serviceAgent",
-      "service": "hypercomputecluster",
+      "permission": "cloudkms.keyHandles.list",
+      "role": "roles/workflows.editor",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0279",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudtrace.traces.patch",
-      "role": "roles/firebasetelemetry.serviceAgent",
-      "service": "cloudtrace",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
         "undocumented": true
       }
     },
     {
-      "id": "2026-06-21-0280",
+      "id": "2026-06-21-0257",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "capacityplanner.usageHistories.summarize",
+      "permission": "capacityplanner.usageAlertInsights.list",
       "role": "roles/capacityplanner.admin",
       "service": "capacityplanner",
       "method": "",
@@ -1294,61 +928,13 @@
       }
     },
     {
-      "id": "2026-06-21-0281",
+      "id": "2026-06-21-0258",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "earthengine.filmstripthumbnails.create",
-      "role": "roles/earthengine.editor",
-      "service": "earthengine",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0282",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudquotas.quotas.get",
-      "role": "roles/capacityplanner.admin",
-      "service": "cloudquotas",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0283",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "earthengine.assets.get",
-      "role": "roles/earthengine.editor",
-      "service": "earthengine",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0284",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.jobs.sshRoot",
-      "role": "roles/iam.mlEngineer",
+      "permission": "run.instances.sshRead",
+      "role": "roles/firebase.developAdmin",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -1358,44 +944,12 @@
       }
     },
     {
-      "id": "2026-06-21-0285",
+      "id": "2026-06-21-0259",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.jobs.sshRoot",
-      "role": "roles/cloudfunctions.admin",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0286",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.jobs.sshRoot",
-      "role": "roles/iam.dataScientist",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0287",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.jobs.sshRoot",
+      "permission": "run.instances.sshRead",
       "role": "roles/firebase.admin",
       "service": "run",
       "method": "",
@@ -1406,7 +960,119 @@
       }
     },
     {
-      "id": "2026-06-21-0288",
+      "id": "2026-06-21-0260",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.sshRead",
+      "role": "roles/iam.dataScientist",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0261",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.sshRead",
+      "role": "roles/cloudfunctions.admin",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0262",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.sshRead",
+      "role": "roles/run.editor",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0263",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.sshRead",
+      "role": "roles/iam.mlEngineer",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0264",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.sshRead",
+      "role": "roles/viewer",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0265",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.instances.sshRead",
+      "role": "roles/run.developer",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0266",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.instances.sshRead",
+      "role": "roles/cloudfunctions.serviceAgent",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0267",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
@@ -1422,7 +1088,71 @@
       }
     },
     {
-      "id": "2026-06-21-0289",
+      "id": "2026-06-21-0268",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.jobs.sshRoot",
+      "role": "roles/firebase.admin",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0269",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.jobs.sshRoot",
+      "role": "roles/iam.dataScientist",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0270",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.jobs.sshRoot",
+      "role": "roles/cloudfunctions.admin",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0271",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.jobs.sshRoot",
+      "role": "roles/iam.mlEngineer",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0272",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
@@ -1438,23 +1168,7 @@
       }
     },
     {
-      "id": "2026-06-21-0290",
-      "date": "2026-06-21",
-      "commit": "17f23366d807",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.jobs.sshRoot",
-      "role": "roles/cloudfunctions.serviceAgent",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-21-0291",
+      "id": "2026-06-21-0273",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
@@ -1470,14 +1184,14 @@
       }
     },
     {
-      "id": "2026-06-21-0292",
+      "id": "2026-06-21-0274",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "hypercomputecluster.operations.get",
-      "role": "roles/hypercomputecluster.serviceAgent",
-      "service": "hypercomputecluster",
+      "permission": "run.jobs.sshRoot",
+      "role": "roles/cloudfunctions.serviceAgent",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1486,14 +1200,14 @@
       }
     },
     {
-      "id": "2026-06-21-0293",
+      "id": "2026-06-21-0275",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "earthengine.config.get",
-      "role": "roles/earthengine.editor",
-      "service": "earthengine",
+      "permission": "serviceusage.effectivepolicy.get",
+      "role": "roles/capacityplanner.admin",
+      "service": "serviceusage",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1502,7 +1216,39 @@
       }
     },
     {
-      "id": "2026-06-21-0294",
+      "id": "2026-06-21-0276",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "chronicle.legacySoarAdvancedReports.get",
+      "role": "roles/chronicle.soarVulnerabilityManager",
+      "service": "chronicle",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0277",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "chronicle.legacySoarAdvancedReports.get",
+      "role": "roles/chronicle.soarThreatManager",
+      "service": "chronicle",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0278",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
@@ -1518,14 +1264,270 @@
       }
     },
     {
+      "id": "2026-06-21-0279",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "capacityplanner.capacityPlans.delete",
+      "role": "roles/capacityplanner.admin",
+      "service": "capacityplanner",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0280",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "hypercomputecluster.machineLearningRuns.list",
+      "role": "roles/hypercomputecluster.serviceAgent",
+      "service": "hypercomputecluster",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0281",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "logging.logEntries.route",
+      "role": "roles/firebasetelemetry.serviceAgent",
+      "service": "logging",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0282",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "chronicle.featuredContentPlaybooks.list",
+      "role": "roles/viewer",
+      "service": "chronicle",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0283",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "chronicle.featuredContentPlaybooks.list",
+      "role": "roles/iam.securityAdmin",
+      "service": "chronicle",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0284",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "chronicle.featuredContentPlaybooks.list",
+      "role": "roles/iam.securityAuditor",
+      "service": "chronicle",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0285",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "chronicle.featuredContentPlaybooks.list",
+      "role": "roles/chronicle.editor",
+      "service": "chronicle",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0286",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "monitoring.monitoredResourceDescriptors.list",
+      "role": "roles/firebasetelemetry.serviceAgent",
+      "service": "monitoring",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0287",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "hypercomputecluster.machineLearningRuns.update",
+      "role": "roles/hypercomputecluster.serviceAgent",
+      "service": "hypercomputecluster",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0288",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "capacityplanner.operations.get",
+      "role": "roles/capacityplanner.admin",
+      "service": "capacityplanner",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0289",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.reservations.get",
+      "role": "roles/capacityplanner.admin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0290",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "discoveryengine.dataStores.get",
+      "role": "roles/discoveryengine.user",
+      "service": "discoveryengine",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0291",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "discoveryengine.dataStores.get",
+      "role": "roles/discoveryengine.podcastApiUser",
+      "service": "discoveryengine",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0292",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "observability.operations.get",
+      "role": "roles/aiplatform.serviceAgent",
+      "service": "observability",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0293",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.keyHandles.create",
+      "role": "roles/apihub.provisioningAdmin",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-21-0294",
+      "date": "2026-06-21",
+      "commit": "17f23366d807",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.keyHandles.create",
+      "role": "roles/workflows.editor",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
       "id": "2026-06-21-0295",
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "workloadmanager.findings.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "workloadmanager",
+      "permission": "telemetry.traces.write",
+      "role": "roles/firebasetelemetry.serviceAgent",
+      "service": "telemetry",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1539,9 +1541,9 @@
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "workloadmanager.findings.list",
-      "role": "roles/iam.securityAuditor",
-      "service": "workloadmanager",
+      "permission": "chronicle.moduleSettings.rebranding",
+      "role": "roles/chronicle.soarVulnerabilityManager",
+      "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1555,9 +1557,9 @@
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "workloadmanager.findings.list",
-      "role": "roles/viewer",
-      "service": "workloadmanager",
+      "permission": "chronicle.moduleSettings.rebranding",
+      "role": "roles/chronicle.soarThreatManager",
+      "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1570,15 +1572,15 @@
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "workloadmanager.findings.list",
-      "role": "roles/workloadmanager.viewer",
-      "service": "workloadmanager",
+      "change_type": "permission_added_to_role",
+      "permission": "chronicle.featuredContentPlaybooks.get",
+      "role": "roles/viewer",
+      "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -1587,9 +1589,9 @@
       "commit": "17f23366d807",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "workloadmanager.findings.list",
-      "role": "roles/workloadmanager.admin",
-      "service": "workloadmanager",
+      "permission": "chronicle.featuredContentPlaybooks.get",
+      "role": "roles/chronicle.editor",
+      "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1602,15 +1604,15 @@
       "date": "2026-06-21",
       "commit": "17f23366d807",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "workloadmanager.findings.list",
-      "role": "roles/workloadmanager.evaluationAdmin",
-      "service": "workloadmanager",
+      "change_type": "permission_added_to_role",
+      "permission": "chronicle.preferenceSets.get",
+      "role": "roles/chronicle.soarVulnerabilityManager",
+      "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     }
   ],
@@ -1619,13 +1621,13 @@
       "CRITICAL": 6,
       "HIGH": 356,
       "MEDIUM": 1298,
-      "INFO": 160
+      "INFO": 158
     },
     "by_dimension": {
       "predefined_roles": 59,
       "role_permissions": 1534,
-      "methods": 116,
-      "method_map": 111
+      "methods": 115,
+      "method_map": 110
     },
     "new_services": []
   }
