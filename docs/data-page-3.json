@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-28T16:25:22Z",
-  "total_entries": 2273,
-  "pages": 23,
+  "generated_at": "2026-06-29T16:59:00Z",
+  "total_entries": 2157,
+  "pages": 22,
   "page": 3,
   "page_size": 100,
   "entries": [
@@ -11,9 +11,9 @@
       "commit": "967f47893c29",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.projects.list",
-      "role": "roles/dataplex.dataDomainAdmin",
-      "service": "resourcemanager",
+      "permission": "dataplex.dataDomains.lookupEntry",
+      "role": "roles/dataplex.dataDomainEditor",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -27,9 +27,9 @@
       "commit": "967f47893c29",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.projects.list",
-      "role": "roles/dataplex.dataDomainViewer",
-      "service": "resourcemanager",
+      "permission": "dataplex.dataDomains.lookupEntry",
+      "role": "roles/dataplex.dataDomainEntryReader",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -43,9 +43,9 @@
       "commit": "967f47893c29",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.projects.list",
-      "role": "roles/workloadidentity.admin",
-      "service": "resourcemanager",
+      "permission": "oracledatabase.autonomousDatabases.clone",
+      "role": "roles/oracledatabase.admin",
+      "service": "oracledatabase",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -62,7 +62,7 @@
       "permission": "",
       "role": "",
       "service": "file",
-      "method": "file.projects.locations.sharePools.acquireShare",
+      "method": "file.projects.locations.sharePools.releaseShare",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -78,7 +78,7 @@
       "permission": "",
       "role": "",
       "service": "file",
-      "method": "file.projects.locations.sharePools.releaseShare",
+      "method": "file.projects.locations.sharePools.acquireShare",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -110,7 +110,7 @@
       "permission": "",
       "role": "",
       "service": "cloudsupport",
-      "method": "cloudsupport.supportEventSubscriptions.undelete",
+      "method": "cloudsupport.supportEventSubscriptions.get",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -126,8 +126,8 @@
       "permission": "",
       "role": "",
       "service": "cloudsupport",
-      "method": "cloudsupport.supportEventSubscriptions.delete",
-      "severity": "HIGH",
+      "method": "cloudsupport.supportEventSubscriptions.undelete",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "cloudsupport"
@@ -142,8 +142,8 @@
       "permission": "",
       "role": "",
       "service": "cloudsupport",
-      "method": "cloudsupport.supportEventSubscriptions.get",
-      "severity": "INFO",
+      "method": "cloudsupport.supportEventSubscriptions.create",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "cloudsupport"
@@ -158,8 +158,8 @@
       "permission": "",
       "role": "",
       "service": "cloudsupport",
-      "method": "cloudsupport.supportEventSubscriptions.list",
-      "severity": "INFO",
+      "method": "cloudsupport.supportEventSubscriptions.delete",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "cloudsupport"
@@ -174,8 +174,8 @@
       "permission": "",
       "role": "",
       "service": "cloudsupport",
-      "method": "cloudsupport.supportEventSubscriptions.create",
-      "severity": "HIGH",
+      "method": "cloudsupport.supportEventSubscriptions.list",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "cloudsupport"
@@ -206,7 +206,7 @@
       "permission": "",
       "role": "",
       "service": "sts",
-      "method": "sts.projects.locations.workloadIdentityPools.openid.getJwks",
+      "method": "sts.organizations.locations.workloadIdentityPools.openid.getJwks",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -222,7 +222,7 @@
       "permission": "",
       "role": "",
       "service": "sts",
-      "method": "sts.organizations.locations.workloadIdentityPools.openid.getJwks",
+      "method": "sts.projects.locations.workloadIdentityPools.openid.getJwks",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -253,12 +253,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "chat",
-      "method": "chat.users.availability.updateAvailability",
+      "service": "assuredworkloads",
+      "method": "assuredworkloads.projects.locations.dbFindingSummaries.list",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "chat"
+        "service": "assuredworkloads"
       }
     },
     {
@@ -269,12 +269,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "chat",
-      "method": "chat.users.availability.markAsAway",
+      "service": "assuredworkloads",
+      "method": "assuredworkloads.folders.locations.dbFindingSummaries.list",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "chat"
+        "service": "assuredworkloads"
       }
     },
     {
@@ -285,12 +285,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "chat",
-      "method": "chat.users.availability.markAsActive",
+      "service": "assuredworkloads",
+      "method": "assuredworkloads.organizations.locations.dbFindingSummaries.list",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "chat"
+        "service": "assuredworkloads"
       }
     },
     {
@@ -301,12 +301,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "chat",
-      "method": "chat.users.availability.getAvailability",
-      "severity": "INFO",
+      "service": "dataplex",
+      "method": "dataplex.projects.locations.dataDomains.create",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "chat"
+        "service": "dataplex"
       }
     },
     {
@@ -317,12 +317,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "chat",
-      "method": "chat.users.availability.markAsDoNotDisturb",
+      "service": "dataplex",
+      "method": "dataplex.projects.locations.dataDomains.bindings.list",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "chat"
+        "service": "dataplex"
       }
     },
     {
@@ -334,7 +334,7 @@
       "permission": "",
       "role": "",
       "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.delete",
+      "method": "dataplex.projects.locations.dataDomains.patch",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -350,8 +350,8 @@
       "permission": "",
       "role": "",
       "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.list",
-      "severity": "INFO",
+      "method": "dataplex.projects.locations.dataDomains.bindings.create",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "dataplex"
@@ -382,7 +382,7 @@
       "permission": "",
       "role": "",
       "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.bindings.list",
+      "method": "dataplex.projects.locations.dataDomains.list",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -398,7 +398,7 @@
       "permission": "",
       "role": "",
       "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.patch",
+      "method": "dataplex.projects.locations.dataDomains.delete",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -414,7 +414,7 @@
       "permission": "",
       "role": "",
       "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.bindings.create",
+      "method": "dataplex.projects.locations.dataDomains.bindings.delete",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -430,8 +430,8 @@
       "permission": "",
       "role": "",
       "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.create",
-      "severity": "HIGH",
+      "method": "dataplex.projects.locations.dataDomains.bindings.get",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "dataplex"
@@ -445,12 +445,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.bindings.delete",
-      "severity": "HIGH",
+      "service": "chat",
+      "method": "chat.users.availability.updateAvailability",
+      "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "dataplex"
+        "service": "chat"
       }
     },
     {
@@ -461,12 +461,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.bindings.get",
+      "service": "chat",
+      "method": "chat.users.availability.markAsActive",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "dataplex"
+        "service": "chat"
       }
     },
     {
@@ -477,12 +477,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "assuredworkloads",
-      "method": "assuredworkloads.organizations.locations.dbFindingSummaries.list",
+      "service": "chat",
+      "method": "chat.users.availability.markAsAway",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "assuredworkloads"
+        "service": "chat"
       }
     },
     {
@@ -493,12 +493,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "assuredworkloads",
-      "method": "assuredworkloads.folders.locations.dbFindingSummaries.list",
+      "service": "chat",
+      "method": "chat.users.availability.getAvailability",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "assuredworkloads"
+        "service": "chat"
       }
     },
     {
@@ -509,12 +509,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "assuredworkloads",
-      "method": "assuredworkloads.projects.locations.dbFindingSummaries.list",
+      "service": "chat",
+      "method": "chat.users.availability.markAsDoNotDisturb",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "assuredworkloads"
+        "service": "chat"
       }
     },
     {
@@ -525,9 +525,9 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "cloudsupport",
-      "method": "cloudsupport.supportEventSubscriptions.patch",
-      "severity": "HIGH",
+      "service": "file",
+      "method": "file.projects.locations.sharePools.acquireShare",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
@@ -541,8 +541,8 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "sts",
-      "method": "sts.organizations.locations.workloadIdentityPools.well-known.getOpenid-configuration",
+      "service": "file",
+      "method": "file.projects.locations.sharePools.releaseShare",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -557,8 +557,8 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "assuredworkloads",
-      "method": "assuredworkloads.projects.locations.dbFindingSummaries.list",
+      "service": "dataplex",
+      "method": "dataplex.projects.locations.dataDomains.get",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -589,8 +589,8 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "cloudsupport",
-      "method": "cloudsupport.supportEventSubscriptions.delete",
+      "service": "dataplex",
+      "method": "dataplex.projects.locations.dataDomains.create",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -599,102 +599,6 @@
     },
     {
       "id": "2026-06-27-0238",
-      "date": "2026-06-27",
-      "commit": "967f47893c29",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.bindings.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-27-0239",
-      "date": "2026-06-27",
-      "commit": "967f47893c29",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-27-0240",
-      "date": "2026-06-27",
-      "commit": "967f47893c29",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "cloudsupport",
-      "method": "cloudsupport.supportEventSubscriptions.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-27-0241",
-      "date": "2026-06-27",
-      "commit": "967f47893c29",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.bindings.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-27-0242",
-      "date": "2026-06-27",
-      "commit": "967f47893c29",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "cloudsupport",
-      "method": "cloudsupport.supportEventSubscriptions.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-27-0243",
-      "date": "2026-06-27",
-      "commit": "967f47893c29",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "assuredworkloads",
-      "method": "assuredworkloads.folders.locations.dbFindingSummaries.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-27-0244",
       "date": "2026-06-27",
       "commit": "967f47893c29",
       "dimension": "method_map",
@@ -710,31 +614,15 @@
       }
     },
     {
-      "id": "2026-06-27-0245",
+      "id": "2026-06-27-0239",
       "date": "2026-06-27",
       "commit": "967f47893c29",
       "dimension": "method_map",
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-27-0246",
-      "date": "2026-06-27",
-      "commit": "967f47893c29",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "chat",
-      "method": "chat.users.availability.getAvailability",
+      "service": "sts",
+      "method": "sts.organizations.locations.workloadIdentityPools.well-known.getOpenid-configuration",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -742,135 +630,7 @@
       }
     },
     {
-      "id": "2026-06-27-0247",
-      "date": "2026-06-27",
-      "commit": "967f47893c29",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.sharePools.releaseShare",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-27-0248",
-      "date": "2026-06-27",
-      "commit": "967f47893c29",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-27-0249",
-      "date": "2026-06-27",
-      "commit": "967f47893c29",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "chat",
-      "method": "chat.users.availability.markAsDoNotDisturb",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-27-0250",
-      "date": "2026-06-27",
-      "commit": "967f47893c29",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-27-0251",
-      "date": "2026-06-27",
-      "commit": "967f47893c29",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "cloudsupport",
-      "method": "cloudsupport.supportEventSubscriptions.undelete",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-27-0252",
-      "date": "2026-06-27",
-      "commit": "967f47893c29",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "chat",
-      "method": "chat.users.availability.markAsActive",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-27-0253",
-      "date": "2026-06-27",
-      "commit": "967f47893c29",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "cloudsupport",
-      "method": "cloudsupport.supportEventSubscriptions.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-27-0254",
-      "date": "2026-06-27",
-      "commit": "967f47893c29",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.bindings.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-06-27-0255",
+      "id": "2026-06-27-0240",
       "date": "2026-06-27",
       "commit": "967f47893c29",
       "dimension": "method_map",
@@ -886,7 +646,23 @@
       }
     },
     {
-      "id": "2026-06-27-0256",
+      "id": "2026-06-27-0241",
+      "date": "2026-06-27",
+      "commit": "967f47893c29",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudsupport",
+      "method": "cloudsupport.supportEventSubscriptions.undelete",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-27-0242",
       "date": "2026-06-27",
       "commit": "967f47893c29",
       "dimension": "method_map",
@@ -894,23 +670,23 @@
       "permission": "",
       "role": "",
       "service": "dataplex",
-      "method": "dataplex.projects.locations.dataDomains.get",
-      "severity": "INFO",
+      "method": "dataplex.projects.locations.dataDomains.bindings.create",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
       }
     },
     {
-      "id": "2026-06-27-0257",
+      "id": "2026-06-27-0243",
       "date": "2026-06-27",
       "commit": "967f47893c29",
       "dimension": "method_map",
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "chat",
-      "method": "chat.users.availability.markAsAway",
+      "service": "dataplex",
+      "method": "dataplex.projects.locations.dataDomains.list",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -918,7 +694,39 @@
       }
     },
     {
-      "id": "2026-06-27-0258",
+      "id": "2026-06-27-0244",
+      "date": "2026-06-27",
+      "commit": "967f47893c29",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "dataplex",
+      "method": "dataplex.projects.locations.dataDomains.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-27-0245",
+      "date": "2026-06-27",
+      "commit": "967f47893c29",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudsupport",
+      "method": "cloudsupport.supportEventSubscriptions.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-27-0246",
       "date": "2026-06-27",
       "commit": "967f47893c29",
       "dimension": "method_map",
@@ -934,7 +742,7 @@
       }
     },
     {
-      "id": "2026-06-27-0259",
+      "id": "2026-06-27-0247",
       "date": "2026-06-27",
       "commit": "967f47893c29",
       "dimension": "method_map",
@@ -950,15 +758,15 @@
       }
     },
     {
-      "id": "2026-06-27-0260",
+      "id": "2026-06-27-0248",
       "date": "2026-06-27",
       "commit": "967f47893c29",
       "dimension": "method_map",
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "file",
-      "method": "file.projects.locations.sharePools.acquireShare",
+      "service": "assuredworkloads",
+      "method": "assuredworkloads.projects.locations.dbFindingSummaries.list",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -966,7 +774,135 @@
       }
     },
     {
-      "id": "2026-06-27-0261",
+      "id": "2026-06-27-0249",
+      "date": "2026-06-27",
+      "commit": "967f47893c29",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "chat",
+      "method": "chat.users.availability.markAsActive",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-27-0250",
+      "date": "2026-06-27",
+      "commit": "967f47893c29",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "assuredworkloads",
+      "method": "assuredworkloads.folders.locations.dbFindingSummaries.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-27-0251",
+      "date": "2026-06-27",
+      "commit": "967f47893c29",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudsupport",
+      "method": "cloudsupport.supportEventSubscriptions.patch",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-27-0252",
+      "date": "2026-06-27",
+      "commit": "967f47893c29",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "dataplex",
+      "method": "dataplex.projects.locations.dataDomains.patch",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-27-0253",
+      "date": "2026-06-27",
+      "commit": "967f47893c29",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudsupport",
+      "method": "cloudsupport.supportEventSubscriptions.create",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-27-0254",
+      "date": "2026-06-27",
+      "commit": "967f47893c29",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudsupport",
+      "method": "cloudsupport.supportEventSubscriptions.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-27-0255",
+      "date": "2026-06-27",
+      "commit": "967f47893c29",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "chat",
+      "method": "chat.users.availability.getAvailability",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-27-0256",
+      "date": "2026-06-27",
+      "commit": "967f47893c29",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "dataplex",
+      "method": "dataplex.projects.locations.dataDomains.bindings.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-27-0257",
       "date": "2026-06-27",
       "commit": "967f47893c29",
       "dimension": "method_map",
@@ -982,14 +918,78 @@
       }
     },
     {
+      "id": "2026-06-27-0258",
+      "date": "2026-06-27",
+      "commit": "967f47893c29",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "dataplex",
+      "method": "dataplex.projects.locations.dataDomains.bindings.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-27-0259",
+      "date": "2026-06-27",
+      "commit": "967f47893c29",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudsupport",
+      "method": "cloudsupport.supportEventSubscriptions.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-27-0260",
+      "date": "2026-06-27",
+      "commit": "967f47893c29",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "chat",
+      "method": "chat.users.availability.markAsAway",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-06-27-0261",
+      "date": "2026-06-27",
+      "commit": "967f47893c29",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "chat",
+      "method": "chat.users.availability.markAsDoNotDisturb",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
       "id": "2026-06-26-0262",
       "date": "2026-06-26",
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.evaluationMetrics.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "aiplatform",
+      "permission": "workloadidentity.locations.list",
+      "role": "roles/iam.securityAuditor",
+      "service": "workloadidentity",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1003,9 +1003,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.evaluationMetrics.list",
-      "role": "roles/aiplatform.user",
-      "service": "aiplatform",
+      "permission": "workloadidentity.locations.list",
+      "role": "roles/iam.securityAdmin",
+      "service": "workloadidentity",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1019,9 +1019,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.evaluationMetrics.list",
-      "role": "roles/aiplatform.viewer",
-      "service": "aiplatform",
+      "permission": "workloadidentity.locations.list",
+      "role": "roles/owner",
+      "service": "workloadidentity",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1035,9 +1035,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.evaluationMetrics.list",
-      "role": "roles/iam.supportUser",
-      "service": "aiplatform",
+      "permission": "workloadidentity.locations.list",
+      "role": "roles/editor",
+      "service": "workloadidentity",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1051,9 +1051,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.evaluationMetrics.list",
-      "role": "roles/aiplatform.editor",
-      "service": "aiplatform",
+      "permission": "workloadidentity.locations.list",
+      "role": "roles/iam.supportUser",
+      "service": "workloadidentity",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1067,9 +1067,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.evaluationMetrics.list",
-      "role": "roles/editor",
-      "service": "aiplatform",
+      "permission": "cloudkms.folders.showEffectiveAutokeyConfig",
+      "role": "roles/cloudkms.admin",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1083,9 +1083,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.evaluationMetrics.list",
-      "role": "roles/iam.securityAuditor",
-      "service": "aiplatform",
+      "permission": "cloudkms.folders.showEffectiveAutokeyConfig",
+      "role": "roles/editor",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1099,9 +1099,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.evaluationMetrics.list",
+      "permission": "cloudkms.folders.showEffectiveAutokeyConfig",
       "role": "roles/iam.mlEngineer",
-      "service": "aiplatform",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1115,9 +1115,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.evaluationMetrics.list",
-      "role": "roles/owner",
-      "service": "aiplatform",
+      "permission": "cloudkms.folders.showEffectiveAutokeyConfig",
+      "role": "roles/iam.supportUser",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1131,9 +1131,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "netapp.backups.useReadOnly",
-      "role": "roles/iam.supportUser",
-      "service": "netapp",
+      "permission": "cloudkms.folders.showEffectiveAutokeyConfig",
+      "role": "roles/owner",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1147,9 +1147,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "netapp.backups.useReadOnly",
-      "role": "roles/netapp.admin",
-      "service": "netapp",
+      "permission": "cloudkms.folders.showEffectiveAutokeyConfig",
+      "role": "roles/iam.databasesAdmin",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1163,9 +1163,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "netapp.backups.useReadOnly",
-      "role": "roles/editor",
-      "service": "netapp",
+      "permission": "cloudkms.folders.showEffectiveAutokeyConfig",
+      "role": "roles/iam.securityAuditor",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1179,9 +1179,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "netapp.backups.useReadOnly",
-      "role": "roles/owner",
-      "service": "netapp",
+      "permission": "cloudkms.folders.showEffectiveAutokeyConfig",
+      "role": "roles/cloudkms.viewer",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1195,9 +1195,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "workloadidentity.locations.list",
-      "role": "roles/iam.supportUser",
-      "service": "workloadidentity",
+      "permission": "cloudkms.folders.showEffectiveAutokeyConfig",
+      "role": "roles/cloudkms.autokeyAdmin",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1211,9 +1211,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "workloadidentity.locations.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "workloadidentity",
+      "permission": "dataplex.dataDomains.getIamPolicy",
+      "role": "roles/iam.securityAuditor",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1227,9 +1227,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "workloadidentity.locations.list",
-      "role": "roles/editor",
-      "service": "workloadidentity",
+      "permission": "dataplex.dataDomains.getIamPolicy",
+      "role": "roles/iam.securityAdmin",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1243,9 +1243,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "workloadidentity.locations.list",
-      "role": "roles/iam.securityAuditor",
-      "service": "workloadidentity",
+      "permission": "dataplex.dataDomains.getIamPolicy",
+      "role": "roles/dataplex.admin",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1259,9 +1259,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "workloadidentity.locations.list",
+      "permission": "dataplex.dataDomains.getIamPolicy",
       "role": "roles/owner",
-      "service": "workloadidentity",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1275,9 +1275,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "workloadidentity.operations.get",
-      "role": "roles/iam.supportUser",
-      "service": "workloadidentity",
+      "permission": "dataplex.dataDomains.getIamPolicy",
+      "role": "roles/editor",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1291,9 +1291,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "workloadidentity.operations.get",
-      "role": "roles/editor",
-      "service": "workloadidentity",
+      "permission": "dataplex.dataDomains.getIamPolicy",
+      "role": "roles/iam.supportUser",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1307,8 +1307,8 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "workloadidentity.operations.get",
-      "role": "roles/owner",
+      "permission": "workloadidentity.locations.get",
+      "role": "roles/iam.supportUser",
       "service": "workloadidentity",
       "method": "",
       "severity": "MEDIUM",
@@ -1323,11 +1323,11 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.dataDomains.delete",
-      "role": "roles/dataplex.admin",
-      "service": "dataplex",
+      "permission": "workloadidentity.locations.get",
+      "role": "roles/editor",
+      "service": "workloadidentity",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1339,11 +1339,11 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.dataDomains.delete",
-      "role": "roles/editor",
-      "service": "dataplex",
+      "permission": "workloadidentity.locations.get",
+      "role": "roles/owner",
+      "service": "workloadidentity",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1355,11 +1355,11 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.dataDomains.delete",
-      "role": "roles/owner",
-      "service": "dataplex",
+      "permission": "oracledatabase.autonomousDatabases.refresh",
+      "role": "roles/editor",
+      "service": "oracledatabase",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1371,9 +1371,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.dataDomains.list",
-      "role": "roles/iam.supportUser",
-      "service": "dataplex",
+      "permission": "oracledatabase.autonomousDatabases.refresh",
+      "role": "roles/oracledatabase.autonomousDatabaseAdmin",
+      "service": "oracledatabase",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1387,9 +1387,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.dataDomains.list",
-      "role": "roles/dataplex.admin",
-      "service": "dataplex",
+      "permission": "oracledatabase.autonomousDatabases.refresh",
+      "role": "roles/owner",
+      "service": "oracledatabase",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1403,8 +1403,8 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.dataDomains.list",
-      "role": "roles/iam.securityAdmin",
+      "permission": "dataplex.dataDomains.discover",
+      "role": "roles/dataplex.entryOwner",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -1419,8 +1419,8 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.dataDomains.list",
-      "role": "roles/editor",
+      "permission": "dataplex.dataDomains.discover",
+      "role": "roles/dataplex.entryTypeUser",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -1435,8 +1435,8 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.dataDomains.list",
-      "role": "roles/iam.securityAuditor",
+      "permission": "dataplex.dataDomains.discover",
+      "role": "roles/datacatalog.tagTemplateOwner",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -1451,8 +1451,8 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.dataDomains.list",
-      "role": "roles/owner",
+      "permission": "dataplex.dataDomains.discover",
+      "role": "roles/datacatalog.tagTemplateUser",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -1467,9 +1467,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "oracledatabase.autonomousDatabases.listRefreshableClones",
-      "role": "roles/iam.supportUser",
-      "service": "oracledatabase",
+      "permission": "dataplex.dataDomains.discover",
+      "role": "roles/dataplex.catalogEditor",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1483,9 +1483,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "oracledatabase.autonomousDatabases.listRefreshableClones",
-      "role": "roles/oracledatabase.autonomousDatabaseAdmin",
-      "service": "oracledatabase",
+      "permission": "dataplex.dataDomains.discover",
+      "role": "roles/datacatalog.entryOwner",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1499,9 +1499,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "oracledatabase.autonomousDatabases.listRefreshableClones",
-      "role": "roles/editor",
-      "service": "oracledatabase",
+      "permission": "dataplex.dataDomains.discover",
+      "role": "roles/dataplex.aspectTypeOwner",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1515,9 +1515,9 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "oracledatabase.autonomousDatabases.listRefreshableClones",
-      "role": "roles/owner",
-      "service": "oracledatabase",
+      "permission": "dataplex.dataDomains.discover",
+      "role": "roles/dlp.serviceAgent",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1531,11 +1531,11 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.evaluationMetrics.create",
-      "role": "roles/aiplatform.editor",
-      "service": "aiplatform",
+      "permission": "dataplex.dataDomains.discover",
+      "role": "roles/dataplex.entryTypeOwner",
+      "service": "dataplex",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1547,11 +1547,11 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.evaluationMetrics.create",
-      "role": "roles/editor",
-      "service": "aiplatform",
+      "permission": "dataplex.dataDomains.discover",
+      "role": "roles/iam.supportUser",
+      "service": "dataplex",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1563,11 +1563,11 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.evaluationMetrics.create",
-      "role": "roles/iam.mlEngineer",
-      "service": "aiplatform",
+      "permission": "dataplex.dataDomains.discover",
+      "role": "roles/owner",
+      "service": "dataplex",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1579,11 +1579,11 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.evaluationMetrics.create",
-      "role": "roles/aiplatform.user",
-      "service": "aiplatform",
+      "permission": "dataplex.dataDomains.discover",
+      "role": "roles/dataplex.aspectTypeUser",
+      "service": "dataplex",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1595,11 +1595,11 @@
       "commit": "eb55fecc3d03",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.evaluationMetrics.create",
-      "role": "roles/owner",
-      "service": "aiplatform",
+      "permission": "dataplex.dataDomains.discover",
+      "role": "roles/dataplex.admin",
+      "service": "dataplex",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1608,16 +1608,16 @@
   ],
   "summary": {
     "by_severity": {
-      "CRITICAL": 10,
-      "HIGH": 437,
-      "MEDIUM": 1594,
+      "CRITICAL": 9,
+      "HIGH": 428,
+      "MEDIUM": 1488,
       "INFO": 232
     },
     "by_dimension": {
       "methods": 168,
       "method_map": 163,
-      "predefined_roles": 65,
-      "role_permissions": 1877
+      "predefined_roles": 61,
+      "role_permissions": 1765
     },
     "new_services": []
   }
