@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-14T16:26:27Z",
-  "total_entries": 4001,
+  "generated_at": "2026-07-15T16:29:15Z",
+  "total_entries": 4021,
   "pages": 41,
   "page": 39,
   "page_size": 100,
@@ -11,8 +11,8 @@
       "commit": "63de73515088",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.adminDelete",
-      "role": "roles/datacatalog.admin",
+      "permission": "dataplex.glossaries.requestChanges",
+      "role": "roles/datacatalog.editor",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -27,8 +27,8 @@
       "commit": "63de73515088",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.adminDelete",
-      "role": "roles/dataplex.workflowAdmin",
+      "permission": "dataplex.glossaries.requestChanges",
+      "role": "roles/datacatalog.admin",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -43,8 +43,8 @@
       "commit": "63de73515088",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/datacatalog.editor",
+      "permission": "dataplex.glossaries.requestChanges",
+      "role": "roles/viewer",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -59,7 +59,7 @@
       "commit": "63de73515088",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
+      "permission": "dataplex.entryGroups.requestChanges",
       "role": "roles/datacatalog.viewer",
       "service": "dataplex",
       "method": "",
@@ -75,8 +75,8 @@
       "commit": "63de73515088",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/datacatalog.admin",
+      "permission": "dataplex.entryGroups.requestChanges",
+      "role": "roles/datacatalog.editor",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -91,8 +91,8 @@
       "commit": "63de73515088",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/dataplex.changeRequestOwner",
+      "permission": "dataplex.entryGroups.requestChanges",
+      "role": "roles/datacatalog.entryGroupOwner",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -107,8 +107,8 @@
       "commit": "63de73515088",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/dataplex.workflowAdmin",
+      "permission": "dataplex.entryGroups.requestChanges",
+      "role": "roles/datacatalog.admin",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -123,8 +123,8 @@
       "commit": "63de73515088",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/dataplex.catalogEditor",
+      "permission": "dataplex.entryGroups.requestChanges",
+      "role": "roles/viewer",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -139,9 +139,9 @@
       "commit": "63de73515088",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/viewer",
-      "service": "dataplex",
+      "permission": "externalexposure.scanMetrics.get",
+      "role": "roles/securitycenter.adminViewer",
+      "service": "externalexposure",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -155,9 +155,9 @@
       "commit": "63de73515088",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/datacatalog.entryGroupOwner",
-      "service": "dataplex",
+      "permission": "cloudkms.keyHandles.list",
+      "role": "roles/file.admin",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -171,9 +171,9 @@
       "commit": "63de73515088",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/datacatalog.entryOwner",
-      "service": "dataplex",
+      "permission": "cloudkms.keyHandles.get",
+      "role": "roles/file.admin",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -187,11 +187,11 @@
       "commit": "63de73515088",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.use",
-      "role": "roles/datacatalog.admin",
+      "permission": "dataplex.changeRequests.delete",
+      "role": "roles/dataplex.workflowAdmin",
       "service": "dataplex",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -203,7 +203,39 @@
       "commit": "63de73515088",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.use",
+      "permission": "dataplex.changeRequests.delete",
+      "role": "roles/datacatalog.admin",
+      "service": "dataplex",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3814",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.delete",
+      "role": "roles/dataplex.changeRequestOwner",
+      "service": "dataplex",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3815",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.adminDelete",
       "role": "roles/dataplex.workflowAdmin",
       "service": "dataplex",
       "method": "",
@@ -214,7 +246,87 @@
       }
     },
     {
-      "id": "2026-06-18-3814",
+      "id": "2026-06-18-3816",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.adminDelete",
+      "role": "roles/datacatalog.admin",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3817",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "navigationconnect.trips.create",
+      "role": "roles/navigationconnect.admin",
+      "service": "navigationconnect",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3818",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "navigationconnect.trips.get",
+      "role": "roles/navigationconnect.admin",
+      "service": "navigationconnect",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3819",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "navigationconnect.trips.get",
+      "role": "roles/viewer",
+      "service": "navigationconnect",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3820",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.keyHandles.create",
+      "role": "roles/file.admin",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3821",
       "date": "2026-06-18",
       "commit": "63de73515088",
       "dimension": "role_permissions",
@@ -230,23 +342,215 @@
       }
     },
     {
-      "id": "2026-06-17-3815",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "predefined_roles",
-      "change_type": "removed",
-      "permission": "",
-      "role": "roles/bigquerymigration.migrationViewer",
-      "service": "bigquerymigration",
+      "id": "2026-06-18-3822",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "navigationconnect.trips.cancel",
+      "role": "roles/navigationconnect.admin",
+      "service": "navigationconnect",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "title": "Migration Management Viewer"
+        "undocumented": true
       }
     },
     {
-      "id": "2026-06-17-3816",
+      "id": "2026-06-18-3823",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/datacatalog.viewer",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3824",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/dataplex.catalogEditor",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3825",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/dataplex.changeRequestOwner",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3826",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/datacatalog.editor",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3827",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/datacatalog.entryGroupOwner",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3828",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/dataplex.workflowAdmin",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3829",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/datacatalog.admin",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3830",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/viewer",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3831",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.get",
+      "role": "roles/datacatalog.entryOwner",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3832",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.use",
+      "role": "roles/dataplex.workflowAdmin",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3833",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.use",
+      "role": "roles/datacatalog.admin",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-18-3834",
+      "date": "2026-06-18",
+      "commit": "63de73515088",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.update",
+      "role": "roles/dataplex.changeRequestOwner",
+      "service": "dataplex",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3835",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "predefined_roles",
@@ -262,39 +566,23 @@
       }
     },
     {
-      "id": "2026-06-17-3817",
+      "id": "2026-06-17-3836",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "predefined_roles",
       "change_type": "removed",
       "permission": "",
-      "role": "roles/dataplex.workflowAdmin",
-      "service": "dataplex",
+      "role": "roles/bigquerymigration.migrationViewer",
+      "service": "bigquerymigration",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "title": "Dataplex Workflow Admin"
+        "title": "Migration Management Viewer"
       }
     },
     {
-      "id": "2026-06-17-3818",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "predefined_roles",
-      "change_type": "removed",
-      "permission": "",
-      "role": "roles/dataplex.workflowApprover",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "title": "Dataplex Workflow Approver"
-      }
-    },
-    {
-      "id": "2026-06-17-3819",
+      "id": "2026-06-17-3837",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "predefined_roles",
@@ -310,323 +598,35 @@
       }
     },
     {
-      "id": "2026-06-17-3820",
+      "id": "2026-06-17-3838",
       "date": "2026-06-17",
       "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudkms.operations.get",
-      "role": "roles/file.editor",
-      "service": "cloudkms",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3821",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudkms.operations.get",
-      "role": "roles/file.admin",
-      "service": "cloudkms",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3822",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudkms.keyHandles.create",
-      "role": "roles/file.editor",
-      "service": "cloudkms",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3823",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudkms.keyHandles.create",
-      "role": "roles/file.admin",
-      "service": "cloudkms",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3824",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.projects.list",
-      "role": "roles/navigationconnect.viewer",
-      "service": "resourcemanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3825",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.projects.list",
-      "role": "roles/navigationconnect.admin",
-      "service": "resourcemanager",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3826",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/dataplex.admin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3827",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/editor",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3828",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/dataplex.catalogAdmin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3829",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/iam.securityAuditor",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3830",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/dataplex.entryOwner",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3831",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/dataplex.catalogViewer",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3832",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/datacatalog.viewer",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3833",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/datacatalog.admin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3834",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.list",
+      "dimension": "predefined_roles",
+      "change_type": "removed",
+      "permission": "",
       "role": "roles/dataplex.workflowAdmin",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3835",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/dataplex.catalogEditor",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3836",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/datacatalog.entryGroupOwner",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3837",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.list",
-      "role": "roles/datacatalog.entryOwner",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3838",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "externalexposure.scanMetrics.get",
-      "role": "roles/iam.securityAuditor",
-      "service": "externalexposure",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
+        "title": "Dataplex Workflow Admin"
       }
     },
     {
       "id": "2026-06-17-3839",
       "date": "2026-06-17",
       "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "externalexposure.scanMetrics.get",
-      "role": "roles/securitycenter.adminEditor",
-      "service": "externalexposure",
+      "dimension": "predefined_roles",
+      "change_type": "removed",
+      "permission": "",
+      "role": "roles/dataplex.workflowApprover",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "title": "Dataplex Workflow Approver"
       }
     },
     {
@@ -635,9 +635,9 @@
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "navigationconnect.trips.cancel",
+      "permission": "networkmanagement.providers.generateProviderAccessToken",
       "role": "roles/editor",
-      "service": "navigationconnect",
+      "service": "networkmanagement",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -699,9 +699,9 @@
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudmessaging.topicSubscriptions.list",
-      "role": "roles/firebase.editor",
-      "service": "cloudmessaging",
+      "permission": "cloudkms.operations.get",
+      "role": "roles/file.editor",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -714,15 +714,15 @@
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudmessaging.topicSubscriptions.list",
-      "role": "roles/firebase.viewer",
-      "service": "cloudmessaging",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudkms.operations.get",
+      "role": "roles/file.admin",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -731,8 +731,8 @@
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryGroups.requestChanges",
-      "role": "roles/dataplex.catalogAdmin",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/editor",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -747,7 +747,7 @@
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryGroups.requestChanges",
+      "permission": "dataplex.changeRequests.list",
       "role": "roles/dataplex.catalogViewer",
       "service": "dataplex",
       "method": "",
@@ -763,8 +763,8 @@
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryGroups.requestChanges",
-      "role": "roles/dataplex.admin",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/dataplex.catalogAdmin",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -779,8 +779,8 @@
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryGroups.requestChanges",
-      "role": "roles/editor",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/dataplex.entryOwner",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -794,15 +794,15 @@
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.entryGroups.requestChanges",
-      "role": "roles/datacatalog.viewer",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/dataplex.admin",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -810,15 +810,15 @@
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.entryGroups.requestChanges",
-      "role": "roles/datacatalog.admin",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/iam.securityAuditor",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -827,8 +827,8 @@
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "dataplex.entryGroups.requestChanges",
-      "role": "roles/datacatalog.entryGroupOwner",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/datacatalog.viewer",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -842,15 +842,15 @@
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "networkmanagement.providers.generateProviderAccessToken",
-      "role": "roles/editor",
-      "service": "networkmanagement",
+      "change_type": "permission_removed_from_role",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/dataplex.catalogEditor",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -858,15 +858,15 @@
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudkms.keyHandles.list",
-      "role": "roles/file.editor",
-      "service": "cloudkms",
+      "change_type": "permission_removed_from_role",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/datacatalog.entryGroupOwner",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -875,9 +875,9 @@
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "cloudkms.keyHandles.list",
-      "role": "roles/file.admin",
-      "service": "cloudkms",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/dataplex.workflowAdmin",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -890,15 +890,15 @@
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudkms.keyHandles.get",
-      "role": "roles/file.editor",
-      "service": "cloudkms",
+      "change_type": "permission_removed_from_role",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/datacatalog.admin",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -907,9 +907,9 @@
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "cloudkms.keyHandles.get",
-      "role": "roles/file.admin",
-      "service": "cloudkms",
+      "permission": "dataplex.changeRequests.list",
+      "role": "roles/datacatalog.entryOwner",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -923,11 +923,11 @@
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "navigationconnect.trips.create",
-      "role": "roles/editor",
-      "service": "navigationconnect",
+      "permission": "cloudkms.projects.showEffectiveAutokeyConfig",
+      "role": "roles/file.editor",
+      "service": "cloudkms",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -938,15 +938,15 @@
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.projects.get",
-      "role": "roles/navigationconnect.viewer",
-      "service": "resourcemanager",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudkms.projects.showEffectiveAutokeyConfig",
+      "role": "roles/file.admin",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -955,9 +955,9 @@
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.projects.get",
-      "role": "roles/navigationconnect.admin",
-      "service": "resourcemanager",
+      "permission": "dataplex.glossaries.requestChanges",
+      "role": "roles/dataplex.admin",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -967,150 +967,6 @@
     },
     {
       "id": "2026-06-17-3861",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "navigationconnect.trips.get",
-      "role": "roles/navigationconnect.viewer",
-      "service": "navigationconnect",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3862",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "navigationconnect.trips.get",
-      "role": "roles/editor",
-      "service": "navigationconnect",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3863",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.delete",
-      "role": "roles/dataplex.catalogAdmin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3864",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.delete",
-      "role": "roles/dataplex.admin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3865",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.delete",
-      "role": "roles/editor",
-      "service": "dataplex",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3866",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.delete",
-      "role": "roles/dataplex.changeRequestOwner",
-      "service": "dataplex",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3867",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.delete",
-      "role": "roles/datacatalog.admin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3868",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.delete",
-      "role": "roles/dataplex.workflowAdmin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3869",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.glossaries.requestChanges",
-      "role": "roles/dataplex.catalogAdmin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3870",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
@@ -1126,13 +982,13 @@
       }
     },
     {
-      "id": "2026-06-17-3871",
+      "id": "2026-06-17-3862",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "dataplex.glossaries.requestChanges",
-      "role": "roles/dataplex.admin",
+      "role": "roles/dataplex.catalogAdmin",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -1142,7 +998,7 @@
       }
     },
     {
-      "id": "2026-06-17-3872",
+      "id": "2026-06-17-3863",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
@@ -1158,7 +1014,7 @@
       }
     },
     {
-      "id": "2026-06-17-3873",
+      "id": "2026-06-17-3864",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
@@ -1174,7 +1030,7 @@
       }
     },
     {
-      "id": "2026-06-17-3874",
+      "id": "2026-06-17-3865",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
@@ -1190,92 +1046,44 @@
       }
     },
     {
-      "id": "2026-06-17-3875",
+      "id": "2026-06-17-3866",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudkms.projects.showEffectiveAutokeyConfig",
-      "role": "roles/file.editor",
-      "service": "cloudkms",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3876",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudkms.projects.showEffectiveAutokeyConfig",
-      "role": "roles/file.admin",
-      "service": "cloudkms",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3877",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.update",
+      "permission": "dataplex.entryGroups.requestChanges",
       "role": "roles/dataplex.admin",
       "service": "dataplex",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
       }
     },
     {
-      "id": "2026-06-17-3878",
+      "id": "2026-06-17-3867",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.update",
-      "role": "roles/editor",
+      "permission": "dataplex.entryGroups.requestChanges",
+      "role": "roles/dataplex.catalogViewer",
       "service": "dataplex",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
       }
     },
     {
-      "id": "2026-06-17-3879",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.update",
-      "role": "roles/dataplex.changeRequestOwner",
-      "service": "dataplex",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3880",
+      "id": "2026-06-17-3868",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.adminDelete",
+      "permission": "dataplex.entryGroups.requestChanges",
       "role": "roles/dataplex.catalogAdmin",
       "service": "dataplex",
       "method": "",
@@ -1286,13 +1094,13 @@
       }
     },
     {
-      "id": "2026-06-17-3881",
+      "id": "2026-06-17-3869",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.adminDelete",
-      "role": "roles/dataplex.admin",
+      "permission": "dataplex.entryGroups.requestChanges",
+      "role": "roles/editor",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -1302,12 +1110,44 @@
       }
     },
     {
-      "id": "2026-06-17-3882",
+      "id": "2026-06-17-3870",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.adminDelete",
+      "permission": "dataplex.entryGroups.requestChanges",
+      "role": "roles/datacatalog.viewer",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3871",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "dataplex.entryGroups.requestChanges",
+      "role": "roles/datacatalog.entryGroupOwner",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3872",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "dataplex.entryGroups.requestChanges",
       "role": "roles/datacatalog.admin",
       "service": "dataplex",
       "method": "",
@@ -1318,30 +1158,14 @@
       }
     },
     {
-      "id": "2026-06-17-3883",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.adminDelete",
-      "role": "roles/dataplex.workflowAdmin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3884",
+      "id": "2026-06-17-3873",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudmessaging.topicSubscriptions.get",
-      "role": "roles/firebase.editor",
-      "service": "cloudmessaging",
+      "permission": "externalexposure.scanMetrics.get",
+      "role": "roles/iam.securityAuditor",
+      "service": "externalexposure",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1350,7 +1174,23 @@
       }
     },
     {
-      "id": "2026-06-17-3885",
+      "id": "2026-06-17-3874",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "externalexposure.scanMetrics.get",
+      "role": "roles/securitycenter.adminEditor",
+      "service": "externalexposure",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3875",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
@@ -1366,14 +1206,14 @@
       }
     },
     {
-      "id": "2026-06-17-3886",
+      "id": "2026-06-17-3876",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/dataplex.admin",
-      "service": "dataplex",
+      "permission": "cloudmessaging.topicSubscriptions.get",
+      "role": "roles/firebase.editor",
+      "service": "cloudmessaging",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1382,13 +1222,173 @@
       }
     },
     {
+      "id": "2026-06-17-3877",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.keyHandles.list",
+      "role": "roles/file.editor",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3878",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudkms.keyHandles.list",
+      "role": "roles/file.admin",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3879",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudkms.keyHandles.get",
+      "role": "roles/file.editor",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3880",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudkms.keyHandles.get",
+      "role": "roles/file.admin",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3881",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.delete",
+      "role": "roles/dataplex.admin",
+      "service": "dataplex",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3882",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.delete",
+      "role": "roles/dataplex.catalogAdmin",
+      "service": "dataplex",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3883",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.changeRequests.delete",
+      "role": "roles/editor",
+      "service": "dataplex",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3884",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "dataplex.changeRequests.delete",
+      "role": "roles/dataplex.workflowAdmin",
+      "service": "dataplex",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3885",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "dataplex.changeRequests.delete",
+      "role": "roles/datacatalog.admin",
+      "service": "dataplex",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3886",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "dataplex.changeRequests.delete",
+      "role": "roles/dataplex.changeRequestOwner",
+      "service": "dataplex",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
       "id": "2026-06-17-3887",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/editor",
+      "permission": "dataplex.changeRequests.adminDelete",
+      "role": "roles/dataplex.admin",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -1403,7 +1403,7 @@
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
+      "permission": "dataplex.changeRequests.adminDelete",
       "role": "roles/dataplex.catalogAdmin",
       "service": "dataplex",
       "method": "",
@@ -1418,72 +1418,8 @@
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/dataplex.entryOwner",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3890",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/dataplex.catalogViewer",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3891",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/datacatalog.viewer",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3892",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/datacatalog.admin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-06-17-3893",
-      "date": "2026-06-17",
-      "commit": "cab94a443895",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.get",
+      "permission": "dataplex.changeRequests.adminDelete",
       "role": "roles/dataplex.workflowAdmin",
       "service": "dataplex",
       "method": "",
@@ -1494,19 +1430,83 @@
       }
     },
     {
-      "id": "2026-06-17-3894",
+      "id": "2026-06-17-3890",
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/dataplex.changeRequestOwner",
+      "permission": "dataplex.changeRequests.adminDelete",
+      "role": "roles/datacatalog.admin",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
         "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3891",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "navigationconnect.trips.create",
+      "role": "roles/editor",
+      "service": "navigationconnect",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3892",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudmessaging.topicSubscriptions.list",
+      "role": "roles/firebase.viewer",
+      "service": "cloudmessaging",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3893",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudmessaging.topicSubscriptions.list",
+      "role": "roles/firebase.editor",
+      "service": "cloudmessaging",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-06-17-3894",
+      "date": "2026-06-17",
+      "commit": "cab94a443895",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "resourcemanager.projects.get",
+      "role": "roles/navigationconnect.admin",
+      "service": "resourcemanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
       }
     },
     {
@@ -1514,15 +1514,15 @@
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/dataplex.catalogEditor",
-      "service": "dataplex",
+      "change_type": "permission_added_to_role",
+      "permission": "resourcemanager.projects.get",
+      "role": "roles/navigationconnect.viewer",
+      "service": "resourcemanager",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -1530,15 +1530,15 @@
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/datacatalog.entryGroupOwner",
-      "service": "dataplex",
+      "change_type": "permission_added_to_role",
+      "permission": "navigationconnect.trips.get",
+      "role": "roles/navigationconnect.viewer",
+      "service": "navigationconnect",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -1546,15 +1546,15 @@
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.changeRequests.get",
-      "role": "roles/datacatalog.entryOwner",
-      "service": "dataplex",
+      "change_type": "permission_added_to_role",
+      "permission": "navigationconnect.trips.get",
+      "role": "roles/editor",
+      "service": "navigationconnect",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -1563,11 +1563,11 @@
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.use",
-      "role": "roles/dataplex.catalogAdmin",
-      "service": "dataplex",
+      "permission": "cloudkms.keyHandles.create",
+      "role": "roles/file.editor",
+      "service": "cloudkms",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1578,15 +1578,15 @@
       "date": "2026-06-17",
       "commit": "cab94a443895",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.use",
-      "role": "roles/dataplex.admin",
-      "service": "dataplex",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudkms.keyHandles.create",
+      "role": "roles/file.admin",
+      "service": "cloudkms",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -1595,8 +1595,8 @@
       "commit": "cab94a443895",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataplex.changeRequests.use",
-      "role": "roles/editor",
+      "permission": "dataplex.dataProducts.approve",
+      "role": "roles/dataplex.admin",
       "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
@@ -1609,14 +1609,14 @@
   "summary": {
     "by_severity": {
       "CRITICAL": 19,
-      "HIGH": 514,
+      "HIGH": 520,
       "MEDIUM": 3262,
-      "INFO": 206
+      "INFO": 220
     },
     "by_dimension": {
+      "methods": 155,
+      "method_map": 147,
       "role_permissions": 3669,
-      "methods": 145,
-      "method_map": 137,
       "predefined_roles": 50
     },
     "new_services": []
