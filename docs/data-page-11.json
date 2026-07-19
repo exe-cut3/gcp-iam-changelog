@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-18T16:17:26Z",
-  "total_entries": 4232,
-  "pages": 43,
+  "generated_at": "2026-07-19T16:18:10Z",
+  "total_entries": 4075,
+  "pages": 41,
   "page": 11,
   "page_size": 100,
   "entries": [
@@ -11,9 +11,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "datamigration.privateConnections.listEffectiveTags",
-      "role": "roles/editor",
-      "service": "datamigration",
+      "permission": "run.instances.start",
+      "role": "roles/run.editor",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -27,9 +27,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "datamigration.privateConnections.listEffectiveTags",
-      "role": "roles/dlp.projectdriver",
-      "service": "datamigration",
+      "permission": "run.instances.start",
+      "role": "roles/run.admin",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -42,56 +42,8 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "datamigration.privateConnections.listEffectiveTags",
-      "role": "roles/owner",
-      "service": "datamigration",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-07-11-1004",
-      "date": "2026-07-11",
-      "commit": "0f12962d9265",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "datamigration.privateConnections.listEffectiveTags",
-      "role": "roles/datamigration.admin",
-      "service": "datamigration",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-07-11-1005",
-      "date": "2026-07-11",
-      "commit": "0f12962d9265",
-      "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.get",
-      "role": "roles/owner",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-07-11-1006",
-      "date": "2026-07-11",
-      "commit": "0f12962d9265",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.instances.get",
+      "permission": "run.instances.start",
       "role": "roles/cloudfunctions.admin",
       "service": "run",
       "method": "",
@@ -102,12 +54,12 @@
       }
     },
     {
-      "id": "2026-07-11-1007",
+      "id": "2026-07-11-1004",
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.get",
+      "permission": "run.instances.start",
       "role": "roles/run.developer",
       "service": "run",
       "method": "",
@@ -118,16 +70,64 @@
       }
     },
     {
+      "id": "2026-07-11-1005",
+      "date": "2026-07-11",
+      "commit": "0f12962d9265",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.instances.start",
+      "role": "roles/run.sourceDeveloper",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-07-11-1006",
+      "date": "2026-07-11",
+      "commit": "0f12962d9265",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.instances.start",
+      "role": "roles/editor",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-07-11-1007",
+      "date": "2026-07-11",
+      "commit": "0f12962d9265",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.instances.start",
+      "role": "roles/iam.mlEngineer",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
       "id": "2026-07-11-1008",
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.get",
-      "role": "roles/run.editor",
+      "permission": "run.instances.delete",
+      "role": "roles/owner",
       "service": "run",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -139,11 +139,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.get",
-      "role": "roles/run.admin",
+      "permission": "run.instances.delete",
+      "role": "roles/run.editor",
       "service": "run",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -154,15 +154,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.instances.get",
-      "role": "roles/run.viewer",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.delete",
+      "role": "roles/run.admin",
       "service": "run",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -170,15 +170,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.instances.get",
-      "role": "roles/run.sourceDeveloper",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.delete",
+      "role": "roles/cloudfunctions.admin",
       "service": "run",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -186,15 +186,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.instances.get",
-      "role": "roles/firebase.editor",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.delete",
+      "role": "roles/run.developer",
       "service": "run",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -203,11 +203,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "run.instances.get",
-      "role": "roles/editor",
+      "permission": "run.instances.delete",
+      "role": "roles/run.sourceDeveloper",
       "service": "run",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "was_undocumented": true
@@ -219,11 +219,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "run.instances.get",
-      "role": "roles/iam.siteReliabilityEngineer",
+      "permission": "run.instances.delete",
+      "role": "roles/editor",
       "service": "run",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "was_undocumented": true
@@ -235,11 +235,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "run.instances.get",
-      "role": "roles/iam.supportUser",
+      "permission": "run.instances.delete",
+      "role": "roles/iam.mlEngineer",
       "service": "run",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "was_undocumented": true
@@ -251,11 +251,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "run.instances.get",
-      "role": "roles/iam.mlEngineer",
-      "service": "run",
+      "permission": "compute.subnetworks.create",
+      "role": "roles/dataproc.serviceAgent",
+      "service": "compute",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "was_undocumented": true
@@ -267,11 +267,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/iam.securityReviewer",
-      "service": "run",
+      "permission": "analyticshub.queryTemplates.update",
+      "role": "roles/owner",
+      "service": "analyticshub",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -282,15 +282,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/owner",
-      "service": "run",
+      "change_type": "permission_removed_from_role",
+      "permission": "analyticshub.queryTemplates.update",
+      "role": "roles/editor",
+      "service": "analyticshub",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -298,15 +298,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/cloudfunctions.admin",
-      "service": "run",
+      "change_type": "permission_removed_from_role",
+      "permission": "analyticshub.queryTemplates.update",
+      "role": "roles/analyticshub.publisher",
+      "service": "analyticshub",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -315,11 +315,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/run.developer",
-      "service": "run",
+      "permission": "analyticshub.queryTemplates.create",
+      "role": "roles/owner",
+      "service": "analyticshub",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -330,15 +330,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/run.editor",
-      "service": "run",
+      "change_type": "permission_removed_from_role",
+      "permission": "analyticshub.queryTemplates.create",
+      "role": "roles/editor",
+      "service": "analyticshub",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -346,15 +346,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/run.admin",
-      "service": "run",
+      "change_type": "permission_removed_from_role",
+      "permission": "analyticshub.queryTemplates.create",
+      "role": "roles/analyticshub.publisher",
+      "service": "analyticshub",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -362,10 +362,26 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudkms.keyHandles.list",
+      "role": "roles/datastream.admin",
+      "service": "cloudkms",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-07-11-1024",
+      "date": "2026-07-11",
+      "commit": "0f12962d9265",
+      "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/iam.securityAdmin",
-      "service": "run",
+      "permission": "datamigration.migrationJobs.listTagBindings",
+      "role": "roles/dlp.projectdriver",
+      "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -374,35 +390,19 @@
       }
     },
     {
-      "id": "2026-07-11-1024",
-      "date": "2026-07-11",
-      "commit": "0f12962d9265",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/run.viewer",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
       "id": "2026-07-11-1025",
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/run.sourceDeveloper",
-      "service": "run",
+      "change_type": "permission_added_to_role",
+      "permission": "datamigration.migrationJobs.listTagBindings",
+      "role": "roles/editor",
+      "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -410,15 +410,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/firebase.editor",
-      "service": "run",
+      "change_type": "permission_added_to_role",
+      "permission": "datamigration.migrationJobs.listTagBindings",
+      "role": "roles/iam.supportUser",
+      "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -426,15 +426,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/editor",
-      "service": "run",
+      "change_type": "permission_added_to_role",
+      "permission": "datamigration.migrationJobs.listTagBindings",
+      "role": "roles/dlp.orgdriver",
+      "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -443,9 +443,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/iam.siteReliabilityEngineer",
-      "service": "run",
+      "permission": "datamigration.migrationJobs.listTagBindings",
+      "role": "roles/datamigration.admin",
+      "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -459,9 +459,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/iam.supportUser",
-      "service": "run",
+      "permission": "datamigration.migrationJobs.listTagBindings",
+      "role": "roles/owner",
+      "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -475,9 +475,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/iam.mlEngineer",
-      "service": "run",
+      "permission": "container.deployments.list",
+      "role": "roles/hypercomputecluster.serviceAgent",
+      "service": "container",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -510,7 +510,7 @@
       "permission": "",
       "role": "",
       "service": "cloudkms",
-      "method": "cloudkms.folders.showEffectiveAutokeyConfig",
+      "method": "cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.importTrustedKeyWrappedCryptoKeyVersion",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -526,7 +526,7 @@
       "permission": "",
       "role": "",
       "service": "cloudkms",
-      "method": "cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.importTrustedKeyWrappedCryptoKeyVersion",
+      "method": "cloudkms.folders.showEffectiveAutokeyConfig",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -558,7 +558,7 @@
       "permission": "",
       "role": "",
       "service": "cloudkms",
-      "method": "cloudkms.folders.showEffectiveAutokeyConfig",
+      "method": "cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.importTrustedKeyWrappedCryptoKeyVersion",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -574,7 +574,7 @@
       "permission": "",
       "role": "",
       "service": "cloudkms",
-      "method": "cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.importTrustedKeyWrappedCryptoKeyVersion",
+      "method": "cloudkms.folders.showEffectiveAutokeyConfig",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -583,630 +583,6 @@
     },
     {
       "id": "2026-07-09-1037",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "bigqueryreservation",
-      "method": "bigqueryreservation.projects.locations.reservationGroups.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "bigqueryreservation"
-      }
-    },
-    {
-      "id": "2026-07-09-1038",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "calendar",
-      "method": "calendar.calendars.transferOwnership",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "calendar"
-      }
-    },
-    {
-      "id": "2026-07-09-1039",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.operations.cancel",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1040",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.tuningJobs.operations.wait",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1041",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.tuningJobs.operations.wait",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1042",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.memories.operations.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1043",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.memories.operations.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1044",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.evaluationMetrics.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1045",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.memories.operations.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1046",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.operations.wait",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1047",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.evaluationMetrics.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1048",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.memories.operations.cancel",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1049",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.memories.operations.wait",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1050",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.evaluationMetrics.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1051",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.memories.operations.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1052",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.operations.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1053",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.memories.operations.cancel",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1054",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.memories.operations.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1055",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.operations.wait",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1056",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.operations.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1057",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.memories.operations.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1058",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.operations.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1059",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.memories.operations.wait",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1060",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.operations.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1061",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.memories.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1062",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.operations.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1063",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.operations.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1064",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.operations.cancel",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1065",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.evaluationMetrics.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "aiplatform"
-      }
-    },
-    {
-      "id": "2026-07-09-1066",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudsupport",
-      "method": "cloudsupport.supportEventSubscriptions.expunge",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "cloudsupport"
-      }
-    },
-    {
-      "id": "2026-07-09-1067",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "androidpublisher",
-      "method": "androidpublisher.orders.reviewrefund",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "androidpublisher"
-      }
-    },
-    {
-      "id": "2026-07-09-1068",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "chat",
-      "method": "chat.users.availability.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "chat"
-      }
-    },
-    {
-      "id": "2026-07-09-1069",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "chat",
-      "method": "chat.users.availability.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "chat"
-      }
-    },
-    {
-      "id": "2026-07-09-1070",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "chat",
-      "method": "chat.users.availability.getAvailability",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "chat"
-      }
-    },
-    {
-      "id": "2026-07-09-1071",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "chat",
-      "method": "chat.users.availability.updateAvailability",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "chat"
-      }
-    },
-    {
-      "id": "2026-07-09-1072",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "workstations",
-      "method": "workstations.projects.locations.workstationClusters.workstationConfigs.workstations.suspend",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "workstations"
-      }
-    },
-    {
-      "id": "2026-07-09-1073",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "displayvideo",
-      "method": "displayvideo.firstAndThirdPartyAudiences.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "displayvideo"
-      }
-    },
-    {
-      "id": "2026-07-09-1074",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "displayvideo",
-      "method": "displayvideo.firstAndThirdPartyAudiences.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "displayvideo"
-      }
-    },
-    {
-      "id": "2026-07-09-1075",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "displayvideo",
-      "method": "displayvideo.firstAndThirdPartyAudiences.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "displayvideo"
-      }
-    },
-    {
-      "id": "2026-07-09-1076",
       "date": "2026-07-09",
       "commit": "7ff619b9b675",
       "dimension": "methods",
@@ -1222,7 +598,55 @@
       }
     },
     {
-      "id": "2026-07-09-1077",
+      "id": "2026-07-09-1038",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "removed",
+      "permission": "",
+      "role": "",
+      "service": "displayvideo",
+      "method": "displayvideo.firstAndThirdPartyAudiences.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "displayvideo"
+      }
+    },
+    {
+      "id": "2026-07-09-1039",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "removed",
+      "permission": "",
+      "role": "",
+      "service": "displayvideo",
+      "method": "displayvideo.firstAndThirdPartyAudiences.patch",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "displayvideo"
+      }
+    },
+    {
+      "id": "2026-07-09-1040",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "removed",
+      "permission": "",
+      "role": "",
+      "service": "displayvideo",
+      "method": "displayvideo.firstAndThirdPartyAudiences.create",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "displayvideo"
+      }
+    },
+    {
+      "id": "2026-07-09-1041",
       "date": "2026-07-09",
       "commit": "7ff619b9b675",
       "dimension": "methods",
@@ -1238,87 +662,71 @@
       }
     },
     {
-      "id": "2026-07-09-1078",
+      "id": "2026-07-09-1042",
       "date": "2026-07-09",
       "commit": "7ff619b9b675",
       "dimension": "methods",
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "secretmanager",
-      "method": "secretmanager.projects.secrets.enableManagedRotation",
-      "severity": "INFO",
+      "service": "chat",
+      "method": "chat.users.availability.patch",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "secretmanager"
+        "service": "chat"
       }
     },
     {
-      "id": "2026-07-09-1079",
+      "id": "2026-07-09-1043",
       "date": "2026-07-09",
       "commit": "7ff619b9b675",
       "dimension": "methods",
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "secretmanager",
-      "method": "secretmanager.projects.secrets.rotateSecret",
+      "service": "chat",
+      "method": "chat.users.availability.get",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "secretmanager"
+        "service": "chat"
       }
     },
     {
-      "id": "2026-07-09-1080",
+      "id": "2026-07-09-1044",
       "date": "2026-07-09",
       "commit": "7ff619b9b675",
       "dimension": "methods",
-      "change_type": "added",
+      "change_type": "removed",
       "permission": "",
       "role": "",
-      "service": "secretmanager",
-      "method": "secretmanager.projects.locations.secrets.enableManagedRotation",
+      "service": "chat",
+      "method": "chat.users.availability.updateAvailability",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "secretmanager"
+        "service": "chat"
       }
     },
     {
-      "id": "2026-07-09-1081",
+      "id": "2026-07-09-1045",
       "date": "2026-07-09",
       "commit": "7ff619b9b675",
       "dimension": "methods",
-      "change_type": "added",
+      "change_type": "removed",
       "permission": "",
       "role": "",
-      "service": "secretmanager",
-      "method": "secretmanager.projects.locations.secrets.rotateSecret",
+      "service": "chat",
+      "method": "chat.users.availability.getAvailability",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "secretmanager"
+        "service": "chat"
       }
     },
     {
-      "id": "2026-07-09-1082",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.acceleratorPodControllers.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "compute"
-      }
-    },
-    {
-      "id": "2026-07-09-1083",
+      "id": "2026-07-09-1046",
       "date": "2026-07-09",
       "commit": "7ff619b9b675",
       "dimension": "methods",
@@ -1334,119 +742,7 @@
       }
     },
     {
-      "id": "2026-07-09-1084",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.acceleratorPodControllers.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "compute"
-      }
-    },
-    {
-      "id": "2026-07-09-1085",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.dhcpOptionsConfigs.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "compute"
-      }
-    },
-    {
-      "id": "2026-07-09-1086",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.acceleratorPodControllers.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "compute"
-      }
-    },
-    {
-      "id": "2026-07-09-1087",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.dhcpOptionsConfigs.insert",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "compute"
-      }
-    },
-    {
-      "id": "2026-07-09-1088",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.dhcpOptionsConfigs.testIamPermissions",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "compute"
-      }
-    },
-    {
-      "id": "2026-07-09-1089",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.dhcpOptionsConfigs.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "compute"
-      }
-    },
-    {
-      "id": "2026-07-09-1090",
-      "date": "2026-07-09",
-      "commit": "7ff619b9b675",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.acceleratorPodControllers.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "compute"
-      }
-    },
-    {
-      "id": "2026-07-09-1091",
+      "id": "2026-07-09-1047",
       "date": "2026-07-09",
       "commit": "7ff619b9b675",
       "dimension": "methods",
@@ -1462,7 +758,39 @@
       }
     },
     {
-      "id": "2026-07-09-1092",
+      "id": "2026-07-09-1048",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.dhcpOptionsConfigs.testIamPermissions",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "compute"
+      }
+    },
+    {
+      "id": "2026-07-09-1049",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.acceleratorPodControllers.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "compute"
+      }
+    },
+    {
+      "id": "2026-07-09-1050",
       "date": "2026-07-09",
       "commit": "7ff619b9b675",
       "dimension": "methods",
@@ -1478,6 +806,678 @@
       }
     },
     {
+      "id": "2026-07-09-1051",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.dhcpOptionsConfigs.insert",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "compute"
+      }
+    },
+    {
+      "id": "2026-07-09-1052",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.acceleratorPodControllers.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "compute"
+      }
+    },
+    {
+      "id": "2026-07-09-1053",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.acceleratorPodControllers.patch",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "compute"
+      }
+    },
+    {
+      "id": "2026-07-09-1054",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.dhcpOptionsConfigs.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "compute"
+      }
+    },
+    {
+      "id": "2026-07-09-1055",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.dhcpOptionsConfigs.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "compute"
+      }
+    },
+    {
+      "id": "2026-07-09-1056",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.acceleratorPodControllers.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "compute"
+      }
+    },
+    {
+      "id": "2026-07-09-1057",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "calendar",
+      "method": "calendar.calendars.transferOwnership",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "calendar"
+      }
+    },
+    {
+      "id": "2026-07-09-1058",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "secretmanager",
+      "method": "secretmanager.projects.locations.secrets.rotateSecret",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "secretmanager"
+      }
+    },
+    {
+      "id": "2026-07-09-1059",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "secretmanager",
+      "method": "secretmanager.projects.secrets.enableManagedRotation",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "secretmanager"
+      }
+    },
+    {
+      "id": "2026-07-09-1060",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "secretmanager",
+      "method": "secretmanager.projects.secrets.rotateSecret",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "secretmanager"
+      }
+    },
+    {
+      "id": "2026-07-09-1061",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "secretmanager",
+      "method": "secretmanager.projects.locations.secrets.enableManagedRotation",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "secretmanager"
+      }
+    },
+    {
+      "id": "2026-07-09-1062",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "androidpublisher",
+      "method": "androidpublisher.orders.reviewrefund",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "androidpublisher"
+      }
+    },
+    {
+      "id": "2026-07-09-1063",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.memoryBanks.operations.cancel",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1064",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.memoryBanks.memories.operations.cancel",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1065",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.memoryBanks.memories.operations.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1066",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.evaluationMetrics.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1067",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.memoryBanks.operations.wait",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1068",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.evaluationMetrics.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1069",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.memoryBanks.memories.operations.wait",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1070",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.memoryBanks.operations.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1071",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.memoryBanks.memories.operations.wait",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1072",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.memoryBanks.memories.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1073",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.memoryBanks.operations.cancel",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1074",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.memoryBanks.memories.operations.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1075",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.memoryBanks.memories.operations.cancel",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1076",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.memoryBanks.operations.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1077",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.tuningJobs.operations.wait",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1078",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.memoryBanks.memories.operations.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1079",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.memoryBanks.operations.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1080",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.memoryBanks.operations.wait",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1081",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.memoryBanks.memories.operations.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1082",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.memoryBanks.operations.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1083",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.evaluationMetrics.create",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1084",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.tuningJobs.operations.wait",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1085",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.memoryBanks.operations.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1086",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.memoryBanks.memories.operations.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1087",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.memoryBanks.operations.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1088",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.memoryBanks.memories.operations.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1089",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.evaluationMetrics.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-09-1090",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "bigqueryreservation",
+      "method": "bigqueryreservation.projects.locations.reservationGroups.patch",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "bigqueryreservation"
+      }
+    },
+    {
+      "id": "2026-07-09-1091",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "workstations",
+      "method": "workstations.projects.locations.workstationClusters.workstationConfigs.workstations.suspend",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "workstations"
+      }
+    },
+    {
+      "id": "2026-07-09-1092",
+      "date": "2026-07-09",
+      "commit": "7ff619b9b675",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "cloudsupport",
+      "method": "cloudsupport.supportEventSubscriptions.expunge",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "cloudsupport"
+      }
+    },
+    {
       "id": "2026-07-09-1093",
       "date": "2026-07-09",
       "commit": "7ff619b9b675",
@@ -1486,7 +1486,7 @@
       "permission": "",
       "role": "",
       "service": "aiplatform",
-      "method": "aiplatform.projects.locations.tuningJobs.operations.wait",
+      "method": "aiplatform.memoryBanks.operations.cancel",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1502,7 +1502,7 @@
       "permission": "",
       "role": "",
       "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.operations.cancel",
+      "method": "aiplatform.memoryBanks.memories.operations.cancel",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1533,8 +1533,8 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.tuningJobs.operations.wait",
+      "service": "secretmanager",
+      "method": "secretmanager.projects.secrets.enableManagedRotation",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1549,9 +1549,9 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.memories.operations.list",
-      "severity": "INFO",
+      "service": "compute",
+      "method": "compute.dhcpOptionsConfigs.patch",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
@@ -1566,7 +1566,7 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.dhcpOptionsConfigs.get",
+      "method": "compute.dhcpOptionsConfigs.testIamPermissions",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1581,9 +1581,9 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "compute",
-      "method": "compute.dhcpOptionsConfigs.insert",
-      "severity": "HIGH",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.evaluationMetrics.get",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
@@ -1598,8 +1598,8 @@
       "permission": "",
       "role": "",
       "service": "aiplatform",
-      "method": "aiplatform.projects.locations.evaluationMetrics.delete",
-      "severity": "HIGH",
+      "method": "aiplatform.memoryBanks.operations.wait",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
@@ -1609,15 +1609,15 @@
   "summary": {
     "by_severity": {
       "CRITICAL": 16,
-      "HIGH": 534,
-      "MEDIUM": 3432,
-      "INFO": 250
+      "HIGH": 511,
+      "MEDIUM": 3342,
+      "INFO": 206
     },
     "by_dimension": {
-      "predefined_roles": 32,
-      "role_permissions": 3863,
-      "methods": 176,
-      "method_map": 161
+      "predefined_roles": 27,
+      "role_permissions": 3767,
+      "methods": 148,
+      "method_map": 133
     },
     "new_services": []
   }
