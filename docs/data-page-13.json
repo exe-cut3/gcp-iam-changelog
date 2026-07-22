@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T16:29:29Z",
+  "generated_at": "2026-07-22T16:29:14Z",
   "total_entries": 3891,
   "pages": 39,
   "page": 13,
@@ -11,9 +11,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "compute.networks.create",
-      "role": "roles/dataproc.serviceAgent",
-      "service": "compute",
+      "permission": "run.instances.invoke",
+      "role": "roles/editor",
+      "service": "run",
       "method": "",
       "severity": "HIGH",
       "tags": [],
@@ -27,11 +27,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "container.jobs.get",
-      "role": "roles/hypercomputecluster.serviceAgent",
-      "service": "container",
+      "permission": "run.instances.invoke",
+      "role": "roles/run.sourceDeveloper",
+      "service": "run",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "was_undocumented": true
@@ -43,8 +43,8 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "datamigration.migrationJobs.createTagBinding",
-      "role": "roles/dlp.projectdriver",
+      "permission": "datamigration.connectionProfiles.createTagBinding",
+      "role": "roles/dlp.orgdriver",
       "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
@@ -59,8 +59,8 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "datamigration.migrationJobs.createTagBinding",
-      "role": "roles/dlp.orgdriver",
+      "permission": "datamigration.connectionProfiles.createTagBinding",
+      "role": "roles/dlp.projectdriver",
       "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
@@ -75,8 +75,8 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "datamigration.migrationJobs.createTagBinding",
-      "role": "roles/datamigration.admin",
+      "permission": "datamigration.connectionProfiles.createTagBinding",
+      "role": "roles/owner",
       "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
@@ -91,8 +91,8 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "datamigration.migrationJobs.createTagBinding",
-      "role": "roles/owner",
+      "permission": "datamigration.connectionProfiles.createTagBinding",
+      "role": "roles/datamigration.admin",
       "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
@@ -106,15 +106,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "compute.subnetworks.create",
-      "role": "roles/dataproc.serviceAgent",
-      "service": "compute",
+      "change_type": "permission_added_to_role",
+      "permission": "datamigration.connectionProfiles.deleteTagBinding",
+      "role": "roles/dlp.orgdriver",
+      "service": "datamigration",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -123,11 +123,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.delete",
-      "role": "roles/owner",
-      "service": "run",
+      "permission": "datamigration.connectionProfiles.deleteTagBinding",
+      "role": "roles/dlp.projectdriver",
+      "service": "datamigration",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -138,15 +138,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.instances.delete",
-      "role": "roles/run.developer",
-      "service": "run",
+      "change_type": "permission_removed_from_role",
+      "permission": "datamigration.connectionProfiles.deleteTagBinding",
+      "role": "roles/owner",
+      "service": "datamigration",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -154,15 +154,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.instances.delete",
-      "role": "roles/run.editor",
-      "service": "run",
+      "change_type": "permission_removed_from_role",
+      "permission": "datamigration.connectionProfiles.deleteTagBinding",
+      "role": "roles/datamigration.admin",
+      "service": "datamigration",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -171,11 +171,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.delete",
+      "permission": "run.instances.list",
       "role": "roles/cloudfunctions.admin",
       "service": "run",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -187,11 +187,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.delete",
-      "role": "roles/run.admin",
+      "permission": "run.instances.list",
+      "role": "roles/run.editor",
       "service": "run",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -202,15 +202,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.instances.delete",
-      "role": "roles/iam.mlEngineer",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.list",
+      "role": "roles/iam.securityReviewer",
       "service": "run",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -218,15 +218,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.instances.delete",
-      "role": "roles/run.sourceDeveloper",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.list",
+      "role": "roles/run.admin",
       "service": "run",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -234,15 +234,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.instances.delete",
-      "role": "roles/editor",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.list",
+      "role": "roles/run.developer",
       "service": "run",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -251,9 +251,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "analyticshub.queryTemplates.list",
-      "role": "roles/analyticshub.subscriptionOwner",
-      "service": "analyticshub",
+      "permission": "run.instances.list",
+      "role": "roles/iam.securityAdmin",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -267,9 +267,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "analyticshub.queryTemplates.list",
-      "role": "roles/iam.securityReviewer",
-      "service": "analyticshub",
+      "permission": "run.instances.list",
+      "role": "roles/owner",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -282,15 +282,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "analyticshub.queryTemplates.list",
-      "role": "roles/owner",
-      "service": "analyticshub",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.instances.list",
+      "role": "roles/editor",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -298,15 +298,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "analyticshub.queryTemplates.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "analyticshub",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.instances.list",
+      "role": "roles/iam.siteReliabilityEngineer",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -315,9 +315,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "analyticshub.queryTemplates.list",
-      "role": "roles/analyticshub.viewer",
-      "service": "analyticshub",
+      "permission": "run.instances.list",
+      "role": "roles/iam.mlEngineer",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -331,9 +331,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "analyticshub.queryTemplates.list",
-      "role": "roles/editor",
-      "service": "analyticshub",
+      "permission": "run.instances.list",
+      "role": "roles/iam.supportUser",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -347,9 +347,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "analyticshub.queryTemplates.list",
-      "role": "roles/analyticshub.publisher",
-      "service": "analyticshub",
+      "permission": "run.instances.list",
+      "role": "roles/run.viewer",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -363,9 +363,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "analyticshub.queryTemplates.list",
-      "role": "roles/iam.supportUser",
-      "service": "analyticshub",
+      "permission": "run.instances.list",
+      "role": "roles/firebase.editor",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -379,9 +379,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "container.deployments.list",
-      "role": "roles/hypercomputecluster.serviceAgent",
-      "service": "container",
+      "permission": "run.instances.list",
+      "role": "roles/run.sourceDeveloper",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -394,15 +394,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudkms.keyHandles.create",
-      "role": "roles/datastream.admin",
-      "service": "cloudkms",
+      "change_type": "permission_added_to_role",
+      "permission": "datamigration.privateConnections.listTagBindings",
+      "role": "roles/iam.supportUser",
+      "service": "datamigration",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -411,9 +411,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "analyticshub.queryTemplates.approve",
-      "role": "roles/owner",
-      "service": "analyticshub",
+      "permission": "datamigration.privateConnections.listTagBindings",
+      "role": "roles/editor",
+      "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -426,15 +426,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "analyticshub.queryTemplates.approve",
-      "role": "roles/editor",
-      "service": "analyticshub",
+      "change_type": "permission_added_to_role",
+      "permission": "datamigration.privateConnections.listTagBindings",
+      "role": "roles/dlp.orgdriver",
+      "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -442,10 +442,26 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "datamigration.privateConnections.listTagBindings",
+      "role": "roles/dlp.projectdriver",
+      "service": "datamigration",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-07-11-1229",
+      "date": "2026-07-11",
+      "commit": "0f12962d9265",
+      "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "analyticshub.queryTemplates.approve",
-      "role": "roles/analyticshub.publisher",
-      "service": "analyticshub",
+      "permission": "datamigration.privateConnections.listTagBindings",
+      "role": "roles/owner",
+      "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -454,35 +470,19 @@
       }
     },
     {
-      "id": "2026-07-11-1229",
-      "date": "2026-07-11",
-      "commit": "0f12962d9265",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/iam.securityReviewer",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
       "id": "2026-07-11-1230",
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/owner",
-      "service": "run",
+      "change_type": "permission_removed_from_role",
+      "permission": "datamigration.privateConnections.listTagBindings",
+      "role": "roles/datamigration.admin",
+      "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -491,8 +491,8 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/run.developer",
+      "permission": "run.instances.start",
+      "role": "roles/cloudfunctions.admin",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -507,7 +507,7 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.getIamPolicy",
+      "permission": "run.instances.start",
       "role": "roles/run.editor",
       "service": "run",
       "method": "",
@@ -523,8 +523,8 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/cloudfunctions.admin",
+      "permission": "run.instances.start",
+      "role": "roles/run.admin",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -539,8 +539,8 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/run.admin",
+      "permission": "run.instances.start",
+      "role": "roles/run.developer",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -555,8 +555,8 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/iam.securityAdmin",
+      "permission": "run.instances.start",
+      "role": "roles/owner",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -571,8 +571,8 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/editor",
+      "permission": "run.instances.start",
+      "role": "roles/iam.mlEngineer",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -587,8 +587,8 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/run.viewer",
+      "permission": "run.instances.start",
+      "role": "roles/editor",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -603,8 +603,8 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/iam.mlEngineer",
+      "permission": "run.instances.start",
+      "role": "roles/run.sourceDeveloper",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -619,11 +619,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/firebase.editor",
-      "service": "run",
+      "permission": "compute.subnetworks.create",
+      "role": "roles/dataproc.serviceAgent",
+      "service": "compute",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "was_undocumented": true
@@ -634,9 +634,89 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.stop",
+      "role": "roles/cloudfunctions.admin",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-07-11-1241",
+      "date": "2026-07-11",
+      "commit": "0f12962d9265",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.stop",
+      "role": "roles/run.editor",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-07-11-1242",
+      "date": "2026-07-11",
+      "commit": "0f12962d9265",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.stop",
+      "role": "roles/run.admin",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-07-11-1243",
+      "date": "2026-07-11",
+      "commit": "0f12962d9265",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.stop",
+      "role": "roles/run.developer",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-07-11-1244",
+      "date": "2026-07-11",
+      "commit": "0f12962d9265",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.stop",
+      "role": "roles/owner",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-07-11-1245",
+      "date": "2026-07-11",
+      "commit": "0f12962d9265",
+      "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/iam.supportUser",
+      "permission": "run.instances.stop",
+      "role": "roles/iam.mlEngineer",
       "service": "run",
       "method": "",
       "severity": "MEDIUM",
@@ -646,12 +726,28 @@
       }
     },
     {
-      "id": "2026-07-11-1241",
+      "id": "2026-07-11-1246",
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "run.instances.getIamPolicy",
+      "permission": "run.instances.stop",
+      "role": "roles/editor",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-07-11-1247",
+      "date": "2026-07-11",
+      "commit": "0f12962d9265",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.instances.stop",
       "role": "roles/run.sourceDeveloper",
       "service": "run",
       "method": "",
@@ -662,29 +758,13 @@
       }
     },
     {
-      "id": "2026-07-11-1242",
-      "date": "2026-07-11",
-      "commit": "0f12962d9265",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.instances.getIamPolicy",
-      "role": "roles/iam.siteReliabilityEngineer",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-07-11-1243",
+      "id": "2026-07-11-1248",
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "datamigration.privateConnections.listEffectiveTags",
-      "role": "roles/dlp.projectdriver",
+      "role": "roles/iam.supportUser",
       "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
@@ -694,7 +774,7 @@
       }
     },
     {
-      "id": "2026-07-11-1244",
+      "id": "2026-07-11-1249",
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
@@ -710,7 +790,7 @@
       }
     },
     {
-      "id": "2026-07-11-1245",
+      "id": "2026-07-11-1250",
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
@@ -726,13 +806,13 @@
       }
     },
     {
-      "id": "2026-07-11-1246",
+      "id": "2026-07-11-1251",
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "datamigration.privateConnections.listEffectiveTags",
-      "role": "roles/iam.supportUser",
+      "role": "roles/dlp.projectdriver",
       "service": "datamigration",
       "method": "",
       "severity": "MEDIUM",
@@ -742,23 +822,7 @@
       }
     },
     {
-      "id": "2026-07-11-1247",
-      "date": "2026-07-11",
-      "commit": "0f12962d9265",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "datamigration.privateConnections.listEffectiveTags",
-      "role": "roles/datamigration.admin",
-      "service": "datamigration",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-07-11-1248",
+      "id": "2026-07-11-1252",
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
@@ -774,76 +838,12 @@
       }
     },
     {
-      "id": "2026-07-11-1249",
-      "date": "2026-07-11",
-      "commit": "0f12962d9265",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "datamigration.privateConnections.listTagBindings",
-      "role": "roles/dlp.projectdriver",
-      "service": "datamigration",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-07-11-1250",
-      "date": "2026-07-11",
-      "commit": "0f12962d9265",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "datamigration.privateConnections.listTagBindings",
-      "role": "roles/editor",
-      "service": "datamigration",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-07-11-1251",
-      "date": "2026-07-11",
-      "commit": "0f12962d9265",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "datamigration.privateConnections.listTagBindings",
-      "role": "roles/dlp.orgdriver",
-      "service": "datamigration",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-07-11-1252",
-      "date": "2026-07-11",
-      "commit": "0f12962d9265",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "datamigration.privateConnections.listTagBindings",
-      "role": "roles/iam.supportUser",
-      "service": "datamigration",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
       "id": "2026-07-11-1253",
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "datamigration.privateConnections.listTagBindings",
+      "permission": "datamigration.privateConnections.listEffectiveTags",
       "role": "roles/datamigration.admin",
       "service": "datamigration",
       "method": "",
@@ -859,9 +859,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "datamigration.privateConnections.listTagBindings",
-      "role": "roles/owner",
-      "service": "datamigration",
+      "permission": "cloudkms.operations.get",
+      "role": "roles/datastream.admin",
+      "service": "cloudkms",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -875,11 +875,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "analyticshub.queryTemplates.create",
-      "role": "roles/owner",
-      "service": "analyticshub",
+      "permission": "run.instances.getIamPolicy",
+      "role": "roles/cloudfunctions.admin",
+      "service": "run",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -890,15 +890,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "analyticshub.queryTemplates.create",
-      "role": "roles/editor",
-      "service": "analyticshub",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.getIamPolicy",
+      "role": "roles/run.editor",
+      "service": "run",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -906,15 +906,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "analyticshub.queryTemplates.create",
-      "role": "roles/analyticshub.publisher",
-      "service": "analyticshub",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.getIamPolicy",
+      "role": "roles/iam.securityReviewer",
+      "service": "run",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -922,15 +922,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudkms.operations.get",
-      "role": "roles/datastream.admin",
-      "service": "cloudkms",
+      "change_type": "permission_added_to_role",
+      "permission": "run.instances.getIamPolicy",
+      "role": "roles/run.admin",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -939,11 +939,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.setIamPolicy",
-      "role": "roles/run.admin",
+      "permission": "run.instances.getIamPolicy",
+      "role": "roles/run.developer",
       "service": "run",
       "method": "",
-      "severity": "CRITICAL",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -955,11 +955,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.setIamPolicy",
-      "role": "roles/cloudfunctions.admin",
+      "permission": "run.instances.getIamPolicy",
+      "role": "roles/iam.securityAdmin",
       "service": "run",
       "method": "",
-      "severity": "CRITICAL",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -971,11 +971,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "run.instances.setIamPolicy",
+      "permission": "run.instances.getIamPolicy",
       "role": "roles/owner",
       "service": "run",
       "method": "",
-      "severity": "CRITICAL",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -986,15 +986,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.instances.setIamPolicy",
-      "role": "roles/iam.securityAdmin",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.instances.getIamPolicy",
+      "role": "roles/editor",
       "service": "run",
       "method": "",
-      "severity": "CRITICAL",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -1002,15 +1002,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.instances.update",
-      "role": "roles/owner",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.instances.getIamPolicy",
+      "role": "roles/iam.siteReliabilityEngineer",
       "service": "run",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -1018,15 +1018,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.instances.update",
-      "role": "roles/run.developer",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.instances.getIamPolicy",
+      "role": "roles/iam.mlEngineer",
       "service": "run",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -1034,15 +1034,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.instances.update",
-      "role": "roles/run.editor",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.instances.getIamPolicy",
+      "role": "roles/iam.supportUser",
       "service": "run",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -1050,15 +1050,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.instances.update",
-      "role": "roles/cloudfunctions.admin",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.instances.getIamPolicy",
+      "role": "roles/run.viewer",
       "service": "run",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -1066,15 +1066,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.instances.update",
-      "role": "roles/run.admin",
+      "change_type": "permission_removed_from_role",
+      "permission": "run.instances.getIamPolicy",
+      "role": "roles/firebase.editor",
       "service": "run",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -1083,11 +1083,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "run.instances.update",
-      "role": "roles/iam.mlEngineer",
+      "permission": "run.instances.getIamPolicy",
+      "role": "roles/run.sourceDeveloper",
       "service": "run",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "was_undocumented": true
@@ -1098,15 +1098,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.instances.update",
-      "role": "roles/run.sourceDeveloper",
-      "service": "run",
+      "change_type": "permission_added_to_role",
+      "permission": "analyticshub.queryTemplates.list",
+      "role": "roles/analyticshub.subscriptionOwner",
+      "service": "analyticshub",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -1114,15 +1114,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "run.instances.update",
-      "role": "roles/editor",
-      "service": "run",
+      "change_type": "permission_added_to_role",
+      "permission": "analyticshub.queryTemplates.list",
+      "role": "roles/owner",
+      "service": "analyticshub",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -1131,9 +1131,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "datamigration.migrationJobs.deleteTagBinding",
-      "role": "roles/dlp.projectdriver",
-      "service": "datamigration",
+      "permission": "analyticshub.queryTemplates.list",
+      "role": "roles/iam.securityReviewer",
+      "service": "analyticshub",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1147,9 +1147,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "datamigration.migrationJobs.deleteTagBinding",
-      "role": "roles/dlp.orgdriver",
-      "service": "datamigration",
+      "permission": "analyticshub.queryTemplates.list",
+      "role": "roles/iam.securityAdmin",
+      "service": "analyticshub",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1163,9 +1163,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "datamigration.migrationJobs.deleteTagBinding",
-      "role": "roles/datamigration.admin",
-      "service": "datamigration",
+      "permission": "analyticshub.queryTemplates.list",
+      "role": "roles/analyticshub.publisher",
+      "service": "analyticshub",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1179,9 +1179,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "datamigration.migrationJobs.deleteTagBinding",
-      "role": "roles/owner",
-      "service": "datamigration",
+      "permission": "analyticshub.queryTemplates.list",
+      "role": "roles/iam.supportUser",
+      "service": "analyticshub",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1194,15 +1194,15 @@
       "date": "2026-07-11",
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "analyticshub.queryTemplates.update",
-      "role": "roles/owner",
+      "change_type": "permission_removed_from_role",
+      "permission": "analyticshub.queryTemplates.list",
+      "role": "roles/editor",
       "service": "analyticshub",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -1211,11 +1211,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "analyticshub.queryTemplates.update",
-      "role": "roles/editor",
+      "permission": "analyticshub.queryTemplates.list",
+      "role": "roles/analyticshub.viewer",
       "service": "analyticshub",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "was_undocumented": true
@@ -1227,11 +1227,11 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "analyticshub.queryTemplates.update",
-      "role": "roles/analyticshub.publisher",
-      "service": "analyticshub",
+      "permission": "cloudkms.keyHandles.list",
+      "role": "roles/datastream.admin",
+      "service": "cloudkms",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "was_undocumented": true
@@ -1243,9 +1243,9 @@
       "commit": "0f12962d9265",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "cloudkms.keyHandles.list",
-      "role": "roles/datastream.admin",
-      "service": "cloudkms",
+      "permission": "container.deployments.get",
+      "role": "roles/hypercomputecluster.serviceAgent",
+      "service": "container",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1262,7 +1262,7 @@
       "permission": "",
       "role": "",
       "service": "cloudkms",
-      "method": "cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.importTrustedKeyWrappedCryptoKeyVersion",
+      "method": "cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.exportTrustedKeyWrappedCryptoKeyVersion",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1294,7 +1294,7 @@
       "permission": "",
       "role": "",
       "service": "cloudkms",
-      "method": "cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.exportTrustedKeyWrappedCryptoKeyVersion",
+      "method": "cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.importTrustedKeyWrappedCryptoKeyVersion",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1310,7 +1310,7 @@
       "permission": "",
       "role": "",
       "service": "cloudkms",
-      "method": "cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.importTrustedKeyWrappedCryptoKeyVersion",
+      "method": "cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.exportTrustedKeyWrappedCryptoKeyVersion",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1342,7 +1342,7 @@
       "permission": "",
       "role": "",
       "service": "cloudkms",
-      "method": "cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.exportTrustedKeyWrappedCryptoKeyVersion",
+      "method": "cloudkms.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions.importTrustedKeyWrappedCryptoKeyVersion",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1357,12 +1357,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.tuningJobs.operations.wait",
+      "service": "calendar",
+      "method": "calendar.calendars.transferOwnership",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "calendar"
       }
     },
     {
@@ -1373,12 +1373,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.memories.operations.wait",
-      "severity": "INFO",
+      "service": "bigqueryreservation",
+      "method": "bigqueryreservation.projects.locations.reservationGroups.patch",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "bigqueryreservation"
       }
     },
     {
@@ -1389,12 +1389,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.memories.operations.delete",
-      "severity": "HIGH",
+      "service": "secretmanager",
+      "method": "secretmanager.projects.secrets.enableManagedRotation",
+      "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "secretmanager"
       }
     },
     {
@@ -1405,12 +1405,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.operations.cancel",
+      "service": "secretmanager",
+      "method": "secretmanager.projects.locations.secrets.enableManagedRotation",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "secretmanager"
       }
     },
     {
@@ -1421,12 +1421,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.memories.operations.list",
+      "service": "secretmanager",
+      "method": "secretmanager.projects.locations.secrets.rotateSecret",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "secretmanager"
       }
     },
     {
@@ -1437,12 +1437,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.operations.delete",
-      "severity": "HIGH",
+      "service": "secretmanager",
+      "method": "secretmanager.projects.secrets.rotateSecret",
+      "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "secretmanager"
       }
     },
     {
@@ -1453,12 +1453,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.operations.list",
+      "service": "chat",
+      "method": "chat.users.availability.get",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "chat"
       }
     },
     {
@@ -1469,12 +1469,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.memories.operations.get",
-      "severity": "INFO",
+      "service": "chat",
+      "method": "chat.users.availability.patch",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "chat"
       }
     },
     {
@@ -1482,15 +1482,15 @@
       "date": "2026-07-09",
       "commit": "7ff619b9b675",
       "dimension": "methods",
-      "change_type": "added",
+      "change_type": "removed",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.memories.operations.cancel",
+      "service": "chat",
+      "method": "chat.users.availability.getAvailability",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "chat"
       }
     },
     {
@@ -1498,15 +1498,15 @@
       "date": "2026-07-09",
       "commit": "7ff619b9b675",
       "dimension": "methods",
-      "change_type": "added",
+      "change_type": "removed",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.tuningJobs.operations.wait",
+      "service": "chat",
+      "method": "chat.users.availability.updateAvailability",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "chat"
       }
     },
     {
@@ -1517,12 +1517,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.evaluationMetrics.delete",
+      "service": "compute",
+      "method": "compute.dhcpOptionsConfigs.patch",
       "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "compute"
       }
     },
     {
@@ -1533,12 +1533,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.evaluationMetrics.get",
+      "service": "compute",
+      "method": "compute.acceleratorPodControllers.get",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "compute"
       }
     },
     {
@@ -1549,12 +1549,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.memoryBanks.memories.operations.list",
+      "service": "compute",
+      "method": "compute.dhcpOptionsConfigs.get",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "compute"
       }
     },
     {
@@ -1565,12 +1565,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.operations.delete",
+      "service": "compute",
+      "method": "compute.acceleratorPodControllers.patch",
       "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "compute"
       }
     },
     {
@@ -1581,12 +1581,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.evaluationMetrics.list",
+      "service": "compute",
+      "method": "compute.dhcpOptionsConfigs.list",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "compute"
       }
     },
     {
@@ -1597,12 +1597,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.memoryBanks.memories.operations.wait",
+      "service": "compute",
+      "method": "compute.dhcpOptionsConfigs.testIamPermissions",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "compute"
       }
     }
   ],
