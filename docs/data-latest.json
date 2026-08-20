@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T16:06:50Z",
+  "generated_at": "2026-08-20T16:07:43Z",
   "total_entries": 1747,
   "pages": 18,
   "page": 1,
@@ -14,7 +14,7 @@
       "permission": "",
       "role": "",
       "service": "firestore",
-      "method": "firestore.projects.databases.changeStreams.delete",
+      "method": "firestore.projects.databases.changeStreams.create",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -30,8 +30,8 @@
       "permission": "",
       "role": "",
       "service": "firestore",
-      "method": "firestore.projects.databases.changeStreams.create",
-      "severity": "HIGH",
+      "method": "firestore.projects.databases.changeStreams.get",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "firestore"
@@ -62,8 +62,8 @@
       "permission": "",
       "role": "",
       "service": "firestore",
-      "method": "firestore.projects.databases.changeStreams.get",
-      "severity": "INFO",
+      "method": "firestore.projects.databases.changeStreams.delete",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "firestore"
@@ -126,22 +126,6 @@
       "permission": "",
       "role": "",
       "service": "firestore",
-      "method": "firestore.projects.databases.changeStreams.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-19-0009",
-      "date": "2026-08-19",
-      "commit": "a8e6f3e03bf8",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "firestore",
       "method": "firestore.projects.databases.changeStreams.delete",
       "severity": "HIGH",
       "tags": [],
@@ -150,7 +134,7 @@
       }
     },
     {
-      "id": "2026-08-19-0010",
+      "id": "2026-08-19-0009",
       "date": "2026-08-19",
       "commit": "a8e6f3e03bf8",
       "dimension": "method_map",
@@ -166,7 +150,7 @@
       }
     },
     {
-      "id": "2026-08-19-0011",
+      "id": "2026-08-19-0010",
       "date": "2026-08-19",
       "commit": "a8e6f3e03bf8",
       "dimension": "method_map",
@@ -182,7 +166,7 @@
       }
     },
     {
-      "id": "2026-08-19-0012",
+      "id": "2026-08-19-0011",
       "date": "2026-08-19",
       "commit": "a8e6f3e03bf8",
       "dimension": "method_map",
@@ -198,6 +182,22 @@
       }
     },
     {
+      "id": "2026-08-19-0012",
+      "date": "2026-08-19",
+      "commit": "a8e6f3e03bf8",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "firestore",
+      "method": "firestore.projects.databases.changeStreams.create",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
       "id": "2026-08-17-0013",
       "date": "2026-08-17",
       "commit": "e302bfac61bd",
@@ -206,7 +206,7 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.addresses.updatePublicPtr",
+      "method": "compute.regionSslPolicies.getIamPolicy",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -222,38 +222,6 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.regionSslPolicies.getIamPolicy",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "compute"
-      }
-    },
-    {
-      "id": "2026-08-17-0015",
-      "date": "2026-08-17",
-      "commit": "e302bfac61bd",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.regionSslPolicies.setIamPolicy",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "service": "compute"
-      }
-    },
-    {
-      "id": "2026-08-17-0016",
-      "date": "2026-08-17",
-      "commit": "e302bfac61bd",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "compute",
       "method": "compute.sslPolicies.setIamPolicy",
       "severity": "CRITICAL",
       "tags": [],
@@ -262,7 +230,7 @@
       }
     },
     {
-      "id": "2026-08-17-0017",
+      "id": "2026-08-17-0015",
       "date": "2026-08-17",
       "commit": "e302bfac61bd",
       "dimension": "methods",
@@ -278,11 +246,27 @@
       }
     },
     {
-      "id": "2026-08-17-0018",
+      "id": "2026-08-17-0016",
       "date": "2026-08-17",
       "commit": "e302bfac61bd",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.regionSslPolicies.setIamPolicy",
+      "severity": "CRITICAL",
+      "tags": [],
+      "details": {
+        "service": "compute"
+      }
+    },
+    {
+      "id": "2026-08-17-0017",
+      "date": "2026-08-17",
+      "commit": "e302bfac61bd",
+      "dimension": "methods",
+      "change_type": "added",
       "permission": "",
       "role": "",
       "service": "compute",
@@ -290,11 +274,11 @@
       "severity": "INFO",
       "tags": [],
       "details": {
-        "note": "New method has no permission mapping"
+        "service": "compute"
       }
     },
     {
-      "id": "2026-08-17-0019",
+      "id": "2026-08-17-0018",
       "date": "2026-08-17",
       "commit": "e302bfac61bd",
       "dimension": "method_map",
@@ -310,7 +294,7 @@
       }
     },
     {
-      "id": "2026-08-17-0020",
+      "id": "2026-08-17-0019",
       "date": "2026-08-17",
       "commit": "e302bfac61bd",
       "dimension": "method_map",
@@ -320,6 +304,22 @@
       "service": "compute",
       "method": "compute.sslPolicies.setIamPolicy",
       "severity": "CRITICAL",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-17-0020",
+      "date": "2026-08-17",
+      "commit": "e302bfac61bd",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.sslPolicies.getIamPolicy",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
@@ -350,7 +350,7 @@
       "permission": "",
       "role": "",
       "service": "compute",
-      "method": "compute.sslPolicies.getIamPolicy",
+      "method": "compute.addresses.updatePublicPtr",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -365,12 +365,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "storage",
-      "method": "storage.rapidCaches.update",
-      "severity": "HIGH",
+      "service": "playdeveloperreporting",
+      "method": "playdeveloperreporting.vitals.bitmapmemoryusage.get",
+      "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "storage"
+        "service": "playdeveloperreporting"
       }
     },
     {
@@ -381,12 +381,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "storage",
-      "method": "storage.rapidCaches.disable",
+      "service": "playdeveloperreporting",
+      "method": "playdeveloperreporting.vitals.anonrssandswapmemoryusage.query",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "storage"
+        "service": "playdeveloperreporting"
       }
     },
     {
@@ -397,12 +397,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "storage",
-      "method": "storage.rapidCaches.insert",
-      "severity": "HIGH",
+      "service": "playdeveloperreporting",
+      "method": "playdeveloperreporting.vitals.anonrssandswapmemoryusage.get",
+      "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "storage"
+        "service": "playdeveloperreporting"
       }
     },
     {
@@ -413,12 +413,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "storage",
-      "method": "storage.rapidCaches.list",
+      "service": "playdeveloperreporting",
+      "method": "playdeveloperreporting.vitals.bitmapmemoryusage.query",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "storage"
+        "service": "playdeveloperreporting"
       }
     },
     {
@@ -430,8 +430,8 @@
       "permission": "",
       "role": "",
       "service": "storage",
-      "method": "storage.rapidCaches.get",
-      "severity": "INFO",
+      "method": "storage.rapidCaches.update",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "storage"
@@ -461,12 +461,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "playdeveloperreporting",
-      "method": "playdeveloperreporting.vitals.anonrssandswapmemoryusage.query",
+      "service": "storage",
+      "method": "storage.rapidCaches.get",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "playdeveloperreporting"
+        "service": "storage"
       }
     },
     {
@@ -477,12 +477,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "playdeveloperreporting",
-      "method": "playdeveloperreporting.vitals.bitmapmemoryusage.query",
+      "service": "storage",
+      "method": "storage.rapidCaches.list",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "playdeveloperreporting"
+        "service": "storage"
       }
     },
     {
@@ -493,12 +493,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "playdeveloperreporting",
-      "method": "playdeveloperreporting.vitals.bitmapmemoryusage.get",
-      "severity": "INFO",
+      "service": "storage",
+      "method": "storage.rapidCaches.insert",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "playdeveloperreporting"
+        "service": "storage"
       }
     },
     {
@@ -509,16 +509,48 @@
       "change_type": "added",
       "permission": "",
       "role": "",
+      "service": "storage",
+      "method": "storage.rapidCaches.disable",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "storage"
+      }
+    },
+    {
+      "id": "2026-08-16-0033",
+      "date": "2026-08-16",
+      "commit": "6b1fdbaa2420",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
       "service": "playdeveloperreporting",
       "method": "playdeveloperreporting.vitals.anonrssandswapmemoryusage.get",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "playdeveloperreporting"
+        "note": "New method has no permission mapping"
       }
     },
     {
-      "id": "2026-08-16-0033",
+      "id": "2026-08-16-0034",
+      "date": "2026-08-16",
+      "commit": "6b1fdbaa2420",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "playdeveloperreporting",
+      "method": "playdeveloperreporting.vitals.anonrssandswapmemoryusage.query",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-16-0035",
       "date": "2026-08-16",
       "commit": "6b1fdbaa2420",
       "dimension": "method_map",
@@ -534,38 +566,6 @@
       }
     },
     {
-      "id": "2026-08-16-0034",
-      "date": "2026-08-16",
-      "commit": "6b1fdbaa2420",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "storage",
-      "method": "storage.rapidCaches.disable",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-16-0035",
-      "date": "2026-08-16",
-      "commit": "6b1fdbaa2420",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "playdeveloperreporting",
-      "method": "playdeveloperreporting.vitals.anonrssandswapmemoryusage.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
       "id": "2026-08-16-0036",
       "date": "2026-08-16",
       "commit": "6b1fdbaa2420",
@@ -573,24 +573,8 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "playdeveloperreporting",
-      "method": "playdeveloperreporting.vitals.anonrssandswapmemoryusage.query",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-16-0037",
-      "date": "2026-08-16",
-      "commit": "6b1fdbaa2420",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
       "service": "storage",
-      "method": "storage.rapidCaches.insert",
+      "method": "storage.managedFolders.update",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -598,55 +582,7 @@
       }
     },
     {
-      "id": "2026-08-16-0038",
-      "date": "2026-08-16",
-      "commit": "6b1fdbaa2420",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "storage",
-      "method": "storage.rapidCaches.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-16-0039",
-      "date": "2026-08-16",
-      "commit": "6b1fdbaa2420",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "playdeveloperreporting",
-      "method": "playdeveloperreporting.vitals.bitmapmemoryusage.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-16-0040",
-      "date": "2026-08-16",
-      "commit": "6b1fdbaa2420",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "playdeveloperreporting",
-      "method": "playdeveloperreporting.vitals.bitmapmemoryusage.query",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-16-0041",
+      "id": "2026-08-16-0037",
       "date": "2026-08-16",
       "commit": "6b1fdbaa2420",
       "dimension": "method_map",
@@ -662,7 +598,23 @@
       }
     },
     {
-      "id": "2026-08-16-0042",
+      "id": "2026-08-16-0038",
+      "date": "2026-08-16",
+      "commit": "6b1fdbaa2420",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "playdeveloperreporting",
+      "method": "playdeveloperreporting.vitals.bitmapmemoryusage.query",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-16-0039",
       "date": "2026-08-16",
       "commit": "6b1fdbaa2420",
       "dimension": "method_map",
@@ -670,8 +622,56 @@
       "permission": "",
       "role": "",
       "service": "storage",
-      "method": "storage.managedFolders.update",
+      "method": "storage.rapidCaches.disable",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-16-0040",
+      "date": "2026-08-16",
+      "commit": "6b1fdbaa2420",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "storage",
+      "method": "storage.rapidCaches.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-16-0041",
+      "date": "2026-08-16",
+      "commit": "6b1fdbaa2420",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "storage",
+      "method": "storage.rapidCaches.insert",
       "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-16-0042",
+      "date": "2026-08-16",
+      "commit": "6b1fdbaa2420",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "playdeveloperreporting",
+      "method": "playdeveloperreporting.vitals.bitmapmemoryusage.get",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
@@ -719,8 +719,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.servers.start",
-      "role": "roles/ftp.admin",
+      "permission": "ftp.locations.list",
+      "role": "roles/ftp.viewer",
       "service": "ftp",
       "method": "",
       "severity": "MEDIUM",
@@ -735,8 +735,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.servers.start",
-      "role": "roles/editor",
+      "permission": "ftp.locations.list",
+      "role": "roles/iam.securityReviewer",
       "service": "ftp",
       "method": "",
       "severity": "MEDIUM",
@@ -751,11 +751,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataproc.agents.create",
-      "role": "roles/dataplex.serviceAgent",
-      "service": "dataproc",
+      "permission": "ftp.locations.list",
+      "role": "roles/ftp.admin",
+      "service": "ftp",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -767,8 +767,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.users.list",
-      "role": "roles/iam.securityAuditor",
+      "permission": "ftp.locations.list",
+      "role": "roles/editor",
       "service": "ftp",
       "method": "",
       "severity": "MEDIUM",
@@ -783,8 +783,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.users.list",
-      "role": "roles/editor",
+      "permission": "ftp.locations.list",
+      "role": "roles/iam.securityAuditor",
       "service": "ftp",
       "method": "",
       "severity": "MEDIUM",
@@ -799,9 +799,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.users.list",
-      "role": "roles/ftp.viewer",
-      "service": "ftp",
+      "permission": "policysimulator.activityBacktests.viewRabPolicy",
+      "role": "roles/policysimulator.viewer",
+      "service": "policysimulator",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -815,9 +815,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.users.list",
-      "role": "roles/iam.securityReviewer",
-      "service": "ftp",
+      "permission": "policysimulator.activityBacktests.viewRabPolicy",
+      "role": "roles/editor",
+      "service": "policysimulator",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -831,9 +831,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.users.list",
-      "role": "roles/ftp.admin",
-      "service": "ftp",
+      "permission": "policysimulator.activityBacktests.viewRabPolicy",
+      "role": "roles/policysimulator.admin",
+      "service": "policysimulator",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -847,8 +847,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.servers.list",
-      "role": "roles/iam.securityAuditor",
+      "permission": "ftp.users.list",
+      "role": "roles/ftp.viewer",
       "service": "ftp",
       "method": "",
       "severity": "MEDIUM",
@@ -863,8 +863,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.servers.list",
-      "role": "roles/editor",
+      "permission": "ftp.users.list",
+      "role": "roles/iam.securityReviewer",
       "service": "ftp",
       "method": "",
       "severity": "MEDIUM",
@@ -879,8 +879,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.servers.list",
-      "role": "roles/ftp.viewer",
+      "permission": "ftp.users.list",
+      "role": "roles/ftp.admin",
       "service": "ftp",
       "method": "",
       "severity": "MEDIUM",
@@ -895,8 +895,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.servers.list",
-      "role": "roles/iam.securityReviewer",
+      "permission": "ftp.users.list",
+      "role": "roles/editor",
       "service": "ftp",
       "method": "",
       "severity": "MEDIUM",
@@ -911,8 +911,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.servers.list",
-      "role": "roles/ftp.admin",
+      "permission": "ftp.users.list",
+      "role": "roles/iam.securityAuditor",
       "service": "ftp",
       "method": "",
       "severity": "MEDIUM",
@@ -927,7 +927,7 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataproc.tasks.lease",
+      "permission": "dataproc.tasks.reportStatus",
       "role": "roles/dataplex.serviceAgent",
       "service": "dataproc",
       "method": "",
@@ -943,11 +943,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "devicestreaming.deviceSessions.create",
-      "role": "roles/devicerun.admin",
-      "service": "devicestreaming",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/composer.serviceAgent",
+      "service": "compute",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -959,11 +959,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.delete",
-      "role": "roles/editor",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/iam.securityReviewer",
       "service": "compute",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -975,11 +975,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.delete",
-      "role": "roles/iam.networkAdmin",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/cloudtpu.serviceAgent",
       "service": "compute",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -991,11 +991,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.delete",
-      "role": "roles/compute.editor",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/editor",
       "service": "compute",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1007,11 +1007,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.delete",
-      "role": "roles/cloudtpu.serviceAgent",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/compute.editor",
       "service": "compute",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1023,11 +1023,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.delete",
-      "role": "roles/notebooks.serviceAgent",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/iam.networkAdmin",
       "service": "compute",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1039,11 +1039,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.delete",
-      "role": "roles/composer.serviceAgent",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/iam.databasesAdmin",
       "service": "compute",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1055,9 +1055,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "devicerun.locations.get",
-      "role": "roles/devicerun.admin",
-      "service": "devicerun",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/iam.securityAuditor",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1071,9 +1071,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "devicerun.locations.get",
-      "role": "roles/editor",
-      "service": "devicerun",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/notebooks.serviceAgent",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1087,9 +1087,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "devicerun.locations.get",
-      "role": "roles/devicerun.viewer",
-      "service": "devicerun",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/notebooks.legacyViewer",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1103,9 +1103,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.locations.list",
-      "role": "roles/iam.securityAuditor",
-      "service": "ftp",
+      "permission": "compute.recoverableSnapshots.recover",
+      "role": "roles/composer.serviceAgent",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1119,9 +1119,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.locations.list",
-      "role": "roles/editor",
-      "service": "ftp",
+      "permission": "compute.recoverableSnapshots.recover",
+      "role": "roles/cloudtpu.serviceAgent",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1135,9 +1135,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.locations.list",
-      "role": "roles/ftp.viewer",
-      "service": "ftp",
+      "permission": "compute.recoverableSnapshots.recover",
+      "role": "roles/editor",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1151,9 +1151,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.locations.list",
-      "role": "roles/iam.securityReviewer",
-      "service": "ftp",
+      "permission": "compute.recoverableSnapshots.recover",
+      "role": "roles/compute.editor",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1167,9 +1167,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.locations.list",
-      "role": "roles/ftp.admin",
-      "service": "ftp",
+      "permission": "compute.recoverableSnapshots.recover",
+      "role": "roles/iam.networkAdmin",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1183,11 +1183,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.servers.delete",
-      "role": "roles/ftp.admin",
-      "service": "ftp",
+      "permission": "compute.recoverableSnapshots.recover",
+      "role": "roles/notebooks.serviceAgent",
+      "service": "compute",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1199,8 +1199,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.servers.delete",
-      "role": "roles/editor",
+      "permission": "ftp.servers.create",
+      "role": "roles/ftp.admin",
       "service": "ftp",
       "method": "",
       "severity": "HIGH",
@@ -1215,11 +1215,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "financialservices.v1instances.listTagBindings",
-      "role": "roles/dlp.orgdriver",
-      "service": "financialservices",
+      "permission": "ftp.servers.create",
+      "role": "roles/editor",
+      "service": "ftp",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1231,9 +1231,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "financialservices.v1instances.listTagBindings",
-      "role": "roles/iam.securityAuditor",
-      "service": "financialservices",
+      "permission": "dataproc.tasks.listInvalidatedLeases",
+      "role": "roles/dataplex.serviceAgent",
+      "service": "dataproc",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1247,11 +1247,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "financialservices.v1instances.listTagBindings",
-      "role": "roles/financialservices.viewer",
-      "service": "financialservices",
+      "permission": "ftp.operations.delete",
+      "role": "roles/ftp.admin",
+      "service": "ftp",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1263,11 +1263,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "financialservices.v1instances.listTagBindings",
+      "permission": "ftp.operations.delete",
       "role": "roles/editor",
-      "service": "financialservices",
+      "service": "ftp",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1279,9 +1279,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.delete",
-      "role": "roles/visualinspection.serviceAgent",
-      "service": "aiplatform",
+      "permission": "ftp.servers.update",
+      "role": "roles/ftp.admin",
+      "service": "ftp",
       "method": "",
       "severity": "HIGH",
       "tags": [],
@@ -1295,9 +1295,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.delete",
+      "permission": "ftp.servers.update",
       "role": "roles/editor",
-      "service": "aiplatform",
+      "service": "ftp",
       "method": "",
       "severity": "HIGH",
       "tags": [],
@@ -1311,9 +1311,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.delete",
-      "role": "roles/iam.mlEngineer",
-      "service": "aiplatform",
+      "permission": "dataproc.agents.delete",
+      "role": "roles/dataplex.serviceAgent",
+      "service": "dataproc",
       "method": "",
       "severity": "HIGH",
       "tags": [],
@@ -1327,11 +1327,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.delete",
-      "role": "roles/iam.dataScientist",
-      "service": "aiplatform",
+      "permission": "devicerun.operations.get",
+      "role": "roles/devicerun.viewer",
+      "service": "devicerun",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1343,11 +1343,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "devicerun.operations.delete",
+      "permission": "devicerun.operations.get",
       "role": "roles/devicerun.admin",
       "service": "devicerun",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1359,11 +1359,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "devicerun.operations.delete",
+      "permission": "devicerun.operations.get",
       "role": "roles/editor",
       "service": "devicerun",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1375,11 +1375,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "devicerun.sessions.delete",
-      "role": "roles/devicerun.admin",
-      "service": "devicerun",
+      "permission": "policysimulator.activityBacktestResults.search",
+      "role": "roles/policysimulator.viewer",
+      "service": "policysimulator",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1391,11 +1391,11 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "devicerun.sessions.delete",
+      "permission": "policysimulator.activityBacktestResults.search",
       "role": "roles/editor",
-      "service": "devicerun",
+      "service": "policysimulator",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1403,6 +1403,22 @@
     },
     {
       "id": "2026-08-15-0088",
+      "date": "2026-08-15",
+      "commit": "d46497a18fba",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "policysimulator.activityBacktestResults.search",
+      "role": "roles/policysimulator.admin",
+      "service": "policysimulator",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-15-0089",
       "date": "2026-08-15",
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
@@ -1418,7 +1434,7 @@
       }
     },
     {
-      "id": "2026-08-15-0089",
+      "id": "2026-08-15-0090",
       "date": "2026-08-15",
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
@@ -1434,32 +1450,16 @@
       }
     },
     {
-      "id": "2026-08-15-0090",
-      "date": "2026-08-15",
-      "commit": "d46497a18fba",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "datalineage.processRevisions.delete",
-      "role": "roles/datalineage.editor",
-      "service": "datalineage",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
       "id": "2026-08-15-0091",
       "date": "2026-08-15",
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "datalineage.processRevisions.delete",
+      "permission": "compute.snapshotRecycleBinPolicy.get",
       "role": "roles/editor",
-      "service": "datalineage",
+      "service": "compute",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1471,8 +1471,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.get",
-      "role": "roles/iam.securityAuditor",
+      "permission": "compute.snapshotRecycleBinPolicy.get",
+      "role": "roles/compute.editor",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -1487,8 +1487,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.get",
-      "role": "roles/iam.databasesAdmin",
+      "permission": "compute.snapshotRecycleBinPolicy.get",
+      "role": "roles/iam.networkAdmin",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -1503,8 +1503,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.get",
-      "role": "roles/editor",
+      "permission": "compute.snapshotRecycleBinPolicy.get",
+      "role": "roles/iam.databasesAdmin",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -1519,8 +1519,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.get",
-      "role": "roles/iam.networkAdmin",
+      "permission": "compute.snapshotRecycleBinPolicy.get",
+      "role": "roles/iam.securityAuditor",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -1535,8 +1535,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.get",
-      "role": "roles/composer.serviceAgent",
+      "permission": "compute.snapshotRecycleBinPolicy.get",
+      "role": "roles/notebooks.serviceAgent",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -1551,8 +1551,8 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.get",
-      "role": "roles/compute.editor",
+      "permission": "compute.snapshotRecycleBinPolicy.get",
+      "role": "roles/notebooks.legacyViewer",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -1567,9 +1567,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.get",
-      "role": "roles/cloudtpu.serviceAgent",
-      "service": "compute",
+      "permission": "chronicle.tagSubscriptions.get",
+      "role": "roles/chronicle.viewer",
+      "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1583,9 +1583,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.get",
-      "role": "roles/notebooks.serviceAgent",
-      "service": "compute",
+      "permission": "chronicle.tagSubscriptions.get",
+      "role": "roles/editor",
+      "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1599,9 +1599,9 @@
       "commit": "d46497a18fba",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.get",
-      "role": "roles/notebooks.legacyViewer",
-      "service": "compute",
+      "permission": "ftp.servers.get",
+      "role": "roles/ftp.viewer",
+      "service": "ftp",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],

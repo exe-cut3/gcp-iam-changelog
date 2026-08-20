@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T16:06:50Z",
+  "generated_at": "2026-08-20T16:07:43Z",
   "total_entries": 1747,
   "pages": 18,
   "page": 18,
@@ -11,11 +11,11 @@
       "commit": "661a986b9dae",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ml.versions.create",
-      "role": "roles/ml.editor",
-      "service": "ml",
+      "permission": "chronicle.queryMetrics.get",
+      "role": "roles/viewer",
+      "service": "chronicle",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -27,11 +27,11 @@
       "commit": "661a986b9dae",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ml.jobs.create",
-      "role": "roles/ml.editor",
-      "service": "ml",
+      "permission": "chronicle.queryMetrics.get",
+      "role": "roles/chronicle.restrictedDataAccessViewer",
+      "service": "chronicle",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -43,8 +43,8 @@
       "commit": "661a986b9dae",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "chronicle.queryMetrics.list",
-      "role": "roles/chronicle.restrictedDataAccessViewer",
+      "permission": "chronicle.queryMetrics.get",
+      "role": "roles/chronicle.admin",
       "service": "chronicle",
       "method": "",
       "severity": "MEDIUM",
@@ -59,7 +59,7 @@
       "commit": "661a986b9dae",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "chronicle.queryMetrics.list",
+      "permission": "chronicle.queryMetrics.get",
       "role": "roles/chronicle.limitedViewer",
       "service": "chronicle",
       "method": "",
@@ -74,15 +74,15 @@
       "date": "2026-07-24",
       "commit": "661a986b9dae",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.queryMetrics.list",
-      "role": "roles/chronicle.admin",
-      "service": "chronicle",
+      "change_type": "permission_removed_from_role",
+      "permission": "dataplex.operations.list",
+      "role": "roles/spanner.databaseUser",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -90,15 +90,15 @@
       "date": "2026-07-24",
       "commit": "661a986b9dae",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.queryMetrics.list",
-      "role": "roles/viewer",
-      "service": "chronicle",
+      "change_type": "permission_removed_from_role",
+      "permission": "dataplex.operations.list",
+      "role": "roles/spanner.graphIntelligenceUser",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -107,11 +107,11 @@
       "commit": "661a986b9dae",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ml.trials.get",
+      "permission": "ml.versions.update",
       "role": "roles/ml.editor",
       "service": "ml",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -125,12 +125,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "redis",
-      "method": "redis.projects.locations.aclPolicies.revisions.list",
+      "service": "cloudtasks",
+      "method": "cloudtasks.projects.locations.operations.get",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "redis"
+        "service": "cloudtasks"
       }
     },
     {
@@ -141,12 +141,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "redis",
-      "method": "redis.projects.locations.aclPolicies.revisions.get",
+      "service": "cloudtasks",
+      "method": "cloudtasks.projects.locations.queues.tasks.batchDelete",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "redis"
+        "service": "cloudtasks"
       }
     },
     {
@@ -157,12 +157,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.publishers.v1.responses",
+      "service": "cloudtasks",
+      "method": "cloudtasks.projects.locations.queues.tasks.batchCreate",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "aiplatform"
+        "service": "cloudtasks"
       }
     },
     {
@@ -174,7 +174,7 @@
       "permission": "",
       "role": "",
       "service": "assuredworkloads",
-      "method": "assuredworkloads.folders.locations.dbFrameworkComplianceReports.fetch",
+      "method": "assuredworkloads.folders.locations.dbFrameworkComplianceReports.dbControlComplianceSummaries.list",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -190,7 +190,7 @@
       "permission": "",
       "role": "",
       "service": "assuredworkloads",
-      "method": "assuredworkloads.folders.locations.dbFrameworkComplianceReports.dbControlComplianceSummaries.list",
+      "method": "assuredworkloads.projects.locations.dbFrameworkComplianceReports.fetch",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -206,7 +206,7 @@
       "permission": "",
       "role": "",
       "service": "assuredworkloads",
-      "method": "assuredworkloads.projects.locations.dbFrameworkComplianceReports.dbControlComplianceSummaries.list",
+      "method": "assuredworkloads.organizations.locations.dbFrameworkComplianceSummaries.list",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -222,7 +222,7 @@
       "permission": "",
       "role": "",
       "service": "assuredworkloads",
-      "method": "assuredworkloads.folders.locations.dbFrameworkComplianceSummaries.list",
+      "method": "assuredworkloads.organizations.locations.dbFrameworkComplianceReports.fetch",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -238,7 +238,7 @@
       "permission": "",
       "role": "",
       "service": "assuredworkloads",
-      "method": "assuredworkloads.folders.locations.dbFrameworkComplianceReports.aggregate",
+      "method": "assuredworkloads.projects.locations.dbFrameworkComplianceReports.dbControlComplianceSummaries.list",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -254,7 +254,7 @@
       "permission": "",
       "role": "",
       "service": "assuredworkloads",
-      "method": "assuredworkloads.projects.locations.dbFrameworkComplianceSummaries.list",
+      "method": "assuredworkloads.organizations.locations.dbFrameworkComplianceReports.aggregate",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -270,7 +270,7 @@
       "permission": "",
       "role": "",
       "service": "assuredworkloads",
-      "method": "assuredworkloads.organizations.locations.dbFrameworkComplianceSummaries.list",
+      "method": "assuredworkloads.folders.locations.dbFrameworkComplianceReports.fetch",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -286,7 +286,7 @@
       "permission": "",
       "role": "",
       "service": "assuredworkloads",
-      "method": "assuredworkloads.projects.locations.dbFrameworkComplianceReports.fetch",
+      "method": "assuredworkloads.projects.locations.dbFrameworkComplianceReports.aggregate",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -302,7 +302,7 @@
       "permission": "",
       "role": "",
       "service": "assuredworkloads",
-      "method": "assuredworkloads.organizations.locations.dbFrameworkComplianceReports.dbControlComplianceSummaries.list",
+      "method": "assuredworkloads.projects.locations.dbFrameworkComplianceSummaries.list",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -318,7 +318,7 @@
       "permission": "",
       "role": "",
       "service": "assuredworkloads",
-      "method": "assuredworkloads.organizations.locations.dbFrameworkComplianceReports.fetch",
+      "method": "assuredworkloads.folders.locations.dbFrameworkComplianceReports.aggregate",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -334,7 +334,7 @@
       "permission": "",
       "role": "",
       "service": "assuredworkloads",
-      "method": "assuredworkloads.projects.locations.dbFrameworkComplianceReports.aggregate",
+      "method": "assuredworkloads.folders.locations.dbFrameworkComplianceSummaries.list",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -350,7 +350,7 @@
       "permission": "",
       "role": "",
       "service": "assuredworkloads",
-      "method": "assuredworkloads.organizations.locations.dbFrameworkComplianceReports.aggregate",
+      "method": "assuredworkloads.organizations.locations.dbFrameworkComplianceReports.dbControlComplianceSummaries.list",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -359,6 +359,54 @@
     },
     {
       "id": "2026-07-24-1723",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "redis",
+      "method": "redis.projects.locations.aclPolicies.revisions.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "redis"
+      }
+    },
+    {
+      "id": "2026-07-24-1724",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "redis",
+      "method": "redis.projects.locations.aclPolicies.revisions.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "redis"
+      }
+    },
+    {
+      "id": "2026-07-24-1725",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.publishers.v1.responses",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "aiplatform"
+      }
+    },
+    {
+      "id": "2026-07-24-1726",
       "date": "2026-07-24",
       "commit": "661a986b9dae",
       "dimension": "methods",
@@ -374,7 +422,7 @@
       }
     },
     {
-      "id": "2026-07-24-1724",
+      "id": "2026-07-24-1727",
       "date": "2026-07-24",
       "commit": "661a986b9dae",
       "dimension": "methods",
@@ -390,103 +438,7 @@
       }
     },
     {
-      "id": "2026-07-24-1725",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudtasks",
-      "method": "cloudtasks.projects.locations.queues.tasks.batchDelete",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "cloudtasks"
-      }
-    },
-    {
-      "id": "2026-07-24-1726",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudtasks",
-      "method": "cloudtasks.projects.locations.operations.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "cloudtasks"
-      }
-    },
-    {
-      "id": "2026-07-24-1727",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudtasks",
-      "method": "cloudtasks.projects.locations.queues.tasks.batchCreate",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "cloudtasks"
-      }
-    },
-    {
       "id": "2026-07-24-1728",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "assuredworkloads",
-      "method": "assuredworkloads.folders.locations.dbFrameworkComplianceReports.fetch",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-07-24-1729",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "assuredworkloads",
-      "method": "assuredworkloads.organizations.locations.dbFrameworkComplianceSummaries.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-07-24-1730",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "cloudtasks",
-      "method": "cloudtasks.projects.locations.operations.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-07-24-1731",
       "date": "2026-07-24",
       "commit": "661a986b9dae",
       "dimension": "method_map",
@@ -502,151 +454,7 @@
       }
     },
     {
-      "id": "2026-07-24-1732",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.publishers.v1.responses",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-07-24-1733",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "redis",
-      "method": "redis.projects.locations.aclPolicies.revisions.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-07-24-1734",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "assuredworkloads",
-      "method": "assuredworkloads.organizations.locations.dbFrameworkComplianceReports.dbControlComplianceSummaries.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-07-24-1735",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "assuredworkloads",
-      "method": "assuredworkloads.projects.locations.dbFrameworkComplianceReports.aggregate",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-07-24-1736",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "cloudtasks",
-      "method": "cloudtasks.projects.locations.queues.tasks.batchDelete",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-07-24-1737",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "redis",
-      "method": "redis.projects.locations.aclPolicies.revisions.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-07-24-1738",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "assuredworkloads",
-      "method": "assuredworkloads.folders.locations.dbFrameworkComplianceSummaries.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-07-24-1739",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "androidpublisher",
-      "method": "androidpublisher.appstorecatalog.recentappviews.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-07-24-1740",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "androidpublisher",
-      "method": "androidpublisher.appstorecatalog.recentupdateevents.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-07-24-1741",
+      "id": "2026-07-24-1729",
       "date": "2026-07-24",
       "commit": "661a986b9dae",
       "dimension": "method_map",
@@ -662,7 +470,7 @@
       }
     },
     {
-      "id": "2026-07-24-1742",
+      "id": "2026-07-24-1730",
       "date": "2026-07-24",
       "commit": "661a986b9dae",
       "dimension": "method_map",
@@ -670,7 +478,7 @@
       "permission": "",
       "role": "",
       "service": "assuredworkloads",
-      "method": "assuredworkloads.projects.locations.dbFrameworkComplianceReports.dbControlComplianceSummaries.list",
+      "method": "assuredworkloads.folders.locations.dbFrameworkComplianceReports.fetch",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -678,7 +486,7 @@
       }
     },
     {
-      "id": "2026-07-24-1743",
+      "id": "2026-07-24-1731",
       "date": "2026-07-24",
       "commit": "661a986b9dae",
       "dimension": "method_map",
@@ -686,7 +494,7 @@
       "permission": "",
       "role": "",
       "service": "assuredworkloads",
-      "method": "assuredworkloads.folders.locations.dbFrameworkComplianceReports.aggregate",
+      "method": "assuredworkloads.projects.locations.dbFrameworkComplianceReports.aggregate",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -694,23 +502,7 @@
       }
     },
     {
-      "id": "2026-07-24-1744",
-      "date": "2026-07-24",
-      "commit": "661a986b9dae",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "assuredworkloads",
-      "method": "assuredworkloads.projects.locations.dbFrameworkComplianceSummaries.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-07-24-1745",
+      "id": "2026-07-24-1732",
       "date": "2026-07-24",
       "commit": "661a986b9dae",
       "dimension": "method_map",
@@ -726,7 +518,103 @@
       }
     },
     {
-      "id": "2026-07-24-1746",
+      "id": "2026-07-24-1733",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "assuredworkloads",
+      "method": "assuredworkloads.organizations.locations.dbFrameworkComplianceReports.aggregate",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-07-24-1734",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "assuredworkloads",
+      "method": "assuredworkloads.projects.locations.dbFrameworkComplianceSummaries.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-07-24-1735",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "assuredworkloads",
+      "method": "assuredworkloads.organizations.locations.dbFrameworkComplianceReports.dbControlComplianceSummaries.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-07-24-1736",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudtasks",
+      "method": "cloudtasks.projects.locations.operations.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-07-24-1737",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "redis",
+      "method": "redis.projects.locations.aclPolicies.revisions.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-07-24-1738",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "assuredworkloads",
+      "method": "assuredworkloads.organizations.locations.dbFrameworkComplianceSummaries.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-07-24-1739",
       "date": "2026-07-24",
       "commit": "661a986b9dae",
       "dimension": "method_map",
@@ -742,6 +630,118 @@
       }
     },
     {
+      "id": "2026-07-24-1740",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "assuredworkloads",
+      "method": "assuredworkloads.projects.locations.dbFrameworkComplianceReports.dbControlComplianceSummaries.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-07-24-1741",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "redis",
+      "method": "redis.projects.locations.aclPolicies.revisions.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-07-24-1742",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "androidpublisher",
+      "method": "androidpublisher.appstorecatalog.recentupdateevents.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-07-24-1743",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "androidpublisher",
+      "method": "androidpublisher.appstorecatalog.recentappviews.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-07-24-1744",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "assuredworkloads",
+      "method": "assuredworkloads.folders.locations.dbFrameworkComplianceReports.aggregate",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-07-24-1745",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudtasks",
+      "method": "cloudtasks.projects.locations.queues.tasks.batchDelete",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-07-24-1746",
+      "date": "2026-07-24",
+      "commit": "661a986b9dae",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.publishers.v1.responses",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
       "id": "2026-07-24-1747",
       "date": "2026-07-24",
       "commit": "661a986b9dae",
@@ -750,7 +750,7 @@
       "permission": "",
       "role": "",
       "service": "assuredworkloads",
-      "method": "assuredworkloads.organizations.locations.dbFrameworkComplianceReports.aggregate",
+      "method": "assuredworkloads.folders.locations.dbFrameworkComplianceSummaries.list",
       "severity": "INFO",
       "tags": [],
       "details": {
