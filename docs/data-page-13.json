@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T16:05:03Z",
+  "generated_at": "2026-09-04T16:04:27Z",
   "total_entries": 2077,
   "pages": 21,
   "page": 13,
@@ -11,11 +11,11 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.cancel",
-      "role": "roles/aiplatform.editor",
+      "permission": "aiplatform.tasks.delete",
+      "role": "roles/aiplatform.user",
       "service": "aiplatform",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -27,11 +27,11 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.cancel",
-      "role": "roles/owner",
+      "permission": "aiplatform.tasks.delete",
+      "role": "roles/aiplatform.admin",
       "service": "aiplatform",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -43,9 +43,9 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.cancel",
-      "role": "roles/aiplatform.serviceAgent",
-      "service": "aiplatform",
+      "permission": "ftp.servers.list",
+      "role": "roles/owner",
+      "service": "ftp",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -59,9 +59,9 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.cancel",
-      "role": "roles/aiplatform.customCodeServiceAgent",
-      "service": "aiplatform",
+      "permission": "ftp.servers.list",
+      "role": "roles/viewer",
+      "service": "ftp",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -75,9 +75,9 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.cancel",
-      "role": "roles/aiplatform.user",
-      "service": "aiplatform",
+      "permission": "ftp.servers.list",
+      "role": "roles/iam.supportUser",
+      "service": "ftp",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -91,11 +91,11 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "chronicle.tagSubscriptions.create",
-      "role": "roles/chronicle.admin",
-      "service": "chronicle",
+      "permission": "ftp.servers.list",
+      "role": "roles/iam.securityAdmin",
+      "service": "ftp",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -107,11 +107,11 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "chronicle.tagSubscriptions.create",
-      "role": "roles/chronicle.editor",
-      "service": "chronicle",
+      "permission": "geminidataanalytics.locations.get",
+      "role": "roles/bigquery.studioAdmin",
+      "service": "geminidataanalytics",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -123,11 +123,11 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "chronicle.tagSubscriptions.create",
-      "role": "roles/owner",
-      "service": "chronicle",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/dataflow.serviceAgent",
+      "service": "compute",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -139,8 +139,8 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.getIamPolicy",
-      "role": "roles/notebooks.legacyAdmin",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/compute.storageAdmin",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -155,8 +155,8 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.getIamPolicy",
-      "role": "roles/notebooks.viewer",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/batch.serviceAgent",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -171,8 +171,8 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.getIamPolicy",
-      "role": "roles/owner",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/notebooks.legacyAdmin",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -183,6 +183,278 @@
     },
     {
       "id": "2026-08-14-1212",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/container.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1213",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/notebooks.editor",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1214",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/compute.instanceAdmin.v1",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1215",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/iam.siteReliabilityEngineer",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1216",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/iam.supportUser",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1217",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/notebooks.admin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1218",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/viewer",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1219",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/genomics.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1220",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/notebooks.runner",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1221",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/compute.viewer",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1222",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/compute.admin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1223",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/notebooks.viewer",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1224",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/lifesciences.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1225",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/owner",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1226",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/iam.infrastructureAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1227",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.snapshots.getEffectiveRecycleBinRule",
+      "role": "roles/dataprep.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1228",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "geminidataanalytics.dataAgents.setIamPolicy",
+      "role": "roles/bigquery.studioAdmin",
+      "service": "geminidataanalytics",
+      "method": "",
+      "severity": "CRITICAL",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1229",
       "date": "2026-08-14",
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
@@ -198,13 +470,13 @@
       }
     },
     {
-      "id": "2026-08-14-1213",
+      "id": "2026-08-14-1230",
       "date": "2026-08-14",
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "compute.recoverableSnapshots.getIamPolicy",
-      "role": "roles/viewer",
+      "role": "roles/dataflow.serviceAgent",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -214,7 +486,71 @@
       }
     },
     {
-      "id": "2026-08-14-1214",
+      "id": "2026-08-14-1231",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/compute.storageAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1232",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/batch.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1233",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/notebooks.legacyAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1234",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/container.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1235",
       "date": "2026-08-14",
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
@@ -230,13 +566,13 @@
       }
     },
     {
-      "id": "2026-08-14-1215",
+      "id": "2026-08-14-1236",
       "date": "2026-08-14",
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "compute.recoverableSnapshots.getIamPolicy",
-      "role": "roles/compute.viewer",
+      "role": "roles/compute.instanceAdmin.v1",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -246,71 +582,7 @@
       }
     },
     {
-      "id": "2026-08-14-1216",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.getIamPolicy",
-      "role": "roles/batch.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1217",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.getIamPolicy",
-      "role": "roles/container.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1218",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.getIamPolicy",
-      "role": "roles/compute.admin",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1219",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.getIamPolicy",
-      "role": "roles/dataflow.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1220",
+      "id": "2026-08-14-1237",
       "date": "2026-08-14",
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
@@ -326,13 +598,13 @@
       }
     },
     {
-      "id": "2026-08-14-1221",
+      "id": "2026-08-14-1238",
       "date": "2026-08-14",
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "compute.recoverableSnapshots.getIamPolicy",
-      "role": "roles/lifesciences.serviceAgent",
+      "role": "roles/iam.supportUser",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -342,23 +614,7 @@
       }
     },
     {
-      "id": "2026-08-14-1222",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.getIamPolicy",
-      "role": "roles/dataprep.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1223",
+      "id": "2026-08-14-1239",
       "date": "2026-08-14",
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
@@ -374,13 +630,13 @@
       }
     },
     {
-      "id": "2026-08-14-1224",
+      "id": "2026-08-14-1240",
       "date": "2026-08-14",
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "compute.recoverableSnapshots.getIamPolicy",
-      "role": "roles/compute.storageAdmin",
+      "role": "roles/viewer",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -390,39 +646,7 @@
       }
     },
     {
-      "id": "2026-08-14-1225",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.getIamPolicy",
-      "role": "roles/iam.infrastructureAdmin",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1226",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.getIamPolicy",
-      "role": "roles/iam.supportUser",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1227",
+      "id": "2026-08-14-1241",
       "date": "2026-08-14",
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
@@ -438,7 +662,7 @@
       }
     },
     {
-      "id": "2026-08-14-1228",
+      "id": "2026-08-14-1242",
       "date": "2026-08-14",
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
@@ -454,238 +678,14 @@
       }
     },
     {
-      "id": "2026-08-14-1229",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.getIamPolicy",
-      "role": "roles/compute.instanceAdmin.v1",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1230",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.setIamPolicy",
-      "role": "roles/lifesciences.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1231",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.setIamPolicy",
-      "role": "roles/notebooks.legacyAdmin",
-      "service": "compute",
-      "method": "",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1232",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.setIamPolicy",
-      "role": "roles/owner",
-      "service": "compute",
-      "method": "",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1233",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.setIamPolicy",
-      "role": "roles/iam.securityAdmin",
-      "service": "compute",
-      "method": "",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1234",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.setIamPolicy",
-      "role": "roles/container.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1235",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.setIamPolicy",
-      "role": "roles/compute.admin",
-      "service": "compute",
-      "method": "",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1236",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.setIamPolicy",
-      "role": "roles/compute.storageAdmin",
-      "service": "compute",
-      "method": "",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1237",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.setIamPolicy",
-      "role": "roles/dataflow.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1238",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.setIamPolicy",
-      "role": "roles/iam.infrastructureAdmin",
-      "service": "compute",
-      "method": "",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1239",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.setIamPolicy",
-      "role": "roles/genomics.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1240",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.setIamPolicy",
-      "role": "roles/iam.siteReliabilityEngineer",
-      "service": "compute",
-      "method": "",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1241",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.setIamPolicy",
-      "role": "roles/compute.instanceAdmin.v1",
-      "service": "compute",
-      "method": "",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1242",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "prodactuation.uberProxyServices.delete",
-      "role": "roles/owner",
-      "service": "prodactuation",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
       "id": "2026-08-14-1243",
       "date": "2026-08-14",
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.servers.list",
-      "role": "roles/iam.supportUser",
-      "service": "ftp",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/compute.viewer",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -699,9 +699,9 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.servers.list",
-      "role": "roles/viewer",
-      "service": "ftp",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/compute.admin",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -715,9 +715,9 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.servers.list",
-      "role": "roles/owner",
-      "service": "ftp",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/notebooks.viewer",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -731,9 +731,9 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.servers.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "ftp",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/lifesciences.serviceAgent",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -747,8 +747,8 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.recover",
-      "role": "roles/lifesciences.serviceAgent",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/owner",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -763,8 +763,8 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.recover",
-      "role": "roles/notebooks.legacyAdmin",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/iam.infrastructureAdmin",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -779,8 +779,8 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.recover",
-      "role": "roles/owner",
+      "permission": "compute.recoverableSnapshots.getIamPolicy",
+      "role": "roles/dataprep.serviceAgent",
       "service": "compute",
       "method": "",
       "severity": "MEDIUM",
@@ -795,9 +795,9 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.recover",
-      "role": "roles/batch.serviceAgent",
-      "service": "compute",
+      "permission": "policysimulator.activityBacktests.list",
+      "role": "roles/owner",
+      "service": "policysimulator",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -811,9 +811,9 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.recover",
-      "role": "roles/container.serviceAgent",
-      "service": "compute",
+      "permission": "policysimulator.activityBacktests.list",
+      "role": "roles/viewer",
+      "service": "policysimulator",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -827,9 +827,9 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.recover",
-      "role": "roles/compute.admin",
-      "service": "compute",
+      "permission": "policysimulator.activityBacktests.list",
+      "role": "roles/iam.supportUser",
+      "service": "policysimulator",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -843,9 +843,9 @@
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.recover",
-      "role": "roles/compute.storageAdmin",
-      "service": "compute",
+      "permission": "policysimulator.activityBacktests.list",
+      "role": "roles/iam.securityAdmin",
+      "service": "policysimulator",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -855,710 +855,6 @@
     },
     {
       "id": "2026-08-14-1254",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.recover",
-      "role": "roles/dataflow.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1255",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.recover",
-      "role": "roles/iam.infrastructureAdmin",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1256",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.recover",
-      "role": "roles/genomics.serviceAgent",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1257",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.recover",
-      "role": "roles/iam.siteReliabilityEngineer",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1258",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "compute.recoverableSnapshots.recover",
-      "role": "roles/compute.instanceAdmin.v1",
-      "service": "compute",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1259",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "ftp.users.list",
-      "role": "roles/iam.supportUser",
-      "service": "ftp",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1260",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "ftp.users.list",
-      "role": "roles/viewer",
-      "service": "ftp",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1261",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "ftp.users.list",
-      "role": "roles/owner",
-      "service": "ftp",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1262",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "ftp.users.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "ftp",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1263",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "ftp.servers.create",
-      "role": "roles/owner",
-      "service": "ftp",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1264",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.operations.list",
-      "role": "roles/bigquery.studioAdmin",
-      "service": "geminidataanalytics",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1265",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "devicerun.sessions.get",
-      "role": "roles/iam.supportUser",
-      "service": "devicerun",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1266",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "devicerun.sessions.get",
-      "role": "roles/viewer",
-      "service": "devicerun",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1267",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "devicerun.sessions.get",
-      "role": "roles/owner",
-      "service": "devicerun",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1268",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.delete",
-      "role": "roles/aiplatform.admin",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1269",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.delete",
-      "role": "roles/aiplatform.editor",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1270",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.delete",
-      "role": "roles/owner",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1271",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.delete",
-      "role": "roles/aiplatform.serviceAgent",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1272",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.delete",
-      "role": "roles/aiplatform.customCodeServiceAgent",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1273",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.delete",
-      "role": "roles/aiplatform.user",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1274",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.list",
-      "role": "roles/aiplatform.admin",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1275",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.list",
-      "role": "roles/owner",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1276",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.list",
-      "role": "roles/dlp.projectdriver",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1277",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1278",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.list",
-      "role": "roles/aiplatform.viewer",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1279",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.list",
-      "role": "roles/aiplatform.customCodeServiceAgent",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1280",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.list",
-      "role": "roles/viewer",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1281",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.list",
-      "role": "roles/aiplatform.editor",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1282",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.list",
-      "role": "roles/aiplatform.serviceAgent",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1283",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.list",
-      "role": "roles/iam.supportUser",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1284",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "aiplatform.tasks.list",
-      "role": "roles/aiplatform.user",
-      "service": "aiplatform",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1285",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "devicerun.operations.get",
-      "role": "roles/iam.supportUser",
-      "service": "devicerun",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1286",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "devicerun.operations.get",
-      "role": "roles/viewer",
-      "service": "devicerun",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1287",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "devicerun.operations.get",
-      "role": "roles/owner",
-      "service": "devicerun",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1288",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "ftp.users.update",
-      "role": "roles/owner",
-      "service": "ftp",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1289",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "prodactuation.uberProxyServices.update",
-      "role": "roles/owner",
-      "service": "prodactuation",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1290",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "ftp.operations.delete",
-      "role": "roles/owner",
-      "service": "ftp",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1291",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.tagSubscriptions.list",
-      "role": "roles/chronicle.editor",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1292",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.tagSubscriptions.list",
-      "role": "roles/owner",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1293",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.tagSubscriptions.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1294",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.tagSubscriptions.list",
-      "role": "roles/chronicle.admin",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1295",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.tagSubscriptions.list",
-      "role": "roles/iam.supportUser",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1296",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "chronicle.tagSubscriptions.list",
-      "role": "roles/viewer",
-      "service": "chronicle",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1297",
-      "date": "2026-08-14",
-      "commit": "d9e7315979ee",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "geminidataanalytics.dataAgents.chat",
-      "role": "roles/bigquery.studioAdmin",
-      "service": "geminidataanalytics",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-14-1298",
       "date": "2026-08-14",
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
@@ -1574,7 +870,663 @@
       }
     },
     {
-      "id": "2026-08-14-1299",
+      "id": "2026-08-14-1255",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "prodactuation.uberProxyServices.get",
+      "role": "roles/owner",
+      "service": "prodactuation",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1256",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "prodactuation.uberProxyServices.get",
+      "role": "roles/viewer",
+      "service": "prodactuation",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1257",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "prodactuation.uberProxyServices.get",
+      "role": "roles/iam.supportUser",
+      "service": "prodactuation",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1258",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "prodactuation.uberProxyServices.get",
+      "role": "roles/prodactuation.viewer",
+      "service": "prodactuation",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1259",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "devicerun.locations.list",
+      "role": "roles/owner",
+      "service": "devicerun",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1260",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "devicerun.locations.list",
+      "role": "roles/viewer",
+      "service": "devicerun",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1261",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "devicerun.locations.list",
+      "role": "roles/iam.supportUser",
+      "service": "devicerun",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1262",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "devicerun.locations.list",
+      "role": "roles/iam.securityAdmin",
+      "service": "devicerun",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1263",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "financialservices.v1instances.listTagBindings",
+      "role": "roles/financialservices.admin",
+      "service": "financialservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1264",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "financialservices.v1instances.listTagBindings",
+      "role": "roles/owner",
+      "service": "financialservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1265",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "financialservices.v1instances.listTagBindings",
+      "role": "roles/iam.supportUser",
+      "service": "financialservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1266",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "financialservices.v1instances.listTagBindings",
+      "role": "roles/viewer",
+      "service": "financialservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1267",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "financialservices.v1instances.listTagBindings",
+      "role": "roles/dlp.projectdriver",
+      "service": "financialservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1268",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "financialservices.v1instances.listTagBindings",
+      "role": "roles/resourcemanager.tagViewer",
+      "service": "financialservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1269",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "financialservices.v1instances.listTagBindings",
+      "role": "roles/resourcemanager.tagUser",
+      "service": "financialservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1270",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "financialservices.v1instances.createTagBinding",
+      "role": "roles/dlp.projectdriver",
+      "service": "financialservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1271",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "financialservices.v1instances.createTagBinding",
+      "role": "roles/financialservices.admin",
+      "service": "financialservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1272",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "financialservices.v1instances.createTagBinding",
+      "role": "roles/owner",
+      "service": "financialservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1273",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "financialservices.v1instances.createTagBinding",
+      "role": "roles/resourcemanager.tagUser",
+      "service": "financialservices",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1274",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "datalineage.processRevisions.get",
+      "role": "roles/owner",
+      "service": "datalineage",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1275",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "datalineage.processRevisions.get",
+      "role": "roles/datalineage.admin",
+      "service": "datalineage",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1276",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "datalineage.processRevisions.get",
+      "role": "roles/iam.supportUser",
+      "service": "datalineage",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1277",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "datalineage.processRevisions.get",
+      "role": "roles/viewer",
+      "service": "datalineage",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1278",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "devicerun.sessions.create",
+      "role": "roles/owner",
+      "service": "devicerun",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1279",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "datalineage.processRevisions.delete",
+      "role": "roles/owner",
+      "service": "datalineage",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1280",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "datalineage.processRevisions.delete",
+      "role": "roles/datalineage.admin",
+      "service": "datalineage",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1281",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "ftp.users.delete",
+      "role": "roles/owner",
+      "service": "ftp",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1282",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "resourcemanager.projects.get",
+      "role": "roles/devicerun.viewer",
+      "service": "resourcemanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1283",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "resourcemanager.projects.get",
+      "role": "roles/devicerun.admin",
+      "service": "resourcemanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1284",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "devicerun.operations.list",
+      "role": "roles/owner",
+      "service": "devicerun",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1285",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "devicerun.operations.list",
+      "role": "roles/viewer",
+      "service": "devicerun",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1286",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "devicerun.operations.list",
+      "role": "roles/iam.supportUser",
+      "service": "devicerun",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1287",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "devicerun.operations.list",
+      "role": "roles/iam.securityAdmin",
+      "service": "devicerun",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1288",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "datalineage.processRevisions.list",
+      "role": "roles/datalineage.admin",
+      "service": "datalineage",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1289",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "datalineage.processRevisions.list",
+      "role": "roles/iam.supportUser",
+      "service": "datalineage",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1290",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "datalineage.processRevisions.list",
+      "role": "roles/iam.securityAdmin",
+      "service": "datalineage",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1291",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "datalineage.processRevisions.list",
+      "role": "roles/owner",
+      "service": "datalineage",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1292",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "datalineage.processRevisions.list",
+      "role": "roles/viewer",
+      "service": "datalineage",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1293",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "ftp.operations.get",
+      "role": "roles/owner",
+      "service": "ftp",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1294",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "ftp.operations.get",
+      "role": "roles/iam.supportUser",
+      "service": "ftp",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1295",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "ftp.operations.get",
+      "role": "roles/viewer",
+      "service": "ftp",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1296",
       "date": "2026-08-14",
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
@@ -1590,16 +1542,64 @@
       }
     },
     {
+      "id": "2026-08-14-1297",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "devicerun.devices.list",
+      "role": "roles/owner",
+      "service": "devicerun",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1298",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "devicerun.devices.list",
+      "role": "roles/viewer",
+      "service": "devicerun",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-14-1299",
+      "date": "2026-08-14",
+      "commit": "d9e7315979ee",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "devicerun.devices.list",
+      "role": "roles/iam.supportUser",
+      "service": "devicerun",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
       "id": "2026-08-14-1300",
       "date": "2026-08-14",
       "commit": "d9e7315979ee",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "ftp.users.create",
-      "role": "roles/owner",
-      "service": "ftp",
+      "permission": "devicerun.devices.list",
+      "role": "roles/iam.securityAdmin",
+      "service": "devicerun",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
