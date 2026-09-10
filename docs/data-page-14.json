@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T16:04:19Z",
+  "generated_at": "2026-09-10T16:04:15Z",
   "total_entries": 2227,
   "pages": 23,
   "page": 14,
@@ -11,9 +11,9 @@
       "commit": "b6681564d1f7",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "redis.clusters.listTagBindings",
-      "role": "roles/iam.securityAuditor",
-      "service": "redis",
+      "permission": "apptopology.sreDomainTopologies.generate",
+      "role": "roles/apptopology.viewer",
+      "service": "apptopology",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -27,9 +27,9 @@
       "commit": "b6681564d1f7",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "redis.clusters.listTagBindings",
-      "role": "roles/owner",
-      "service": "redis",
+      "permission": "apptopology.sreDomainTopologies.generate",
+      "role": "roles/iam.siteReliabilityEngineer",
+      "service": "apptopology",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -43,11 +43,11 @@
       "commit": "b6681564d1f7",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "redis.clusters.listTagBindings",
-      "role": "roles/iam.dataScientist",
-      "service": "redis",
+      "permission": "discoveryengine.accounts.create",
+      "role": "roles/discoveryengine.agentspaceAdmin",
+      "service": "discoveryengine",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -58,15 +58,15 @@
       "date": "2026-08-28",
       "commit": "b6681564d1f7",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "vectorsearch.collections.create",
-      "role": "roles/vectorsearch.serviceAgent",
-      "service": "vectorsearch",
+      "change_type": "permission_removed_from_role",
+      "permission": "prodactuation.dnsConfigs.create",
+      "role": "roles/owner",
+      "service": "prodactuation",
       "method": "",
       "severity": "HIGH",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -75,9 +75,9 @@
       "commit": "b6681564d1f7",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "discoveryengine.notes.get",
-      "role": "roles/discoveryengine.agentspaceAdmin",
-      "service": "discoveryengine",
+      "permission": "apptopology.domains.get",
+      "role": "roles/apptopology.admin",
+      "service": "apptopology",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -90,35 +90,19 @@
       "date": "2026-08-28",
       "commit": "b6681564d1f7",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "prodactuation.ganpatiGroups.listMemberships",
-      "role": "roles/owner",
-      "service": "prodactuation",
+      "change_type": "permission_added_to_role",
+      "permission": "discoveryengine.notebooks.generateGuide",
+      "role": "roles/discoveryengine.agentspaceAdmin",
+      "service": "discoveryengine",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
       "id": "2026-08-28-1307",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.globalFrontendSettings.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "compute"
-      }
-    },
-    {
-      "id": "2026-08-28-1308",
       "date": "2026-08-28",
       "commit": "b6681564d1f7",
       "dimension": "methods",
@@ -134,103 +118,23 @@
       }
     },
     {
+      "id": "2026-08-28-1308",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.globalFrontendSettings.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "compute"
+      }
+    },
+    {
       "id": "2026-08-28-1309",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.volumes.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "file"
-      }
-    },
-    {
-      "id": "2026-08-28-1310",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.volumes.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "file"
-      }
-    },
-    {
-      "id": "2026-08-28-1311",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "file"
-      }
-    },
-    {
-      "id": "2026-08-28-1312",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "file"
-      }
-    },
-    {
-      "id": "2026-08-28-1313",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "file"
-      }
-    },
-    {
-      "id": "2026-08-28-1314",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.volumes.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "file"
-      }
-    },
-    {
-      "id": "2026-08-28-1315",
       "date": "2026-08-28",
       "commit": "b6681564d1f7",
       "dimension": "methods",
@@ -246,23 +150,7 @@
       }
     },
     {
-      "id": "2026-08-28-1316",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "file"
-      }
-    },
-    {
-      "id": "2026-08-28-1317",
+      "id": "2026-08-28-1310",
       "date": "2026-08-28",
       "commit": "b6681564d1f7",
       "dimension": "methods",
@@ -278,6 +166,118 @@
       }
     },
     {
+      "id": "2026-08-28-1311",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "file"
+      }
+    },
+    {
+      "id": "2026-08-28-1312",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.volumes.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "file"
+      }
+    },
+    {
+      "id": "2026-08-28-1313",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.volumes.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "file"
+      }
+    },
+    {
+      "id": "2026-08-28-1314",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.create",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "file"
+      }
+    },
+    {
+      "id": "2026-08-28-1315",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.volumes.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "file"
+      }
+    },
+    {
+      "id": "2026-08-28-1316",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.patch",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "file"
+      }
+    },
+    {
+      "id": "2026-08-28-1317",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "file"
+      }
+    },
+    {
       "id": "2026-08-28-1318",
       "date": "2026-08-28",
       "commit": "b6681564d1f7",
@@ -285,12 +285,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "dataflow",
-      "method": "dataflow.folders.locations.configStoreSettings.delete",
-      "severity": "HIGH",
+      "service": "chat",
+      "method": "chat.spaces.messagePins.list",
+      "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "dataflow"
+        "service": "chat"
       }
     },
     {
@@ -301,12 +301,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "dataflow",
-      "method": "dataflow.folders.locations.configStoreSettings.resolve",
-      "severity": "INFO",
+      "service": "chat",
+      "method": "chat.spaces.messagePins.delete",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "dataflow"
+        "service": "chat"
       }
     },
     {
@@ -317,12 +317,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "dataflow",
-      "method": "dataflow.projects.locations.configStoreSettings.resolve",
-      "severity": "INFO",
+      "service": "chat",
+      "method": "chat.spaces.messagePins.create",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "dataflow"
+        "service": "chat"
       }
     },
     {
@@ -334,7 +334,7 @@
       "permission": "",
       "role": "",
       "service": "dataflow",
-      "method": "dataflow.organizations.locations.configStoreSettings.get",
+      "method": "dataflow.organizations.locations.configStoreSettings.resolve",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -350,8 +350,8 @@
       "permission": "",
       "role": "",
       "service": "dataflow",
-      "method": "dataflow.organizations.locations.configStoreSettings.delete",
-      "severity": "HIGH",
+      "method": "dataflow.organizations.locations.configStoreSettings.list",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "dataflow"
@@ -382,7 +382,7 @@
       "permission": "",
       "role": "",
       "service": "dataflow",
-      "method": "dataflow.organizations.locations.configStoreSettings.resolve",
+      "method": "dataflow.projects.locations.configStoreSettings.list",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -398,7 +398,7 @@
       "permission": "",
       "role": "",
       "service": "dataflow",
-      "method": "dataflow.folders.locations.configStoreSettings.list",
+      "method": "dataflow.organizations.locations.configStoreSettings.get",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -414,7 +414,7 @@
       "permission": "",
       "role": "",
       "service": "dataflow",
-      "method": "dataflow.folders.locations.configStoreSettings.create",
+      "method": "dataflow.organizations.locations.configStoreSettings.create",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -430,8 +430,8 @@
       "permission": "",
       "role": "",
       "service": "dataflow",
-      "method": "dataflow.projects.locations.configStoreSettings.get",
-      "severity": "INFO",
+      "method": "dataflow.organizations.locations.configStoreSettings.delete",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "dataflow"
@@ -446,7 +446,7 @@
       "permission": "",
       "role": "",
       "service": "dataflow",
-      "method": "dataflow.organizations.locations.configStoreSettings.list",
+      "method": "dataflow.projects.locations.configStoreSettings.resolve",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -462,7 +462,7 @@
       "permission": "",
       "role": "",
       "service": "dataflow",
-      "method": "dataflow.projects.locations.configStoreSettings.list",
+      "method": "dataflow.projects.locations.configStoreSettings.get",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -478,8 +478,8 @@
       "permission": "",
       "role": "",
       "service": "dataflow",
-      "method": "dataflow.organizations.locations.configStoreSettings.create",
-      "severity": "HIGH",
+      "method": "dataflow.folders.locations.configStoreSettings.get",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "dataflow"
@@ -494,7 +494,7 @@
       "permission": "",
       "role": "",
       "service": "dataflow",
-      "method": "dataflow.folders.locations.configStoreSettings.get",
+      "method": "dataflow.folders.locations.configStoreSettings.resolve",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -510,8 +510,8 @@
       "permission": "",
       "role": "",
       "service": "dataflow",
-      "method": "dataflow.projects.locations.configStoreSettings.delete",
-      "severity": "HIGH",
+      "method": "dataflow.folders.locations.configStoreSettings.list",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "dataflow"
@@ -525,12 +525,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "chat",
-      "method": "chat.spaces.messagePins.create",
+      "service": "dataflow",
+      "method": "dataflow.projects.locations.configStoreSettings.delete",
       "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "chat"
+        "service": "dataflow"
       }
     },
     {
@@ -541,12 +541,12 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "chat",
-      "method": "chat.spaces.messagePins.list",
-      "severity": "INFO",
+      "service": "dataflow",
+      "method": "dataflow.folders.locations.configStoreSettings.delete",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "chat"
+        "service": "dataflow"
       }
     },
     {
@@ -557,400 +557,16 @@
       "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "chat",
-      "method": "chat.spaces.messagePins.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "chat"
-      }
-    },
-    {
-      "id": "2026-08-28-1336",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.volumes.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1337",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataflow",
-      "method": "dataflow.organizations.locations.configStoreSettings.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1338",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "chat",
-      "method": "chat.spaces.messagePins.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1339",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataflow",
-      "method": "dataflow.organizations.locations.configStoreSettings.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1340",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataflow",
-      "method": "dataflow.projects.locations.configStoreSettings.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1341",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.volumes.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1342",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.globalFrontendSettings.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1343",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "chat",
-      "method": "chat.spaces.messagePins.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1344",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataflow",
-      "method": "dataflow.projects.locations.configStoreSettings.resolve",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1345",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "compute",
-      "method": "compute.globalFrontendSettings.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1346",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataflow",
-      "method": "dataflow.organizations.locations.configStoreSettings.resolve",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1347",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1348",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataflow",
-      "method": "dataflow.folders.locations.configStoreSettings.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1349",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataflow",
-      "method": "dataflow.folders.locations.configStoreSettings.resolve",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1350",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "chat",
-      "method": "chat.spaces.messagePins.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1351",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.volumes.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1352",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataflow",
-      "method": "dataflow.organizations.locations.configStoreSettings.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1353",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1354",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1355",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataflow",
-      "method": "dataflow.projects.locations.configStoreSettings.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1356",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
       "service": "dataflow",
       "method": "dataflow.folders.locations.configStoreSettings.create",
       "severity": "HIGH",
       "tags": [],
       "details": {
-        "note": "New method has no permission mapping"
+        "service": "dataflow"
       }
     },
     {
-      "id": "2026-08-28-1357",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.volumes.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1358",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "dataflow",
-      "method": "dataflow.organizations.locations.configStoreSettings.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1359",
-      "date": "2026-08-28",
-      "commit": "b6681564d1f7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-08-28-1360",
+      "id": "2026-08-28-1336",
       "date": "2026-08-28",
       "commit": "b6681564d1f7",
       "dimension": "method_map",
@@ -966,7 +582,135 @@
       }
     },
     {
-      "id": "2026-08-28-1361",
+      "id": "2026-08-28-1337",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.volumes.create",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1338",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "dataflow",
+      "method": "dataflow.organizations.locations.configStoreSettings.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1339",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "chat",
+      "method": "chat.spaces.messagePins.create",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1340",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.globalFrontendSettings.patch",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1341",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.create",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1342",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "chat",
+      "method": "chat.spaces.messagePins.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1343",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1344",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "dataflow",
+      "method": "dataflow.folders.locations.configStoreSettings.resolve",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1345",
       "date": "2026-08-28",
       "commit": "b6681564d1f7",
       "dimension": "method_map",
@@ -982,7 +726,71 @@
       }
     },
     {
-      "id": "2026-08-28-1362",
+      "id": "2026-08-28-1346",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1347",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "chat",
+      "method": "chat.spaces.messagePins.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1348",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "dataflow",
+      "method": "dataflow.folders.locations.configStoreSettings.create",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1349",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "dataflow",
+      "method": "dataflow.organizations.locations.configStoreSettings.resolve",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1350",
       "date": "2026-08-28",
       "commit": "b6681564d1f7",
       "dimension": "method_map",
@@ -998,7 +806,71 @@
       }
     },
     {
-      "id": "2026-08-28-1363",
+      "id": "2026-08-28-1351",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "dataflow",
+      "method": "dataflow.organizations.locations.configStoreSettings.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1352",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.volumes.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1353",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "dataflow",
+      "method": "dataflow.organizations.locations.configStoreSettings.create",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1354",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.patch",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1355",
       "date": "2026-08-28",
       "commit": "b6681564d1f7",
       "dimension": "method_map",
@@ -1014,7 +886,23 @@
       }
     },
     {
-      "id": "2026-08-28-1364",
+      "id": "2026-08-28-1356",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.volumes.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1357",
       "date": "2026-08-28",
       "commit": "b6681564d1f7",
       "dimension": "method_map",
@@ -1030,71 +918,119 @@
       }
     },
     {
+      "id": "2026-08-28-1358",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.volumes.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1359",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "dataflow",
+      "method": "dataflow.projects.locations.configStoreSettings.resolve",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1360",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "dataflow",
+      "method": "dataflow.organizations.locations.configStoreSettings.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1361",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.globalFrontendSettings.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1362",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "dataflow",
+      "method": "dataflow.folders.locations.configStoreSettings.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1363",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "dataflow",
+      "method": "dataflow.projects.locations.configStoreSettings.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-08-28-1364",
+      "date": "2026-08-28",
+      "commit": "b6681564d1f7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "dataflow",
+      "method": "dataflow.projects.locations.configStoreSettings.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
       "id": "2026-08-24-1365",
-      "date": "2026-08-24",
-      "commit": "688e3e7b7728",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "cloudbuild",
-      "method": "cloudbuild.projects.locations.gitLabConfigs.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "cloudbuild"
-      }
-    },
-    {
-      "id": "2026-08-24-1366",
-      "date": "2026-08-24",
-      "commit": "688e3e7b7728",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "cloudbuild",
-      "method": "cloudbuild.projects.locations.gitLabConfigs.removeGitLabConnectedRepository",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "cloudbuild"
-      }
-    },
-    {
-      "id": "2026-08-24-1367",
-      "date": "2026-08-24",
-      "commit": "688e3e7b7728",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "cloudbuild",
-      "method": "cloudbuild.projects.locations.gitLabConfigs.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "cloudbuild"
-      }
-    },
-    {
-      "id": "2026-08-24-1368",
-      "date": "2026-08-24",
-      "commit": "688e3e7b7728",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "cloudbuild",
-      "method": "cloudbuild.projects.locations.gitLabConfigs.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "cloudbuild"
-      }
-    },
-    {
-      "id": "2026-08-24-1369",
       "date": "2026-08-24",
       "commit": "688e3e7b7728",
       "dimension": "methods",
@@ -1110,7 +1046,7 @@
       }
     },
     {
-      "id": "2026-08-24-1370",
+      "id": "2026-08-24-1366",
       "date": "2026-08-24",
       "commit": "688e3e7b7728",
       "dimension": "methods",
@@ -1118,23 +1054,7 @@
       "permission": "",
       "role": "",
       "service": "cloudbuild",
-      "method": "cloudbuild.projects.locations.gitLabConfigs.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "cloudbuild"
-      }
-    },
-    {
-      "id": "2026-08-24-1371",
-      "date": "2026-08-24",
-      "commit": "688e3e7b7728",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "cloudbuild",
-      "method": "cloudbuild.projects.locations.gitLabConfigs.connectedRepositories.batchCreate",
+      "method": "cloudbuild.projects.locations.gitLabConfigs.list",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1142,7 +1062,23 @@
       }
     },
     {
-      "id": "2026-08-24-1372",
+      "id": "2026-08-24-1367",
+      "date": "2026-08-24",
+      "commit": "688e3e7b7728",
+      "dimension": "methods",
+      "change_type": "removed",
+      "permission": "",
+      "role": "",
+      "service": "cloudbuild",
+      "method": "cloudbuild.projects.locations.gitLabConfigs.patch",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "cloudbuild"
+      }
+    },
+    {
+      "id": "2026-08-24-1368",
       "date": "2026-08-24",
       "commit": "688e3e7b7728",
       "dimension": "methods",
@@ -1158,23 +1094,71 @@
       }
     },
     {
-      "id": "2026-08-23-1373",
-      "date": "2026-08-23",
-      "commit": "5021e0976988",
+      "id": "2026-08-24-1369",
+      "date": "2026-08-24",
+      "commit": "688e3e7b7728",
       "dimension": "methods",
-      "change_type": "added",
+      "change_type": "removed",
       "permission": "",
       "role": "",
-      "service": "dataform",
-      "method": "dataform.projects.locations.repositories.workspaces.deleteBranch",
-      "severity": "INFO",
+      "service": "cloudbuild",
+      "method": "cloudbuild.projects.locations.gitLabConfigs.create",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "dataform"
+        "service": "cloudbuild"
       }
     },
     {
-      "id": "2026-08-23-1374",
+      "id": "2026-08-24-1370",
+      "date": "2026-08-24",
+      "commit": "688e3e7b7728",
+      "dimension": "methods",
+      "change_type": "removed",
+      "permission": "",
+      "role": "",
+      "service": "cloudbuild",
+      "method": "cloudbuild.projects.locations.gitLabConfigs.removeGitLabConnectedRepository",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "cloudbuild"
+      }
+    },
+    {
+      "id": "2026-08-24-1371",
+      "date": "2026-08-24",
+      "commit": "688e3e7b7728",
+      "dimension": "methods",
+      "change_type": "removed",
+      "permission": "",
+      "role": "",
+      "service": "cloudbuild",
+      "method": "cloudbuild.projects.locations.gitLabConfigs.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "cloudbuild"
+      }
+    },
+    {
+      "id": "2026-08-24-1372",
+      "date": "2026-08-24",
+      "commit": "688e3e7b7728",
+      "dimension": "methods",
+      "change_type": "removed",
+      "permission": "",
+      "role": "",
+      "service": "cloudbuild",
+      "method": "cloudbuild.projects.locations.gitLabConfigs.connectedRepositories.batchCreate",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "cloudbuild"
+      }
+    },
+    {
+      "id": "2026-08-23-1373",
       "date": "2026-08-23",
       "commit": "5021e0976988",
       "dimension": "methods",
@@ -1190,7 +1174,7 @@
       }
     },
     {
-      "id": "2026-08-23-1375",
+      "id": "2026-08-23-1374",
       "date": "2026-08-23",
       "commit": "5021e0976988",
       "dimension": "methods",
@@ -1199,6 +1183,22 @@
       "role": "",
       "service": "dataform",
       "method": "dataform.projects.locations.repositories.workspaces.syncWorkspaceRefs",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "dataform"
+      }
+    },
+    {
+      "id": "2026-08-23-1375",
+      "date": "2026-08-23",
+      "commit": "5021e0976988",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "dataform",
+      "method": "dataform.projects.locations.repositories.workspaces.checkout",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1230,7 +1230,7 @@
       "permission": "",
       "role": "",
       "service": "dataform",
-      "method": "dataform.projects.locations.repositories.workspaces.checkout",
+      "method": "dataform.projects.locations.repositories.workspaces.deleteBranch",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1246,7 +1246,7 @@
       "permission": "",
       "role": "",
       "service": "aiplatform",
-      "method": "aiplatform.projects.locations.publishers.v1.responses.get",
+      "method": "aiplatform.projects.locations.endpoints.responses.get",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1262,8 +1262,8 @@
       "permission": "",
       "role": "",
       "service": "aiplatform",
-      "method": "aiplatform.projects.locations.publishers.v1.responses.delete",
-      "severity": "HIGH",
+      "method": "aiplatform.projects.locations.publishers.v1.responses.get",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "aiplatform"
@@ -1294,8 +1294,8 @@
       "permission": "",
       "role": "",
       "service": "aiplatform",
-      "method": "aiplatform.projects.locations.endpoints.responses.get",
-      "severity": "INFO",
+      "method": "aiplatform.projects.locations.publishers.v1.responses.delete",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "aiplatform"
@@ -1309,9 +1309,9 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.publishers.v1.responses.delete",
-      "severity": "HIGH",
+      "service": "dataform",
+      "method": "dataform.projects.locations.repositories.workspaces.fetchCurrentBranch",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
@@ -1325,8 +1325,8 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "dataform",
-      "method": "dataform.projects.locations.repositories.workspaces.deleteBranch",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.publishers.v1.responses.get",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1341,9 +1341,9 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "dataform",
-      "method": "dataform.projects.locations.repositories.workspaces.fetchCurrentBranch",
-      "severity": "INFO",
+      "service": "aiplatform",
+      "method": "aiplatform.projects.locations.publishers.v1.responses.delete",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
@@ -1374,7 +1374,7 @@
       "permission": "",
       "role": "",
       "service": "dataform",
-      "method": "dataform.projects.locations.repositories.workspaces.fetchBranches",
+      "method": "dataform.projects.locations.repositories.workspaces.checkout",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1406,7 +1406,7 @@
       "permission": "",
       "role": "",
       "service": "dataform",
-      "method": "dataform.projects.locations.repositories.workspaces.checkout",
+      "method": "dataform.projects.locations.repositories.workspaces.fetchBranches",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1422,7 +1422,7 @@
       "permission": "",
       "role": "",
       "service": "aiplatform",
-      "method": "aiplatform.projects.locations.publishers.v1.responses.get",
+      "method": "aiplatform.projects.locations.endpoints.responses.get",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1437,8 +1437,8 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "aiplatform",
-      "method": "aiplatform.projects.locations.endpoints.responses.get",
+      "service": "dataform",
+      "method": "dataform.projects.locations.repositories.workspaces.deleteBranch",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1451,11 +1451,11 @@
       "commit": "2073fa52ac00",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "roads.selectedRoutes.update",
-      "role": "roles/owner",
-      "service": "roads",
+      "permission": "resourcemanager.projects.list",
+      "role": "roles/analyticshub.serviceAgent",
+      "service": "resourcemanager",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1467,11 +1467,11 @@
       "commit": "2073fa52ac00",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "roads.selectedRoutes.update",
-      "role": "roles/roads.roadsSelectionAdmin",
-      "service": "roads",
+      "permission": "run.locations.uploadSource",
+      "role": "roles/owner",
+      "service": "run",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1483,9 +1483,9 @@
       "commit": "2073fa52ac00",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "discoveryengine.ideaForgeInstances.stop",
-      "role": "roles/owner",
-      "service": "discoveryengine",
+      "permission": "run.locations.uploadSource",
+      "role": "roles/cloudfunctions.serviceAgent",
+      "service": "run",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1495,86 +1495,6 @@
     },
     {
       "id": "2026-08-22-1394",
-      "date": "2026-08-22",
-      "commit": "2073fa52ac00",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "discoveryengine.ideaForgeInstances.stop",
-      "role": "roles/discoveryengine.editor",
-      "service": "discoveryengine",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-22-1395",
-      "date": "2026-08-22",
-      "commit": "2073fa52ac00",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "discoveryengine.ideaForgeInstances.stop",
-      "role": "roles/discoveryengine.podcastApiUser",
-      "service": "discoveryengine",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-22-1396",
-      "date": "2026-08-22",
-      "commit": "2073fa52ac00",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "discoveryengine.ideaForgeInstances.stop",
-      "role": "roles/discoveryengine.admin",
-      "service": "discoveryengine",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-22-1397",
-      "date": "2026-08-22",
-      "commit": "2073fa52ac00",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.locations.uploadSource",
-      "role": "roles/run.editor",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-22-1398",
-      "date": "2026-08-22",
-      "commit": "2073fa52ac00",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "run.locations.uploadSource",
-      "role": "roles/owner",
-      "service": "run",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-08-22-1399",
       "date": "2026-08-22",
       "commit": "2073fa52ac00",
       "dimension": "role_permissions",
@@ -1590,7 +1510,7 @@
       }
     },
     {
-      "id": "2026-08-22-1400",
+      "id": "2026-08-22-1395",
       "date": "2026-08-22",
       "commit": "2073fa52ac00",
       "dimension": "role_permissions",
@@ -1598,6 +1518,86 @@
       "permission": "run.locations.uploadSource",
       "role": "roles/run.developer",
       "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-22-1396",
+      "date": "2026-08-22",
+      "commit": "2073fa52ac00",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.locations.uploadSource",
+      "role": "roles/run.editor",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-22-1397",
+      "date": "2026-08-22",
+      "commit": "2073fa52ac00",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.locations.uploadSource",
+      "role": "roles/run.admin",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-22-1398",
+      "date": "2026-08-22",
+      "commit": "2073fa52ac00",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "policysimulator.activityBacktests.viewRabPolicy",
+      "role": "roles/policysimulator.viewer",
+      "service": "policysimulator",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-22-1399",
+      "date": "2026-08-22",
+      "commit": "2073fa52ac00",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "policysimulator.activityBacktests.viewRabPolicy",
+      "role": "roles/owner",
+      "service": "policysimulator",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-08-22-1400",
+      "date": "2026-08-22",
+      "commit": "2073fa52ac00",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.instances.listVmExtensionStates",
+      "role": "roles/compute.instanceAdmin",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
