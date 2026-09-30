@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-29T16:05:03Z",
-  "total_entries": 34613,
+  "generated_at": "2026-09-30T16:05:04Z",
+  "total_entries": 34641,
   "pages": 347,
   "page": 347,
   "page_size": 100,
@@ -11,9 +11,9 @@
       "commit": "fa730127fd45",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "monitoring.monitoredResourceDescriptors.list",
-      "role": "roles/apptopology.viewer",
-      "service": "monitoring",
+      "permission": "backupdr.appliedAutoProtectionPolicies.list",
+      "role": "roles/backupdr.viewer",
+      "service": "backupdr",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -23,6 +23,22 @@
     },
     {
       "id": "2026-09-04-34602",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "backupdr.appliedAutoProtectionPolicies.list",
+      "role": "roles/backupdr.editor",
+      "service": "backupdr",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34603",
       "date": "2026-09-04",
       "commit": "fa730127fd45",
       "dimension": "role_permissions",
@@ -38,30 +54,14 @@
       }
     },
     {
-      "id": "2026-09-04-34603",
-      "date": "2026-09-04",
-      "commit": "fa730127fd45",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "opsconfigmonitoring.resourceMetadata.list",
-      "role": "roles/apptopology.viewer",
-      "service": "opsconfigmonitoring",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
       "id": "2026-09-04-34604",
       "date": "2026-09-04",
       "commit": "fa730127fd45",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "monitoring.groups.list",
-      "role": "roles/datapipelines.serviceAgent",
-      "service": "monitoring",
+      "permission": "serviceextensions.locations.list",
+      "role": "roles/iam.supportUser",
+      "service": "serviceextensions",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -75,9 +75,9 @@
       "commit": "fa730127fd45",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "monitoring.groups.list",
-      "role": "roles/storage.admin",
-      "service": "monitoring",
+      "permission": "serviceextensions.locations.list",
+      "role": "roles/iam.securityAuditor",
+      "service": "serviceextensions",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -91,8 +91,8 @@
       "commit": "fa730127fd45",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "monitoring.groups.list",
-      "role": "roles/dlp.serviceAgent",
+      "permission": "monitoring.alertPolicies.listTagBindings",
+      "role": "roles/apptopology.viewer",
       "service": "monitoring",
       "method": "",
       "severity": "MEDIUM",
@@ -107,8 +107,8 @@
       "commit": "fa730127fd45",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "monitoring.groups.list",
-      "role": "roles/visualinspection.serviceAgent",
+      "permission": "monitoring.metricDescriptors.list",
+      "role": "roles/apptopology.viewer",
       "service": "monitoring",
       "method": "",
       "severity": "MEDIUM",
@@ -124,7 +124,7 @@
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "monitoring.groups.list",
-      "role": "roles/dataplex.serviceAgent",
+      "role": "roles/apptopology.viewer",
       "service": "monitoring",
       "method": "",
       "severity": "MEDIUM",
@@ -140,7 +140,7 @@
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "monitoring.groups.list",
-      "role": "roles/apptopology.viewer",
+      "role": "roles/visualinspection.serviceAgent",
       "service": "monitoring",
       "method": "",
       "severity": "MEDIUM",
@@ -156,7 +156,7 @@
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "monitoring.groups.list",
-      "role": "roles/dataproc.serviceAgent",
+      "role": "roles/storage.admin",
       "service": "monitoring",
       "method": "",
       "severity": "MEDIUM",
@@ -172,7 +172,7 @@
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
       "permission": "monitoring.groups.list",
-      "role": "roles/datafusion.serviceAgent",
+      "role": "roles/dlp.serviceAgent",
       "service": "monitoring",
       "method": "",
       "severity": "MEDIUM",
@@ -187,9 +187,9 @@
       "commit": "fa730127fd45",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "backupdr.appliedAutoProtectionPolicies.authorize",
-      "role": "roles/backupdr.editor",
-      "service": "backupdr",
+      "permission": "monitoring.groups.list",
+      "role": "roles/dataproc.serviceAgent",
+      "service": "monitoring",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -203,9 +203,457 @@
       "commit": "fa730127fd45",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "backupdr.appliedAutoProtectionPolicies.authorize",
+      "permission": "monitoring.groups.list",
+      "role": "roles/datafusion.serviceAgent",
+      "service": "monitoring",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34614",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "monitoring.groups.list",
+      "role": "roles/datapipelines.serviceAgent",
+      "service": "monitoring",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34615",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "monitoring.groups.list",
+      "role": "roles/dataplex.serviceAgent",
+      "service": "monitoring",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34616",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "monitoring.dashboards.listTagBindings",
+      "role": "roles/apptopology.viewer",
+      "service": "monitoring",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34617",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "serviceextensions.locations.get",
+      "role": "roles/iam.supportUser",
+      "service": "serviceextensions",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34618",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "backupdr.autoProtectionPolicies.list",
+      "role": "roles/iam.supportUser",
+      "service": "backupdr",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34619",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "backupdr.autoProtectionPolicies.list",
       "role": "roles/backupdr.admin",
       "service": "backupdr",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34620",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "backupdr.autoProtectionPolicies.list",
+      "role": "roles/iam.securityAuditor",
+      "service": "backupdr",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34621",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "backupdr.autoProtectionPolicies.list",
+      "role": "roles/backupdr.viewer",
+      "service": "backupdr",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34622",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "backupdr.autoProtectionPolicies.list",
+      "role": "roles/backupdr.editor",
+      "service": "backupdr",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34623",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "monitoring.notificationChannelDescriptors.get",
+      "role": "roles/apptopology.viewer",
+      "service": "monitoring",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34624",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "backupdr.autoProtectionBindings.get",
+      "role": "roles/iam.supportUser",
+      "service": "backupdr",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34625",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "backupdr.autoProtectionBindings.get",
+      "role": "roles/backupdr.admin",
+      "service": "backupdr",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34626",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "backupdr.autoProtectionBindings.get",
+      "role": "roles/backupdr.viewer",
+      "service": "backupdr",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34627",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "backupdr.autoProtectionBindings.get",
+      "role": "roles/backupdr.editor",
+      "service": "backupdr",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34628",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "monitoring.notificationChannels.get",
+      "role": "roles/apptopology.viewer",
+      "service": "monitoring",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34629",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "monitoring.services.list",
+      "role": "roles/apptopology.viewer",
+      "service": "monitoring",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34630",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "monitoring.uptimeCheckConfigs.get",
+      "role": "roles/apptopology.viewer",
+      "service": "monitoring",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34631",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.managedRulesets.get",
+      "role": "roles/iam.siteReliabilityEngineer",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34632",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.managedRulesets.get",
+      "role": "roles/iam.securityAuditor",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34633",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.managedRulesets.get",
+      "role": "roles/notebooks.legacyAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34634",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.managedRulesets.get",
+      "role": "roles/iam.networkAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34635",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.managedRulesets.get",
+      "role": "roles/compute.editor",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34636",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.managedRulesets.get",
+      "role": "roles/iam.supportUser",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34637",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.managedRulesets.get",
+      "role": "roles/compute.admin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34638",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.managedRulesets.get",
+      "role": "roles/notebooks.runner",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34639",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.managedRulesets.get",
+      "role": "roles/notebooks.editor",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34640",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "monitoring.monitoredResourceDescriptors.list",
+      "role": "roles/apptopology.viewer",
+      "service": "monitoring",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-04-34641",
+      "date": "2026-09-04",
+      "commit": "fa730127fd45",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "aiplatform.batchPredictionJobs.get",
+      "role": "roles/vectorsearch.serviceAgent",
+      "service": "aiplatform",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -217,15 +665,15 @@
   "summary": {
     "by_severity": {
       "CRITICAL": 448,
-      "HIGH": 9123,
+      "HIGH": 9135,
       "MEDIUM": 24942,
-      "INFO": 100
+      "INFO": 116
     },
     "by_dimension": {
+      "methods": 94,
+      "method_map": 94,
       "predefined_roles": 24,
-      "role_permissions": 34429,
-      "methods": 80,
-      "method_map": 80
+      "role_permissions": 34429
     },
     "new_services": []
   }
