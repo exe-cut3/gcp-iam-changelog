@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T22:15:27Z",
+  "generated_at": "2026-10-06T20:38:54Z",
   "total_entries": 35532,
   "pages": 356,
   "page": 17,
@@ -11,9 +11,9 @@
       "commit": "7bd79d67f198",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "spanner.instances.list",
-      "role": "roles/databaseinsights.serviceAgent",
-      "service": "spanner",
+      "permission": "iam.googleapis.com-workforcePoolSubjects.revokeSessions",
+      "role": "roles/admin",
+      "service": "iam",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -27,9 +27,9 @@
       "commit": "7bd79d67f198",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "databaseinsights.queryStats.fetch",
+      "permission": "monitoring.metricsScopes.link",
       "role": "roles/databaseinsights.serviceAgent",
-      "service": "databaseinsights",
+      "service": "monitoring",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -98,38 +98,6 @@
       "dimension": "predefined_roles",
       "change_type": "removed",
       "permission": "",
-      "role": "roles/timeseriesinsights.datasetsViewer",
-      "service": "timeseriesinsights",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "title": "Timeseries Insights DataSet Viewer"
-      }
-    },
-    {
-      "id": "2026-09-25-1607",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "predefined_roles",
-      "change_type": "removed",
-      "permission": "",
-      "role": "roles/timeseriesinsights.datasetsEditor",
-      "service": "timeseriesinsights",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "title": "Timeseries Insights DataSet Editor"
-      }
-    },
-    {
-      "id": "2026-09-25-1608",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "predefined_roles",
-      "change_type": "removed",
-      "permission": "",
       "role": "roles/timeseriesinsights.viewer",
       "service": "timeseriesinsights",
       "method": "",
@@ -140,7 +108,23 @@
       }
     },
     {
-      "id": "2026-09-25-1609",
+      "id": "2026-09-25-1607",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "predefined_roles",
+      "change_type": "removed",
+      "permission": "",
+      "role": "roles/timeseriesinsights.datasetsViewer",
+      "service": "timeseriesinsights",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "title": "Timeseries Insights DataSet Viewer"
+      }
+    },
+    {
+      "id": "2026-09-25-1608",
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "predefined_roles",
@@ -153,6 +137,22 @@
       "tags": [],
       "details": {
         "title": "Timeseries Insights DataSet Owner"
+      }
+    },
+    {
+      "id": "2026-09-25-1609",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "predefined_roles",
+      "change_type": "removed",
+      "permission": "",
+      "role": "roles/timeseriesinsights.datasetsEditor",
+      "service": "timeseriesinsights",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "title": "Timeseries Insights DataSet Editor"
       }
     },
     {
@@ -177,8 +177,8 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsGet",
-      "role": "roles/cloudaicompanion.settingsUser",
+      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate",
+      "role": "roles/cloudaicompanion.settingsAdmin",
       "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
@@ -193,8 +193,8 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsGet",
-      "role": "roles/viewer",
+      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate",
+      "role": "roles/writer",
       "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
@@ -209,8 +209,8 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsGet",
-      "role": "roles/cloudaicompanion.settingsAdmin",
+      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate",
+      "role": "roles/cloudaicompanion.editor",
       "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
@@ -225,8 +225,8 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsGet",
-      "role": "roles/writer",
+      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate",
+      "role": "roles/owner",
       "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
@@ -240,56 +240,8 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsGet",
-      "role": "roles/cloudaicompanion.editor",
-      "service": "cloudaicompanion",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-09-25-1616",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsGet",
-      "role": "roles/owner",
-      "service": "cloudaicompanion",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-09-25-1617",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsGet",
-      "role": "roles/bigquery.studioAdmin",
-      "service": "cloudaicompanion",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-09-25-1618",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsGet",
+      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate",
       "role": "roles/cloudaicompanion.admin",
       "service": "cloudaicompanion",
       "method": "",
@@ -300,19 +252,67 @@
       }
     },
     {
-      "id": "2026-09-25-1619",
+      "id": "2026-09-25-1616",
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "timeseriesinsights.datasets.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "timeseriesinsights",
+      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate",
+      "role": "roles/bigquery.studioAdmin",
+      "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": false
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-25-1617",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryGroups.useManagedConnectorTypes",
+      "role": "roles/datacatalog.entryGroupOwner",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-25-1618",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryGroups.useManagedConnectorTypes",
+      "role": "roles/writer",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-25-1619",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryGroups.useManagedConnectorTypes",
+      "role": "roles/datacatalog.admin",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
       }
     },
     {
@@ -320,15 +320,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "timeseriesinsights.datasets.list",
-      "role": "roles/viewer",
-      "service": "timeseriesinsights",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryGroups.useManagedConnectorTypes",
+      "role": "roles/dataplex.catalogAdmin",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": false
+        "undocumented": true
       }
     },
     {
@@ -336,15 +336,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "timeseriesinsights.datasets.list",
-      "role": "roles/timeseriesinsights.viewer",
-      "service": "timeseriesinsights",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryGroups.useManagedConnectorTypes",
+      "role": "roles/owner",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -352,15 +352,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "timeseriesinsights.datasets.list",
-      "role": "roles/writer",
-      "service": "timeseriesinsights",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryGroups.useManagedConnectorTypes",
+      "role": "roles/datacatalog.entryOwner",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -368,15 +368,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "timeseriesinsights.datasets.list",
-      "role": "roles/iam.securityReviewer",
-      "service": "timeseriesinsights",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryGroups.useManagedConnectorTypes",
+      "role": "roles/dataplex.entryGroupOwner",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": false
+        "undocumented": true
       }
     },
     {
@@ -385,9 +385,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "timeseriesinsights.datasets.list",
-      "role": "roles/iam.securityAuditor",
-      "service": "timeseriesinsights",
+      "permission": "dataplex.entryGroups.useManagedConnectorTypes",
+      "role": "roles/dataplex.catalogEditor",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -400,15 +400,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "timeseriesinsights.datasets.list",
-      "role": "roles/owner",
-      "service": "timeseriesinsights",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.interconnects.setName",
+      "role": "roles/writer",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": false
+        "undocumented": true
       }
     },
     {
@@ -417,9 +417,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsList",
-      "role": "roles/cloudaicompanion.settingsUser",
-      "service": "cloudaicompanion",
+      "permission": "compute.interconnects.setName",
+      "role": "roles/compute.networkAdmin",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -433,9 +433,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsList",
-      "role": "roles/viewer",
-      "service": "cloudaicompanion",
+      "permission": "compute.interconnects.setName",
+      "role": "roles/iam.infrastructureAdmin",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -449,9 +449,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsList",
-      "role": "roles/cloudaicompanion.settingsAdmin",
-      "service": "cloudaicompanion",
+      "permission": "compute.interconnects.setName",
+      "role": "roles/compute.editor",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -465,9 +465,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsList",
-      "role": "roles/writer",
-      "service": "cloudaicompanion",
+      "permission": "compute.interconnects.setName",
+      "role": "roles/owner",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -481,9 +481,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsList",
-      "role": "roles/cloudaicompanion.editor",
-      "service": "cloudaicompanion",
+      "permission": "compute.interconnects.setName",
+      "role": "roles/cloudtpu.serviceAgent",
+      "service": "compute",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -497,9 +497,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsList",
-      "role": "roles/owner",
-      "service": "cloudaicompanion",
+      "permission": "devicerun.softwareVersions.get",
+      "role": "roles/writer",
+      "service": "devicerun",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -512,15 +512,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsList",
-      "role": "roles/bigquery.studioAdmin",
-      "service": "cloudaicompanion",
+      "change_type": "permission_added_to_role",
+      "permission": "devicerun.softwareVersions.get",
+      "role": "roles/devicerun.admin",
+      "service": "devicerun",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -528,15 +528,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsList",
-      "role": "roles/cloudaicompanion.admin",
-      "service": "cloudaicompanion",
+      "change_type": "permission_added_to_role",
+      "permission": "devicerun.softwareVersions.get",
+      "role": "roles/viewer",
+      "service": "devicerun",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -545,9 +545,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.get",
-      "role": "roles/cloudaicompanion.settingsUser",
-      "service": "cloudaicompanion",
+      "permission": "devicerun.softwareVersions.get",
+      "role": "roles/owner",
+      "service": "devicerun",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -561,9 +561,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.get",
-      "role": "roles/viewer",
-      "service": "cloudaicompanion",
+      "permission": "netapp.storagePools.get",
+      "role": "roles/backupdr.serviceAgent",
+      "service": "netapp",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -577,11 +577,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.get",
+      "permission": "cloudaicompanion.gibqObservabilitySettings.delete",
       "role": "roles/cloudaicompanion.settingsAdmin",
       "service": "cloudaicompanion",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -593,11 +593,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.get",
+      "permission": "cloudaicompanion.gibqObservabilitySettings.delete",
       "role": "roles/writer",
       "service": "cloudaicompanion",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -609,11 +609,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.get",
+      "permission": "cloudaicompanion.gibqObservabilitySettings.delete",
       "role": "roles/cloudaicompanion.editor",
       "service": "cloudaicompanion",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -625,11 +625,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.get",
+      "permission": "cloudaicompanion.gibqObservabilitySettings.delete",
       "role": "roles/owner",
       "service": "cloudaicompanion",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -641,11 +641,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.get",
-      "role": "roles/bigquery.studioAdmin",
+      "permission": "cloudaicompanion.gibqObservabilitySettings.delete",
+      "role": "roles/cloudaicompanion.admin",
       "service": "cloudaicompanion",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "was_undocumented": true
@@ -657,11 +657,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.get",
-      "role": "roles/cloudaicompanion.admin",
+      "permission": "cloudaicompanion.gibqObservabilitySettings.delete",
+      "role": "roles/bigquery.studioAdmin",
       "service": "cloudaicompanion",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "was_undocumented": true
@@ -673,11 +673,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate",
-      "role": "roles/cloudaicompanion.editor",
-      "service": "cloudaicompanion",
+      "permission": "compute.regionSslPolicies.setIamPolicy",
+      "role": "roles/compute.loadBalancerAdmin",
+      "service": "compute",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
         "undocumented": true
@@ -689,11 +689,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate",
-      "role": "roles/writer",
-      "service": "cloudaicompanion",
+      "permission": "compute.regionSslPolicies.setIamPolicy",
+      "role": "roles/compute.networkAdmin",
+      "service": "compute",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
         "undocumented": true
@@ -705,11 +705,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate",
-      "role": "roles/cloudaicompanion.settingsAdmin",
-      "service": "cloudaicompanion",
+      "permission": "compute.regionSslPolicies.setIamPolicy",
+      "role": "roles/iam.infrastructureAdmin",
+      "service": "compute",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
         "undocumented": true
@@ -721,11 +721,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate",
-      "role": "roles/owner",
-      "service": "cloudaicompanion",
+      "permission": "compute.regionSslPolicies.setIamPolicy",
+      "role": "roles/iam.securityAdmin",
+      "service": "compute",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
         "undocumented": true
@@ -736,15 +736,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate",
-      "role": "roles/bigquery.studioAdmin",
-      "service": "cloudaicompanion",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.regionSslPolicies.setIamPolicy",
+      "role": "roles/owner",
+      "service": "compute",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -752,15 +752,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate",
-      "role": "roles/cloudaicompanion.admin",
-      "service": "cloudaicompanion",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.regionSslPolicies.setIamPolicy",
+      "role": "roles/cloudtpu.serviceAgent",
+      "service": "compute",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -768,15 +768,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "cloudaicompanion",
+      "change_type": "permission_removed_from_role",
+      "permission": "compute.regionSslPolicies.setIamPolicy",
+      "role": "roles/compute.securityAdmin",
+      "service": "compute",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -785,8 +785,8 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.list",
-      "role": "roles/cloudaicompanion.settingsUser",
+      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsDelete",
+      "role": "roles/cloudaicompanion.settingsAdmin",
       "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
@@ -801,8 +801,8 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.list",
-      "role": "roles/viewer",
+      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsDelete",
+      "role": "roles/writer",
       "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
@@ -817,8 +817,8 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.list",
-      "role": "roles/cloudaicompanion.settingsAdmin",
+      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsDelete",
+      "role": "roles/cloudaicompanion.editor",
       "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
@@ -833,8 +833,8 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.list",
-      "role": "roles/writer",
+      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsDelete",
+      "role": "roles/owner",
       "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
@@ -848,15 +848,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.list",
-      "role": "roles/iam.securityReviewer",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsDelete",
+      "role": "roles/cloudaicompanion.admin",
       "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -864,15 +864,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.list",
-      "role": "roles/iam.securityAuditor",
+      "change_type": "permission_removed_from_role",
+      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsDelete",
+      "role": "roles/bigquery.studioAdmin",
       "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -881,9 +881,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.list",
-      "role": "roles/cloudaicompanion.editor",
-      "service": "cloudaicompanion",
+      "permission": "discoveryengine.locations.buildAuthorizationUrl",
+      "role": "roles/writer",
+      "service": "discoveryengine",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -897,9 +897,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.list",
-      "role": "roles/owner",
-      "service": "cloudaicompanion",
+      "permission": "discoveryengine.locations.buildAuthorizationUrl",
+      "role": "roles/viewer",
+      "service": "discoveryengine",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -912,15 +912,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.list",
-      "role": "roles/bigquery.studioAdmin",
-      "service": "cloudaicompanion",
+      "change_type": "permission_added_to_role",
+      "permission": "discoveryengine.locations.buildAuthorizationUrl",
+      "role": "roles/discoveryengine.agentspaceRestrictedUser",
+      "service": "discoveryengine",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -928,15 +928,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.list",
-      "role": "roles/cloudaicompanion.admin",
-      "service": "cloudaicompanion",
+      "change_type": "permission_added_to_role",
+      "permission": "discoveryengine.locations.buildAuthorizationUrl",
+      "role": "roles/discoveryengine.agentspaceUser",
+      "service": "discoveryengine",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -945,9 +945,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUse",
-      "role": "roles/cloudaicompanion.editor",
-      "service": "cloudaicompanion",
+      "permission": "discoveryengine.locations.buildAuthorizationUrl",
+      "role": "roles/owner",
+      "service": "discoveryengine",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -961,9 +961,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUse",
-      "role": "roles/writer",
-      "service": "cloudaicompanion",
+      "permission": "dataplex.entryLinkTypes.getIamPolicy",
+      "role": "roles/iam.securityAuditor",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -977,9 +977,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUse",
-      "role": "roles/cloudaicompanion.settingsAdmin",
-      "service": "cloudaicompanion",
+      "permission": "dataplex.entryLinkTypes.getIamPolicy",
+      "role": "roles/writer",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -993,9 +993,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUse",
-      "role": "roles/owner",
-      "service": "cloudaicompanion",
+      "permission": "dataplex.entryLinkTypes.getIamPolicy",
+      "role": "roles/viewer",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1005,118 +1005,6 @@
     },
     {
       "id": "2026-09-25-1663",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUse",
-      "role": "roles/bigquery.studioAdmin",
-      "service": "cloudaicompanion",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-09-25-1664",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsUse",
-      "role": "roles/cloudaicompanion.admin",
-      "service": "cloudaicompanion",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-09-25-1665",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryLinkTypes.delete",
-      "role": "roles/dataplex.catalogAdmin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-09-25-1666",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryLinkTypes.delete",
-      "role": "roles/writer",
-      "service": "dataplex",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-09-25-1667",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryLinkTypes.delete",
-      "role": "roles/owner",
-      "service": "dataplex",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-09-25-1668",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryLinkTypes.delete",
-      "role": "roles/datacatalog.admin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-09-25-1669",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "dataplex.entryLinkTypes.delete",
-      "role": "roles/dataplex.catalogEditor",
-      "service": "dataplex",
-      "method": "",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "was_undocumented": true
-      }
-    },
-    {
-      "id": "2026-09-25-1670",
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
@@ -1132,23 +1020,7 @@
       }
     },
     {
-      "id": "2026-09-25-1671",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryLinkTypes.getIamPolicy",
-      "role": "roles/viewer",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-09-25-1672",
+      "id": "2026-09-25-1664",
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
@@ -1164,7 +1036,23 @@
       }
     },
     {
-      "id": "2026-09-25-1673",
+      "id": "2026-09-25-1665",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryLinkTypes.getIamPolicy",
+      "role": "roles/dataplex.catalogAdmin",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-25-1666",
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
@@ -1180,71 +1068,7 @@
       }
     },
     {
-      "id": "2026-09-25-1674",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryLinkTypes.getIamPolicy",
-      "role": "roles/dataplex.catalogAdmin",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-09-25-1675",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryLinkTypes.getIamPolicy",
-      "role": "roles/writer",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-09-25-1676",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryLinkTypes.getIamPolicy",
-      "role": "roles/iam.securityReviewer",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-09-25-1677",
-      "date": "2026-09-25",
-      "commit": "d3311c420d99",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "dataplex.entryLinkTypes.getIamPolicy",
-      "role": "roles/iam.securityAuditor",
-      "service": "dataplex",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-09-25-1678",
+      "id": "2026-09-25-1667",
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
@@ -1260,7 +1084,23 @@
       }
     },
     {
-      "id": "2026-09-25-1679",
+      "id": "2026-09-25-1668",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryLinkTypes.getIamPolicy",
+      "role": "roles/iam.securityReviewer",
+      "service": "dataplex",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-25-1669",
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
@@ -1276,16 +1116,176 @@
       }
     },
     {
+      "id": "2026-09-25-1670",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "enterprisepurchasing.licenseKeys.get",
+      "role": "roles/writer",
+      "service": "enterprisepurchasing",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-25-1671",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "enterprisepurchasing.licenseKeys.get",
+      "role": "roles/viewer",
+      "service": "enterprisepurchasing",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-25-1672",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "enterprisepurchasing.licenseKeys.get",
+      "role": "roles/owner",
+      "service": "enterprisepurchasing",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-25-1673",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "enterprisepurchasing.licenseKeys.get",
+      "role": "roles/enterprisepurchasing.editor",
+      "service": "enterprisepurchasing",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-25-1674",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "role_permissions",
+      "change_type": "permission_removed_from_role",
+      "permission": "enterprisepurchasing.licenseKeys.get",
+      "role": "roles/enterprisepurchasing.viewer",
+      "service": "enterprisepurchasing",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "was_undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-25-1675",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "agentregistry.skills.setIamPolicy",
+      "role": "roles/owner",
+      "service": "agentregistry",
+      "method": "",
+      "severity": "CRITICAL",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-25-1676",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "agentregistry.skills.setIamPolicy",
+      "role": "roles/iam.securityAdmin",
+      "service": "agentregistry",
+      "method": "",
+      "severity": "CRITICAL",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-25-1677",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "enterprisepurchasing.licenseKeys.list",
+      "role": "roles/iam.securityAuditor",
+      "service": "enterprisepurchasing",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-25-1678",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "enterprisepurchasing.licenseKeys.list",
+      "role": "roles/writer",
+      "service": "enterprisepurchasing",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-09-25-1679",
+      "date": "2026-09-25",
+      "commit": "d3311c420d99",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "enterprisepurchasing.licenseKeys.list",
+      "role": "roles/viewer",
+      "service": "enterprisepurchasing",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
       "id": "2026-09-25-1680",
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.update",
-      "role": "roles/cloudaicompanion.editor",
-      "service": "cloudaicompanion",
+      "permission": "enterprisepurchasing.licenseKeys.list",
+      "role": "roles/iam.securityAdmin",
+      "service": "enterprisepurchasing",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1297,11 +1297,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.update",
-      "role": "roles/writer",
-      "service": "cloudaicompanion",
+      "permission": "enterprisepurchasing.licenseKeys.list",
+      "role": "roles/owner",
+      "service": "enterprisepurchasing",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1313,11 +1313,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.update",
-      "role": "roles/cloudaicompanion.settingsAdmin",
-      "service": "cloudaicompanion",
+      "permission": "enterprisepurchasing.licenseKeys.list",
+      "role": "roles/iam.securityReviewer",
+      "service": "enterprisepurchasing",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1328,15 +1328,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.update",
-      "role": "roles/owner",
-      "service": "cloudaicompanion",
+      "change_type": "permission_removed_from_role",
+      "permission": "enterprisepurchasing.licenseKeys.list",
+      "role": "roles/enterprisepurchasing.editor",
+      "service": "enterprisepurchasing",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -1345,11 +1345,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.update",
-      "role": "roles/bigquery.studioAdmin",
-      "service": "cloudaicompanion",
+      "permission": "enterprisepurchasing.licenseKeys.list",
+      "role": "roles/enterprisepurchasing.viewer",
+      "service": "enterprisepurchasing",
       "method": "",
-      "severity": "HIGH",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
         "was_undocumented": true
@@ -1360,15 +1360,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudaicompanion.gibqObservabilitySettings.update",
-      "role": "roles/cloudaicompanion.admin",
-      "service": "cloudaicompanion",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.sslPolicies.setIamPolicy",
+      "role": "roles/compute.loadBalancerAdmin",
+      "service": "compute",
       "method": "",
-      "severity": "HIGH",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -1376,15 +1376,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "timeseriesinsights.locations.list",
-      "role": "roles/iam.securityAdmin",
-      "service": "timeseriesinsights",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.sslPolicies.setIamPolicy",
+      "role": "roles/compute.networkAdmin",
+      "service": "compute",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
-        "was_undocumented": false
+        "undocumented": true
       }
     },
     {
@@ -1392,15 +1392,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "timeseriesinsights.locations.list",
-      "role": "roles/viewer",
-      "service": "timeseriesinsights",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.sslPolicies.setIamPolicy",
+      "role": "roles/iam.infrastructureAdmin",
+      "service": "compute",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
-        "was_undocumented": false
+        "undocumented": true
       }
     },
     {
@@ -1408,15 +1408,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "timeseriesinsights.locations.list",
-      "role": "roles/timeseriesinsights.viewer",
-      "service": "timeseriesinsights",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.sslPolicies.setIamPolicy",
+      "role": "roles/iam.securityAdmin",
+      "service": "compute",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -1424,15 +1424,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "timeseriesinsights.locations.list",
-      "role": "roles/writer",
-      "service": "timeseriesinsights",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.sslPolicies.setIamPolicy",
+      "role": "roles/owner",
+      "service": "compute",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -1440,15 +1440,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "timeseriesinsights.locations.list",
-      "role": "roles/iam.securityReviewer",
-      "service": "timeseriesinsights",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.sslPolicies.setIamPolicy",
+      "role": "roles/cloudtpu.serviceAgent",
+      "service": "compute",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
-        "was_undocumented": false
+        "undocumented": true
       }
     },
     {
@@ -1457,11 +1457,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_removed_from_role",
-      "permission": "timeseriesinsights.locations.list",
-      "role": "roles/iam.securityAuditor",
-      "service": "timeseriesinsights",
+      "permission": "compute.sslPolicies.setIamPolicy",
+      "role": "roles/compute.securityAdmin",
+      "service": "compute",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
         "was_undocumented": true
@@ -1472,15 +1472,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "timeseriesinsights.locations.list",
-      "role": "roles/owner",
-      "service": "timeseriesinsights",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryLinkTypes.create",
+      "role": "roles/dataplex.catalogAdmin",
+      "service": "dataplex",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "was_undocumented": false
+        "undocumented": true
       }
     },
     {
@@ -1488,15 +1488,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudsql.instances.export",
-      "role": "roles/viewer",
-      "service": "cloudsql",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryLinkTypes.create",
+      "role": "roles/writer",
+      "service": "dataplex",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "was_undocumented": false
+        "undocumented": true
       }
     },
     {
@@ -1504,15 +1504,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudsql.instances.export",
-      "role": "roles/writer",
-      "service": "cloudsql",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryLinkTypes.create",
+      "role": "roles/owner",
+      "service": "dataplex",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -1520,15 +1520,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_removed_from_role",
-      "permission": "cloudsql.instances.export",
-      "role": "roles/iam.securityAuditor",
-      "service": "cloudsql",
+      "change_type": "permission_added_to_role",
+      "permission": "dataplex.entryLinkTypes.create",
+      "role": "roles/datacatalog.admin",
+      "service": "dataplex",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "was_undocumented": true
+        "undocumented": true
       }
     },
     {
@@ -1536,15 +1536,15 @@
       "date": "2026-09-25",
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.projects.list",
-      "role": "roles/flow.admin",
-      "service": "resourcemanager",
+      "change_type": "permission_removed_from_role",
+      "permission": "dataplex.entryLinkTypes.create",
+      "role": "roles/dataplex.catalogEditor",
+      "service": "dataplex",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "undocumented": true
+        "was_undocumented": true
       }
     },
     {
@@ -1553,11 +1553,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "resourcemanager.projects.list",
-      "role": "roles/flow.editor",
-      "service": "resourcemanager",
+      "permission": "enterprisepurchasing.licenseKeys.create",
+      "role": "roles/writer",
+      "service": "enterprisepurchasing",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1569,11 +1569,11 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.regionSslPolicies.getIamPolicy",
-      "role": "roles/cloudtpu.serviceAgent",
-      "service": "compute",
+      "permission": "enterprisepurchasing.licenseKeys.create",
+      "role": "roles/owner",
+      "service": "enterprisepurchasing",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -1585,9 +1585,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.regionSslPolicies.getIamPolicy",
-      "role": "roles/iam.securityAdmin",
-      "service": "compute",
+      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsList",
+      "role": "roles/writer",
+      "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -1601,9 +1601,9 @@
       "commit": "d3311c420d99",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.regionSslPolicies.getIamPolicy",
-      "role": "roles/compute.loadBalancerAdmin",
-      "service": "compute",
+      "permission": "cloudaicompanion.settingBindings.gibqObservabilitySettingsList",
+      "role": "roles/viewer",
+      "service": "cloudaicompanion",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
