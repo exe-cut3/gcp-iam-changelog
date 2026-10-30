@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-29T20:45:10Z",
-  "total_entries": 6963,
+  "generated_at": "2026-10-30T20:16:26Z",
+  "total_entries": 6965,
   "pages": 70,
   "page": 18,
   "page_size": 100,
@@ -11,8 +11,8 @@
       "commit": "a10266d495e4",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataflow.snapshots.deleteTagBinding",
-      "role": "roles/dlp.orgdriver",
+      "permission": "dataflow.jobs.listEffectiveTags",
+      "role": "roles/viewer",
       "service": "dataflow",
       "method": "",
       "severity": "MEDIUM",
@@ -27,8 +27,8 @@
       "commit": "a10266d495e4",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataflow.snapshots.deleteTagBinding",
-      "role": "roles/dataflow.admin",
+      "permission": "dataflow.jobs.listEffectiveTags",
+      "role": "roles/writer",
       "service": "dataflow",
       "method": "",
       "severity": "MEDIUM",
@@ -43,8 +43,8 @@
       "commit": "a10266d495e4",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "dataflow.snapshots.deleteTagBinding",
-      "role": "roles/resourcemanager.tagUser",
+      "permission": "dataflow.jobs.listEffectiveTags",
+      "role": "roles/reader",
       "service": "dataflow",
       "method": "",
       "severity": "MEDIUM",
@@ -59,9 +59,9 @@
       "commit": "a10266d495e4",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "eventarc.enrollments.list",
-      "role": "roles/wiz.cloudInventoryViewer",
-      "service": "eventarc",
+      "permission": "dataflow.jobs.listEffectiveTags",
+      "role": "roles/dataflow.admin",
+      "service": "dataflow",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -75,9 +75,9 @@
       "commit": "a10266d495e4",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "eventarc.enrollments.list",
-      "role": "roles/cloudfunctions.standardServiceAgent",
-      "service": "eventarc",
+      "permission": "dataflow.jobs.listEffectiveTags",
+      "role": "roles/dlp.orgdriver",
+      "service": "dataflow",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -91,9 +91,9 @@
       "commit": "a10266d495e4",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "parametermanager.parameters.list",
+      "permission": "dataplex.assets.list",
       "role": "roles/wiz.cloudInventoryViewer",
-      "service": "parametermanager",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -107,9 +107,9 @@
       "commit": "a10266d495e4",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "pubsub.subscriptions.getIamPolicy",
+      "permission": "resourcemanager.projects.list",
       "role": "roles/cloudfunctions.standardServiceAgent",
-      "service": "pubsub",
+      "service": "resourcemanager",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -123,7 +123,7 @@
       "commit": "a10266d495e4",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "aiplatform.specialistPools.list",
+      "permission": "aiplatform.agents.get",
       "role": "roles/wiz.cloudInventoryViewer",
       "service": "aiplatform",
       "method": "",
@@ -139,9 +139,9 @@
       "commit": "a10266d495e4",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "networkservices.authzExtensions.list",
+      "permission": "dataplex.glossaries.list",
       "role": "roles/wiz.cloudInventoryViewer",
-      "service": "networkservices",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -155,9 +155,9 @@
       "commit": "a10266d495e4",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "eventarc.operations.cancel",
-      "role": "roles/cloudfunctions.standardServiceAgent",
-      "service": "eventarc",
+      "permission": "networksecurity.interceptEndpointGroups.list",
+      "role": "roles/wiz.cloudInventoryViewer",
+      "service": "networksecurity",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -171,9 +171,9 @@
       "commit": "a10266d495e4",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "pubsub.subscriptions.update",
+      "permission": "run.workerpools.delete",
       "role": "roles/cloudfunctions.standardServiceAgent",
-      "service": "pubsub",
+      "service": "run",
       "method": "",
       "severity": "HIGH",
       "tags": [],
@@ -187,9 +187,9 @@
       "commit": "a10266d495e4",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "apihub.generatedSpecApis.retrieveGeneratedSpecView",
-      "role": "roles/apigee.apiAdminV2",
-      "service": "apihub",
+      "permission": "eventarc.channelConnections.listEffectiveTags",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "eventarc",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -199,86 +199,6 @@
     },
     {
       "id": "2026-10-24-1713",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "apihub.generatedSpecApis.retrieveGeneratedSpecView",
-      "role": "roles/viewer",
-      "service": "apihub",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-10-24-1714",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "apihub.generatedSpecApis.retrieveGeneratedSpecView",
-      "role": "roles/reader",
-      "service": "apihub",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-10-24-1715",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "apihub.generatedSpecApis.retrieveGeneratedSpecView",
-      "role": "roles/writer",
-      "service": "apihub",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-10-24-1716",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "apihub.generatedSpecApis.retrieveGeneratedSpecView",
-      "role": "roles/apihub.editor",
-      "service": "apihub",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-10-24-1717",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "apihub.generatedSpecApis.retrieveGeneratedSpecView",
-      "role": "roles/apihub.viewer",
-      "service": "apihub",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-10-24-1718",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
       "dimension": "role_permissions",
@@ -294,14 +214,94 @@
       }
     },
     {
+      "id": "2026-10-24-1714",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "certificatemanager.trustconfigs.list",
+      "role": "roles/wiz.cloudInventoryViewer",
+      "service": "certificatemanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1715",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.pipelines.create",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "eventarc",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1716",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.enrollments.create",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "eventarc",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1717",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.triggers.listTagBindings",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "eventarc",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1718",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "firebasedataconnect.services.postgrestInsert",
+      "role": "roles/firebase.admin",
+      "service": "firebasedataconnect",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
       "id": "2026-10-24-1719",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "compute.httpHealthChecks.list",
-      "role": "roles/wiz.cloudInventoryViewer",
-      "service": "compute",
+      "permission": "firebasedataconnect.services.postgrestInsert",
+      "role": "roles/firebase.developAdmin",
+      "service": "firebasedataconnect",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -311,6 +311,490 @@
     },
     {
       "id": "2026-10-24-1720",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "firebasedataconnect.services.postgrestInsert",
+      "role": "roles/writer",
+      "service": "firebasedataconnect",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1721",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "speech.recognizers.list",
+      "role": "roles/wiz.cloudInventoryViewer",
+      "service": "speech",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1722",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "apihub.specs.get",
+      "role": "roles/wiz.cloudInventoryViewer",
+      "service": "apihub",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1723",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "certificatemanager.certissuanceconfigs.list",
+      "role": "roles/wiz.cloudInventoryViewer",
+      "service": "certificatemanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1724",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "developerconnect.users.list",
+      "role": "roles/wiz.cloudInventoryViewer",
+      "service": "developerconnect",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1725",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "artifactregistry.pythonpackages.list",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "artifactregistry",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1726",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "backupdr.backupPlanAssociations.list",
+      "role": "roles/wiz.cloudInventoryViewer",
+      "service": "backupdr",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1727",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "redis.backups.list",
+      "role": "roles/wiz.cloudInventoryViewer",
+      "service": "redis",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1728",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "artifactregistry.projectsettings.get",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "artifactregistry",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1729",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "recommender.runServiceIdentityRecommendations.get",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "recommender",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1730",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "binaryauthorization.attestors.list",
+      "role": "roles/wiz.cloudInventoryViewer",
+      "service": "binaryauthorization",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1731",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "privateca.certificateTemplates.list",
+      "role": "roles/wiz.cloudInventoryViewer",
+      "service": "privateca",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1732",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "artifactregistry.mavenartifacts.get",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "artifactregistry",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1733",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "apihub.specs.list",
+      "role": "roles/wiz.cloudInventoryViewer",
+      "service": "apihub",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1734",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "iam.serviceAccounts.actAs",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "iam",
+      "method": "",
+      "severity": "CRITICAL",
+      "tags": [
+        "PrivEsc"
+      ],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1735",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.channels.undelete",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "eventarc",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1736",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudbuild.builds.create",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "cloudbuild",
+      "method": "",
+      "severity": "CRITICAL",
+      "tags": [
+        "PrivEsc"
+      ],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1737",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.managedRulesets.get",
+      "role": "roles/cloudtpu.serviceAgent",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1738",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.managedRulesets.get",
+      "role": "roles/compute.loadBalancerAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1739",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.managedRulesets.get",
+      "role": "roles/compute.securityAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1740",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.managedRulesets.get",
+      "role": "roles/compute.orgSecurityPolicyAdmin",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1741",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "compute.managedRulesets.get",
+      "role": "roles/compute.orgSecurityPolicyUser",
+      "service": "compute",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1742",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "agentregistry.skills.update",
+      "role": "roles/discoveryengine.serviceAgent",
+      "service": "agentregistry",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1743",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "workloadmanager.locations.list",
+      "role": "roles/wiz.cloudInventoryViewer",
+      "service": "workloadmanager",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1744",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "artifactregistry.locations.list",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "artifactregistry",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1745",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "run.executions.cancel",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "run",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1746",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "healthcare.consentStores.list",
+      "role": "roles/wiz.cloudInventoryViewer",
+      "service": "healthcare",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1747",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "osconfig.patchDeployments.list",
+      "role": "roles/wiz.cloudInventoryViewer",
+      "service": "osconfig",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1748",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "artifactregistry.repositories.createOnPush",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "artifactregistry",
+      "method": "",
+      "severity": "MEDIUM",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1749",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "artifactregistry.packages.update",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "artifactregistry",
+      "method": "",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "undocumented": true
+      }
+    },
+    {
+      "id": "2026-10-24-1750",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
       "dimension": "role_permissions",
@@ -326,587 +810,91 @@
       }
     },
     {
-      "id": "2026-10-24-1721",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "privateca.certificates.list",
-      "role": "roles/wiz.cloudInventoryViewer",
-      "service": "privateca",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-10-24-1722",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "role_permissions",
-      "change_type": "permission_added_to_role",
-      "permission": "recommender.runServiceSecurityInsights.get",
-      "role": "roles/cloudfunctions.standardServiceAgent",
-      "service": "recommender",
-      "method": "",
-      "severity": "MEDIUM",
-      "tags": [],
-      "details": {
-        "undocumented": true
-      }
-    },
-    {
-      "id": "2026-10-24-1723",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.folders.updateBoundaryConfig",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "cloudresourcemanager"
-      }
-    },
-    {
-      "id": "2026-10-24-1724",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.folders.boundaries.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "cloudresourcemanager"
-      }
-    },
-    {
-      "id": "2026-10-24-1725",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.organizations.boundaries.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "cloudresourcemanager"
-      }
-    },
-    {
-      "id": "2026-10-24-1726",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.folders.boundaries.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "cloudresourcemanager"
-      }
-    },
-    {
-      "id": "2026-10-24-1727",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.organizations.boundaries.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "cloudresourcemanager"
-      }
-    },
-    {
-      "id": "2026-10-24-1728",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.folders.boundaries.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "cloudresourcemanager"
-      }
-    },
-    {
-      "id": "2026-10-24-1729",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.organizations.updateBoundaryConfig",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "cloudresourcemanager"
-      }
-    },
-    {
-      "id": "2026-10-24-1730",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.organizations.boundaries.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "cloudresourcemanager"
-      }
-    },
-    {
-      "id": "2026-10-24-1731",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.organizations.boundaries.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "cloudresourcemanager"
-      }
-    },
-    {
-      "id": "2026-10-24-1732",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.organizations.boundaries.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "cloudresourcemanager"
-      }
-    },
-    {
-      "id": "2026-10-24-1733",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.folders.getBoundaryConfig",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "cloudresourcemanager"
-      }
-    },
-    {
-      "id": "2026-10-24-1734",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.organizations.getBoundaryConfig",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "cloudresourcemanager"
-      }
-    },
-    {
-      "id": "2026-10-24-1735",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.folders.boundaries.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "cloudresourcemanager"
-      }
-    },
-    {
-      "id": "2026-10-24-1736",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.folders.boundaries.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "cloudresourcemanager"
-      }
-    },
-    {
-      "id": "2026-10-24-1737",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "backupdr"
-      }
-    },
-    {
-      "id": "2026-10-24-1738",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "backupdr"
-      }
-    },
-    {
-      "id": "2026-10-24-1739",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.initiateDelete",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "backupdr"
-      }
-    },
-    {
-      "id": "2026-10-24-1740",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.matchingResources.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "backupdr"
-      }
-    },
-    {
-      "id": "2026-10-24-1741",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "backupdr"
-      }
-    },
-    {
-      "id": "2026-10-24-1742",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.appliedAutoProtectionPolicies.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "backupdr"
-      }
-    },
-    {
-      "id": "2026-10-24-1743",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "backupdr"
-      }
-    },
-    {
-      "id": "2026-10-24-1744",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.matchingResources.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "backupdr"
-      }
-    },
-    {
-      "id": "2026-10-24-1745",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "backupdr"
-      }
-    },
-    {
-      "id": "2026-10-24-1746",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "backupdr"
-      }
-    },
-    {
-      "id": "2026-10-24-1747",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "backupdr"
-      }
-    },
-    {
-      "id": "2026-10-24-1748",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "backupdr"
-      }
-    },
-    {
-      "id": "2026-10-24-1749",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.initiateDelete",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-24-1750",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.matchingResources.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
       "id": "2026-10-24-1751",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.create",
-      "severity": "HIGH",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "artifactregistry.repositories.readViaVirtualRepository",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "artifactregistry",
+      "method": "",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "note": "New method has no permission mapping"
+        "undocumented": true
       }
     },
     {
       "id": "2026-10-24-1752",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.get",
-      "severity": "INFO",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "cloudtranslate.customModels.list",
+      "role": "roles/wiz.cloudInventoryViewer",
+      "service": "cloudtranslate",
+      "method": "",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "note": "New method has no permission mapping"
+        "undocumented": true
       }
     },
     {
       "id": "2026-10-24-1753",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.patch",
-      "severity": "HIGH",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.kafkaSources.list",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "eventarc",
+      "method": "",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "note": "New method has no permission mapping"
+        "undocumented": true
       }
     },
     {
       "id": "2026-10-24-1754",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.folders.boundaries.delete",
-      "severity": "HIGH",
+      "dimension": "role_permissions",
+      "change_type": "permission_added_to_role",
+      "permission": "eventarc.triggers.list",
+      "role": "roles/cloudfunctions.standardServiceAgent",
+      "service": "eventarc",
+      "method": "",
+      "severity": "MEDIUM",
       "tags": [],
       "details": {
-        "note": "New method has no permission mapping"
+        "undocumented": true
       }
     },
     {
       "id": "2026-10-24-1755",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
+      "dimension": "methods",
+      "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.organizations.boundaries.patch",
-      "severity": "HIGH",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.matchingResources.get",
+      "severity": "INFO",
       "tags": [],
       "details": {
-        "note": "New method has no permission mapping"
+        "service": "backupdr"
       }
     },
     {
       "id": "2026-10-24-1756",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.matchingResources.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-24-1757",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
+      "dimension": "methods",
+      "change_type": "added",
       "permission": "",
       "role": "",
       "service": "backupdr",
@@ -914,95 +902,15 @@
       "severity": "INFO",
       "tags": [],
       "details": {
-        "note": "New method has no permission mapping"
+        "service": "backupdr"
       }
     },
     {
-      "id": "2026-10-24-1758",
+      "id": "2026-10-24-1757",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-24-1759",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.organizations.boundaries.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-24-1760",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.folders.updateBoundaryConfig",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-24-1761",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.folders.boundaries.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-24-1762",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-24-1763",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
+      "dimension": "methods",
+      "change_type": "added",
       "permission": "",
       "role": "",
       "service": "backupdr",
@@ -1010,95 +918,127 @@
       "severity": "INFO",
       "tags": [],
       "details": {
-        "note": "New method has no permission mapping"
+        "service": "backupdr"
+      }
+    },
+    {
+      "id": "2026-10-24-1758",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.initiateDelete",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "backupdr"
+      }
+    },
+    {
+      "id": "2026-10-24-1759",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.matchingResources.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "backupdr"
+      }
+    },
+    {
+      "id": "2026-10-24-1760",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.create",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "backupdr"
+      }
+    },
+    {
+      "id": "2026-10-24-1761",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "backupdr"
+      }
+    },
+    {
+      "id": "2026-10-24-1762",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "backupdr"
+      }
+    },
+    {
+      "id": "2026-10-24-1763",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.patch",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "backupdr"
       }
     },
     {
       "id": "2026-10-24-1764",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
+      "dimension": "methods",
+      "change_type": "added",
       "permission": "",
       "role": "",
       "service": "backupdr",
-      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.get",
-      "severity": "INFO",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.create",
+      "severity": "HIGH",
       "tags": [],
       "details": {
-        "note": "New method has no permission mapping"
+        "service": "backupdr"
       }
     },
     {
       "id": "2026-10-24-1765",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.organizations.boundaries.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-24-1766",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.folders.getBoundaryConfig",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-24-1767",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.organizations.getBoundaryConfig",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-24-1768",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.folders.boundaries.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-24-1769",
-      "date": "2026-10-24",
-      "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
+      "dimension": "methods",
+      "change_type": "added",
       "permission": "",
       "role": "",
       "service": "backupdr",
@@ -1106,31 +1046,47 @@
       "severity": "INFO",
       "tags": [],
       "details": {
-        "note": "New method has no permission mapping"
+        "service": "backupdr"
       }
     },
     {
-      "id": "2026-10-24-1770",
+      "id": "2026-10-24-1766",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
+      "dimension": "methods",
+      "change_type": "added",
       "permission": "",
       "role": "",
-      "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.organizations.updateBoundaryConfig",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.get",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "note": "New method has no permission mapping"
+        "service": "backupdr"
       }
     },
     {
-      "id": "2026-10-24-1771",
+      "id": "2026-10-24-1767",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.folders.boundaries.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "cloudresourcemanager"
+      }
+    },
+    {
+      "id": "2026-10-24-1768",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
       "permission": "",
       "role": "",
       "service": "cloudresourcemanager",
@@ -1138,15 +1094,127 @@
       "severity": "HIGH",
       "tags": [],
       "details": {
-        "note": "New method has no permission mapping"
+        "service": "cloudresourcemanager"
+      }
+    },
+    {
+      "id": "2026-10-24-1769",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.folders.getBoundaryConfig",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "cloudresourcemanager"
+      }
+    },
+    {
+      "id": "2026-10-24-1770",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.folders.boundaries.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "cloudresourcemanager"
+      }
+    },
+    {
+      "id": "2026-10-24-1771",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.folders.boundaries.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "cloudresourcemanager"
       }
     },
     {
       "id": "2026-10-24-1772",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.folders.boundaries.patch",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "cloudresourcemanager"
+      }
+    },
+    {
+      "id": "2026-10-24-1773",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.folders.boundaries.create",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "cloudresourcemanager"
+      }
+    },
+    {
+      "id": "2026-10-24-1774",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.organizations.boundaries.create",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "cloudresourcemanager"
+      }
+    },
+    {
+      "id": "2026-10-24-1775",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.organizations.updateBoundaryConfig",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "cloudresourcemanager"
+      }
+    },
+    {
+      "id": "2026-10-24-1776",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
       "permission": "",
       "role": "",
       "service": "cloudresourcemanager",
@@ -1154,11 +1222,91 @@
       "severity": "INFO",
       "tags": [],
       "details": {
+        "service": "cloudresourcemanager"
+      }
+    },
+    {
+      "id": "2026-10-24-1777",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.folders.updateBoundaryConfig",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "cloudresourcemanager"
+      }
+    },
+    {
+      "id": "2026-10-24-1778",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.organizations.boundaries.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "cloudresourcemanager"
+      }
+    },
+    {
+      "id": "2026-10-24-1779",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.organizations.boundaries.patch",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "cloudresourcemanager"
+      }
+    },
+    {
+      "id": "2026-10-24-1780",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.organizations.getBoundaryConfig",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "cloudresourcemanager"
+      }
+    },
+    {
+      "id": "2026-10-24-1781",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.matchingResources.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
         "note": "New method has no permission mapping"
       }
     },
     {
-      "id": "2026-10-24-1773",
+      "id": "2026-10-24-1782",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
       "dimension": "method_map",
@@ -1174,7 +1322,7 @@
       }
     },
     {
-      "id": "2026-10-24-1774",
+      "id": "2026-10-24-1783",
       "date": "2026-10-24",
       "commit": "a10266d495e4",
       "dimension": "method_map",
@@ -1182,7 +1330,7 @@
       "permission": "",
       "role": "",
       "service": "cloudresourcemanager",
-      "method": "cloudresourcemanager.folders.boundaries.create",
+      "method": "cloudresourcemanager.folders.boundaries.patch",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -1190,367 +1338,15 @@
       }
     },
     {
-      "id": "2026-10-22-1775",
-      "date": "2026-10-22",
-      "commit": "50fb133b184b",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "beyondcorp",
-      "method": "beyondcorp.projects.locations.connectors.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "beyondcorp"
-      }
-    },
-    {
-      "id": "2026-10-22-1776",
-      "date": "2026-10-22",
-      "commit": "50fb133b184b",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "beyondcorp",
-      "method": "beyondcorp.projects.locations.appConnectors.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "beyondcorp"
-      }
-    },
-    {
-      "id": "2026-10-22-1777",
-      "date": "2026-10-22",
-      "commit": "50fb133b184b",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "beyondcorp",
-      "method": "beyondcorp.projects.locations.appConnectors.reportStatus",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "beyondcorp"
-      }
-    },
-    {
-      "id": "2026-10-22-1778",
-      "date": "2026-10-22",
-      "commit": "50fb133b184b",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "beyondcorp",
-      "method": "beyondcorp.projects.locations.appConnections.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "beyondcorp"
-      }
-    },
-    {
-      "id": "2026-10-22-1779",
-      "date": "2026-10-22",
-      "commit": "50fb133b184b",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "beyondcorp",
-      "method": "beyondcorp.projects.locations.connections.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "beyondcorp"
-      }
-    },
-    {
-      "id": "2026-10-22-1780",
-      "date": "2026-10-22",
-      "commit": "50fb133b184b",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "beyondcorp",
-      "method": "beyondcorp.projects.locations.appConnectors.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "beyondcorp"
-      }
-    },
-    {
-      "id": "2026-10-22-1781",
-      "date": "2026-10-22",
-      "commit": "50fb133b184b",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "beyondcorp",
-      "method": "beyondcorp.projects.locations.connectors.reportStatus",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "beyondcorp"
-      }
-    },
-    {
-      "id": "2026-10-22-1782",
-      "date": "2026-10-22",
-      "commit": "50fb133b184b",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "beyondcorp",
-      "method": "beyondcorp.projects.locations.connections.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "beyondcorp"
-      }
-    },
-    {
-      "id": "2026-10-22-1783",
-      "date": "2026-10-22",
-      "commit": "50fb133b184b",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "beyondcorp",
-      "method": "beyondcorp.projects.locations.appConnections.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "beyondcorp"
-      }
-    },
-    {
-      "id": "2026-10-22-1784",
-      "date": "2026-10-22",
-      "commit": "50fb133b184b",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "beyondcorp",
-      "method": "beyondcorp.projects.locations.connectors.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "beyondcorp"
-      }
-    },
-    {
-      "id": "2026-10-22-1785",
-      "date": "2026-10-22",
-      "commit": "50fb133b184b",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "beyondcorp",
-      "method": "beyondcorp.projects.locations.appGateways.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "beyondcorp"
-      }
-    },
-    {
-      "id": "2026-10-21-1786",
-      "date": "2026-10-21",
-      "commit": "2cd700ec040d",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "networkservices",
-      "method": "networkservices.projects.locations.telemetryPolicies.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "networkservices"
-      }
-    },
-    {
-      "id": "2026-10-21-1787",
-      "date": "2026-10-21",
-      "commit": "2cd700ec040d",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "networkservices",
-      "method": "networkservices.projects.locations.telemetryPolicies.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "networkservices"
-      }
-    },
-    {
-      "id": "2026-10-21-1788",
-      "date": "2026-10-21",
-      "commit": "2cd700ec040d",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "networkservices",
-      "method": "networkservices.projects.locations.telemetryPolicies.delete",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "networkservices"
-      }
-    },
-    {
-      "id": "2026-10-21-1789",
-      "date": "2026-10-21",
-      "commit": "2cd700ec040d",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "networkservices",
-      "method": "networkservices.projects.locations.telemetryPolicies.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "networkservices"
-      }
-    },
-    {
-      "id": "2026-10-21-1790",
-      "date": "2026-10-21",
-      "commit": "2cd700ec040d",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "networkservices",
-      "method": "networkservices.projects.locations.telemetryPolicies.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "networkservices"
-      }
-    },
-    {
-      "id": "2026-10-21-1791",
-      "date": "2026-10-21",
-      "commit": "2cd700ec040d",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "classroom",
-      "method": "classroom.courses.courseWork.addOnAttachments.studentSubmissions.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "classroom"
-      }
-    },
-    {
-      "id": "2026-10-21-1792",
-      "date": "2026-10-21",
-      "commit": "2cd700ec040d",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "chat",
-      "method": "chat.spaces.messages.replaceCards",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "chat"
-      }
-    },
-    {
-      "id": "2026-10-21-1793",
-      "date": "2026-10-21",
-      "commit": "2cd700ec040d",
+      "id": "2026-10-24-1784",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
       "dimension": "method_map",
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "classroom",
-      "method": "classroom.courses.courseWork.addOnAttachments.studentSubmissions.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-21-1794",
-      "date": "2026-10-21",
-      "commit": "2cd700ec040d",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "networkservices",
-      "method": "networkservices.projects.locations.telemetryPolicies.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-21-1795",
-      "date": "2026-10-21",
-      "commit": "2cd700ec040d",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "networkservices",
-      "method": "networkservices.projects.locations.telemetryPolicies.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-21-1796",
-      "date": "2026-10-21",
-      "commit": "2cd700ec040d",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "chat",
-      "method": "chat.spaces.messages.replaceCards",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-21-1797",
-      "date": "2026-10-21",
-      "commit": "2cd700ec040d",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "networkservices",
-      "method": "networkservices.projects.locations.telemetryPolicies.delete",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.delete",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -1558,15 +1354,15 @@
       }
     },
     {
-      "id": "2026-10-21-1798",
-      "date": "2026-10-21",
-      "commit": "2cd700ec040d",
+      "id": "2026-10-24-1785",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
       "dimension": "method_map",
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "networkservices",
-      "method": "networkservices.projects.locations.telemetryPolicies.patch",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.organizations.boundaries.create",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -1574,48 +1370,256 @@
       }
     },
     {
-      "id": "2026-10-21-1799",
-      "date": "2026-10-21",
-      "commit": "2cd700ec040d",
+      "id": "2026-10-24-1786",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
       "dimension": "method_map",
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "networkservices",
-      "method": "networkservices.projects.locations.telemetryPolicies.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-20-1800",
-      "date": "2026-10-20",
-      "commit": "f5cd217745e1",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "contactcenterinsights",
-      "method": "contactcenterinsights.projects.locations.assistantSessions.list",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.get",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "contactcenterinsights"
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-24-1787",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.patch",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-24-1788",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.organizations.boundaries.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-24-1789",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-24-1790",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.organizations.getBoundaryConfig",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-24-1791",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-24-1792",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.folders.getBoundaryConfig",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-24-1793",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.organizations.updateBoundaryConfig",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-24-1794",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.organizations.boundaries.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-24-1795",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.folders.boundaries.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-24-1796",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.appliedAutoProtectionPolicies.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-24-1797",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.matchingResources.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-24-1798",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "backupdr",
+      "method": "backupdr.projects.locations.autoProtectionPolicies.bindings.create",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-24-1799",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.folders.boundaries.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-24-1800",
+      "date": "2026-10-24",
+      "commit": "a10266d495e4",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "cloudresourcemanager",
+      "method": "cloudresourcemanager.folders.updateBoundaryConfig",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
       }
     }
   ],
   "summary": {
     "by_severity": {
       "CRITICAL": 44,
-      "HIGH": 896,
+      "HIGH": 886,
       "MEDIUM": 5823,
-      "INFO": 200
+      "INFO": 212
     },
     "by_dimension": {
-      "methods": 175,
-      "method_map": 131,
+      "methods": 176,
+      "method_map": 132,
       "predefined_roles": 35,
       "role_permissions": 6622
     },
