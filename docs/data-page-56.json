@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-02T23:16:10Z",
-  "total_entries": 7613,
+  "generated_at": "2026-11-03T21:22:20Z",
+  "total_entries": 7601,
   "pages": 77,
   "page": 56,
   "page_size": 100,
@@ -11,9 +11,9 @@
       "commit": "b3feacd01ae5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "databaseinsights.genUiAgent.getBlueprint",
-      "role": "roles/databaseinsights.viewer",
-      "service": "databaseinsights",
+      "permission": "dataplex.entries.updateContext",
+      "role": "roles/datacatalog.entryOwner",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -27,9 +27,9 @@
       "commit": "b3feacd01ae5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "oracledatabase.odbDnsZones.get",
-      "role": "roles/reader",
-      "service": "oracledatabase",
+      "permission": "dataplex.entries.updateContext",
+      "role": "roles/dataplex.catalogAdmin",
+      "service": "dataplex",
       "method": "",
       "severity": "MEDIUM",
       "tags": [],
@@ -43,11 +43,11 @@
       "commit": "b3feacd01ae5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "oracledatabase.odbDnsZones.get",
-      "role": "roles/writer",
+      "permission": "oracledatabase.odbDnsZones.create",
+      "role": "roles/owner",
       "service": "oracledatabase",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -59,11 +59,11 @@
       "commit": "b3feacd01ae5",
       "dimension": "role_permissions",
       "change_type": "permission_added_to_role",
-      "permission": "oracledatabase.odbDnsZones.get",
-      "role": "roles/owner",
+      "permission": "oracledatabase.odbDnsZones.create",
+      "role": "roles/writer",
       "service": "oracledatabase",
       "method": "",
-      "severity": "MEDIUM",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "undocumented": true
@@ -71,38 +71,6 @@
     },
     {
       "id": "2026-10-16-5505",
-      "date": "2026-10-16",
-      "commit": "b3feacd01ae5",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "dataplex",
-      "method": "dataplex.projects.locations.entryGroups.requestBatchMetadataChange",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "dataplex"
-      }
-    },
-    {
-      "id": "2026-10-16-5506",
-      "date": "2026-10-16",
-      "commit": "b3feacd01ae5",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "dataplex",
-      "method": "dataplex.projects.locations.entryGroups.batchChangeMetadata",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "dataplex"
-      }
-    },
-    {
-      "id": "2026-10-16-5507",
       "date": "2026-10-16",
       "commit": "b3feacd01ae5",
       "dimension": "methods",
@@ -118,23 +86,7 @@
       }
     },
     {
-      "id": "2026-10-16-5508",
-      "date": "2026-10-16",
-      "commit": "b3feacd01ae5",
-      "dimension": "methods",
-      "change_type": "removed",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.collaborativeProjects.knowledgeSpaces.operations.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "discoveryengine"
-      }
-    },
-    {
-      "id": "2026-10-16-5509",
+      "id": "2026-10-16-5506",
       "date": "2026-10-16",
       "commit": "b3feacd01ae5",
       "dimension": "methods",
@@ -150,6 +102,54 @@
       }
     },
     {
+      "id": "2026-10-16-5507",
+      "date": "2026-10-16",
+      "commit": "b3feacd01ae5",
+      "dimension": "methods",
+      "change_type": "removed",
+      "permission": "",
+      "role": "",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.engines.collaborativeProjects.knowledgeSpaces.operations.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "discoveryengine"
+      }
+    },
+    {
+      "id": "2026-10-16-5508",
+      "date": "2026-10-16",
+      "commit": "b3feacd01ae5",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "dataplex",
+      "method": "dataplex.projects.locations.entryGroups.batchChangeMetadata",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "dataplex"
+      }
+    },
+    {
+      "id": "2026-10-16-5509",
+      "date": "2026-10-16",
+      "commit": "b3feacd01ae5",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "dataplex",
+      "method": "dataplex.projects.locations.entryGroups.requestBatchMetadataChange",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "dataplex"
+      }
+    },
+    {
       "id": "2026-10-16-5510",
       "date": "2026-10-16",
       "commit": "b3feacd01ae5",
@@ -158,7 +158,7 @@
       "permission": "",
       "role": "",
       "service": "dataplex",
-      "method": "dataplex.projects.locations.entryGroups.requestBatchMetadataChange",
+      "method": "dataplex.projects.locations.entryGroups.batchChangeMetadata",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -190,7 +190,7 @@
       "permission": "",
       "role": "",
       "service": "dataplex",
-      "method": "dataplex.projects.locations.entryGroups.batchChangeMetadata",
+      "method": "dataplex.projects.locations.entryGroups.requestBatchMetadataChange",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -206,8 +206,8 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.delete",
-      "severity": "HIGH",
+      "method": "discoveryengine.projects.locations.collections.engines.getCompletionConfig",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "discoveryengine"
@@ -222,8 +222,8 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.alphaEvolvePrograms.list",
-      "severity": "INFO",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.alphaEvolvePrograms.create",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "discoveryengine"
@@ -238,7 +238,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.acquirePrograms",
+      "method": "discoveryengine.projects.locations.dataStores.updateCompletionConfig",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -254,7 +254,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.getIamPolicy",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.get",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -270,7 +270,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.dataConnector.invokeConnectorMcp",
+      "method": "discoveryengine.projects.locations.collections.engines.assistants.agents.toolCalls.operations.get",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -286,8 +286,8 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.alphaEvolvePrograms.create",
-      "severity": "HIGH",
+      "method": "discoveryengine.projects.locations.collections.dataStores.updateCompletionConfig",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "discoveryengine"
@@ -302,7 +302,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.resume",
+      "method": "discoveryengine.projects.locations.collections.dataStores.getCompletionConfig",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -318,8 +318,8 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.userStores.userLicenses.export",
-      "severity": "INFO",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.delete",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "discoveryengine"
@@ -334,7 +334,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.dataConnector.mcp",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.start",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -350,7 +350,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.alphaEvolvePrograms.get",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.submitProgramsEvaluations",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -366,7 +366,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.dataStores.updateCompletionConfig",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.resume",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -382,8 +382,8 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.getCompletionConfig",
-      "severity": "INFO",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.create",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "discoveryengine"
@@ -398,7 +398,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.collaborativeProjects.knowledgeSpaces.operations.get",
+      "method": "discoveryengine.projects.locations.collections.dataConnector.invokeConnectorMcp",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -414,7 +414,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.get",
+      "method": "discoveryengine.projects.locations.collections.getIamPolicy",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -430,8 +430,8 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.setIamPolicy",
-      "severity": "CRITICAL",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.list",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "discoveryengine"
@@ -446,7 +446,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.submitProgramsEvaluations",
+      "method": "discoveryengine.projects.locations.collections.engines.updateCompletionConfig",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -462,8 +462,8 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.dataStores.getCompletionConfig",
-      "severity": "INFO",
+      "method": "discoveryengine.projects.locations.collections.setIamPolicy",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
         "service": "discoveryengine"
@@ -478,7 +478,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.start",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.acquirePrograms",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -494,8 +494,8 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.create",
-      "severity": "HIGH",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.alphaEvolvePrograms.list",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "discoveryengine"
@@ -510,7 +510,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.dataStores.getCompletionConfig",
+      "method": "discoveryengine.projects.locations.collections.dataConnector.mcp",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -526,7 +526,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.assistants.agents.toolCalls.operations.get",
+      "method": "discoveryengine.projects.locations.collections.engines.collaborativeProjects.knowledgeSpaces.operations.get",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -542,7 +542,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.list",
+      "method": "discoveryengine.projects.locations.dataStores.getCompletionConfig",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -558,7 +558,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.updateCompletionConfig",
+      "method": "discoveryengine.projects.locations.userStores.userLicenses.export",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -574,7 +574,7 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.dataStores.updateCompletionConfig",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.alphaEvolvePrograms.get",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -590,8 +590,8 @@
       "permission": "",
       "role": "",
       "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.delete",
-      "severity": "HIGH",
+      "method": "discoveryengine.projects.locations.collections.engines.getCompletionConfig",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
@@ -599,70 +599,6 @@
     },
     {
       "id": "2026-10-15-5538",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.alphaEvolvePrograms.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5539",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.acquirePrograms",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5540",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.getIamPolicy",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5541",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.dataConnector.invokeConnectorMcp",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5542",
       "date": "2026-10-15",
       "commit": "c40de22ffdbb",
       "dimension": "method_map",
@@ -678,279 +614,7 @@
       }
     },
     {
-      "id": "2026-10-15-5543",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.resume",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5544",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.userStores.userLicenses.export",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5545",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.dataConnector.mcp",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5546",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.alphaEvolvePrograms.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5547",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.dataStores.updateCompletionConfig",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5548",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.getCompletionConfig",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5549",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.collaborativeProjects.knowledgeSpaces.operations.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5550",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5551",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.submitProgramsEvaluations",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5552",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.setIamPolicy",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5553",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.dataStores.getCompletionConfig",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5554",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.start",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5555",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.create",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5556",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.dataStores.getCompletionConfig",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5557",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.assistants.agents.toolCalls.operations.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5558",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5559",
-      "date": "2026-10-15",
-      "commit": "c40de22ffdbb",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "discoveryengine",
-      "method": "discoveryengine.projects.locations.collections.engines.updateCompletionConfig",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-15-5560",
+      "id": "2026-10-15-5539",
       "date": "2026-10-15",
       "commit": "c40de22ffdbb",
       "dimension": "method_map",
@@ -966,135 +630,343 @@
       }
     },
     {
-      "id": "2026-10-14-5561",
-      "date": "2026-10-14",
-      "commit": "ed17b3d120e7",
-      "dimension": "methods",
-      "change_type": "removed",
+      "id": "2026-10-15-5540",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "assuredworkloads",
-      "method": "assuredworkloads.assuredworkloads.archiveResourceEvents",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.get",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "assuredworkloads"
+        "note": "New method has no permission mapping"
       }
     },
     {
-      "id": "2026-10-14-5562",
-      "date": "2026-10-14",
-      "commit": "ed17b3d120e7",
-      "dimension": "methods",
-      "change_type": "removed",
+      "id": "2026-10-15-5541",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "assuredworkloads",
-      "method": "assuredworkloads.assuredworkloads.revertArchivedResourceEvents",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.dataStores.updateCompletionConfig",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "assuredworkloads"
+        "note": "New method has no permission mapping"
       }
     },
     {
-      "id": "2026-10-14-5563",
-      "date": "2026-10-14",
-      "commit": "ed17b3d120e7",
-      "dimension": "methods",
-      "change_type": "added",
+      "id": "2026-10-15-5542",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "compute",
-      "method": "compute.organizationZoneVmExtensionPolicies.delete",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.engines.assistants.agents.toolCalls.operations.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-15-5543",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.dataStores.getCompletionConfig",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-15-5544",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.delete",
       "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "compute"
+        "note": "New method has no permission mapping"
       }
     },
     {
-      "id": "2026-10-14-5564",
-      "date": "2026-10-14",
-      "commit": "ed17b3d120e7",
-      "dimension": "methods",
-      "change_type": "removed",
+      "id": "2026-10-15-5545",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "compute",
-      "method": "compute.orgVmExtensionPolicies.delete",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.start",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-15-5546",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.submitProgramsEvaluations",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-15-5547",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.resume",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-15-5548",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.create",
       "severity": "HIGH",
       "tags": [],
       "details": {
-        "service": "compute"
+        "note": "New method has no permission mapping"
       }
     },
     {
-      "id": "2026-10-14-5565",
-      "date": "2026-10-14",
-      "commit": "ed17b3d120e7",
-      "dimension": "methods",
-      "change_type": "added",
+      "id": "2026-10-15-5549",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "dataform",
-      "method": "dataform.projects.locations.repositories.workspaces.fetchHistory",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.getIamPolicy",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "dataform"
+        "note": "New method has no permission mapping"
       }
     },
     {
-      "id": "2026-10-14-5566",
-      "date": "2026-10-14",
-      "commit": "ed17b3d120e7",
-      "dimension": "methods",
-      "change_type": "removed",
+      "id": "2026-10-15-5550",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "storage",
-      "method": "storage.channels.stop",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.dataConnector.invokeConnectorMcp",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "storage"
+        "note": "New method has no permission mapping"
       }
     },
     {
-      "id": "2026-10-14-5567",
-      "date": "2026-10-14",
-      "commit": "ed17b3d120e7",
-      "dimension": "methods",
-      "change_type": "added",
+      "id": "2026-10-15-5551",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "biglake",
-      "method": "biglake.projects.catalogs.namespaces.views.setIamPolicy",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-15-5552",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.engines.updateCompletionConfig",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-15-5553",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.setIamPolicy",
       "severity": "CRITICAL",
       "tags": [],
       "details": {
-        "service": "biglake"
+        "note": "New method has no permission mapping"
       }
     },
     {
-      "id": "2026-10-14-5568",
-      "date": "2026-10-14",
-      "commit": "ed17b3d120e7",
-      "dimension": "methods",
-      "change_type": "added",
+      "id": "2026-10-15-5554",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "biglake",
-      "method": "biglake.projects.catalogs.namespaces.views.testIamPermissions",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.acquirePrograms",
       "severity": "INFO",
       "tags": [],
       "details": {
-        "service": "biglake"
+        "note": "New method has no permission mapping"
       }
     },
     {
-      "id": "2026-10-14-5569",
+      "id": "2026-10-15-5555",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.alphaEvolvePrograms.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-15-5556",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.dataConnector.mcp",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-15-5557",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.engines.collaborativeProjects.knowledgeSpaces.operations.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-15-5558",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.dataStores.getCompletionConfig",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-15-5559",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.userStores.userLicenses.export",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-15-5560",
+      "date": "2026-10-15",
+      "commit": "c40de22ffdbb",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "discoveryengine",
+      "method": "discoveryengine.projects.locations.collections.engines.sessions.alphaEvolveExperiments.alphaEvolvePrograms.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-14-5561",
       "date": "2026-10-14",
       "commit": "ed17b3d120e7",
       "dimension": "methods",
@@ -1110,6 +982,134 @@
       }
     },
     {
+      "id": "2026-10-14-5562",
+      "date": "2026-10-14",
+      "commit": "ed17b3d120e7",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "biglake",
+      "method": "biglake.projects.catalogs.namespaces.views.testIamPermissions",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "biglake"
+      }
+    },
+    {
+      "id": "2026-10-14-5563",
+      "date": "2026-10-14",
+      "commit": "ed17b3d120e7",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "biglake",
+      "method": "biglake.projects.catalogs.namespaces.views.setIamPolicy",
+      "severity": "CRITICAL",
+      "tags": [],
+      "details": {
+        "service": "biglake"
+      }
+    },
+    {
+      "id": "2026-10-14-5564",
+      "date": "2026-10-14",
+      "commit": "ed17b3d120e7",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "dataform",
+      "method": "dataform.projects.locations.repositories.workspaces.fetchHistory",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "dataform"
+      }
+    },
+    {
+      "id": "2026-10-14-5565",
+      "date": "2026-10-14",
+      "commit": "ed17b3d120e7",
+      "dimension": "methods",
+      "change_type": "removed",
+      "permission": "",
+      "role": "",
+      "service": "assuredworkloads",
+      "method": "assuredworkloads.assuredworkloads.archiveResourceEvents",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "assuredworkloads"
+      }
+    },
+    {
+      "id": "2026-10-14-5566",
+      "date": "2026-10-14",
+      "commit": "ed17b3d120e7",
+      "dimension": "methods",
+      "change_type": "removed",
+      "permission": "",
+      "role": "",
+      "service": "assuredworkloads",
+      "method": "assuredworkloads.assuredworkloads.revertArchivedResourceEvents",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "assuredworkloads"
+      }
+    },
+    {
+      "id": "2026-10-14-5567",
+      "date": "2026-10-14",
+      "commit": "ed17b3d120e7",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.organizationZoneVmExtensionPolicies.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "compute"
+      }
+    },
+    {
+      "id": "2026-10-14-5568",
+      "date": "2026-10-14",
+      "commit": "ed17b3d120e7",
+      "dimension": "methods",
+      "change_type": "removed",
+      "permission": "",
+      "role": "",
+      "service": "compute",
+      "method": "compute.orgVmExtensionPolicies.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "service": "compute"
+      }
+    },
+    {
+      "id": "2026-10-14-5569",
+      "date": "2026-10-14",
+      "commit": "ed17b3d120e7",
+      "dimension": "methods",
+      "change_type": "removed",
+      "permission": "",
+      "role": "",
+      "service": "storage",
+      "method": "storage.channels.stop",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "storage"
+      }
+    },
+    {
       "id": "2026-10-14-5570",
       "date": "2026-10-14",
       "commit": "ed17b3d120e7",
@@ -1117,8 +1117,8 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "biglake",
-      "method": "biglake.projects.catalogs.namespaces.views.testIamPermissions",
+      "service": "dataform",
+      "method": "dataform.projects.locations.repositories.workspaces.fetchHistory",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1127,22 +1127,6 @@
     },
     {
       "id": "2026-10-14-5571",
-      "date": "2026-10-14",
-      "commit": "ed17b3d120e7",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "biglake",
-      "method": "biglake.projects.catalogs.namespaces.views.setIamPolicy",
-      "severity": "CRITICAL",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-14-5572",
       "date": "2026-10-14",
       "commit": "ed17b3d120e7",
       "dimension": "method_map",
@@ -1158,6 +1142,22 @@
       }
     },
     {
+      "id": "2026-10-14-5572",
+      "date": "2026-10-14",
+      "commit": "ed17b3d120e7",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "biglake",
+      "method": "biglake.projects.catalogs.namespaces.views.testIamPermissions",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
       "id": "2026-10-14-5573",
       "date": "2026-10-14",
       "commit": "ed17b3d120e7",
@@ -1165,9 +1165,9 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "dataform",
-      "method": "dataform.projects.locations.repositories.workspaces.fetchHistory",
-      "severity": "INFO",
+      "service": "biglake",
+      "method": "biglake.projects.catalogs.namespaces.views.setIamPolicy",
+      "severity": "CRITICAL",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
@@ -1214,7 +1214,7 @@
       "permission": "",
       "role": "",
       "service": "chromemanagement",
-      "method": "chromemanagement.customers.chromeBrowsers.list",
+      "method": "chromemanagement.customers.enrollmentTokens.list",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1230,8 +1230,8 @@
       "permission": "",
       "role": "",
       "service": "chromemanagement",
-      "method": "chromemanagement.customers.enrollmentTokens.revoke",
-      "severity": "INFO",
+      "method": "chromemanagement.customers.chromeBrowsers.patch",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "chromemanagement"
@@ -1246,23 +1246,7 @@
       "permission": "",
       "role": "",
       "service": "chromemanagement",
-      "method": "chromemanagement.customers.enrollmentTokens.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "service": "chromemanagement"
-      }
-    },
-    {
-      "id": "2026-10-11-5579",
-      "date": "2026-10-11",
-      "commit": "823da4fd3834",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "chromemanagement",
-      "method": "chromemanagement.customers.chromeBrowsers.patch",
+      "method": "chromemanagement.customers.enrollmentTokens.create",
       "severity": "HIGH",
       "tags": [],
       "details": {
@@ -1270,7 +1254,7 @@
       }
     },
     {
-      "id": "2026-10-11-5580",
+      "id": "2026-10-11-5579",
       "date": "2026-10-11",
       "commit": "823da4fd3834",
       "dimension": "methods",
@@ -1286,6 +1270,22 @@
       }
     },
     {
+      "id": "2026-10-11-5580",
+      "date": "2026-10-11",
+      "commit": "823da4fd3834",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "chromemanagement",
+      "method": "chromemanagement.customers.chromeBrowsers.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "chromemanagement"
+      }
+    },
+    {
       "id": "2026-10-11-5581",
       "date": "2026-10-11",
       "commit": "823da4fd3834",
@@ -1294,8 +1294,8 @@
       "permission": "",
       "role": "",
       "service": "chromemanagement",
-      "method": "chromemanagement.customers.enrollmentTokens.create",
-      "severity": "HIGH",
+      "method": "chromemanagement.customers.chromeBrowsers.move",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "service": "chromemanagement"
@@ -1326,7 +1326,7 @@
       "permission": "",
       "role": "",
       "service": "chromemanagement",
-      "method": "chromemanagement.customers.chromeBrowsers.move",
+      "method": "chromemanagement.customers.enrollmentTokens.revoke",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1342,23 +1342,7 @@
       "permission": "",
       "role": "",
       "service": "file",
-      "method": "file.projects.locations.volumePools.volumes.patch",
-      "severity": "HIGH",
-      "tags": [],
-      "details": {
-        "service": "file"
-      }
-    },
-    {
-      "id": "2026-10-11-5585",
-      "date": "2026-10-11",
-      "commit": "823da4fd3834",
-      "dimension": "methods",
-      "change_type": "added",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.volumes.createFromSource",
+      "method": "file.projects.locations.volumePools.volumes.directDelete",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1366,7 +1350,7 @@
       }
     },
     {
-      "id": "2026-10-11-5586",
+      "id": "2026-10-11-5585",
       "date": "2026-10-11",
       "commit": "823da4fd3834",
       "dimension": "methods",
@@ -1382,6 +1366,22 @@
       }
     },
     {
+      "id": "2026-10-11-5586",
+      "date": "2026-10-11",
+      "commit": "823da4fd3834",
+      "dimension": "methods",
+      "change_type": "added",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.volumes.createFromSource",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "service": "file"
+      }
+    },
+    {
       "id": "2026-10-11-5587",
       "date": "2026-10-11",
       "commit": "823da4fd3834",
@@ -1390,8 +1390,8 @@
       "permission": "",
       "role": "",
       "service": "file",
-      "method": "file.projects.locations.volumePools.volumes.directDelete",
-      "severity": "INFO",
+      "method": "file.projects.locations.volumePools.volumes.patch",
+      "severity": "HIGH",
       "tags": [],
       "details": {
         "service": "file"
@@ -1422,8 +1422,8 @@
       "permission": "",
       "role": "",
       "service": "file",
-      "method": "file.projects.locations.volumePools.volumes.patch",
-      "severity": "HIGH",
+      "method": "file.projects.locations.volumePools.volumes.directDelete",
+      "severity": "INFO",
       "tags": [],
       "details": {
         "note": "New method has no permission mapping"
@@ -1453,54 +1453,6 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.volumes.createFromSource",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-11-5592",
-      "date": "2026-10-11",
-      "commit": "823da4fd3834",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "chromemanagement",
-      "method": "chromemanagement.customers.chromeBrowsers.list",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-11-5593",
-      "date": "2026-10-11",
-      "commit": "823da4fd3834",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "chromemanagement",
-      "method": "chromemanagement.customers.enrollmentTokens.revoke",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-11-5594",
-      "date": "2026-10-11",
-      "commit": "823da4fd3834",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
       "service": "chromemanagement",
       "method": "chromemanagement.customers.enrollmentTokens.list",
       "severity": "INFO",
@@ -1510,7 +1462,7 @@
       }
     },
     {
-      "id": "2026-10-11-5595",
+      "id": "2026-10-11-5592",
       "date": "2026-10-11",
       "commit": "823da4fd3834",
       "dimension": "method_map",
@@ -1526,7 +1478,23 @@
       }
     },
     {
-      "id": "2026-10-11-5596",
+      "id": "2026-10-11-5593",
+      "date": "2026-10-11",
+      "commit": "823da4fd3834",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "file",
+      "method": "file.projects.locations.volumePools.volumes.createFromSource",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-11-5594",
       "date": "2026-10-11",
       "commit": "823da4fd3834",
       "dimension": "method_map",
@@ -1542,39 +1510,7 @@
       }
     },
     {
-      "id": "2026-10-11-5597",
-      "date": "2026-10-11",
-      "commit": "823da4fd3834",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.volumes.directDelete",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-11-5598",
-      "date": "2026-10-11",
-      "commit": "823da4fd3834",
-      "dimension": "method_map",
-      "change_type": "unmapped_method",
-      "permission": "",
-      "role": "",
-      "service": "chromemanagement",
-      "method": "chromemanagement.customers.enrollmentTokens.get",
-      "severity": "INFO",
-      "tags": [],
-      "details": {
-        "note": "New method has no permission mapping"
-      }
-    },
-    {
-      "id": "2026-10-11-5599",
+      "id": "2026-10-11-5595",
       "date": "2026-10-11",
       "commit": "823da4fd3834",
       "dimension": "method_map",
@@ -1590,6 +1526,70 @@
       }
     },
     {
+      "id": "2026-10-11-5596",
+      "date": "2026-10-11",
+      "commit": "823da4fd3834",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "chromemanagement",
+      "method": "chromemanagement.customers.enrollmentTokens.get",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-11-5597",
+      "date": "2026-10-11",
+      "commit": "823da4fd3834",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "chromemanagement",
+      "method": "chromemanagement.customers.chromeBrowsers.move",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-11-5598",
+      "date": "2026-10-11",
+      "commit": "823da4fd3834",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "chromemanagement",
+      "method": "chromemanagement.customers.chromeBrowsers.list",
+      "severity": "INFO",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
+      "id": "2026-10-11-5599",
+      "date": "2026-10-11",
+      "commit": "823da4fd3834",
+      "dimension": "method_map",
+      "change_type": "unmapped_method",
+      "permission": "",
+      "role": "",
+      "service": "chromemanagement",
+      "method": "chromemanagement.customers.chromeBrowsers.delete",
+      "severity": "HIGH",
+      "tags": [],
+      "details": {
+        "note": "New method has no permission mapping"
+      }
+    },
+    {
       "id": "2026-10-11-5600",
       "date": "2026-10-11",
       "commit": "823da4fd3834",
@@ -1597,8 +1597,8 @@
       "change_type": "unmapped_method",
       "permission": "",
       "role": "",
-      "service": "file",
-      "method": "file.projects.locations.volumePools.volumes.directCreate",
+      "service": "chromemanagement",
+      "method": "chromemanagement.customers.enrollmentTokens.revoke",
       "severity": "INFO",
       "tags": [],
       "details": {
@@ -1609,14 +1609,14 @@
   "summary": {
     "by_severity": {
       "CRITICAL": 44,
-      "HIGH": 855,
+      "HIGH": 849,
       "MEDIUM": 6512,
-      "INFO": 202
+      "INFO": 196
     },
     "by_dimension": {
       "role_permissions": 7301,
-      "methods": 158,
-      "method_map": 129,
+      "methods": 152,
+      "method_map": 123,
       "predefined_roles": 25
     },
     "new_services": []
